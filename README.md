@@ -9,7 +9,7 @@ There are two parts to it, the auth-server, and the client.
 - Visit https://developer.spotify.com/ 
 - Log in and create an app
 - Enter http//localhost:8888/callback as the redirect uri
-- Save your changes
+- Save your changes.
 - Copy down the following: Redirect uri, client id, client secret
 
 
