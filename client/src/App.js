@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
- 
+import soundcloud from 'soundcloud';
+
 import SpotifyWebApi from 'spotify-web-api-js';
 const spotifyApi = new SpotifyWebApi();
-var volume = 0.1;
+var volume;
 var downVolume = 0.1;
 var stop = false;
- 
+var track = 'https://soundcloud.com/forss/sets/soulhack';
+var SC = require('soundcloud');
+
 class App extends Component {
   constructor(props){
     super(props);
@@ -15,6 +18,9 @@ class App extends Component {
     if (token) {
       spotifyApi.setAccessToken(token);
     }
+    SC.initialize({
+      client_id: 'wJ3iwkqswthCXMGaBX9lJeIZAIshvKtV'
+    });
     this.state = {
       loggedIn: token ? true : false,
       nowPlaying: { name: 'Not Checked', albumArt: '' },
@@ -38,7 +44,19 @@ class App extends Component {
     }
     stop = true;
   }
-  
+  soundcloudSearch() {
+    SC.get('/tracks', {
+        title: 'SoundPlay'
+      }).then(function(tracks) {
+        console.log(tracks);
+          SC.oEmbed(track, {
+            element: document.getElementById('putTheWidgetHere')
+          });
+      });
+    SC.oEmbed(track, {
+      element: document.getElementById('putTheWidgetHere')
+    });
+  }
   // when we receive a new update from the player
   onStateChanged(state) {
     // only update if we got a real state
@@ -161,12 +179,9 @@ class App extends Component {
   }
   
   setVolumeUp(){
-    this.player.setVolume(0.4+volume).then(() => {
+    this.player.setVolume(volume +0.1).then(() => {
       console.log('Volume Up!');
     });
-    if(volume<0.41){
-      volume += 0.1;
-    }
   }
   
   setVolumeDown(){
@@ -188,6 +203,13 @@ class App extends Component {
             }
         });
       })
+  }
+  getVolume(){
+    this.player.getVolume().then(volume => {
+    let volume_percentage = volume * 100;
+    volume = (volume_percentage/100)
+    console.log(`The volume of the player is ${volume_percentage}%`);
+  });
   }
   render() {
     const {
