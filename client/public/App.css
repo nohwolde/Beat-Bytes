@@ -6,7 +6,6 @@ html,h1,h2,h3,h4,h5,h6,a,body{
 
 .App {
   text-align: center;
-  font-size: small;
 }
 
 .App-logo {
@@ -21,14 +20,6 @@ html,h1,h2,h3,h4,h5,h6,a,body{
   color: white;
 }
 
-.logo-image{
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-top: -6px;
-}
-
 .App-title {
   font-size: 1.5em;
 }
@@ -41,7 +32,7 @@ html,h1,h2,h3,h4,h5,h6,a,body{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-.navbar{ background:rgb(3, 59, 133);}
+.navbar{ background:rgb(16, 5, 48);}
 
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
 

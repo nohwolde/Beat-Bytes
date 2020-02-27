@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import './App.css';
-import soundcloud from 'soundcloud';
-
+//import soundcloud from 'soundcloud';
 import SpotifyWebApi from 'spotify-web-api-js';
+import "./pause.png";
 const spotifyApi = new SpotifyWebApi();
-var volume;
+var volume = 0.1;
 var downVolume = 0.1;
 var stop = false;
-var track = 'https://soundcloud.com/forss/sets/soulhack';
 var SC = require('soundcloud');
 
 class App extends Component {
@@ -27,12 +26,13 @@ class App extends Component {
       token: "",
       deviceId: "",
       error: "",
-      trackName: "Track Name",
-      artistName: "Artist Name",
+      trackName: "",
+      artistName: "",
       albumName: "Album Name",
       playing: false,
       position: 0,
       duration: 1,
+      title: "",
     };
     this.playerCheckInterval = null;
   }
@@ -46,17 +46,15 @@ class App extends Component {
   }
   soundcloudSearch() {
     SC.get('/tracks', {
-        title: 'SoundPlay'
+        title: this.state.title
       }).then(function(tracks) {
         console.log(tracks);
-          SC.oEmbed(track, {
+          SC.oEmbed(tracks[0].permalink_url, {
             element: document.getElementById('putTheWidgetHere')
           });
       });
-    SC.oEmbed(track, {
-      element: document.getElementById('putTheWidgetHere')
-    });
   }
+
   // when we receive a new update from the player
   onStateChanged(state) {
     // only update if we got a real state
@@ -84,6 +82,7 @@ class App extends Component {
       // state was null, user might have swapped to another device
       this.setState({ error: "Looks like you might have swapped to another device?" });
     }
+    this.getNowPlaying();
   }
   
   createEventHandlers() {
@@ -179,9 +178,12 @@ class App extends Component {
   }
   
   setVolumeUp(){
-    this.player.setVolume(volume +0.1).then(() => {
+    this.player.setVolume(volume +0.4).then(() => {
       console.log('Volume Up!');
     });
+    if(volume<0.51){
+      volume += 0.1;
+    }
   }
   
   setVolumeDown(){
@@ -194,22 +196,18 @@ class App extends Component {
   }
  
   getNowPlaying(){
-    spotifyApi.getMyCurrentPlaybackState()
-      .then((response) => {
-        this.setState({
-          nowPlaying: { 
-              name: response.item.name, 
-              albumArt: response.item.album.images[0].url
-            }
-        });
-      })
-  }
-  getVolume(){
-    this.player.getVolume().then(volume => {
-    let volume_percentage = volume * 100;
-    volume = (volume_percentage/100)
-    console.log(`The volume of the player is ${volume_percentage}%`);
-  });
+    while(this.state.loggedIn){
+      spotifyApi.getMyCurrentPlaybackState()
+        .then((response) => {
+          this.setState({
+            nowPlaying: { 
+                name: response.item.name, 
+                albumArt: response.item.album.images[0].url
+              }
+          });
+        })
+        return;
+      }
   }
   render() {
     const {
@@ -223,6 +221,30 @@ class App extends Component {
     } = this.state;
     return (
       <div className="App">
+        <p className="App-intro">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"></link>
+        <nav class="navbar fixed-bottom ">
+        <div>
+          <a class="logo-image">
+          <img src={this.state.nowPlaying.albumArt} style={{ height: 50 }} class="img-fluid">
+        </img></a>
+        </div>  
+        <a class="navbar-brand" href="">{trackName} - {artistName}</a>        
+        <div class="logo-image">
+          <img src="play.png" class="img-fluid">
+        </img>
+        </div>
+        </nav>
+        </p>
+        <p>
+          <input type="text" placeholder = "SoundCloud Search" onChange={e => this.setState({ title: e.target.value })} />
+        </p>
+        <button onClick={() => this.soundcloudSearch()}>
+          Search
+        </button>
+        <p>
+          <input type="text" placeholder = "Spotify Search" onChange={e => this.soundcloudSearch({title: e})} />
+        </p>
         <a href='http://localhost:8888' > Login to Spotify </a>
         <div>
           Now Playing: { this.state.nowPlaying.name }
@@ -240,9 +262,9 @@ class App extends Component {
           <p>Track: {trackName}</p>
           <p>Album: {albumName}</p>
           <p>
-            <button onClick={() => this.onPrevClick()}>Previous</button>
+            <button onClick={() => this.onPrevClick() && this.getNowPlaying()}>Previous</button>
             <button onClick={() => this.onPlayClick()}>{playing ? "Pause" : "Play"}</button>
-            <button onClick={() => this.onNextClick()}>Next</button>
+            <button onClick={() => this.onNextClick() && this.getNowPlaying()}>Next</button>
           </p>
         </div>
         <div>
@@ -270,6 +292,7 @@ class App extends Component {
               Go
             </button>
           </p>
+          <div id="putTheWidgetHere"></div>
         </div>
       </div>
     );

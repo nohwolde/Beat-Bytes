@@ -10,6 +10,8 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/fav.ico">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder du ring the build.
@@ -19,13 +21,40 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    <nav class="navbar navbar-expand-lg fixed-top ">  
+    <a class="navbar-brand" href="">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
+    <li class="nav-item">
+        <a class="nav-link" data-value="Spotify Search" href="SpotifySearch.html">Spotify Search</a>        </li>  
+    <li class="nav-item">
+        <a class="nav-link " data-value="Soundcloud Search"href="Soundclou">Soundcloud Search</a>    
+    </li>
+    <li class="nav-item"> 
+        <a class="nav-link "data-value="Collaborative Playlists" href="">Collaborative Playlists</a>         </li>   
+    <li class="nav-item"> 
+      <a class="nav-link " data-value="Settings & Account Status" href="">Settings & Account Status</a>       </li>  
+    </ul>     
+    </div></nav>
+    <div>
+      :
+    </div>
+    <div>
+      :
+    </div>
+
     <title>Beatbytes</title>
-  </head>
+    </head>
+    <h1> BeatBytes Player </h1>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
+    <section class="header">
 
   <script src="https://sdk.scdn.co/spotify-player.js"></script>
   <script>
@@ -33,12 +62,8 @@
       window.Spotify = Spotify;
     }
   </script>
-  <script>
+  
 
-  </script>
-  <div id="putTheWidgetHere"></div>
-  <script type="text/javascript">
-  </script>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
