@@ -6,7 +6,6 @@ html,h1,h2,h3,h4,h5,h6,a,body{
 
 .App {
   text-align: center;
-  font-size: small;
 }
 
 .App-logo {
@@ -26,18 +25,18 @@ html,h1,h2,h3,h4,h5,h6,a,body{
   width: 100%;
   height: 71px;
   font-size: large;
+  background-color: aquamarine;
 }
 
 .App-footer {
   width: 100%;
-  height: 51px;
+  height: 71px;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
 .navbar{ background:rgb(3, 59, 133);}
 
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
