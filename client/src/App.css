@@ -14,6 +14,13 @@ html,h1,h2,h3,h4,h5,h6,a,body{
   height: 80px;
 }
 
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
 .logo-image{
   width: 46px;
   height: 46px;
@@ -22,22 +29,18 @@ html,h1,h2,h3,h4,h5,h6,a,body{
   margin-top: -6px;
 }
 
-.App-header {
-  width: 100%;
-  height: 71px;
-  font-size: large;
+.App-title {
+  font-size: 1.5em;
 }
 
-.App-footer {
-  width: 100%;
-  height: 51px;
+.App-intro {
+  font-size: large;
 }
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
-
 .navbar{ background:rgb(3, 59, 133);}
 
 .nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
