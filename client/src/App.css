@@ -40,7 +40,7 @@ html,h1,h2,h3,h4,h5,h6,a,body{
 
 .navbar{ background:rgb(3, 59, 133);}
 
-.nav-link , .navbar-brand{ color: #f4f4f4; cursor: pointer;}
+.nav-link , .navbar-brand{ color: #22af2e; cursor: pointer;}
 
 .nav-link{ margin-right: 1em !important;}
 

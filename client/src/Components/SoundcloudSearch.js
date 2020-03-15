@@ -11,26 +11,30 @@ var volume = 0.1;
 var downVolume = 0.1;
 var stop = false;
 var SC = require('soundcloud');
+var t = this;
 
 class SoundcloudSearch extends Component {
    constructor(props){
        super(props);
        this.state = {
            q: "",
-           songs: []
+           songs: [],
        };
        this.playerCheckInterval = null;
    }
    soundcloudSearch() {
-       var t = this;
-       SC.get('/tracks', {
-           q: t.state.q
-       }).then(function (tracks) {
-           $(document).ready(function () {
-               let a = t.state.q;
-               localStorage.setItem('a', a);
-               console.log(tracks);
-           })
+        var t = this;
+        var song = this.state.q;
+        localStorage.setItem('soundSong', song);
+        console.log(localStorage.getItem('soundSong'));
+        SC.get('/tracks', {
+            q: t.state.q
+        }).then(function (tracks) {
+        SC.oEmbed(tracks[0].permalink_url, {
+            auto_play: true,
+            maxheight: 80,
+            element: document.getElementById('playerwidget')
+          });
        });
    }
    // when we receive a new update from the player
@@ -48,7 +52,7 @@ class SoundcloudSearch extends Component {
            <div className="App">
                <div>
                    <div>
-                       <img src="fav.ico" className="img-fluid"/>
+                       <img src="fav.ico" className="App-logo"/>
                    </div>
                    <div>
                        <input type="text" placeholder = "SoundCloud Search" onChange={e => this.setState({ q: e.target.value })} />

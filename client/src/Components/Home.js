@@ -237,9 +237,9 @@ class Home extends React.Component {
          <img src="fav.ico" className="App-logo"/>
        </div>
          <div>
-           <input type="text" placeholder = "Spotify Search" onChange={e => this.setState({spotifyTitle: e.target.value})} />
+           <input type="text" placeholder = "Spotify Search & play" onChange={e => this.setState({spotifyTitle: e.target.value})} />
          </div>
-         <button onClick={() => this.spotifySearch() & this.handleLogin()}>
+         <button onClick={() => this.spotifySearch()}>
            Search
          </button>
          <br/>
