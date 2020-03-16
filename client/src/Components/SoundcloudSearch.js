@@ -30,11 +30,12 @@ class SoundcloudSearch extends Component {
         SC.get('/tracks', {
             q: t.state.q
         }).then(function (tracks) {
-        SC.oEmbed(tracks[0].permalink_url, {
+          SC.oEmbed(tracks[0].permalink_url, {
             auto_play: true,
             maxheight: 80,
             element: document.getElementById('playerwidget')
           });
+
        });
    }
    // when we receive a new update from the player

@@ -13,7 +13,9 @@ var SC = require('soundcloud');
 var playlist = new Array();
 var song = localStorage.getItem('soundSong');
 var v;
+var wait = 6000;
 var count = 0;
+var local = new Array();
 
 class Player extends Component {
  constructor(props){
@@ -47,6 +49,8 @@ class Player extends Component {
      playlistName: "",
      v1: "",
      time: 6000,
+     collab: false,
+     local: []
    };
    this.playerCheckInterval = null;
  }
@@ -58,7 +62,6 @@ class Player extends Component {
    var startIndex = url.indexOf("=");
    var endIndex = url.indexOf("&");
    this.state.token = url.substring(startIndex+1, endIndex);
-   console.log(this.state.token);
  }
  // when we receive a new update from the player
  onStateChanged(state) {
@@ -117,6 +120,7 @@ class Player extends Component {
    });
  }
  soundPlay() {
+   this.state.collab = true;
    var h = this;
    var same = localStorage.getItem('soundSong');
    SC.get('/tracks', {
@@ -126,14 +130,19 @@ class Player extends Component {
         h.setState({
           song: tracks[0].permalink_url
         })
+        if(playlist.includes(h.state.song)){
+          return
+        }
         v = h.state.t
-        playlist.push(this.state.song)
+        playlist.push(h.state.song)
+        playlist.push()
         localStorage.setItem("" + v,JSON.stringify(playlist))
-        console.log(localStorage.getItem("" + v))
-        console.log(playlist)
       })
    }
    );
+ }
+ deletePlay(){
+   localStorage.removeItem(""+ this.state.t);
  }
  addSong(){
    if(this.state.t == localStorage.getItem(this.state.t)){
@@ -177,52 +186,55 @@ class Player extends Component {
           v = s.state.t
           playlist.push(s.state.nowPlaying.uri)
           localStorage.setItem("" + v,JSON.stringify(playlist))
-          console.log(localStorage.getItem("" + v))
-          console.log(playlist)
          })
          return
  }
- playCollab(){
+ async playCollab(){
    var collab = Array();
-   var wait = 6000;
-   var t = this;
-   collab = JSON.parse(localStorage.getItem("log") || "[]");
-   console.log(collab);
-   spotifyApi.play({"uris": collab[count]})
-   .then((response) => {
-      t.getNowPlaying()
-   });
-   //spotifyApi.getAudioFeaturesForTrack(collab[count].substr(14)).then((response) => {this.setState({time: response.duration_ms})});
-   for(count;count<collab.length;count++){
+   collab = JSON.parse(localStorage.getItem("" + this.state.t) || "[]");
+    for(count= 0;count<collab.length;count++){
      console.log('sound');
      if(collab[count].charAt(0) == 's'){
-       console.log(collab[count]);
-       wait = t.state.time;
-       console.log(wait);
-       t.timerCollab();
-     }
-     else{
+      await spotifyApi.getAudioFeaturesForTrack(collab[count].substr(14))
+      .then((response) => {
+        this.setState({time: response.duration_ms})
+      });
 
+      await spotifyApi.play({"uris": [collab[count]]})
+       this.getNowPlaying()
+       await this.sleep()
+     }
+     else {
+        await SC.get('/tracks', {
+          permalink_url: collab[count]
+        }).then((tracks) =>{
+          this.setState({time: tracks[0].duration})
+          console.log(this.state.time)
+        });
+        await SC.oEmbed(collab[count], {
+          auto_play: true,
+          maxheight: 80,
+          element: document.getElementById('playerwidget')
+        });
+        await this.sleep()
      }
    }
- }
- timerCollab(){
-  var wait = Array();
-  var t = this;
-  var collab = Array();
-  collab = JSON.parse(localStorage.getItem("log") || "[]");
-  for(var i = 0;i<collab.length;i++){
-    console.log('sound');
-    if(collab[i].charAt(0) == 's'){
-      console.log(collab[i]);
-      //spotifyApi.getAudioFeaturesForTrack(collab[i].substr(14)).then((response) => {this.setState({time: response.duration_ms})});
-      wait.push(t.state.time);
-      console.log(wait);
-      setTimeout(t.playCollab,10000);
-    }
   }
 
- }
+  sleep() {
+    return new Promise(resolve => setTimeout(resolve, this.state.time));
+  }
+
+  getStorage(){
+    localStorage.removeItem('soundSong');
+    var t = this
+    var temp = []
+     Object.keys(localStorage).forEach(function(key){
+      temp.push(key);
+    });
+   this.setState({local: temp.join()})
+  }
+
 
  checkForPlayer() {
    const { token } = this.state;
@@ -293,13 +305,6 @@ class Player extends Component {
    }
    return hashParams;
  }
- playIt(){
-  var collab = Array();
-  collab = JSON.parse(localStorage.getItem("log") || "[]");
-  console.log(collab);
-  spotifyApi.play({"uris": collab[count]})
- }
-
  setVolumeUp(){
    //this function increases the volume for the spotify player if the plus button is pressed 
    this.player.setVolume(volume +0.6).then(() => {
@@ -324,8 +329,7 @@ class Player extends Component {
    var t = this;
    if(this.state.loggedIn && this.state.playing) {
      spotifyApi.getMyCurrentPlaybackState()
-         .then((response) => {
-           if(typeof response.item.name !== 'undefined' ){
+        .then((response) => {
              //do this if the song is currently playing in the browser
             this.setState({
               nowPlaying: {
@@ -334,7 +338,6 @@ class Player extends Component {
                 uri: response.item.uri
               }
             })
-           }
          })
          return
    }
@@ -348,7 +351,9 @@ class Player extends Component {
      albumName,
      //error,
      playing,
-     connected
+     connected,
+     collab,
+     local,
    } = this.state;
    return (
      <div className="Player">
@@ -365,15 +370,30 @@ class Player extends Component {
               <button onClick={() => this.handleLogin()}>{connected ? "Connected":"Connect to Spotify"}</button>
              }
            </div>
+             <div className = 'App-header'>
+             { this.state.collab &&
+              <header>
+                Playing {this.state.t}
+              </header>
+             }
+           </div>
+           <div>
+           {this.state.loggedIn && !this.state.collab &&
+            <button onClick={() => this.getStorage() }>Show Playlists</button>             
+           }
+           <h2>Playlists <mark>{JSON.stringify(this.state.local)}</mark></h2>
+           </div>
+           <div>
+           </div>
            <div>
            <p>
-            { this.state.loggedIn &&
+            { this.state.loggedIn && !this.state.collab &&
              <button onClick={() => this.onPrevClick() && this.getNowPlaying()}>Previous</button>
             }
-            { this.state.loggedIn &&
+            { this.state.loggedIn && !this.state.collab &&
              <button onClick={() => this.onPlayClick()}>{playing ? "Pause" : "Play"}</button>
             }
-            { this.state.loggedIn &&
+            { this.state.loggedIn && !this.state.collab &&
              <button onClick={() => this.onNextClick() && this.getNowPlaying()}>Next</button>
             }
            </p>
@@ -383,13 +403,23 @@ class Player extends Component {
              }
              {this.state.loggedIn &&
              <button onClick={() => this.newPlaylist()}>
-                 Submit
+                 {"add to " + this.state.t}
              </button>
              }
              {this.state.loggedIn &&
+             <input type="text" placeholder = "Playlist Name" onChange={e => this.setState({ t: e.target.value })} />
+             }
+             {this.state.loggedIn &&
               <button onClick={() => this.playCollab()}>
-                Play log
+                Play {this.state.t}
               </button>
+              }
+              <input type="text" placeholder = "Playlist Name" onChange={e => this.setState({ t: e.target.value })} />
+              {this.state.loggedIn &&
+              <button onClick={() => this.deletePlay()}>
+              {"Delete " + this.state.t}
+              </button>
+              }
              }
            </div>
            { this.state.loggedIn &&
