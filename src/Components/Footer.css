@@ -1,0 +1,82 @@
+.footer {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    height: 65px;
+    width: 100%;
+    background-color: #282828;
+    padding: 20px;
+}
+
+.footer_green:hover,
+.footer_icon:hover, 
+.footer_playerLogo:hover {
+    transition: transform 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+}
+
+.footer_albumLogo {
+    height: 60px;
+    width: 60px;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+.footer_left {
+    flex: 0.4;
+    display:flex;
+    align-items: center;
+    color: white;
+    max-width: 500px;
+}
+
+.footer_center {
+    flex: 0.3;
+    padding: 0 100px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 300px;
+}
+
+.footer_right {
+    flex: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+.footer_right * .MuiSlider-root {
+    color: purple;
+    max-width: 220px;
+}
+
+.footer_green {
+    color: purple;
+}
+
+.footer_songInfo {
+    font-size: 14px;
+}
+
+.vl {
+    border-left:1px solid gray;
+    height:60px;
+    margin-right: 10px;
+}
+
+.footer_spotifyInfo {
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.footer_playerLogo {
+    height: 4.5vh;
+    align-items: center;
+    object-fit: contain;
+    margin-right: 10px; 
+}
