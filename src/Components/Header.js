@@ -18,7 +18,9 @@ function Header({spotify}) {
             spotify.searchTracks(elem.target.value).then(
                 function(data) {   
                     data.tracks.items.forEach(function(track) {
-                        var song = {title:track.name,
+                        var song = {
+                        platform:"Spotify",
+                        title:track.name,
                         artist:track.artists.map(artist => artist.name).join(", "), 
                         pic:track.album.images[2].url, 
                         link:track.uri}
@@ -34,6 +36,10 @@ function Header({spotify}) {
             dispatch({
                 type: "SET_DISCOVER_WEEKLY",
                 discover_weekly: null
+            })
+            dispatch({
+                type: "SET_PAGE",
+                page: "Search"
             })
         }
     }

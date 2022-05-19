@@ -17,11 +17,11 @@ import Yt from './pics/yt.png'
 import SoundcloudWidget from 'soundcloud-widget';
 import ReactPlayer from 'react-player';
 
+// creates the footer/player element for the application
 function Footer({spotify, SC}){
     const [player, setPlayer] = useState("Spotify");
     const [{token, item, playing, volume, device_id, platform, link}, dispatch] = useDataLayerValue();
     const [playerUrl, setPlayerUrl] = useState("https://www.youtube.com/watch?v=7cIkC7s3d2o")
-    //https://soundcloud.com/tj_porter/tj-porter-x-bay-swag-doubting-me?in=user382885128/sets/new-tj/
     const [rPlaying, setrPlaying] = useState(false)
 
     //Updates currently playing song and play/pause status of the player
@@ -32,29 +32,23 @@ function Footer({spotify, SC}){
             item: r.item
         });
       });
-    }, [spotify.getMyCurrentPlaybackState()]);
-
-    useEffect(() => {
-      // SC.on(SoundcloudWidget.events.PLAY, function () {
-      //   handlePlayPause();
-      // })
-    })
+    }, [item, playing, dispatch]);
 
     //Updates the volume bar to match the levels in the spotify player
-    useEffect(() => {
-        // spotify.getVolume().then((vol) => {
-        //     console.log(vol)
-        //     dispatch({
-        //         type: "SET_VOLUME",
-        //         volume: vol
-        //     });
-        // })
-    }, [spotify.getMyCurrentPlaybackState()])
+    // useEffect(() => {
+    //     spotify.getVolume().then((vol) => {
+    //         console.log(vol)
+    //         dispatch({
+    //             type: "SET_VOLUME",
+    //             volume: vol
+    //         });
+    //     })
+    // }, [item, playing, dispatch])
   
     //Pauses and plays the spotify player
     const handlePlayPause = () => {
-      if (platform == "Spotify") {
-        if(playing == null){
+      if (platform === "Spotify") {
+        if(playing === null){
           dispatch({
             type: "SET_PLAYING",
             playing: true,
@@ -97,11 +91,11 @@ function Footer({spotify, SC}){
       spotify.getMyCurrentPlayingTrack().then((r) => {
         dispatch({
           type: "SET_PLAYING",
-          playing: true,
+          playing: true
         });
         dispatch({
             type: "SET_ITEM",
-            item: r.item,
+            item: r.item
         });
       });
     };
@@ -138,13 +132,13 @@ function Footer({spotify, SC}){
         spotify.setVolume(value)
     }
 
+    // switches the player to the new platform on command
     function switchPlayer(play) {
-      //setPlayer(play)
       dispatch({
         type: "SET_PLATFORM",
         platform: play
       })
-      if(play != "Spotify"){
+      if(play !== "Spotify"){
         spotify.pause()
       }
       else{
@@ -164,8 +158,8 @@ function Footer({spotify, SC}){
                 <img className = "footer_playerLogo" src={Sc} onClick ={() => switchPlayer("ReactPlayer")}></img>
                 <img className = "footer_playerLogo" src={Yt} onClick ={() => switchPlayer("ReactPlayer")}></img>
                 <div className="vl"></div>
-                {(platform == "Spotify") &&
-                  <div className="footer_spotifyInfo">
+                {(platform === "Spotify") && // displays a spotify song
+                  <div className="footer_spotifyInfo" >
                     <img className = "footer_albumLogo" src={item?.album.images[2].url}></img>
                     <div className="footer_songInfo">
                         <h4>{item?.name}</h4>
@@ -173,9 +167,9 @@ function Footer({spotify, SC}){
                     </div>
                   </div>
                 }
-                {(platform != "Spotify") &&
+                {(platform !== "Spotify") && //displays a youtube or soundcloud song
                   <div className="footer_spotifyInfo">
-                    <ReactPlayer url={link} playing={playing} volume={volume?volume*0.01:0.5} height="90px" width ="450px"
+                    <ReactPlayer url={link} playing={playing} volume={volume?volume*0.1:0.5} height="90px" width ="400px"
                     config = {{
                       soundcloud: {
                         options: {
@@ -190,7 +184,7 @@ function Footer({spotify, SC}){
             <div className="footer_center">
                 <ShuffleIcon className ="footer_green"/>
                 <SkipPreviousIcon onClick ={skipPrevious} className ="footer_icon"/>
-                {(platform == "Spotify") &&
+                {(platform === "Spotify") &&
                 (playing ? (
                     <PauseCircleFilledIcon
                     onClick={handlePlayPause}
@@ -205,7 +199,7 @@ function Footer({spotify, SC}){
                     />
                 ))
                 }
-                {(platform != "Spotify") &&
+                {(platform !== "Spotify") &&
                   (playing ? (
                     <PauseCircleFilledIcon
                       onClick={handlePlayPause}
@@ -241,4 +235,4 @@ function Footer({spotify, SC}){
     )
 }
 
-export default Footer
+export default Footer;

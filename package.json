@@ -1,4 +1,5 @@
 {
+  "homepage": "https://nohwolde.github.io/Beat-Bytes/",
   "name": "beats-app",
   "version": "0.1.0",
   "private": true,
@@ -11,6 +12,7 @@
     "antd": "^4.16.7",
     "axios": "^0.21.1",
     "bootstrap": "^5.1.0",
+    "cors": "^2.8.5",
     "jquery": "^3.6.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -21,6 +23,7 @@
     "sc-searcher": "^1.0.5",
     "soundcloud": "^3.3.2",
     "soundcloud-key-fetch": "^1.0.11",
+    "soundcloud-scraper": "^5.0.2",
     "soundcloud-widget": "^0.2.1",
     "spotify-web-api-js": "^1.5.1",
     "web-vitals": "^1.1.0",
@@ -28,6 +31,8 @@
     "youtube-search": "^1.1.6"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -50,5 +55,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
+  },
+  "proxy": "https://awww.api.com"
 }

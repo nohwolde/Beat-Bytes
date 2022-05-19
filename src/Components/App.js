@@ -47,51 +47,28 @@ function App() {
     const _token = hash.access_token
     const _refresh = hash.refresh_token
     if(_token) {
-      dispatch({
-        type: 'SET_TOKEN',
-        token: _token
-      })
-
-      dispatch({
-        type: 'SET_REFRESH_TROKEN',
-        refresh_token: _refresh
-      })
+      dispatch({ type: 'SET_TOKEN', token: _token})
+      dispatch({ type: 'SET_REFRESH_TROKEN', refresh_token: _refresh})
 
       spotify.setAccessToken(_token);
 
       spotify.getMe().then(user => {
-        dispatch({
-          type: "SET_USER",
-          user: user
-        })
+        dispatch({ type: "SET_USER", user: user})
       })
 
       spotify.getMyTopArtists().then((response) =>
-        dispatch({
-          type: "SET_TOP_ARTISTS",
-          top_artists: response,
-        })
+        dispatch({ type: "SET_TOP_ARTISTS", top_artists: response})
       );
 
-      dispatch({
-        type: "SET_SPOTIFY",
-        spotify: spotify,
-      });
+      dispatch({ type: "SET_SPOTIFY", spotify: spotify});
 
       spotify.getUserPlaylists().then((playlists) => {
-        dispatch({
-          type: "SET_PLAYLISTS", 
-          playlists: playlists
-        })
+        dispatch({ type: "SET_PLAYLISTS", playlists: playlists})
       })
 
       spotify.getPlaylist("37i9dQZEVXcL4fk8T7EeaN").then((response) => {
-        dispatch({
-          type: "SET_DISCOVER_WEEKLY",
-          discover_weekly: response,
-        })
+        dispatch({ type: "SET_DISCOVER_WEEKLY", discover_weekly: response})
       });
-
     }
     console.log("I have a token: ", token)
   }, [token, dispatch]);

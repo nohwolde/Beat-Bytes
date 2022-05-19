@@ -1,45 +1,23 @@
 import React from 'react'
 import './SongRow.css'
-import { useDataLayerValue } from '../DataLayer'
 import logo from './favicon.ico'
 
-function SongRow({track, spotify, playlist}) {
-    const [{token, device_id}, dispatch] = useDataLayerValue()
-    var setReactPlayer = (track) => {
-        dispatch({
-            type: "SET_LINK",
-            link: track.link
-        })
-    }
-    var setPlayer = (track)  => {
-      console.log("Track:")
-      console.log(track.uri)
-      console.log("token: " + token)
-      console.log("device_id: " + device_id)
-      fetch("https://api.spotify.com/v1/me/player/play", {
-        method: "PUT",
-         headers: {
-           authorization: `Bearer ${token}`,
-           "Content-Type": "application/json",
-         },
-         body: JSON.stringify({
-            "uris": [track.uri],
-            // "context_uri": track.uri,
-            // "offset": {
-            //     "position": 5
-            //   },
-            // "position_ms": 0
-            "device_ids": [device_id],
-           // true: start playing music if it was paused on the other device
-           // false: paused if paused on other device, start playing music otherwise
-           //"play": true,
-        }),
-      })
+function SongRow({track}) {
+    if(track !== undefined && track.platform !== undefined){
+        return ( 
+            <div className  = "songRow">
+                <img className = "songRow_album" src = {track.pic} alt = ""/>
+                <div className = "songRow_info">
+                    <h1>{track.title}</h1>
+                    <p>{track.artist} </p>
+                </div>
+            </div>
+        )
     }
     if (typeof track.track !== 'undefined') {
-        if(track.platform == "Spotify"){
+        if(track.platform === "Spotify"){
             return ( 
-                <div className  = "songRow" onClick = {() => setPlayer(track)}>
+                <div className  = "songRow">
                     <img className = "songRow_album" src = {track.album.images[0].url} alt = ""/>
                     <div className = "songRow_info">
                         <h1>{track.name}</h1>
@@ -50,7 +28,7 @@ function SongRow({track, spotify, playlist}) {
         }
         else {
             return (
-                <div className  = "songRow" onClick = {() => setReactPlayer(track)}>
+                <div className  = "songRow">
                     <img className = "songRow_album" src = {track.album.images[0].url} alt = ""/>
                     <div className = "songRow_info">
                         <h1>{track.name}</h1>
