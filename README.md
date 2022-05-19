@@ -1,15 +1,19 @@
-# Getting Started with Create React App
+# Beatbytes is created with create-react-app
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
+To start up the project there are a couple of steps to write in terminal:
 
-In the project directory, you can run:
+### 1. `cd auth-server`
+### 2. `node authorization_code/app.js`
+Starts up the authorization server for authorization from Spotify\
 
-### `npm start`
-
-Runs the app in the development mode.\
+### 3. open up a new terminal browser in the beatbytes project folder
+### 4. `npm start`
+Runs the main react app for interaction with the user\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `npm start`
 
 The page will reload if you make edits.\
 You will also see any lint errors in the console.
