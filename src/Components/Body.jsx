@@ -1,5 +1,6 @@
+import React from 'react';
 import './Body.css';
-import Header from './Header.js';
+import Header from './Header';
 import { useDataLayerValue } from '../DataLayer'
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled'
 import FavoriteIcon from '@material-ui/icons/Favorite'
@@ -8,11 +9,6 @@ import SongRow from './SongRow'
 import Sc from './pics/sc.png'
 import Spot  from './pics/spot.png'
 import Yt from './pics/yt.png'
-import SoundCloud from "soundcloud-scraper"
-import PlaylistIcon from './PlaylistIcon'
-// const SoundCloud = require("soundcloud-scraper/src/util");
-// const Util = new SoundCloud.Util();
-const fs = require("fs");
 
 var opts = {
   maxResults: 20,
@@ -79,13 +75,13 @@ function Body({spotify}) {
     }
     else if(platform === "Soundcloud") {
       let results = []
-      const client = new SoundCloud.Client()
-      const Util = client.search(search_term)
+      // const client = new SoundCloud.Client()
+      // const Util = client.search(search_term)
       // const raw = Util.parseHTML(`https://soundcloud.com/search/sounds?q="${encodeURIComponent(search_term)}`, 
       // {mode:"no-cors"});
       // const html = raw.split("<noscript><ul>")[1].split("</ul>")[1].split("</noscript>")[0];
       // const loaded = Util.loadHTML(html)
-      console.log(Util)
+      // console.log(Util)
       dispatch({
           type: "SET_SEARCH",
           search: results
@@ -129,9 +125,9 @@ function Body({spotify}) {
     return (
       <div className="body">
         <Header spotify = {spotify}/>
-        {playlists?.items?.map(playlist => (
+        {
+        playlists?.items?.map(playlist => (
             <img src={playlist.images[0].url}></img>
-            
         ))}
       </div>
     )

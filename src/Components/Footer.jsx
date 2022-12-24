@@ -18,7 +18,7 @@ import SoundcloudWidget from 'soundcloud-widget';
 import ReactPlayer from 'react-player';
 
 // creates the footer/player element for the application
-function Footer({spotify, SC}){
+function Footer({spotify}){
     const [player, setPlayer] = useState("Spotify");
     const [{token, item, playing, volume, device_id, platform, link}, dispatch] = useDataLayerValue();
     const [playerUrl, setPlayerUrl] = useState("https://www.youtube.com/watch?v=7cIkC7s3d2o")
@@ -159,12 +159,34 @@ function Footer({spotify, SC}){
                 <img className = "footer_playerLogo" src={Yt} onClick ={() => switchPlayer("ReactPlayer")}></img>
                 <div className="vl"></div>
                 {(platform === "Spotify") && // displays a spotify song
-                  <div className="footer_spotifyInfo" >
-                    <img className = "footer_albumLogo" src={item?.album.images[2].url}></img>
-                    <div className="footer_songInfo">
-                        <h4>{item?.name}</h4>
-                        <h5>{item?.artists.map((artist) => artist.name).join(", ")}</h5>
-                    </div>
+                  // <div className="footer_spotifyInfo" >
+                  //   <img className = "footer_albumLogo" src={item?.album.images[2].url}></img>
+                  //   <div className="footer_songInfo">
+                  //       <h4>{item?.name}</h4>
+                  //       <h5>{item?.artists.map((artist) => artist.name).join(", ")}</h5>
+                  //   </div>
+                  // </div>
+                  <div className="footer_spotifyInfo">
+                    {/* <iframe
+                      title="Spotify Web Player"
+                      src="https://open.spotify.com/embed/track/0N3W5peJUQtI4eyR6GJT5O?utm_source=generator"
+                      width={'40%'}
+                      height={'50'}
+                      style={{
+                        borderRadius: 8,
+                      }}
+                    /> */}
+                    <iframe 
+                      style={{
+                        borderRadius: 8,
+                      }}
+                      src="https://open.spotify.com/embed/track/0N3W5peJUQtI4eyR6GJT5O?utm_source=generator" 
+                      width={'125%'}
+                      height={'95'}
+                      frameBorder="0"
+                      allowFullScreen="" 
+                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                    </iframe>
                   </div>
                 }
                 {(platform !== "Spotify") && //displays a youtube or soundcloud song

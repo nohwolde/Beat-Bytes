@@ -1,7 +1,5 @@
 import './App.css'
-import home from './home'
 import React, { Component,  useEffect, useState} from 'react'
-import Search from './Search'
 import Loading from './loading'
 import SpotifyWebApi from 'spotify-web-api-js';
 import { useDataLayerValue } from '../DataLayer'
@@ -15,8 +13,6 @@ import homeIcon from './pics/icons8-home-48.png'
 import Pause from './pics/pause.png'
 import Play from './pics/play.png'
 import Player from './Player'
-
-import 'reactjs-bottom-navigation/dist/index.css'
 
 var currPic = {
   title: "Spotify",

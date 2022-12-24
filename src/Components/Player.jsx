@@ -1,4 +1,4 @@
-import {react, useEffect} from 'react';
+import {React, useEffect} from 'react';
 import './Player.css';
 import Sidebar from './Sidebar'
 import Body from './Body'
@@ -6,8 +6,8 @@ import Footer from './Footer'
 import { useDataLayerValue } from '../DataLayer'
 var request = require('request')
 
-var client_id = '265d52032e594ab28e49883a04fc05f5' // Your client id
-var client_secret = '0a9d581e3aa240b3840d80faad30194b'  // Your secret
+var client_id = '3dd065b6dedd47e99ecb7ed63bcde5d6' // Your client id
+var client_secret = 'a3ae8ca6169d4e8d8a956ec5f330c453'  // Your secret
 
 function Player({spotify}) {
   let [{token, refresh_token, device_id, item, playing, platform}, dispatch] = useDataLayerValue();

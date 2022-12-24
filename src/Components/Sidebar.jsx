@@ -1,4 +1,4 @@
-import react from 'react';
+import React from 'react';
 import './Sidebar.css';
 import logo from './favicon.ico'
 import SidebarOption from './SidebarOption';
