@@ -2,9 +2,11 @@ export const initialState = {
     user: null,
     playlists: [],
     playing: false, 
-    item: null,
+    item: { id: "0N3W5peJUQtI4eyR6GJT5O?utm_source=generator", type: "track"} ,
     top_artists: null,
     spotify: null,
+    soundcloud: {link: "https://soundcloud.com/liltjay/f-n", position: 0},
+    youtube: {link: "https://www.youtube.com/watch?v=jx96Twg-Aew", position: 0},
     device_id: null,
     refresh_token: null,
     volume: null,
@@ -61,6 +63,16 @@ const reducer = (state, action) => {
             return {
                 ...state,
                 spotify: action.spotify,
+            };
+        case "SET_SOUNDCLOUD":
+            return {
+                ...state,
+                soundcloud: action.soundcloud,
+            };
+        case "SET_YOUTUBE":
+            return {
+                ...state,
+                youtube: action.youtube,
             };
         case "SET_PLAYING":
             console.log('SET_PLAYING')

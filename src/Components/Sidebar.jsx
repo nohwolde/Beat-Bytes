@@ -60,7 +60,7 @@ function Sidebar({spotify}) {
       <div onClick = {() => modifyPage("Search")}>
         <SidebarOption Icon = {SearchIcon} title = "Search"/>
       </div>
-      <SidebarOption Icon = {LibraryMusicIcon}title = "Your Library" />
+      <SidebarOption Icon = {LibraryMusicIcon} title = "Your Library" />
       <br></br>
       <strong className = "sidebar_title"> PLAYLISTS</strong>
       <hr />

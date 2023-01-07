@@ -41,6 +41,10 @@ function Header({spotify}) {
                 type: "SET_PAGE",
                 page: "Search"
             })
+            dispatch({
+                type: "SET_PLATFORM",
+                platform: "Spotify"
+            })
         }
     }
     return (
