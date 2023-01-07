@@ -20,19 +20,22 @@ import ReactPlayer from 'react-player';
 // creates the footer/player element for the application
 function Footer({spotify}){
     const [player, setPlayer] = useState("Spotify");
-    const [{token, item, playing, volume, device_id, platform, link}, dispatch] = useDataLayerValue();
+    const [{token, item, playing, volume, device_id, platform, link, soundcloud, youtube}, dispatch] = useDataLayerValue();
     const [playerUrl, setPlayerUrl] = useState("https://www.youtube.com/watch?v=7cIkC7s3d2o")
     const [rPlaying, setrPlaying] = useState(false)
 
     //Updates currently playing song and play/pause status of the player
-    useEffect(() => {
-      spotify.getMyCurrentPlaybackState().then((r) => {
-        dispatch({
-            type: "SET_ITEM",
-            item: r.item
-        });
-      });
-    }, [item, playing, dispatch]);
+    // useEffect(() => {
+    //   spotify.getMyCurrentPlaybackState().then((r) => {
+    //     if(r !== null && r !== undefined){
+    //       dispatch({
+    //           type: "SET_ITEM",
+    //           item: r.item
+    //       });
+    //     }
+    //   });
+    //   console.log(item)
+    // }, [item, playing]);
 
     //Updates the volume bar to match the levels in the spotify player
     // useEffect(() => {
@@ -48,6 +51,8 @@ function Footer({spotify}){
     //Pauses and plays the spotify player
     const handlePlayPause = () => {
       if (platform === "Spotify") {
+        const spotifyEmbedWindow = document.querySelector('iframe[src*="spotify.com/embed"]').contentWindow;
+        spotifyEmbedWindow.postMessage({command: 'toggle'}, '*');
         if(playing === null){
           dispatch({
             type: "SET_PLAYING",
@@ -55,14 +60,12 @@ function Footer({spotify}){
           });
         }
         else if(!playing) {
-          spotify.play();
           dispatch({
             type: "SET_PLAYING",
             playing: !playing,
           });
         }
         else {
-          spotify.pause();
           dispatch({
             type: "SET_PLAYING",
             playing: !playing,
@@ -87,111 +90,74 @@ function Footer({spotify}){
   
     //Skips to the next song
     const skipNext = () => {
-      spotify.skipToNext();
-      spotify.getMyCurrentPlayingTrack().then((r) => {
-        dispatch({
-          type: "SET_PLAYING",
-          playing: true
-        });
-        dispatch({
-            type: "SET_ITEM",
-            item: r.item
-        });
-      });
+      if (platform === "Spotify") {
+        const spotifyEmbedWindow = document.querySelector('iframe[src*="spotify.com/embed"]').contentWindow;
+        spotifyEmbedWindow.postMessage({command: 'next'}, '*');
+      }
+      else {
+        // if(platform === "Soundcloud"){
+        //   SoundcloudWidget(playerUrl).then(function(widget){
+        //     widget.next();
+        //   });
+        // }
+        // else {
+        //   const youtubeEmbedWindow = document.querySelector('iframe[src*="youtube.com/embed"]').contentWindow;
+        //   youtubeEmbedWindow.postMessage({command: 'next'}, '*');
+        // }
+      }
     };
   
     //Goes back to the previous song
     const skipPrevious = () => {
-      spotify.skipToPrevious();
-      spotify.getMyCurrentPlayingTrack().then((r) => {
-        dispatch({
-          type: "SET_PLAYING",
-          playing: true,
-        });
-        dispatch({
-            type: "SET_ITEM",
-            item: r.item,
-        });
-      });
+
     };
 
     //Changes volume to the value specified
     const changeVolume = (value) => {
-        console.log(value)
-        fetch("https://api.spotify.com/v1/me/player/volume", {
-          method: "PUT",
-           headers: {
-             authorization: `Bearer ${token}`,
-             "Content-Type": "application/json",
-           },
-           body: JSON.stringify({
-              "volume_percent": [value],
-              "device_ids": [device_id],
-           }),
-        })
-        spotify.setVolume(value)
+      dispatch({
+        type: "SET_VOLUME",
+        volume: value
+      });
     }
 
     // switches the player to the new platform on command
     function switchPlayer(play) {
       dispatch({
+        type: "SET_DISCOVER_WEEKLY",
+        discover_weekly: null
+      })
+      dispatch({
         type: "SET_PLATFORM",
         platform: play
       })
-      if(play !== "Spotify"){
-        spotify.pause()
-      }
-      else{
-        spotify.play()
-        dispatch({
-          type: "SET_PLAYING",
-          playing: !playing,
-        });
-      }
-      console.log(play)
     }
 
     return (
         <div className="footer">
             <div className="footer_left">
                 <img className = "footer_playerLogo" src={Spot} onClick ={() => switchPlayer("Spotify")}></img>
-                <img className = "footer_playerLogo" src={Sc} onClick ={() => switchPlayer("ReactPlayer")}></img>
-                <img className = "footer_playerLogo" src={Yt} onClick ={() => switchPlayer("ReactPlayer")}></img>
+                <img className = "footer_playerLogo" src={Sc} onClick ={() => switchPlayer("Soundcloud")}></img>
+                <img className = "footer_playerLogo" src={Yt} onClick ={() => switchPlayer("Youtube")}></img>
                 <div className="vl"></div>
                 {(platform === "Spotify") && // displays a spotify song
-                  // <div className="footer_spotifyInfo" >
-                  //   <img className = "footer_albumLogo" src={item?.album.images[2].url}></img>
-                  //   <div className="footer_songInfo">
-                  //       <h4>{item?.name}</h4>
-                  //       <h5>{item?.artists.map((artist) => artist.name).join(", ")}</h5>
-                  //   </div>
-                  // </div>
                   <div className="footer_spotifyInfo">
-                    {/* <iframe
-                      title="Spotify Web Player"
-                      src="https://open.spotify.com/embed/track/0N3W5peJUQtI4eyR6GJT5O?utm_source=generator"
-                      width={'40%'}
-                      height={'50'}
-                      style={{
-                        borderRadius: 8,
-                      }}
-                    /> */}
                     <iframe 
+                      id="spotifyPlayer"
                       style={{
                         borderRadius: 8,
                       }}
-                      src="https://open.spotify.com/embed/track/0N3W5peJUQtI4eyR6GJT5O?utm_source=generator" 
+                      src={`https://open.spotify.com/embed/${item.type}/${item.id}`}
                       width={'125%'}
                       height={'95'}
                       frameBorder="0"
-                      allowFullScreen="" 
+                      allowFullScreen={true}
                       allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
                     </iframe>
                   </div>
                 }
                 {(platform !== "Spotify") && //displays a youtube or soundcloud song
                   <div className="footer_spotifyInfo">
-                    <ReactPlayer url={link} playing={playing} volume={volume?volume*0.1:0.5} height="90px" width ="400px"
+                    <ReactPlayer url={platform === 'Soundcloud'? soundcloud.link: youtube.link} playing={playing} volume={volume?volume*0.1:0.5} height="90px" width ="400px"
                     config = {{
                       soundcloud: {
                         options: {

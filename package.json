@@ -4,15 +4,18 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@distube/soundcloud": "^1.3.0",
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^14.4.3",
     "antd": "^5.1.0",
-    "axios": "^1.2.1",
+    "axios": "^0.26.1",
     "bootstrap": "^5.2.3",
+    "cheerio": "^1.0.0-rc.12",
     "cors": "^2.8.5",
+    "express": "^4.18.2",
     "jquery": "^3.6.3",
     "react": "^17.0.0",
     "react-dom": "^17.0.0",
@@ -20,6 +23,7 @@
     "react-router-dom": "^6.6.1",
     "react-scripts": "^4.0.3",
     "sc-searcher": "^1.0.5",
+    "scrape-soundcloud": "^0.1.7",
     "soundcloud": "^3.3.2",
     "soundcloud-widget": "^0.2.1",
     "spotify-web-api-js": "^1.5.2",
@@ -56,5 +60,5 @@
   "devDependencies": {
     "gh-pages": "^3.2.3"
   },
-  "proxy": "https://awww.api.com"
+  "proxy": "https://soundcloud.com"
 }
