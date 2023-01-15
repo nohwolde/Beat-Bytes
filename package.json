@@ -22,7 +22,7 @@
     "react-dom": "^17.0.0",
     "react-player": "^2.11.0",
     "react-router-dom": "^6.6.1",
-    "react-scripts": "^4.0.3",
+    "react-scripts": "^5.0.1",
     "sass": "^1.57.1",
     "sc-searcher": "^1.0.5",
     "scrape-soundcloud": "^0.1.7",
