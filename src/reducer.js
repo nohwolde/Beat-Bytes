@@ -6,7 +6,7 @@ export const initialState = {
     top_artists: null,
     spotify: null,
     soundcloud: {link: "https://soundcloud.com/liltjay/f-n", position: 0},
-    youtube: {link: "https://www.youtube.com/watch?v=jx96Twg-Aew", position: 0},
+    youtube: {link: "http://www.youtube.com/watch?v=jx96Twg-Aew", position: 0},
     device_id: null,
     refresh_token: null,
     volume: null,

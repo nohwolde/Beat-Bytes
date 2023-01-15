@@ -1,5 +1,5 @@
 import React from 'react'
-import "./Header.css"
+import '../styles/Header.scss'
 import SearchIcon from "@material-ui/icons/Search"
 import {Avatar} from "@material-ui/core"
 import {useDataLayerValue} from '../DataLayer'
@@ -18,13 +18,7 @@ function Header({spotify}) {
             spotify.searchTracks(elem.target.value).then(
                 function(data) {   
                     data.tracks.items.forEach(function(track) {
-                        var song = {
-                        platform:"Spotify",
-                        title:track.name,
-                        artist:track.artists.map(artist => artist.name).join(", "), 
-                        pic:track.album.images[2].url, 
-                        link:track.uri}
-                        results.push(song)
+                        results.push(track)
                     })
                 }
             )
@@ -34,16 +28,8 @@ function Header({spotify}) {
                 search: results
             })
             dispatch({
-                type: "SET_DISCOVER_WEEKLY",
-                discover_weekly: null
-            })
-            dispatch({
                 type: "SET_PAGE",
                 page: "Search"
-            })
-            dispatch({
-                type: "SET_PLATFORM",
-                platform: "Spotify"
             })
         }
     }

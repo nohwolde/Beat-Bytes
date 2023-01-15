@@ -1,24 +1,9 @@
-import './App.css'
-import React, { Component,  useEffect, useState} from 'react'
+import '../styles/App.scss';
+import React, { useEffect, useState} from 'react'
 import Loading from './loading'
 import SpotifyWebApi from 'spotify-web-api-js';
 import { useDataLayerValue } from '../DataLayer'
-
-import Spot from './pics/spot.png'
-import Sc from './pics/sc.png'
-import Yt from './pics/yt.png'
-import searchIcon from './pics/search.png'
-import homeIcon from './pics/icons8-home-48.png'
-
-import Pause from './pics/pause.png'
-import Play from './pics/play.png'
 import Player from './Player'
-
-var currPic = {
-  title: "Spotify",
-  icon: <img className = "App-nav" src={Spot}></img>,
-  activeIcon: <img className = "App-nav" src={Spot}></img>
-}
 
 var spotify = new SpotifyWebApi()
 
@@ -37,7 +22,7 @@ function App() {
     return hashParams;
   }
 
-  useEffect(() => {
+  useEffect(async () => {
     const hash = getHashParams()
     window.location.hash = ""
     const _token = hash.access_token
@@ -58,9 +43,14 @@ function App() {
 
       dispatch({ type: "SET_SPOTIFY", spotify: spotify});
 
-      spotify.getUserPlaylists().then((playlists) => {
-        dispatch({ type: "SET_PLAYLISTS", playlists: playlists})
-      })
+      const lst = []
+      await spotify.getUserPlaylists().then((playlists) => playlists.items.forEach((async playlist => {
+        await spotify.getPlaylist(playlist.id).then((response) => {
+          lst.push(response)
+        });
+      })));
+      dispatch({type: "SET_PLAYLISTS", playlists: lst})
+      console.log(lst)
 
       spotify.getPlaylist("37i9dQZEVXcL4fk8T7EeaN").then((response) => {
         dispatch({ type: "SET_DISCOVER_WEEKLY", discover_weekly: response})
@@ -70,12 +60,12 @@ function App() {
   }, [token, dispatch]);
 
   return (
-    <div>
+    <div className="app">
       {
         token? <Player spotify={spotify}></Player> 
         :
         (
-          <div className="app">
+          <div>
             <Loading />
           </div>
         )

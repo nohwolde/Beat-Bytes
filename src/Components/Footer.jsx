@@ -1,5 +1,5 @@
 import {React, useEffect, useState} from 'react'
-import './Footer.css'
+import '../styles/Footer.scss'
 import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled'
 import PauseCircleFilledIcon from '@material-ui/icons/PauseCircleFilled'
 import SkipPreviousIcon from "@material-ui/icons/SkipPrevious"
@@ -123,10 +123,6 @@ function Footer({spotify}){
     // switches the player to the new platform on command
     function switchPlayer(play) {
       dispatch({
-        type: "SET_DISCOVER_WEEKLY",
-        discover_weekly: null
-      })
-      dispatch({
         type: "SET_PLATFORM",
         platform: play
       })
@@ -135,13 +131,14 @@ function Footer({spotify}){
     return (
         <div className="footer">
             <div className="footer_left">
-                <img className = "footer_playerLogo" src={Spot} onClick ={() => switchPlayer("Spotify")}></img>
-                <img className = "footer_playerLogo" src={Sc} onClick ={() => switchPlayer("Soundcloud")}></img>
-                <img className = "footer_playerLogo" src={Yt} onClick ={() => switchPlayer("Youtube")}></img>
+                <img alt='' className = "footer_playerLogo" src={Spot} onClick ={() => switchPlayer("Spotify")}></img>
+                <img alt='' className = "footer_playerLogo" src={Sc} onClick ={() => switchPlayer("Soundcloud")}></img>
+                <img alt='' className = "footer_playerLogo" src={Yt} onClick ={() => switchPlayer("Youtube")}></img>
                 <div className="vl"></div>
                 {(platform === "Spotify") && // displays a spotify song
                   <div className="footer_spotifyInfo">
                     <iframe 
+                      title="Spotify"
                       id="spotifyPlayer"
                       style={{
                         borderRadius: 8,
@@ -164,6 +161,15 @@ function Footer({spotify}){
                           auto_play: true,
                           color: "#301934"
                         }
+                      }, 
+                      youtube: {
+                        playerVars: { 
+                          'autoplay': 1,
+                          'controls': 1,
+                          'autohide': 1,
+                          'wmode': 'opaque',
+                          'origin': 'http://localhost:3000' 
+                        },
                       }
                     }}/>
                   </div>
