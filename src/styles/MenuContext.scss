@@ -1,0 +1,26 @@
+.context_menu {
+    position: absolute;
+    width: 200px;
+    background-color: #383838;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.context_menu > ul {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 0;
+    list-style: none;
+}
+
+.context_menu > ul li {
+    padding: 18px 12px;
+}
+
+/* hover */
+.context_menu > ul li:hover {
+    cursor: pointer;
+    background-color: #000000;
+}
+
+

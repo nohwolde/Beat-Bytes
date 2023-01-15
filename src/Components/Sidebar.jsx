@@ -1,5 +1,5 @@
 import React from 'react';
-import './Sidebar.css';
+import '../styles/Sidebar.scss';
 import logo from './favicon.ico'
 import SidebarOption from './SidebarOption';
 import HomeIcon from "@material-ui/icons/Home"
@@ -10,17 +10,19 @@ import { useDataLayerValue } from '../DataLayer';
 function Sidebar({spotify}) {
   // function that updates the playlist being displayed in the body component
   const [{playlists}, dispatch] = useDataLayerValue();
-  const setBody = ({playlist})  => {
+  const setBody = (playlist)  => {
     console.log("Playlist:")
     console.log(playlist.id)
-    spotify.getPlaylist(playlist.id).then((response) => {
-      dispatch({
-        type: "SET_DISCOVER_WEEKLY",
-        discover_weekly: response,
-      })
-    });
+    dispatch({
+      type: "SET_DISCOVER_WEEKLY",
+      discover_weekly: playlist
+    })
+    dispatch({
+      type: "SET_PAGE",
+      page: "Discover Weekly"
+    })
   }
-
+  
   // function that modifies the page to either "Search" or "Home"
   const modifyPage  = (page) => {
     if(page === "Search"){
@@ -51,7 +53,7 @@ function Sidebar({spotify}) {
   return (
     <div className="sidebar">
       <img className = "sidebar_logo" src={logo}/>
-      <p style = {{marginTop: 30, marginBottom: 40, display: "flex", alignItems: "center"}}><font size = "+2" face = 'verdana'>    </font></p>
+      <p style = {{marginTop: 30, marginBottom: 40, display: "flex", alignItems: "center"}}><font size = "+2" face = 'verdana'></font></p>
       <br></br>
       <br></br>
       <div onClick = {() => modifyPage("Home")}>
@@ -65,9 +67,9 @@ function Sidebar({spotify}) {
       <strong className = "sidebar_title"> PLAYLISTS</strong>
       <hr />
 
-      {playlists?.items?.map(playlist => (
-        <div onClick ={() => setBody({playlist})}>
-          <SidebarOption spotify={spotify} playlist={playlist} title = {playlist.name}/>
+      {playlists?.map(playlist => (
+        <div onClick ={() => setBody(playlist)}>
+          <SidebarOption playlist={playlist} title = {playlist.name}/>
         </div>
       ))}
     </div>

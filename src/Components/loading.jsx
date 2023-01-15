@@ -1,11 +1,8 @@
 import React, { Component, useEffect} from 'react'
 import logo from './favicon.ico'
-import './loading.css'
+import '../styles/loading.scss'
 import {accessUrl} from "./spotify"
 export default class Loading extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     return (
       <div className="loading">

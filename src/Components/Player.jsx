@@ -1,16 +1,31 @@
 import {React, useEffect} from 'react';
-import './Player.css';
+import '../styles/Player.scss';
 import Sidebar from './Sidebar'
 import Body from './Body'
 import Footer from './Footer'
 import { useDataLayerValue } from '../DataLayer'
+import useContextMenu from "./useContextMenu";
+import MenuContext from './MenuContext';
 var request = require('request')
 
 var client_id = '3dd065b6dedd47e99ecb7ed63bcde5d6' // Your client id
 var client_secret = 'a3ae8ca6169d4e8d8a956ec5f330c453'  // Your secret
 
+const data = [
+  {
+    id: 1,
+    title: "Play Now",
+  },
+  {
+    id: 2,
+    title: "Add to Queue",
+  },
+];
+
 function Player({spotify}) {
   let [{token, refresh_token, device_id, item, playing, platform}, dispatch] = useDataLayerValue();
+
+  const { clicked, setClicked, points, setPoints } = useContextMenu();
   // let device = ""
   // let player = null;
 
@@ -102,12 +117,23 @@ function Player({spotify}) {
   // }
 
   return (
-    <div className="player">
+    <div className="player"
+      onContextMenu={(e) => {
+        e.preventDefault();
+        setClicked(true);
+        setPoints({
+          x: e.pageX,
+          y: e.pageY,
+        });
+        console.log("Right Click", e.pageX, e.pageY);
+      }}
+    >
+      <MenuContext data={data} click={clicked} pointX={points.x} pointY={points.y}/>
       <div className="player_body">
         <Sidebar spotify={spotify}/>
         <Body spotify={spotify}/>
+        <Footer spotify = {spotify}/>
       </div>
-      <Footer spotify = {spotify}/>
     </div>
   )
 }

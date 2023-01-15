@@ -2,10 +2,54 @@
     padding: 30px;
     flex: 0.8;
     height: 100vh;
-    background: linear-gradient(rgb(91, 87, 115), rgba(0, 0, 1));
-    overflow-y: overlay;
+    background: linear-gradient(rgb(123, 119, 148), rgb(0, 0, 61));
     margin-bottom: 50px;
     color: white;
+}
+
+.body_homepage {
+    align-items: center;
+    justify-content: center;
+    display: table-row;
+    flex: 0.8;
+}
+
+.body_homepage > h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font: Open Sans Light;
+    align-items: center;
+    justify-content: center;
+}
+
+.body_playlists {
+    align-items: center;
+    justify-content: center;
+    display: inline-table;
+}
+
+.body_playlist_box {
+    align-items: center;
+    justify-content: center;
+    display: inline-table;
+    margin-bottom: 50px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+}
+
+.body_playlist_box:hover {
+    background: #290186;
+}
+
+.body_playlist_box > h4 {
+    align-items: center;
+    justify-content: center;
+}
+
+.body_playlist_box > img {
+    max-height: 200px;
+    max-width: 200px;
 }
 
 .body::-webkit-scrollbar {
@@ -106,4 +150,29 @@
     align-items: center;
     object-fit: contain;
     margin-right: 10px; 
+}
+
+.context_menu {
+    position: fixed;
+    z-index: 1000;
+    width: 150px;
+    background: #1b1a1a;
+    border-radius: 5px;
+}
+
+#context-menu.visible {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+}
+
+.context_menu_item {
+    padding: 8px 10px;
+    font-size: 15px;
+    color: #eee;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.context_menu_item:hover {
+    background: #343434;
 }

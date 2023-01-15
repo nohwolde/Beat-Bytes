@@ -9,7 +9,7 @@
 
 .sidebarOption > p {
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 10px;
     font-size: 14px;
 }
  
@@ -21,3 +21,10 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.sidebarOption > img {
+    margin-left: 10px;
+    max-width: 25px;
+    max-height: 25px;
+}
+ 
