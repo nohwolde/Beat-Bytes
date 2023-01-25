@@ -5,8 +5,9 @@
     bottom: 0;
     height: 65px;
     width: 100%;
-    background-color: #282828;
+    background: rgb(5, 0, 95);
     padding: 20px;
+    border: 1px solid rgb(49, 15, 77);
 }
 
 .footer_green:hover,
@@ -50,12 +51,12 @@
 }
 
 .footer_right * .MuiSlider-root {
-    color: purple;
+    color: white;
     max-width: 220px;
 }
 
 .footer_green {
-    color: purple;
+    // color: purple;
 }
 
 .footer_songInfo {
@@ -75,8 +76,5 @@
 }
 
 .footer_playerLogo {
-    height: 4.5vh;
-    align-items: center;
-    object-fit: contain;
-    margin-right: 10px; 
+    margin-left: 20px;
 }

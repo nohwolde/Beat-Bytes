@@ -56,10 +56,6 @@ class SoundCloudScraper {
             }
         });
         this.getSound = (url) => __awaiter(this, void 0, void 0, function* () {
-            // if (!this.isSoundCloudUrl(url)) {
-            //     console.log("Not a SoundCloud url given");
-            //     return {};
-            // }
             const htmlString = yield this.getHtmlFromUrl(url);
             return this.extractSound(htmlString);
         });
