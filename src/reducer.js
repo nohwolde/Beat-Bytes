@@ -2,7 +2,7 @@ export const initialState = {
     user: null,
     playlists: [],
     playing: false, 
-    item: { id: "0N3W5peJUQtI4eyR6GJT5O?utm_source=generator", type: "track"} ,
+    item: { id: "0N3W5peJUQtI4eyR6GJT5O?utm_source=generator", type: "track"},
     top_artists: null,
     spotify: null,
     soundcloud: {link: "https://soundcloud.com/liltjay/f-n", position: 0},
@@ -12,6 +12,7 @@ export const initialState = {
     volume: null,
     search_term: null,
     search: [],
+    queue: [],
     platform: "Spotify",
     link: "https://soundcloud.com/liltjay/f-n", //https://www.youtube.com/watch?v=jx96Twg-Aew"
     //Remove after finished developing
@@ -23,6 +24,21 @@ export const initialState = {
 const reducer = (state, action) => {
     //console.log(action)
     switch(action.type) {
+        case 'ADD_TO_QUEUE':
+            return {
+                ...state,
+                queue: [...state.queue, action.item]
+            };
+        case 'REMOVE_FROM_QUEUE':
+            let newQueue = [...state.queue];
+            if (newQueue.index(action.item) !== 0) {
+                newQueue.splice(action.index, 1);
+                return {
+                    ...state,
+                    queue: newQueue
+                };
+            };
+            break;
         case 'SET_PAGE':
             return {
                 ...state,

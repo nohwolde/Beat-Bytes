@@ -2,18 +2,21 @@ import React from 'react'
 import '../styles/SongRow.scss'
 import logo from './favicon.ico'
 import { CloudDownloadOutlined }from '@material-ui/icons'
+
 function SongRow({track}, search = true) {
     if (typeof track.track !== 'undefined' || track.type === 'track') {
         return (
             <div className  = "songRow">
-                {search? // if searching make the image a bit larger
-                    <img className = "songRow_search" src = {track.album.images[0].url} alt = ""/>
-                    :
-                    <img className = "songRow_album" src = {track.album.images[0].url} alt = ""/>
+                {(track.album.images.length === 0)?
+                  <CloudDownloadOutlined className='songRow_download' />
+                  :
+                  <img className = "songRow_search" src = {track.album.images[0].url} alt = ""/>
                 }
                 <div className = "songRow_info">
                     <h1>{track.name}</h1>
-                    <p>{track.artists.map((artist) => artist.name).join(', ')} -{" "}{track.album.name} </p>
+                    {(track.artists.length > 0) &&
+                      <p>{track.artists.map((artist) => artist.name).join(', ')} -{" "}{track.album.name} </p>
+                    }
                 </div>
             </div>
         )

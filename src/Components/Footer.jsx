@@ -11,18 +11,36 @@ import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay"
 import VolumeDownIcon from "@material-ui/icons/VolumeDown"
 import PauseCircleOutlineIcon from "@material-ui/icons/PauseCircleOutline"
 import { useDataLayerValue } from '../DataLayer'
-import Sc from './pics/sc.png'
-import Spot  from './pics/spot.png'
-import Yt from './pics/yt.png'
+import Sc from './pics/soundcloud.svg'
+import Spot  from './pics/spot.svg'
+import Yt from './pics/yt.svg'
 import SoundcloudWidget from 'soundcloud-widget';
 import ReactPlayer from 'react-player';
+
+// window.onSpotifyIframeApiReady = (IFrameAPI) => {
+//   let element = document.getElementById('embed-iframe');
+//   let options = {
+//       uri: 'spotify:episode:7makk4oTQel546B0PZlDM5'
+//     };
+//   let callback = (EmbedController) => {};
+//   IFrameAPI.createController(element, options, callback);
+// };
+
+// let element = document.getElementById('embed-iframe');
+// let options = {
+//   width: 200,
+//   height: 400,
+//   uri: 'spotify:episode:7makk4oTQel546B0PZlDM5'
+// };
+// let callback = (EmbedController) => {};
+// IFrameAPI.createController(element, options, callback);
 
 // creates the footer/player element for the application
 function Footer({spotify}){
     const [player, setPlayer] = useState("Spotify");
     const [{token, item, playing, volume, device_id, platform, link, soundcloud, youtube}, dispatch] = useDataLayerValue();
     const [playerUrl, setPlayerUrl] = useState("https://www.youtube.com/watch?v=7cIkC7s3d2o")
-    const [rPlaying, setrPlaying] = useState(false)
+  const [rPlaying, setrPlaying] = useState(false)
 
     //Updates currently playing song and play/pause status of the player
     // useEffect(() => {
@@ -129,12 +147,18 @@ function Footer({spotify}){
     }
 
     return (
-        <div className="footer">
+      <div className="footer" onKeyDown={(e) => {
+        if (e.key === ' ') {
+          handlePlayPause();
+        }
+      }
+      }>
             <div className="footer_left">
-                <img alt='' className = "footer_playerLogo" src={Spot} onClick ={() => switchPlayer("Spotify")}></img>
+                <img alt='' src={Spot} onClick ={() => switchPlayer("Spotify")}></img>
                 <img alt='' className = "footer_playerLogo" src={Sc} onClick ={() => switchPlayer("Soundcloud")}></img>
-                <img alt='' className = "footer_playerLogo" src={Yt} onClick ={() => switchPlayer("Youtube")}></img>
-                <div className="vl"></div>
+                <img alt='' src={Yt} onClick ={() => switchPlayer("Youtube")}></img>
+          <div className="vl"></div>
+          <div id='embed-iframe'></div>
                 {(platform === "Spotify") && // displays a spotify song
                   <div className="footer_spotifyInfo">
                     <iframe 
@@ -144,17 +168,17 @@ function Footer({spotify}){
                         borderRadius: 8,
                       }}
                       src={`https://open.spotify.com/embed/${item.type}/${item.id}`}
-                      width={'125%'}
                       height={'95'}
                       frameBorder="0"
-                      allowFullScreen={true}
-                      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+                aria-label="spotify-embed"
+                allowtransparency="true"
+                      allow="autoplay; transparency; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
                     </iframe>
                   </div>
                 }
                 {(platform !== "Spotify") && //displays a youtube or soundcloud song
                   <div className="footer_spotifyInfo">
-                    <ReactPlayer url={platform === 'Soundcloud'? soundcloud.link: youtube.link} playing={playing} volume={volume?volume*0.1:0.5} height="90px" width ="400px"
+                    <ReactPlayer url={platform === 'Soundcloud'? soundcloud.link: youtube.link + '&origin'} playing={playing} volume={volume?volume*0.1:0.5} height="90px" width ="300px"
                     config = {{
                       soundcloud: {
                         options: {
@@ -212,18 +236,18 @@ function Footer({spotify}){
                 <RepeatIcon className="footer_green" />
             </div>
             <div className = "footer_right">
-                <Grid container spacing={2}>
-                    <Grid item>
-                        <PlaylistPlayIcon />
-                    </Grid>
-                    <Grid item>
-                        <VolumeDownIcon />
-                    </Grid>
-                    <Grid item xs>
-                        <Slider defaultValue={volume?volume:50}
-                        onChange = {(_,value) => changeVolume(value)}/>
-                    </Grid>
+              <Grid container spacing={2}>
+                <Grid item>
+                  <PlaylistPlayIcon />
                 </Grid>
+                <Grid item>
+                  <VolumeDownIcon />
+                </Grid>
+                <Grid item xs>
+                  <Slider defaultValue={volume?volume:50}
+                  onChange = {(_,value) => changeVolume(value)}/>
+                </Grid>
+              </Grid>
             </div>
         </div>
     )

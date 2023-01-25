@@ -3,7 +3,7 @@
     height: 1000vh;
     flex: 0.2;
     color: white;
-    background-color: #040404;
+    background: linear-gradient(to right, #001843, rgb(0, 0, 0));
     min-width: 230px;
     min-height: 230vh;
     max-width: 275px;
@@ -19,10 +19,10 @@
 }
 
 .sidebar_logo {
-    height: 80px;
+    height: 65px;
     padding: 10px;
     float: left;
-    margin-left: 60px;
+    margin-left: 80px;
 }
 
 .sidebar_title {
