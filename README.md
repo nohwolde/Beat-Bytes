@@ -1,15 +1,22 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Welcome to Beatbytes!
+
+You can use the App at: https://nohwolde.github.io/Beat-Bytes/
 
 This project has been created using **webpack-cli**, you can now run
 
-```
-npm run build
-```
+If you want to install the project on your local machine follow these steps:
 
-or
+1. Make sure you have node.js installed on your machine
 
+2. Download the zip file from this repo or follow instructions to make a git clone.
+
+3. Open the folder and run 
 ```
-yarn build
+npm install
+```
+4. Run 
+```
+npm start
 ```
 
 to bundle your application
