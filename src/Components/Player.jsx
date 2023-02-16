@@ -1,26 +1,24 @@
-import {React, useEffect} from 'react';
-import '../styles/Player.scss';
-import Sidebar from './Sidebar'
-import Body from './Body'
-import Footer from './Footer'
-import { useDataLayerValue } from '../DataLayer'
-import useContextMenu from "./useContextMenu";
-import MenuContext from './MenuContext';
+import React from "react";
+import "../styles/Player.scss";
+import Sidebar from "./Sidebar.jsx";
+import Body from "./Body.jsx";
+import Footer from "./Footer.jsx";
 
-function Player({spotify}) {
+function Player({ spotify }) {
   return (
-    <div className="player"
+    <div
+      className="player"
       onContextMenu={(e) => {
         e.preventDefault();
       }}
     >
       <div className="player_body">
-        <Sidebar spotify={spotify}/>
-        <Body spotify={spotify}/>
-        <Footer spotify = {spotify}/>
+        <Sidebar spotify={spotify} />
+        <Body spotify={spotify} />
+        <Footer spotify={spotify} />
       </div>
     </div>
-  )
+  );
 }
 
 export default Player;

@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './Components/App';
+import './index.scss';
+import App from './Components/App.jsx';
 import reportWebVitals from './reportWebVitals';
 import { DataLayer } from './DataLayer';
 import reducer, { initialState } from './reducer';

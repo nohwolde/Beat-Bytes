@@ -38,16 +38,41 @@
     margin-right: 10px; 
 }
 
-.header_youtube {
+.header_playerLogoActive {
+    height: 5.5vh;
+    align-items: center;
+    object-fit: contain;
+    margin-right: 10px; 
+    background: rgb(73, 103, 255);
+    border-radius: 50px;
+}
+
+.header_yt {
     height: 7.5vh;
     align-items: center;
     object-fit: contain;
     margin-right: 10px; 
 }
 
+.header_ytActive {
+    height: 7.5vh;
+    align-items: center;
+    object-fit: contain;
+    margin-right: 10px;
+    background-color: rgb(73, 103, 255);
+    border-radius: 20%;
+}
+
 .header_sc {
     margin-left: 4px;
     margin-right: 10px;
+}
+
+.header_scActive {
+    margin-left: 4px;
+    margin-right: 10px;
+    background-color: rgb(73, 103, 255);
+    border-radius: 40%;
 }
 
 
