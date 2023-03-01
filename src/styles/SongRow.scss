@@ -6,6 +6,10 @@
     color: white;
 }
 
+.blurSong {
+    opacity: .5;
+}
+
 .songRow:hover {
     cursor: pointer;
     background: #050394;
@@ -36,11 +40,55 @@
 .songRow_download {
     height: 3em;
     width: 3em;
-    margin-left: 10px;
-    margin-right: 45px;
-    color: rgb(172, 246, 246);
+    margin-left: 22px;
+    margin-right: 24px;
+    color: white;
 }
 
 .songRow_search {
     max-height: 80px;
+}
+
+.songRow_controls {
+    margin-right: 20px;
+    display: inline-flex;
+    text-align: right;
+    align-items: end;
+    margin: 0px 0px 0px auto;
+}
+
+.songRow_controlsIcons {
+    min-width: 35px;
+    min-height: 35px;
+    color: white;
+    fill: white;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.songRow_controlsIcons:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+}
+
+.songRow_controlsIcons.upsideDown:hover {
+    transition: 0.2s ease-in-out;
+    transform: (scaleY(-1.2) scaleX(-1.2)) !important;
+}
+
+.upsideDown {
+    margin-right: 10px;
+    transform: rotate(180deg);
+}
+
+.songRow_controlsAdd {
+    max-width: 50px;
+    max-height: 50px;
+    filter: brightness(0) invert(1);
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 5px;
+    position: relative;
 }

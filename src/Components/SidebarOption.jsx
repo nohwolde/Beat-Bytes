@@ -9,7 +9,7 @@ function SidebarOption({ title, Icon = null, playlist = null }) {
         <img
           alt=""
           className="sidebarOption_icon"
-          src={playlist.images[0].url}
+          src={playlist.images.length > 0 ? playlist.images[0].url : ""}
         />
       )}
       {Icon ? <h4>{title}</h4> : <p>{title}</p>}

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "../styles/Footer.scss";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
@@ -14,6 +14,10 @@ import Sc from "./pics/soundcloud.svg";
 import Spot from "./pics/spot.svg";
 import Yt from "./pics/yt.svg";
 import ReactPlayer from "react-player";
+import useQueue from "../store";
+import { useActions } from "../store";
+import { useSpotify } from "../store";
+import shuffle from "./pics/shuffle.png";
 
 var script = document.createElement("script");
 script.setAttribute(
@@ -24,16 +28,45 @@ document.body.appendChild(script);
 
 // creates the footer/player element for the application
 function Footer({ spotify }) {
-  const [
-    { item, playing, volume, platform, soundcloud, youtube, queue },
-    dispatch,
-  ] = useDataLayerValue();
+  const [{ item, soundcloud, youtube }, dispatch] = useDataLayerValue();
+  const skipButton = useRef(null);
+  const prevButton = useRef(null);
+
+  // Queue actions
+  const getQueue = useQueue((state) => state.getQueue);
+  const getPlaying = useQueue((state) => state.getPlaying);
+  const pop = useQueue((state) => state.pop);
+  const back = useQueue((state) => state.back);
+
+  // Reverse actions
+  const getReverseStatus = useActions((state) => state.getReverseStatus);
+  const reverse = useActions((state) => state.reverse);
+  const resetReverse = useActions((state) => state.resetReverse);
+  const setPlaybackStatus = useActions((state) => state.setPlaybackStatus);
+  const getPlaybackStatus = useActions((state) => state.getPlaybackStatus);
+  const setVolume = useActions((state) => state.setVolume);
+  const volume = useActions((state) => state.volume);
+  const playing = useActions((state) => state.playing);
+  const setPlaying = useActions((state) => state.setPlaying);
+
+  // Platform actions
+  const setPlatform = useActions((state) => state.setPlatform);
+  const getPlatform = useActions((state) => state.getPlatform);
+  const platform = useActions((state) => state.platform);
+  const setSkipButton = useActions((state) => state.setSkipButton);
+  const setReverseButton = useActions((state) => state.setReverseButton);
+
   const [rPlaying, setrPlaying] = useState(false);
   const [api, setApi] = useState(null);
   const [spotifyPos, setSpotifyPos] = useState(null);
 
   useEffect(() => {
-    if (platform === "Spotify") {
+    setSkipButton(skipButton);
+    setReverseButton(prevButton);
+  });
+
+  useEffect(() => {
+    if (getPlatform() === "Spotify") {
       console.log("loading spotify player");
       if (api === null) {
         window.onSpotifyIframeApiReady = (IFrameAPI) => {
@@ -46,7 +79,7 @@ function Footer({ spotify }) {
         setIframe(api, spotifyPos);
       }
     }
-  }, [platform]);
+  }, [platform, item]);
 
   const setIframe = (IFrameAPI, seek = 0) => {
     let element = document.getElementById("embed-iframe");
@@ -54,32 +87,64 @@ function Footer({ spotify }) {
     let options = {
       width: "300",
       height: "95",
-      uri: `spotify:${item.type}:${item.id}`,
+      uri: getQueue()?.item.track.uri,
+      allow: "encrypted-media",
     };
     let callback = (EmbedController) => {
       EmbedController.addListener("ready", () => {
         console.log("The Embed has initialized");
         EmbedController.seek(seek);
+        setPlaying(true);
+        EmbedController.play();
       });
       EmbedController.addListener("playback_update", (e) => {
-        const pos = e.data.position;
-        setSpotifyPos(pos);
-        console.log("Position: " + spotifyPos.current);
+        setPlaybackStatus(e.data);
         if (e.data.position === e.data.duration) {
           console.log("Song Ended");
-          console.log(queue);
-          if (queue[0].platform === "Spotify") {
-            EmbedController.loadUri(queue[0].item.uri);
-            handleQueue();
-          } else handleQueue();
+          console.log(getQueue());
+          if (getQueue().platform === "Spotify") {
+            const nextItem = getQueue().item.track.uri;
+            EmbedController.loadUri(nextItem);
+          }
+          handleQueue();
         }
       });
       document.getElementById("toggle").addEventListener("click", () => {
-        if (platform === "Spotify") {
-          handlePlayPause();
+        if (getPlatform() === "Spotify") {
+          setPlaying(true);
           EmbedController.togglePlay();
         }
       });
+      document.getElementById("next").addEventListener("click", () => {
+        if (getPlatform() === "Spotify") {
+          console.log("next");
+          if (getQueue() ? true : false) {
+            if (getQueue()?.platform === "Spotify") {
+              pop();
+              const nextItem = getQueue().item.track.uri;
+              EmbedController.loadUri(nextItem);
+            } else handleQueue();
+          } else {
+            EmbedController.play();
+          }
+        }
+      });
+      document.getElementById("prev").addEventListener("click", () => {
+        if (getPlatform() === "Spotify") {
+          if (
+            getPlaybackStatus().position > 4000 || getQueue() ? true : false
+          ) {
+            // go back one song in the queue
+            if (getQueue().platform === "Spotify") {
+              back();
+              EmbedController.loadUri(getQueue().item.track.uri);
+            } else handleQueue();
+          } else {
+            EmbedController.play();
+          }
+        }
+      });
+      // { item: { track: { uri: "spotify:track:6Q0Cw0qZzZ4zjxYQZ7QoZa" }, platform="Spotify"}
       document.getElementById("sc").addEventListener("click", () => {
         console.log("destroying spotify player");
         EmbedController.destroy();
@@ -94,11 +159,26 @@ function Footer({ spotify }) {
 
   //adds to youtube queue and/or removes the first element from the queue
   const handleQueue = () => {
-    if (queue[0].platform === "Spotify") {
+    if (getQueue().platform === "Spotify") {
       // remove first element from queue
+      setPlatform("Spotify");
     } else {
       // play from react player
+      if (getQueue().platform === "SoundCloud") {
+        if (platform !== "Soundcloud") setPlatform("SoundCloud");
+        dispatch({
+          type: "SET_SOUNDCLOUD",
+          soundcloud: getQueue().item,
+        });
+      } else {
+        if (platform !== "YouTube") setPlatform("YouTube");
+        dispatch({
+          type: "SET_YOUTUBE",
+          youtube: getQueue().item,
+        });
+      }
     }
+    pop();
   };
 
   //Updates currently playing song and play/pause status of the player
@@ -127,7 +207,7 @@ function Footer({ spotify }) {
 
   //Pauses and plays the spotify player
   const handlePlayPause = () => {
-    if (platform === "Spotify") {
+    if (getPlatform() === "Spotify") {
       // const spotifyEmbedWindow = document.querySelector(
       //   'iframe[src*="spotify.com/embed"]'
       // ).contentWindow;
@@ -164,44 +244,10 @@ function Footer({ spotify }) {
     }
   };
 
-  //Skips to the next song
-  const skipNext = () => {
-    if (platform === "Spotify") {
-      console.log("skipped");
-      const spotifyEmbedWindow = document.querySelector(
-        'iframe[src*="spotify.com/embed"]'
-      ).contentWindow;
-      spotifyEmbedWindow.postMessage({ command: "next" }, "*");
-    } else {
-      // if(platform === "Soundcloud"){
-      //   SoundcloudWidget(playerUrl).then(function(widget){
-      //     widget.next();
-      //   });
-      // }
-      // else {
-      //   const youtubeEmbedWindow = document.querySelector('iframe[src*="youtube.com/embed"]').contentWindow;
-      //   youtubeEmbedWindow.postMessage({command: 'next'}, '*');
-      // }
-    }
-  };
-
-  //Goes back to the previous song
-  const skipPrevious = () => {};
-
-  //Changes volume to the value specified
-  const changeVolume = (value) => {
-    dispatch({
-      type: "SET_VOLUME",
-      volume: value,
-    });
-  };
-
-  // switches the player to the new platform on command
-  const switchPlayer = (play) => {
-    dispatch({
-      type: "SET_PLATFORM",
-      platform: play,
-    });
+  const handleEnded = () => {
+    console.log("song ended");
+    setPlaying(true);
+    handleQueue();
   };
 
   return (
@@ -209,36 +255,40 @@ function Footer({ spotify }) {
       className="footer"
       onKeyDown={(e) => {
         if (e.key === " ") {
-          handlePlayPause();
+          setPlaying(true);
         }
       }}
     >
       <div className="footer_left">
-        <img alt="" src={Spot} onClick={() => switchPlayer("Spotify")}></img>
+        <img alt="" src={Spot} onClick={() => setPlatform("Spotify")}></img>
         <img
           id="sc"
           alt=""
           className="footer_playerLogo"
           src={Sc}
-          onClick={() => switchPlayer("Soundcloud")}
+          onClick={() => setPlatform("Soundcloud")}
         ></img>
         <img
           alt=""
           id="yt"
           src={Yt}
-          onClick={() => switchPlayer("Youtube")}
+          onClick={() => setPlatform("Youtube")}
         ></img>
-        {platform === "Spotify" && ( // displays a spotify song
+        {getPlatform() === "Spotify" && ( // displays a spotify song
           <div>
             <div id="embed-iframe"></div>
           </div>
         )}
-        {platform !== "Spotify" && ( //displays a youtube or soundcloud song
+        {getPlatform() !== "Spotify" && ( //displays a youtube or soundcloud song
           <div className="footer_spotifyInfo">
             <ReactPlayer
-              url={platform === "Soundcloud" ? soundcloud.link : youtube.link}
+              url={
+                getPlatform() === "Soundcloud" ? soundcloud.link : youtube.link
+              }
               playing={playing}
-              volume={volume ? volume * 0.1 : 0.5}
+              volume={volume}
+              onProgress={(e) => {}}
+              onEnded={handleEnded}
               height="90px"
               width="300px"
               config={{
@@ -263,41 +313,29 @@ function Footer({ spotify }) {
         )}
       </div>
       <div className="footer_center">
-        <ShuffleIcon className="footer_green" />
-        <SkipPreviousIcon onClick={skipPrevious} className="footer_icon" />
-        {platform === "Spotify" && (
-          <div id="toggle">
-            {playing ? (
-              <PauseCircleFilledIcon
-                onClick={handlePlayPause}
-                fontSize="large"
-                className="footer_icon"
-              />
-            ) : (
-              <PlayCircleFilledIcon
-                onClick={handlePlayPause}
-                fontSize="large"
-                className="footer_icon"
-              />
-            )}
-          </div>
-        )}
-        {platform !== "Spotify" &&
-          (playing ? (
+        <img src={shuffle} className="footer_shuffle" onClick={() => {}} />
+        <div id="prev" ref={prevButton}>
+          <SkipPreviousIcon className="footer_icon" />
+        </div>
+        <div id="toggle">
+          {playing ? (
             <PauseCircleFilledIcon
-              onClick={handlePlayPause}
+              onClick={() => setPlaying(false)}
               fontSize="large"
               className="footer_icon"
             />
           ) : (
             <PlayCircleFilledIcon
-              onClick={handlePlayPause}
+              onClick={() => setPlaying(true)}
               fontSize="large"
               className="footer_icon"
             />
-          ))}
-        <SkipNextIcon onClick={skipNext} className="footer_icon" />
-        <RepeatIcon className="footer_green" />
+          )}
+        </div>
+        <div id="next" ref={skipButton}>
+          <SkipNextIcon className="footer_icon" />
+        </div>
+        <RepeatIcon className="footer_icon" />
       </div>
       <div className="footer_right">
         <Grid container spacing={2}>
@@ -309,8 +347,11 @@ function Footer({ spotify }) {
           </Grid>
           <Grid item xs>
             <Slider
-              defaultValue={volume ? volume : 50}
-              onChange={(_, value) => changeVolume(value)}
+              defaultValue={volume * 100}
+              onChange={(_, value) => {
+                setVolume(value * 0.01);
+                console.log(value);
+              }}
             />
           </Grid>
         </Grid>

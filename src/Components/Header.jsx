@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import "../styles/Header.scss";
 import SearchIcon from "@material-ui/icons/Search";
 import { Avatar } from "@material-ui/core";
@@ -7,6 +7,7 @@ import { SoundCloudScraper } from "./SoundcloudScraper.jsx";
 import Sc from "./pics/soundcloudDark.svg";
 import Spot from "./pics/spotDark.svg";
 import Yt from "./pics/ytDark.svg";
+import { useSpotify } from "../store";
 
 const opts = {
   maxResults: 20,
@@ -15,18 +16,11 @@ const opts = {
 };
 
 function Header({ spotify }) {
-  const [{ user, search_term }, dispatch] = useDataLayerValue();
+  const [{}, dispatch] = useDataLayerValue();
+  const user = useSpotify((state) => state.user);
   let loading = true;
   const [platform, setPlatform] = useState("Spotify");
-  const search = (elem) => {
-    dispatch({
-      type: "SET_SEARCH_TERM",
-      search_term: elem.target.value,
-    });
-    if (elem.key === "Enter" && search_term !== "") {
-      invokeSearch(platform);
-    }
-  };
+  const searchRef = useRef();
 
   // Conducts the search for all three platforms, and searches
   // the database to return  all songs that match the search query
@@ -35,7 +29,7 @@ function Header({ spotify }) {
     // platform can be "Spotify", "Soundcloud", or "Youtube"
     const results = []; // results of all the songs that will be added to the search results object
     if (platform === "Spotify") {
-      await spotify.searchTracks(search_term).then(
+      await spotify.searchTracks(searchRef.current.value).then(
         // uses built in spotify search function
         (data) => {
           data.tracks.items.map(
@@ -52,9 +46,10 @@ function Header({ spotify }) {
       });
     } else if (platform === "Soundcloud") {
       const soundScraper = new SoundCloudScraper();
-      let url = `/search/sounds?q=${search_term}`;
+      let url = `/search/sounds?q=${searchRef.current.value}`;
       let res = await soundScraper.getHtmlFromUrl(url);
-      // await soundScraper.getHtmlFromUrl(url);
+      // res = await res.text();
+      console.log(res);
       res = res.substring(
         res.indexOf("<li><h2>"),
         res.lastIndexOf("</h2></li>")
@@ -78,15 +73,22 @@ function Header({ spotify }) {
       }
       loading = false;
       console.log(tracklist);
-      console.log(await soundScraper.getSound(tracklist[0]));
+      console.log(
+        await soundScraper.extractDataFromHtml(
+          await (await fetch(tracklist[0])).text()
+        )
+      );
+      console.log(await (await fetch(tracklist[0])).text());
       const resolved = await Promise.all(
         tracklist.map(async (link) => {
-          return await soundScraper.getSound(link);
+          return await soundScraper.extractSound(
+            await soundScraper.getHtmlFromUrl(link)
+          );
         })
       );
-      console.log(resolved);
       resolved.map((song) =>
         results.push({
+          item: song,
           platform: "Soundcloud",
           title: song.title,
           artist: song.user.username,
@@ -101,10 +103,11 @@ function Header({ spotify }) {
       });
     } else if (platform === "Youtube") {
       const searcher = require("youtube-search");
-      console.log(search_term);
-      const search = (await searcher(search_term, opts)).results;
+      console.log(searchRef.current.value);
+      const search = (await searcher(searchRef.current.value, opts)).results;
       search.map((video) => {
         results.push({
+          item: video,
           platform: "Youtube",
           title: video.title,
           artist: video.channelTitle,
@@ -133,7 +136,11 @@ function Header({ spotify }) {
           placeholder="Search"
           type="search"
           id="searchBar"
-          onKeyDown={(e) => search(e)}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && searchRef.current.value !== "")
+              invokeSearch(platform);
+          }}
+          ref={searchRef}
         />
         <img
           alt=""
@@ -160,10 +167,12 @@ function Header({ spotify }) {
           onClick={() => invokeSearch("Youtube")}
         ></img>
       </div>
-      <div className="header_right">
-        <Avatar src={user?.images[0]?.url} alt={user} />
-        <h4>{user?.display_name}</h4>
-      </div>
+      <a href={user?.external_urls?.spotify} target="_blank">
+        <div className="header_right">
+          <Avatar src={user?.images[0]?.url} alt={user} />
+          <h4>{user?.display_name}</h4>
+        </div>
+      </a>
     </div>
   );
 }

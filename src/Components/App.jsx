@@ -4,11 +4,20 @@ import Loading from "./Loading.jsx";
 import SpotifyWebApi from "spotify-web-api-js";
 import { useDataLayerValue } from "../DataLayer";
 import Player from "./Player.jsx";
+import axios from "axios";
+import { useSpotify } from "../store";
 
 var spotify = new SpotifyWebApi();
 
 function App() {
-  const [{ token }, dispatch] = useDataLayerValue();
+  const [{}, dispatch] = useDataLayerValue();
+  const setSpotify = useSpotify((state) => state.setSpotify);
+  const token = useSpotify((state) => state.token);
+  const setToken = useSpotify((state) => state.setToken);
+  const setUser = useSpotify((state) => state.setUser);
+  const setPlaylists = useSpotify((state) => state.setPlaylists);
+  const setTopArtists = useSpotify((state) => state.setTopArtists);
+  const addToPlaylist = useSpotify((state) => state.addToPlaylist);
 
   function getHashParams() {
     var hashParams = {};
@@ -23,50 +32,84 @@ function App() {
     return hashParams;
   }
 
-  useEffect(() => {
+  useEffect(async () => {
     const hash = getHashParams();
     window.location.hash = "";
     const _token = hash.access_token;
     const _refresh = hash.refresh_token;
+    console.log(_refresh);
     if (_token) {
-      dispatch({ type: "SET_TOKEN", token: _token });
-      dispatch({ type: "SET_REFRESH_TROKEN", refresh_token: _refresh });
+      setToken(_token);
       spotify.setAccessToken(_token);
-
-      fetchUser();
-      fetchTopArtists();
-      fetchPlaylists();
-
-      dispatch({ type: "SET_SPOTIFY", spotify: spotify });
+      await Promise.all([fetchPlaylists(), fetchUser(), fetchTopArtists()])
+        .then(async (values) => {
+          console.log(values);
+          const playlists = await Promise.all([
+            values[0].map((playlist) => {
+              return {
+                playlistID: playlist.id,
+                beatbytesSongs: [],
+              };
+            }),
+          ]);
+          return Promise.resolve(
+            await axios.post("/db/user/login_or_create", {
+              userID: values[1].id,
+              playlists: playlists[0],
+              profilePhoto: values[1].images[0].url,
+            })
+          );
+        })
+        .then((user) => {
+          console.log(user.data);
+          user.data.playlists.map((playlist) => {
+            playlist.beatbytesSongs.length > 0
+              ? playlist.beatbytesSongs.map((song) => {
+                  addToPlaylist(playlist.playlistID, song);
+                })
+              : null;
+          });
+        });
+      setSpotify(spotify);
     }
     console.log("I have a token: ", token);
-  }, [token, dispatch]);
+  }, [token]);
 
   async function fetchPlaylists() {
     const lst = [];
-    await spotify.getUserPlaylists().then((playlists) =>
-      playlists.items.forEach(async (playlist) => {
-        await spotify.getPlaylist(playlist.id).then((response) => {
-          lst.push(response);
-        });
-      })
-    );
-    dispatch({ type: "SET_PLAYLISTS", playlists: lst });
-    console.log(lst);
+    await spotify
+      .getUserPlaylists()
+      .then(
+        async (playlists) =>
+          await Promise.all(
+            playlists.items.map(async (playlist) => {
+              await spotify.getPlaylist(playlist.id).then((response) => {
+                lst.push(response);
+              });
+            })
+          )
+      )
+      .then(() => {
+        setPlaylists(lst);
+        console.log(lst);
+        return lst;
+      });
+    return lst;
   }
 
   async function fetchTopArtists() {
-    await spotify
-      .getMyTopArtists()
-      .then((response) =>
-        dispatch({ type: "SET_TOP_ARTISTS", top_artists: response })
-      );
+    return await spotify.getMyTopArtists().then((response) => {
+      console.log(response);
+      setTopArtists(response);
+      return response;
+    });
   }
 
   async function fetchUser() {
-    await spotify.getMe().then((user) => {
-      dispatch({ type: "SET_USER", user: user });
+    return await spotify.getMe().then((user) => {
+      setUser(user);
       console.log(user);
+      return user;
     });
   }
 

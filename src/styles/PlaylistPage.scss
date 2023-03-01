@@ -7,6 +7,9 @@
     color: white;
 }
 
+.blurTitle {
+    opacity: .5;
+}
 .playlistPage::-webkit-scrollbar {
     display: none;
 }
@@ -31,11 +34,23 @@
     margin: 20px -30px;
 }
 
-.playlistPage_shuffle {
+.playlistPage_play {
     font-size: 80px !important;
     margin-left: 50px;
+    margin-right: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+.playlistPage_play:hover {
+    transition: 100ms transform ease-in;
+    transform: scale(1.08);
+}
+
+.playlistPage_shuffle {
+    max-width: 60px;
+    max-height: 40px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1);
 }
 
 .playlistPage_shuffle:hover {

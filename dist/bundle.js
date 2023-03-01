@@ -8849,27 +8849,30 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_Footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Footer.scss */ "./src/styles/Footer.scss");
-/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
-/* harmony import */ var _material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/PauseCircleFilled */ "./node_modules/@material-ui/icons/PauseCircleFilled.js");
-/* harmony import */ var _material_ui_icons_SkipPrevious__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/SkipPrevious */ "./node_modules/@material-ui/icons/SkipPrevious.js");
-/* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/SkipNext */ "./node_modules/@material-ui/icons/SkipNext.js");
-/* harmony import */ var _material_ui_icons_Shuffle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Shuffle */ "./node_modules/@material-ui/icons/Shuffle.js");
-/* harmony import */ var _material_ui_icons_Repeat__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/Repeat */ "./node_modules/@material-ui/icons/Repeat.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Slider/Slider.js");
-/* harmony import */ var _material_ui_icons_PlaylistPlay__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/PlaylistPlay */ "./node_modules/@material-ui/icons/PlaylistPlay.js");
-/* harmony import */ var _material_ui_icons_VolumeDown__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/VolumeDown */ "./node_modules/@material-ui/icons/VolumeDown.js");
+/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
+/* harmony import */ var _material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/PauseCircleFilled */ "./node_modules/@material-ui/icons/PauseCircleFilled.js");
+/* harmony import */ var _material_ui_icons_SkipPrevious__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/SkipPrevious */ "./node_modules/@material-ui/icons/SkipPrevious.js");
+/* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/SkipNext */ "./node_modules/@material-ui/icons/SkipNext.js");
+/* harmony import */ var _material_ui_icons_Shuffle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/Shuffle */ "./node_modules/@material-ui/icons/Shuffle.js");
+/* harmony import */ var _material_ui_icons_Repeat__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/Repeat */ "./node_modules/@material-ui/icons/Repeat.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Slider/Slider.js");
+/* harmony import */ var _material_ui_icons_PlaylistPlay__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/PlaylistPlay */ "./node_modules/@material-ui/icons/PlaylistPlay.js");
+/* harmony import */ var _material_ui_icons_VolumeDown__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/icons/VolumeDown */ "./node_modules/@material-ui/icons/VolumeDown.js");
 /* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
 /* harmony import */ var _pics_soundcloud_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pics/soundcloud.svg */ "./src/Components/pics/soundcloud.svg");
 /* harmony import */ var _pics_spot_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pics/spot.svg */ "./src/Components/pics/spot.svg");
 /* harmony import */ var _pics_yt_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pics/yt.svg */ "./src/Components/pics/yt.svg");
 /* harmony import */ var react_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-player */ "./node_modules/react-player/lib/index.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../store */ "./src/store.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
@@ -8900,39 +8903,150 @@ function Footer(_ref) {
     item = _useDataLayerValue2$.item,
     playing = _useDataLayerValue2$.playing,
     volume = _useDataLayerValue2$.volume,
-    platform = _useDataLayerValue2$.platform,
     soundcloud = _useDataLayerValue2$.soundcloud,
     youtube = _useDataLayerValue2$.youtube,
-    queue = _useDataLayerValue2$.queue,
     dispatch = _useDataLayerValue2[1];
+  var skipButton = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var prevButton = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+
+  // Queue actions
+  var getQueue = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+    return state.getQueue;
+  });
+  var pop = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+    return state.pop;
+  });
+  var back = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+    return state.back;
+  });
+
+  // Reverse actions
+  var getReverseStatus = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.getReverseStatus;
+  });
+  var reverse = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.reverse;
+  });
+  var resetReverse = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.resetReverse;
+  });
+  var setPlaybackStatus = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.setPlaybackStatus;
+  });
+  var getPlaybackStatus = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.getPlaybackStatus;
+  });
+
+  // Platform actions
+  var setPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.setPlatform;
+  });
+  var getPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.getPlatform;
+  });
+  var platform = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.platform;
+  });
+  var setSkipButton = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.setSkipButton;
+  });
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
     rPlaying = _useState2[0],
     setrPlaying = _useState2[1];
-  var sPlayer = null;
-  window.onSpotifyIframeApiReady = function (IFrameAPI) {
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState4 = _slicedToArray(_useState3, 2),
+    api = _useState4[0],
+    setApi = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState6 = _slicedToArray(_useState5, 2),
+    spotifyPos = _useState6[0],
+    setSpotifyPos = _useState6[1];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    setSkipButton(skipButton);
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (getPlatform() === "Spotify") {
+      console.log("loading spotify player");
+      if (api === null) {
+        window.onSpotifyIframeApiReady = function (IFrameAPI) {
+          setApi(IFrameAPI);
+          console.log(IFrameAPI);
+          setIframe(IFrameAPI);
+        };
+      } else {
+        console.log("spotify player already loaded");
+        setIframe(api, spotifyPos);
+      }
+    }
+  }, [platform, item]);
+  var setIframe = function setIframe(IFrameAPI) {
+    var seek = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
     var element = document.getElementById("embed-iframe");
+    console.log(element);
     var options = {
-      width: "60%",
+      width: "300",
       height: "95",
       uri: "spotify:".concat(item.type, ":").concat(item.id)
     };
     var callback = function callback(EmbedController) {
+      EmbedController.addListener("ready", function () {
+        console.log("The Embed has initialized");
+        EmbedController.seek(seek);
+      });
       EmbedController.addListener("playback_update", function (e) {
+        setPlaybackStatus(e.data);
+        if (getReverseStatus()) {}
         if (e.data.position === e.data.duration) {
           console.log("Song Ended");
-          console.log(queue);
-          if (queue[0].platform === "Spotify") {
-            EmbedController.loadUri(queue[0].item.uri);
+          console.log(getQueue());
+          if (getQueue().platform === "Spotify") {
+            var nextItem = getQueue().item.track.uri;
+            EmbedController.loadUri(nextItem);
             handleQueue();
           } else handleQueue();
         }
       });
-      document.getElementById("pause").addEventListener("click", function () {
-        if (platform === "Spotify") EmbedController.pause();
+      document.getElementById("toggle").addEventListener("click", function () {
+        if (getPlatform() === "Spotify") {
+          handlePlayPause();
+          EmbedController.togglePlay();
+        }
       });
-      document.getElementById("play").addEventListener("click", function () {
-        if (platform === "Spotify") EmbedController.play();
+      document.getElementById("next").addEventListener("click", function () {
+        if (getPlatform() === "Spotify") {
+          console.log("next");
+          if (getQueue().platform === "Spotify") {
+            var nextItem = getQueue().item.track.uri;
+            EmbedController.loadUri(nextItem);
+            EmbedController.togglePlay();
+            handleQueue();
+          } else handleQueue();
+        }
+      });
+      document.getElementById("prev").addEventListener("click", function () {
+        if (getPlatform() === "Spotify") {
+          if (e.data.position < 4000) {
+            resetReverse(); // set reverse status back to false
+            back(); // go back one song in the queue
+            back();
+            if (getQueue().platform === "Spotify") {
+              var nextItem = getQueue().item.track.uri;
+              EmbedController.loadUri(nextItem);
+              handleQueue();
+            } else handleQueue();
+          } else {
+            EmbedController.togglePlay();
+          }
+        }
+      });
+      document.getElementById("sc").addEventListener("click", function () {
+        console.log("destroying spotify player");
+        EmbedController.destroy();
+      });
+      document.getElementById("yt").addEventListener("click", function () {
+        console.log("destroying spotify player");
+        EmbedController.destroy();
       });
     };
     IFrameAPI.createController(element, options, callback);
@@ -8940,8 +9054,9 @@ function Footer(_ref) {
 
   //adds to youtube queue and/or removes the first element from the queue
   var handleQueue = function handleQueue() {
-    if (queue[0].platform === "Spotify") {
+    if (getQueue().platform === "Spotify") {
       // remove first element from queue
+      pop();
     } else {
       // play from react player
     }
@@ -8973,11 +9088,11 @@ function Footer(_ref) {
 
   //Pauses and plays the spotify player
   var handlePlayPause = function handlePlayPause() {
-    if (platform === "Spotify") {
-      var spotifyEmbedWindow = document.querySelector('iframe[src*="spotify.com/embed"]').contentWindow;
-      spotifyEmbedWindow.postMessage({
-        command: "toggle"
-      }, "*");
+    if (getPlatform() === "Spotify") {
+      // const spotifyEmbedWindow = document.querySelector(
+      //   'iframe[src*="spotify.com/embed"]'
+      // ).contentWindow;
+      // spotifyEmbedWindow.postMessage({ command: "toggle" }, "*");
       if (playing === null) {
         dispatch({
           type: "SET_PLAYING",
@@ -9010,30 +9125,6 @@ function Footer(_ref) {
     }
   };
 
-  //Skips to the next song
-  var skipNext = function skipNext() {
-    if (platform === "Spotify") {
-      console.log("skipped");
-      var spotifyEmbedWindow = document.querySelector('iframe[src*="spotify.com/embed"]').contentWindow;
-      spotifyEmbedWindow.postMessage({
-        command: "next"
-      }, "*");
-    } else {
-      // if(platform === "Soundcloud"){
-      //   SoundcloudWidget(playerUrl).then(function(widget){
-      //     widget.next();
-      //   });
-      // }
-      // else {
-      //   const youtubeEmbedWindow = document.querySelector('iframe[src*="youtube.com/embed"]').contentWindow;
-      //   youtubeEmbedWindow.postMessage({command: 'next'}, '*');
-      // }
-    }
-  };
-
-  //Goes back to the previous song
-  var skipPrevious = function skipPrevious() {};
-
   //Changes volume to the value specified
   var changeVolume = function changeVolume(value) {
     dispatch({
@@ -9041,14 +9132,6 @@ function Footer(_ref) {
       volume: value
     });
   };
-
-  // switches the player to the new platform on command
-  function switchPlayer(play) {
-    dispatch({
-      type: "SET_PLATFORM",
-      platform: play
-    });
-  }
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "footer",
     onKeyDown: function onKeyDown(e) {
@@ -9062,51 +9145,35 @@ function Footer(_ref) {
     alt: "",
     src: _pics_spot_svg__WEBPACK_IMPORTED_MODULE_4__,
     onClick: function onClick() {
-      return switchPlayer("Spotify");
+      return setPlatform("Spotify");
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    id: "sc",
     alt: "",
     className: "footer_playerLogo",
     src: _pics_soundcloud_svg__WEBPACK_IMPORTED_MODULE_3__,
     onClick: function onClick() {
-      return switchPlayer("Soundcloud");
+      return setPlatform("Soundcloud");
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "",
+    id: "yt",
     src: _pics_yt_svg__WEBPACK_IMPORTED_MODULE_5__,
     onClick: function onClick() {
-      return switchPlayer("Youtube");
+      return setPlatform("Youtube");
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "vl"
-  }), platform === "Spotify" &&
+  }), getPlatform() === "Spotify" &&
   /*#__PURE__*/
   // displays a spotify song
-  react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "embed-iframe"
-  })
-  // <div className="footer_spotifyInfo">
-  //   <iframe
-  //     title="Spotify"
-  //     id="spotifyPlayer"
-  //     style={{
-  //       borderRadius: 8,
-  //     }}
-  //     src={`https://open.spotify.com/embed/${item.type}/${item.id}`}
-  //     height={"95"}
-  //     frameBorder="0"
-  //     aria-label="spotify-embed"
-  //     allowtransparency="true"
-  //     allow="autoplay; transparency; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-  //   ></iframe>
-  // </div>
-  , platform !== "Spotify" &&
+  })), getPlatform() !== "Spotify" &&
   /*#__PURE__*/
   //displays a youtube or soundcloud song
   react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "footer_spotifyInfo"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_player__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    url: platform === "Soundcloud" ? soundcloud.link : youtube.link + "&origin",
+    url: getPlatform() === "Soundcloud" ? soundcloud.link : youtube.link,
     playing: playing,
     volume: volume ? volume * 0.1 : 0.5,
     height: "90px",
@@ -9130,46 +9197,43 @@ function Footer(_ref) {
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "footer_center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Shuffle__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Shuffle__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: "footer_green"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_SkipPrevious__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    onClick: skipPrevious,
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "prev",
+    ref: prevButton
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_SkipPrevious__WEBPACK_IMPORTED_MODULE_9__["default"], {
     className: "footer_icon"
-  }), platform === "Spotify" && (playing ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    id: "pause",
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "toggle"
+  }, playing ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_10__["default"], {
     onClick: handlePlayPause,
     fontSize: "large",
     className: "footer_icon"
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_11__["default"], {
     onClick: handlePlayPause,
     fontSize: "large",
     className: "footer_icon"
-  })), platform !== "Spotify" && (playing ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    onClick: handlePlayPause,
-    fontSize: "large",
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "next",
+    ref: skipButton
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_12__["default"], {
     className: "footer_icon"
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    onClick: handlePlayPause,
-    fontSize: "large",
-    className: "footer_icon"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    onClick: skipNext,
-    className: "footer_icon"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Repeat__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Repeat__WEBPACK_IMPORTED_MODULE_13__["default"], {
     className: "footer_green"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "footer_right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["default"], {
     container: true,
     spacing: 2
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["default"], {
     item: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlaylistPlay__WEBPACK_IMPORTED_MODULE_14__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlaylistPlay__WEBPACK_IMPORTED_MODULE_15__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["default"], {
     item: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_VolumeDown__WEBPACK_IMPORTED_MODULE_15__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_VolumeDown__WEBPACK_IMPORTED_MODULE_16__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["default"], {
     item: true,
     xs: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_16__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_17__["default"], {
     defaultValue: volume ? volume : 50,
     onChange: function onChange(_, value) {
       return changeVolume(value);
@@ -9229,30 +9293,20 @@ function Header(_ref) {
   var spotify = _ref.spotify;
   var _useDataLayerValue = (0,_DataLayer__WEBPACK_IMPORTED_MODULE_2__.useDataLayerValue)(),
     _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2),
-    _useDataLayerValue2$ = _useDataLayerValue2[0],
-    user = _useDataLayerValue2$.user,
-    search_term = _useDataLayerValue2$.search_term,
+    user = _useDataLayerValue2[0].user,
     dispatch = _useDataLayerValue2[1];
   var loading = true;
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Spotify"),
     _useState2 = _slicedToArray(_useState, 2),
     platform = _useState2[0],
     setPlatform = _useState2[1];
-  var search = function search(elem) {
-    dispatch({
-      type: "SET_SEARCH_TERM",
-      search_term: elem.target.value
-    });
-    if (elem.key === "Enter" && search_term !== "") {
-      invokeSearch(platform);
-    }
-  };
+  var searchRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
 
   // Conducts the search for all three platforms, and searches
   // the database to return  all songs that match the search query
   var invokeSearch = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(platform) {
-      var results, soundScraper, url, res, index, tracklist, start, end, link, resolved, searcher, _search;
+      var results, soundScraper, url, res, index, tracklist, start, end, link, resolved, searcher, search;
       return _regeneratorRuntime().wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
           case 0:
@@ -9264,7 +9318,7 @@ function Header(_ref) {
               break;
             }
             _context2.next = 5;
-            return spotify.searchTracks(search_term).then(
+            return spotify.searchTracks(searchRef.current.value).then(
             // uses built in spotify search function
             function (data) {
               data.tracks.items.map(function (track // grabs data from each song
@@ -9278,27 +9332,33 @@ function Header(_ref) {
               type: "SET_SEARCH",
               search: results
             });
-            _context2.next = 57;
+            _context2.next = 63;
             break;
           case 9:
             if (!(platform === "Soundcloud")) {
-              _context2.next = 47;
+              _context2.next = 53;
               break;
             }
             soundScraper = new _SoundcloudScraper_jsx__WEBPACK_IMPORTED_MODULE_3__.SoundCloudScraper();
-            url = "/search/sounds?q=".concat(search_term);
+            url = "/search/sounds?q=".concat(searchRef.current.value);
             _context2.next = 14;
-            return soundScraper.getHtmlFromUrl(url);
+            return fetch(url);
           case 14:
             res = _context2.sent;
+            _context2.next = 17;
+            return res.text();
+          case 17:
+            res = _context2.sent;
+            console.log(res);
+            // let res = await soundScraper.getHtmlFromUrl(url);
             // await soundScraper.getHtmlFromUrl(url);
             res = res.substring(res.indexOf("<li><h2>"), res.lastIndexOf("</h2></li>"));
             console.log(res);
             index = 0;
             tracklist = [];
-          case 19:
+          case 23:
             if (!(index < res.length)) {
-              _context2.next = 31;
+              _context2.next = 35;
               break;
             }
             if (!loading) {
@@ -9307,37 +9367,42 @@ function Header(_ref) {
             start = res.indexOf('"', index);
             end = res.indexOf('"', start + 1);
             if (!(start === -1 || end === -1)) {
-              _context2.next = 25;
+              _context2.next = 29;
               break;
             }
-            return _context2.abrupt("break", 31);
-          case 25:
+            return _context2.abrupt("break", 35);
+          case 29:
             link = res.substring(start + 1, end);
             tracklist.push(link);
             index = end + 1;
             console.log(link);
-            _context2.next = 19;
+            _context2.next = 23;
             break;
-          case 31:
+          case 35:
             loading = false;
             console.log(tracklist);
             _context2.t0 = console;
-            _context2.next = 36;
-            return soundScraper.getSound(tracklist[0]);
-          case 36:
+            _context2.next = 40;
+            return fetch(tracklist[0]);
+          case 40:
+            _context2.next = 42;
+            return _context2.sent.text();
+          case 42:
             _context2.t1 = _context2.sent;
             _context2.t0.log.call(_context2.t0, _context2.t1);
-            _context2.next = 40;
+            _context2.next = 46;
             return Promise.all(tracklist.map( /*#__PURE__*/function () {
               var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(link) {
                 return _regeneratorRuntime().wrap(function _callee$(_context) {
                   while (1) switch (_context.prev = _context.next) {
                     case 0:
-                      _context.next = 2;
-                      return soundScraper.getSound(link);
-                    case 2:
-                      return _context.abrupt("return", _context.sent);
+                      _context.t0 = soundScraper;
+                      _context.next = 3;
+                      return fetch(link);
                     case 3:
+                      _context.t1 = _context.sent;
+                      return _context.abrupt("return", _context.t0.extractSound.call(_context.t0, _context.t1));
+                    case 5:
                     case "end":
                       return _context.stop();
                   }
@@ -9347,7 +9412,7 @@ function Header(_ref) {
                 return _ref3.apply(this, arguments);
               };
             }()));
-          case 40:
+          case 46:
             resolved = _context2.sent;
             console.log(resolved);
             resolved.map(function (song) {
@@ -9364,20 +9429,20 @@ function Header(_ref) {
               type: "SET_SEARCH",
               search: results
             });
-            _context2.next = 57;
+            _context2.next = 63;
             break;
-          case 47:
+          case 53:
             if (!(platform === "Youtube")) {
-              _context2.next = 57;
+              _context2.next = 63;
               break;
             }
             searcher = __webpack_require__(/*! youtube-search */ "./node_modules/youtube-search/index.js");
-            console.log(search_term);
-            _context2.next = 52;
-            return searcher(search_term, opts);
-          case 52:
-            _search = _context2.sent.results;
-            _search.map(function (video) {
+            console.log(searchRef.current.value);
+            _context2.next = 58;
+            return searcher(searchRef.current.value, opts);
+          case 58:
+            search = _context2.sent.results;
+            search.map(function (video) {
               results.push({
                 platform: "Youtube",
                 title: video.title,
@@ -9386,18 +9451,18 @@ function Header(_ref) {
                 link: "http://www.youtube.com/watch?v=" + video.id
               });
             });
-            console.log(_search);
+            console.log(search);
             console.log(results);
             dispatch({
               type: "SET_SEARCH",
               search: results
             });
-          case 57:
+          case 63:
             dispatch({
               type: "SET_PAGE",
               page: "Search"
             });
-          case 58:
+          case 64:
           case "end":
             return _context2.stop();
         }
@@ -9415,9 +9480,10 @@ function Header(_ref) {
     placeholder: "Search",
     type: "search",
     id: "searchBar",
-    onKeyDown: function onKeyDown(e) {
-      return search(e);
-    }
+    onKeyDown: function onKeyDown() {
+      return invokeSearch(platform);
+    },
+    ref: searchRef
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "",
     className: platform === "Spotify" ? "header_playerLogoActive" : "header_playerLogo",
@@ -9660,25 +9726,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_Body_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Body.scss */ "./src/styles/Body.scss");
 /* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
-/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
-/* harmony import */ var _material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/PauseCircleFilled */ "./node_modules/@material-ui/icons/PauseCircleFilled.js");
-/* harmony import */ var _material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/Favorite */ "./node_modules/@material-ui/icons/Favorite.js");
-/* harmony import */ var _material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/MoreHoriz */ "./node_modules/@material-ui/icons/MoreHoriz.js");
+/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
+/* harmony import */ var _material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/PauseCircleFilled */ "./node_modules/@material-ui/icons/PauseCircleFilled.js");
+/* harmony import */ var _material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/Favorite */ "./node_modules/@material-ui/icons/Favorite.js");
+/* harmony import */ var _material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/MoreHoriz */ "./node_modules/@material-ui/icons/MoreHoriz.js");
 /* harmony import */ var _SongRow_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SongRow.jsx */ "./src/Components/SongRow.jsx");
 /* harmony import */ var _useContextMenu_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./useContextMenu.jsx */ "./src/Components/useContextMenu.jsx");
 /* harmony import */ var _styles_PlaylistPage_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/PlaylistPage.scss */ "./src/styles/PlaylistPage.scss");
 /* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
 /* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6__);
-function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
-function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
-function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../store */ "./src/store.js");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
 
 
 
@@ -9700,43 +9765,43 @@ function PlaylistPage(_ref) {
     device_id = _useDataLayerValue2$.device_id,
     playing = _useDataLayerValue2$.playing,
     item = _useDataLayerValue2$.item,
-    queue = _useDataLayerValue2$.queue,
     dispatch = _useDataLayerValue2[1];
   var _useContextMenu = (0,_useContextMenu_jsx__WEBPACK_IMPORTED_MODULE_4__["default"])(),
     clicked = _useContextMenu.clicked,
     setClicked = _useContextMenu.setClicked,
     points = _useContextMenu.points,
     setPoints = _useContextMenu.setPoints;
-  var handlePlaylist = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(playlist) {
-      var i, newItem;
-      return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) switch (_context.prev = _context.next) {
-          case 0:
-            for (i = 0; i < playlist.tracks.items.length; i++) {
-              if (playlist.tracks.items[i].track.track !== undefined) {
-                newItem = {
-                  item: playlist.tracks.items[i],
-                  platform: "Spotify"
-                };
-                dispatch({
-                  type: "SET_QUEUE",
-                  queue: newItem
-                });
-                console.log("added to queue", newItem);
-              }
-            }
-            console.log(queue);
-          case 2:
-          case "end":
-            return _context.stop();
-        }
-      }, _callee);
-    }));
-    return function handlePlaylist(_x2) {
-      return _ref2.apply(this, arguments);
-    };
-  }();
+  var queue = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+    return state.queue;
+  });
+  var addQueue = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+    return state.addQueue;
+  });
+  var addFrontQueue = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+    return state.addFrontQueue;
+  });
+  var skip = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.skip;
+  });
+  var reverse = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+    return state.reverse;
+  });
+  var back = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+    return state.back;
+  });
+  var handlePlaylist = function handlePlaylist(playlist) {
+    for (var i = 0; i < playlist.tracks.items.length; i++) {
+      if (playlist.tracks.items[i].track.track !== undefined) {
+        var newItem = {
+          item: playlist.tracks.items[i],
+          platform: "Spotify"
+        };
+        addQueue(newItem);
+        console.log("added to queue", newItem);
+      }
+    }
+    console.log(queue);
+  };
   var updateContextMenu = function updateContextMenu(e, item) {
     var song = document.getElementById(item.id);
     setClicked(true);
@@ -9810,24 +9875,27 @@ function PlaylistPage(_ref) {
     className: "playlistPage_songs"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "playlistPage_icons"
-  }, playing && discover_weekly.id === item.id ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, playing && discover_weekly.id === item.id ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_8__["default"], {
     className: "playlistPage_shuffle",
     onClick: function onClick() {
       return setPlayer(discover_weekly);
     }
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_9__["default"], {
     className: "playlistPage_shuffle",
     onClick: function onClick() {
       return handlePlaylist(discover_weekly);
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_10__["default"], {
     fontSize: "large"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_10__["default"], null)), discover_weekly === null || discover_weekly === void 0 ? void 0 : discover_weekly.tracks.items.map(function (item) {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_11__["default"], null)), discover_weekly === null || discover_weekly === void 0 ? void 0 : discover_weekly.tracks.items.map(function (item) {
     return typeof item.track.track !== "undefined" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       id: item.track.id,
       key: item.track.id,
       onClick: function onClick() {
-        return setPlayer(item.track);
+        return addFrontQueue({
+          item: item,
+          platform: "Spotify"
+        });
       },
       onContextMenu: function onContextMenu(e) {
         return updateContextMenu(e, item.track);
@@ -9972,7 +10040,10 @@ function SearchPage(_ref) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6___default()("search-"),
       onClick: function onClick() {
-        return !track.platform ? setPlayer(track) : setReactPlayer(track);
+        addFrontQueue({
+          item: track,
+          platform: !track.platform ? "Spotify" : track.platform
+        });
       },
       onContextMenu: function onContextMenu(e) {
         return updateContextMenu(e, track);
@@ -10178,17 +10249,47 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_SongRow_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/SongRow.scss */ "./src/styles/SongRow.scss");
-/* harmony import */ var _material_ui_icons__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/icons */ "./node_modules/@material-ui/icons/esm/CloudDownloadOutlined.js");
+/* harmony import */ var _material_ui_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons */ "./node_modules/@material-ui/icons/esm/CloudDownloadOutlined.js");
+/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store */ "./src/store.js");
+
+
+
+
+
 
 
 
 function SongRow(_ref) {
   var track = _ref.track;
   var search = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+  // const [{ item }, dispatch] =
+  //   useDataLayerValue();
+  // Queue actions
+  var getPlaying = (0,_store__WEBPACK_IMPORTED_MODULE_2__["default"])(function (state) {
+    return state.getPlaying;
+  });
+  var addFrontQueue = (0,_store__WEBPACK_IMPORTED_MODULE_2__["default"])(function (state) {
+    return state.addFrontQueue;
+  });
+  var addQueue = (0,_store__WEBPACK_IMPORTED_MODULE_2__["default"])(function (state) {
+    return state.addQueue;
+  });
+  var getPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_2__.useActions)(function (state) {
+    return state.getPlatform;
+  });
+  var skip = (0,_store__WEBPACK_IMPORTED_MODULE_2__.useActions)(function (state) {
+    return state.skip;
+  });
+
+  // Controller actions
+  var setSong = (0,_store__WEBPACK_IMPORTED_MODULE_2__.useSpotify)(function (state) {
+    return state.setSong;
+  });
   if (typeof track.track !== "undefined" || track.type === "track") {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "songRow"
-    }, track.album.images.length === 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }, track.album.images.length === 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons__WEBPACK_IMPORTED_MODULE_3__["default"], {
       className: "songRow_download"
     }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
       className: "songRow_search",
@@ -10198,7 +10299,13 @@ function SongRow(_ref) {
       className: "songRow_info"
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, track.name), track.artists.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, track.artists.map(function (artist) {
       return artist.name;
-    }).join(", "), " -", " ", track.album.name, " ")));
+    }).join(", "), " -", " ", track.album.name, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      className: "songRow_controls"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      onClick: function onClick() {
+        return addFrontQueue(track);
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_4__["default"], null)))));
   } else if (track.platform !== "undefined" && track.platform !== "Spotify") {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "songRow"
@@ -10219,7 +10326,7 @@ function SongRow(_ref) {
   } else {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "songRow"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons__WEBPACK_IMPORTED_MODULE_3__["default"], {
       className: "songRow_download"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "songRow_info"
@@ -10472,8 +10579,8 @@ __webpack_require__.r(__webpack_exports__);
 // https://developer.spotify.com/documentation/web-playback-sdk/quick-start/#
 var authEndpoint = "https://accounts.spotify.com/authorize";
 // Replace with your app's client ID, redirect URI and desired scopes
-var clientId = '3dd065b6dedd47e99ecb7ed63bcde5d6'; // Your client id
-var redirectUri = "http://localhost:3000";
+var clientId = "3dd065b6dedd47e99ecb7ed63bcde5d6"; // Your client id
+var redirectUri = "http://localhost:3000/";
 var scopes = ["user-read-currently-playing", "user-read-recently-played", "user-read-playback-state", "user-top-read", "user-modify-playback-state", "streaming", "user-read-private"];
 var getTokenFromResponse = function getTokenFromResponse() {
   return window.location.hash.substring(1).split("&").reduce(function (initial, item) {
@@ -10580,17 +10687,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "initialState": () => (/* binding */ initialState)
 /* harmony export */ });
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
-function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
-function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
-function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
-function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 var initialState = {
   user: null,
   playlists: [],
@@ -10611,9 +10718,7 @@ var initialState = {
   device_id: null,
   refresh_token: null,
   volume: null,
-  search_term: "",
   search: [],
-  queue: [],
   platform: "Spotify",
   link: "https://soundcloud.com/liltjay/f-n",
   //https://www.youtube.com/watch?v=jx96Twg-Aew"
@@ -10626,21 +10731,10 @@ var reducer = function reducer(state, action) {
   //console.log(action)
   switch (action.type) {
     case 'SET_QUEUE':
-      var nQueue = _toConsumableArray(state.queue);
-      nQueue.push(action.queue);
+      console.log(action.queue);
       return _objectSpread(_objectSpread({}, state), {}, {
-        queue: [].concat(_toConsumableArray(state.queue), [action.payload])
+        queue: [].concat(_toConsumableArray(state.queue), [action.queue])
       });
-    // case 'REMOVE_FROM_QUEUE':
-    //     let newQueue = [...state.queue];
-    //     if (newQueue.index(action.item) !== 0) {
-    //         newQueue.splice(action.index, 1);
-    //         return {
-    //             ...state,
-    //             queue: newQueue
-    //         };
-    //     };
-    //     break;
     case 'SET_PAGE':
       return _objectSpread(_objectSpread({}, state), {}, {
         page: action.page
@@ -10756,6 +10850,160 @@ var reportWebVitals = function reportWebVitals(onPerfEntry) {
   }
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (reportWebVitals);
+
+/***/ }),
+
+/***/ "./src/store.js":
+/*!**********************!*\
+  !*** ./src/store.js ***!
+  \**********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
+/* harmony export */   "useActions": () => (/* binding */ useActions),
+/* harmony export */   "useSpotify": () => (/* binding */ useSpotify)
+/* harmony export */ });
+/* harmony import */ var zustand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zustand */ "./node_modules/zustand/esm/index.mjs");
+/* harmony import */ var zustand_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! zustand/middleware */ "./node_modules/zustand/esm/middleware.mjs");
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+
+
+var queueStore = function queueStore(set, get) {
+  return {
+    queue: [],
+    queuePosition: 0,
+    addQueue: function addQueue(song) {
+      return set(function (state) {
+        return {
+          queue: [].concat(_toConsumableArray(state.queue), [song])
+        };
+      });
+    },
+    addFrontQueue: function addFrontQueue(song) {
+      var _get$queue;
+      if (((_get$queue = get().queue) === null || _get$queue === void 0 ? void 0 : _get$queue.length) > 0) {
+        set(function (state) {
+          return {
+            queue: [get().queue[0], song].concat(_toConsumableArray(state.queue.slice[1]))
+          };
+        });
+      } else set(function () {
+        return {
+          queue: [song]
+        };
+      });
+    },
+    getQueue: function getQueue() {
+      return get().queue[get().queuePosition];
+    },
+    getQueuePosition: function getQueuePosition() {
+      return get().queuePosition;
+    },
+    pop: function pop() {
+      return set(function (state) {
+        return {
+          queuePosition: state.queuePosition + 1
+        };
+      });
+    },
+    back: function back() {
+      return set(function (state) {
+        return {
+          queuePosition: state.queuePosition - 1
+        };
+      });
+    },
+    getPlaying: function getPlaying() {
+      return get().queue[get().queuePosition - 1];
+    }
+  };
+};
+var actionsStore = function actionsStore(set, get) {
+  return {
+    reverseStatus: false,
+    reverseButton: null,
+    platform: "Spotify",
+    skipButton: null,
+    playbackStatus: null,
+    setPlaybackStatus: function setPlaybackStatus(status) {
+      return set({
+        playbackStatus: status
+      });
+    },
+    getPlaybackStatus: function getPlaybackStatus() {
+      return get().playbackStatus;
+    },
+    setSkipButton: function setSkipButton(button) {
+      return set({
+        skipButton: button
+      });
+    },
+    skip: function skip() {
+      var _get$skipButton$curre;
+      return (_get$skipButton$curre = get().skipButton.current) === null || _get$skipButton$curre === void 0 ? void 0 : _get$skipButton$curre.dispatchEvent(new MouseEvent("click", {
+        view: window,
+        bubbles: true,
+        cancelable: true,
+        buttons: 1
+      }));
+    },
+    setReverseButton: function setReverseButton(button) {
+      return set({
+        skipButton: button
+      });
+    },
+    reverse: function reverse() {
+      var _get$reverseButton$cu;
+      return (_get$reverseButton$cu = get().reverseButton.current) === null || _get$reverseButton$cu === void 0 ? void 0 : _get$reverseButton$cu.dispatchEvent(new MouseEvent("click", {
+        view: window,
+        bubbles: true,
+        cancelable: true,
+        buttons: 1
+      }));
+    },
+    getReverseStatus: function getReverseStatus() {
+      return get().reverseStatus;
+    },
+    setPlatform: function setPlatform(platform) {
+      return set({
+        platform: platform
+      });
+    },
+    getPlatform: function getPlatform() {
+      return get().platform;
+    }
+  };
+};
+var spotifyStore = function spotifyStore(set, get) {
+  return {
+    song: "",
+    setSong: function setSong(song) {
+      return set({
+        song: song
+      });
+    },
+    getSong: function getSong() {
+      return get().song;
+    }
+  };
+};
+spotifyStore = (0,zustand_middleware__WEBPACK_IMPORTED_MODULE_0__.devtools)(spotifyStore);
+actionsStore = (0,zustand_middleware__WEBPACK_IMPORTED_MODULE_0__.devtools)(actionsStore);
+queueStore = (0,zustand_middleware__WEBPACK_IMPORTED_MODULE_0__.devtools)(queueStore);
+var useQueue = (0,zustand__WEBPACK_IMPORTED_MODULE_1__["default"])(queueStore);
+var useActions = (0,zustand__WEBPACK_IMPORTED_MODULE_1__["default"])(actionsStore);
+var useSpotify = (0,zustand__WEBPACK_IMPORTED_MODULE_1__["default"])(spotifyStore);
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useQueue);
 
 /***/ }),
 
@@ -11136,7 +11384,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".songRow {\n  margin-left: 20px;\n  padding: 20px;\n  display: flex;\n  align-items: center;\n  color: white;\n}\n\n.songRow:hover {\n  cursor: pointer;\n  background: #050394;\n  opacity: 0.8;\n}\n\n.songRow_info {\n  margin-left: 20px;\n}\n\n.songRow_info > h1 {\n  font-size: 16px;\n}\n\n.songRow_info > p {\n  font-size: 14px;\n  margin-top: 3px;\n  color: lightgray;\n}\n\n.songRow_album {\n  height: 3em;\n  width: 3em;\n  margin-right: 30px;\n  color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n  height: 3em;\n  width: 3em;\n  margin-left: 10px;\n  margin-right: 45px;\n  color: rgb(172, 246, 246);\n}\n\n.songRow_search {\n  max-height: 80px;\n}", "",{"version":3,"sources":["webpack://./src/styles/SongRow.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;EACA,YAAA;AACJ;;AAEA;EACI,iBAAA;AACJ;;AAEA;EACI,eAAA;AACJ;;AAEA;EACI,eAAA;EACA,eAAA;EACA,gBAAA;AACJ;;AAEA;EACI,WAAA;EACA,UAAA;EACA,kBAAA;EACA,yBAAA;AACJ;;AAEA;EACI,WAAA;EACA,UAAA;EACA,iBAAA;EACA,kBAAA;EACA,yBAAA;AACJ;;AAEA;EACI,gBAAA;AACJ","sourcesContent":[".songRow {\n    margin-left: 20px;\n    padding: 20px;\n    display: flex;\n    align-items: center;\n    color: white;\n}\n\n.songRow:hover {\n    cursor: pointer;\n    background: #050394;\n    opacity: 0.8;\n}\n\n.songRow_info {\n    margin-left: 20px;\n}\n\n.songRow_info > h1 {\n    font-size: 16px;\n}\n\n.songRow_info > p {\n    font-size: 14px;\n    margin-top: 3px;\n    color: lightgray;\n}\n\n.songRow_album {\n    height: 3em;\n    width: 3em;\n    margin-right: 30px;\n    color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n    height: 3em;\n    width: 3em;\n    margin-left: 10px;\n    margin-right: 45px;\n    color: rgb(172, 246, 246);\n}\n\n.songRow_search {\n    max-height: 80px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".songRow {\n  margin-left: 20px;\n  padding: 20px;\n  display: flex;\n  align-items: center;\n  color: white;\n}\n\n.songRow:hover {\n  cursor: pointer;\n  background: #050394;\n  opacity: 0.8;\n}\n\n.songRow_info {\n  margin-left: 20px;\n}\n\n.songRow_info > h1 {\n  font-size: 16px;\n}\n\n.songRow_info > p {\n  font-size: 14px;\n  margin-top: 3px;\n  color: lightgray;\n}\n\n.songRow_album {\n  height: 3em;\n  width: 3em;\n  margin-right: 30px;\n  color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n  height: 3em;\n  width: 3em;\n  margin-left: 10px;\n  margin-right: 45px;\n  color: rgb(172, 246, 246);\n}\n\n.songRow_search {\n  max-height: 80px;\n}\n\n.songRow_controls {\n  display: flex;\n  align-items: left;\n}", "",{"version":3,"sources":["webpack://./src/styles/SongRow.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;EACA,YAAA;AACJ;;AAEA;EACI,iBAAA;AACJ;;AAEA;EACI,eAAA;AACJ;;AAEA;EACI,eAAA;EACA,eAAA;EACA,gBAAA;AACJ;;AAEA;EACI,WAAA;EACA,UAAA;EACA,kBAAA;EACA,yBAAA;AACJ;;AAEA;EACI,WAAA;EACA,UAAA;EACA,iBAAA;EACA,kBAAA;EACA,yBAAA;AACJ;;AAEA;EACI,gBAAA;AACJ;;AAEA;EACI,aAAA;EACA,iBAAA;AACJ","sourcesContent":[".songRow {\n    margin-left: 20px;\n    padding: 20px;\n    display: flex;\n    align-items: center;\n    color: white;\n}\n\n.songRow:hover {\n    cursor: pointer;\n    background: #050394;\n    opacity: 0.8;\n}\n\n.songRow_info {\n    margin-left: 20px;\n}\n\n.songRow_info > h1 {\n    font-size: 16px;\n}\n\n.songRow_info > p {\n    font-size: 14px;\n    margin-top: 3px;\n    color: lightgray;\n}\n\n.songRow_album {\n    height: 3em;\n    width: 3em;\n    margin-right: 30px;\n    color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n    height: 3em;\n    width: 3em;\n    margin-left: 10px;\n    margin-right: 45px;\n    color: rgb(172, 246, 246);\n}\n\n.songRow_search {\n    max-height: 80px;\n}\n\n.songRow_controls {\n    display: flex;\n    align-items: left;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -56261,6 +56509,464 @@ function warning(condition, message) {
 
 /***/ }),
 
+/***/ "./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js":
+/*!**********************************************************************************************!*\
+  !*** ./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js ***!
+  \**********************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/**
+ * @license React
+ * use-sync-external-store-shim.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+if (true) {
+  (function() {
+
+          'use strict';
+
+/* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
+if (
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart ===
+    'function'
+) {
+  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
+}
+          var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+
+var ReactSharedInternals = React.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED;
+
+function error(format) {
+  {
+    {
+      for (var _len2 = arguments.length, args = new Array(_len2 > 1 ? _len2 - 1 : 0), _key2 = 1; _key2 < _len2; _key2++) {
+        args[_key2 - 1] = arguments[_key2];
+      }
+
+      printWarning('error', format, args);
+    }
+  }
+}
+
+function printWarning(level, format, args) {
+  // When changing this logic, you might want to also
+  // update consoleWithStackDev.www.js as well.
+  {
+    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
+    var stack = ReactDebugCurrentFrame.getStackAddendum();
+
+    if (stack !== '') {
+      format += '%s';
+      args = args.concat([stack]);
+    } // eslint-disable-next-line react-internal/safe-string-coercion
+
+
+    var argsWithFormat = args.map(function (item) {
+      return String(item);
+    }); // Careful: RN currently depends on this prefix
+
+    argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
+    // breaks IE9: https://github.com/facebook/react/issues/13610
+    // eslint-disable-next-line react-internal/no-production-logging
+
+    Function.prototype.apply.call(console[level], console, argsWithFormat);
+  }
+}
+
+/**
+ * inlined Object.is polyfill to avoid requiring consumers ship their own
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+ */
+function is(x, y) {
+  return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y // eslint-disable-line no-self-compare
+  ;
+}
+
+var objectIs = typeof Object.is === 'function' ? Object.is : is;
+
+// dispatch for CommonJS interop named imports.
+
+var useState = React.useState,
+    useEffect = React.useEffect,
+    useLayoutEffect = React.useLayoutEffect,
+    useDebugValue = React.useDebugValue;
+var didWarnOld18Alpha = false;
+var didWarnUncachedGetSnapshot = false; // Disclaimer: This shim breaks many of the rules of React, and only works
+// because of a very particular set of implementation details and assumptions
+// -- change any one of them and it will break. The most important assumption
+// is that updates are always synchronous, because concurrent rendering is
+// only available in versions of React that also have a built-in
+// useSyncExternalStore API. And we only use this shim when the built-in API
+// does not exist.
+//
+// Do not assume that the clever hacks used by this hook also work in general.
+// The point of this shim is to replace the need for hacks by other libraries.
+
+function useSyncExternalStore(subscribe, getSnapshot, // Note: The shim does not use getServerSnapshot, because pre-18 versions of
+// React do not expose a way to check if we're hydrating. So users of the shim
+// will need to track that themselves and return the correct value
+// from `getSnapshot`.
+getServerSnapshot) {
+  {
+    if (!didWarnOld18Alpha) {
+      if (React.startTransition !== undefined) {
+        didWarnOld18Alpha = true;
+
+        error('You are using an outdated, pre-release alpha of React 18 that ' + 'does not support useSyncExternalStore. The ' + 'use-sync-external-store shim will not work correctly. Upgrade ' + 'to a newer pre-release.');
+      }
+    }
+  } // Read the current snapshot from the store on every render. Again, this
+  // breaks the rules of React, and only works here because of specific
+  // implementation details, most importantly that updates are
+  // always synchronous.
+
+
+  var value = getSnapshot();
+
+  {
+    if (!didWarnUncachedGetSnapshot) {
+      var cachedValue = getSnapshot();
+
+      if (!objectIs(value, cachedValue)) {
+        error('The result of getSnapshot should be cached to avoid an infinite loop');
+
+        didWarnUncachedGetSnapshot = true;
+      }
+    }
+  } // Because updates are synchronous, we don't queue them. Instead we force a
+  // re-render whenever the subscribed state changes by updating an some
+  // arbitrary useState hook. Then, during render, we call getSnapshot to read
+  // the current value.
+  //
+  // Because we don't actually use the state returned by the useState hook, we
+  // can save a bit of memory by storing other stuff in that slot.
+  //
+  // To implement the early bailout, we need to track some things on a mutable
+  // object. Usually, we would put that in a useRef hook, but we can stash it in
+  // our useState hook instead.
+  //
+  // To force a re-render, we call forceUpdate({inst}). That works because the
+  // new object always fails an equality check.
+
+
+  var _useState = useState({
+    inst: {
+      value: value,
+      getSnapshot: getSnapshot
+    }
+  }),
+      inst = _useState[0].inst,
+      forceUpdate = _useState[1]; // Track the latest getSnapshot function with a ref. This needs to be updated
+  // in the layout phase so we can access it during the tearing check that
+  // happens on subscribe.
+
+
+  useLayoutEffect(function () {
+    inst.value = value;
+    inst.getSnapshot = getSnapshot; // Whenever getSnapshot or subscribe changes, we need to check in the
+    // commit phase if there was an interleaved mutation. In concurrent mode
+    // this can happen all the time, but even in synchronous mode, an earlier
+    // effect may have mutated the store.
+
+    if (checkIfSnapshotChanged(inst)) {
+      // Force a re-render.
+      forceUpdate({
+        inst: inst
+      });
+    }
+  }, [subscribe, value, getSnapshot]);
+  useEffect(function () {
+    // Check for changes right before subscribing. Subsequent changes will be
+    // detected in the subscription handler.
+    if (checkIfSnapshotChanged(inst)) {
+      // Force a re-render.
+      forceUpdate({
+        inst: inst
+      });
+    }
+
+    var handleStoreChange = function () {
+      // TODO: Because there is no cross-renderer API for batching updates, it's
+      // up to the consumer of this library to wrap their subscription event
+      // with unstable_batchedUpdates. Should we try to detect when this isn't
+      // the case and print a warning in development?
+      // The store changed. Check if the snapshot changed since the last time we
+      // read from the store.
+      if (checkIfSnapshotChanged(inst)) {
+        // Force a re-render.
+        forceUpdate({
+          inst: inst
+        });
+      }
+    }; // Subscribe to the store and return a clean-up function.
+
+
+    return subscribe(handleStoreChange);
+  }, [subscribe]);
+  useDebugValue(value);
+  return value;
+}
+
+function checkIfSnapshotChanged(inst) {
+  var latestGetSnapshot = inst.getSnapshot;
+  var prevValue = inst.value;
+
+  try {
+    var nextValue = latestGetSnapshot();
+    return !objectIs(prevValue, nextValue);
+  } catch (error) {
+    return true;
+  }
+}
+
+function useSyncExternalStore$1(subscribe, getSnapshot, getServerSnapshot) {
+  // Note: The shim does not use getServerSnapshot, because pre-18 versions of
+  // React do not expose a way to check if we're hydrating. So users of the shim
+  // will need to track that themselves and return the correct value
+  // from `getSnapshot`.
+  return getSnapshot();
+}
+
+var canUseDOM = !!(typeof window !== 'undefined' && typeof window.document !== 'undefined' && typeof window.document.createElement !== 'undefined');
+
+var isServerEnvironment = !canUseDOM;
+
+var shim = isServerEnvironment ? useSyncExternalStore$1 : useSyncExternalStore;
+var useSyncExternalStore$2 = React.useSyncExternalStore !== undefined ? React.useSyncExternalStore : shim;
+
+exports.useSyncExternalStore = useSyncExternalStore$2;
+          /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
+if (
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop ===
+    'function'
+) {
+  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+}
+        
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js":
+/*!************************************************************************************************************!*\
+  !*** ./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js ***!
+  \************************************************************************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+/**
+ * @license React
+ * use-sync-external-store-shim/with-selector.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+
+
+if (true) {
+  (function() {
+
+          'use strict';
+
+/* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
+if (
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart ===
+    'function'
+) {
+  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStart(new Error());
+}
+          var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+var shim = __webpack_require__(/*! use-sync-external-store/shim */ "./node_modules/use-sync-external-store/shim/index.js");
+
+/**
+ * inlined Object.is polyfill to avoid requiring consumers ship their own
+ * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
+ */
+function is(x, y) {
+  return x === y && (x !== 0 || 1 / x === 1 / y) || x !== x && y !== y // eslint-disable-line no-self-compare
+  ;
+}
+
+var objectIs = typeof Object.is === 'function' ? Object.is : is;
+
+var useSyncExternalStore = shim.useSyncExternalStore;
+
+// for CommonJS interop.
+
+var useRef = React.useRef,
+    useEffect = React.useEffect,
+    useMemo = React.useMemo,
+    useDebugValue = React.useDebugValue; // Same as useSyncExternalStore, but supports selector and isEqual arguments.
+
+function useSyncExternalStoreWithSelector(subscribe, getSnapshot, getServerSnapshot, selector, isEqual) {
+  // Use this to track the rendered snapshot.
+  var instRef = useRef(null);
+  var inst;
+
+  if (instRef.current === null) {
+    inst = {
+      hasValue: false,
+      value: null
+    };
+    instRef.current = inst;
+  } else {
+    inst = instRef.current;
+  }
+
+  var _useMemo = useMemo(function () {
+    // Track the memoized state using closure variables that are local to this
+    // memoized instance of a getSnapshot function. Intentionally not using a
+    // useRef hook, because that state would be shared across all concurrent
+    // copies of the hook/component.
+    var hasMemo = false;
+    var memoizedSnapshot;
+    var memoizedSelection;
+
+    var memoizedSelector = function (nextSnapshot) {
+      if (!hasMemo) {
+        // The first time the hook is called, there is no memoized result.
+        hasMemo = true;
+        memoizedSnapshot = nextSnapshot;
+
+        var _nextSelection = selector(nextSnapshot);
+
+        if (isEqual !== undefined) {
+          // Even if the selector has changed, the currently rendered selection
+          // may be equal to the new selection. We should attempt to reuse the
+          // current value if possible, to preserve downstream memoizations.
+          if (inst.hasValue) {
+            var currentSelection = inst.value;
+
+            if (isEqual(currentSelection, _nextSelection)) {
+              memoizedSelection = currentSelection;
+              return currentSelection;
+            }
+          }
+        }
+
+        memoizedSelection = _nextSelection;
+        return _nextSelection;
+      } // We may be able to reuse the previous invocation's result.
+
+
+      // We may be able to reuse the previous invocation's result.
+      var prevSnapshot = memoizedSnapshot;
+      var prevSelection = memoizedSelection;
+
+      if (objectIs(prevSnapshot, nextSnapshot)) {
+        // The snapshot is the same as last time. Reuse the previous selection.
+        return prevSelection;
+      } // The snapshot has changed, so we need to compute a new selection.
+
+
+      // The snapshot has changed, so we need to compute a new selection.
+      var nextSelection = selector(nextSnapshot); // If a custom isEqual function is provided, use that to check if the data
+      // has changed. If it hasn't, return the previous selection. That signals
+      // to React that the selections are conceptually equal, and we can bail
+      // out of rendering.
+
+      // If a custom isEqual function is provided, use that to check if the data
+      // has changed. If it hasn't, return the previous selection. That signals
+      // to React that the selections are conceptually equal, and we can bail
+      // out of rendering.
+      if (isEqual !== undefined && isEqual(prevSelection, nextSelection)) {
+        return prevSelection;
+      }
+
+      memoizedSnapshot = nextSnapshot;
+      memoizedSelection = nextSelection;
+      return nextSelection;
+    }; // Assigning this to a constant so that Flow knows it can't change.
+
+
+    // Assigning this to a constant so that Flow knows it can't change.
+    var maybeGetServerSnapshot = getServerSnapshot === undefined ? null : getServerSnapshot;
+
+    var getSnapshotWithSelector = function () {
+      return memoizedSelector(getSnapshot());
+    };
+
+    var getServerSnapshotWithSelector = maybeGetServerSnapshot === null ? undefined : function () {
+      return memoizedSelector(maybeGetServerSnapshot());
+    };
+    return [getSnapshotWithSelector, getServerSnapshotWithSelector];
+  }, [getSnapshot, getServerSnapshot, selector, isEqual]),
+      getSelection = _useMemo[0],
+      getServerSelection = _useMemo[1];
+
+  var value = useSyncExternalStore(subscribe, getSelection, getServerSelection);
+  useEffect(function () {
+    inst.hasValue = true;
+    inst.value = value;
+  }, [value]);
+  useDebugValue(value);
+  return value;
+}
+
+exports.useSyncExternalStoreWithSelector = useSyncExternalStoreWithSelector;
+          /* global __REACT_DEVTOOLS_GLOBAL_HOOK__ */
+if (
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__ !== 'undefined' &&
+  typeof __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop ===
+    'function'
+) {
+  __REACT_DEVTOOLS_GLOBAL_HOOK__.registerInternalModuleStop(new Error());
+}
+        
+  })();
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/use-sync-external-store/shim/index.js":
+/*!************************************************************!*\
+  !*** ./node_modules/use-sync-external-store/shim/index.js ***!
+  \************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ../cjs/use-sync-external-store-shim.development.js */ "./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim.development.js");
+}
+
+
+/***/ }),
+
+/***/ "./node_modules/use-sync-external-store/shim/with-selector.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/use-sync-external-store/shim/with-selector.js ***!
+  \********************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+if (false) {} else {
+  module.exports = __webpack_require__(/*! ../cjs/use-sync-external-store-shim/with-selector.development.js */ "./node_modules/use-sync-external-store/cjs/use-sync-external-store-shim/with-selector.development.js");
+}
+
+
+/***/ }),
+
 /***/ "./node_modules/youtube-search/index.js":
 /*!**********************************************!*\
   !*** ./node_modules/youtube-search/index.js ***!
@@ -77302,6 +78008,722 @@ const defaultTreeAdapter = {
     },
 };
 //# sourceMappingURL=default.js.map
+
+/***/ }),
+
+/***/ "./node_modules/zustand/esm/index.mjs":
+/*!********************************************!*\
+  !*** ./node_modules/zustand/esm/index.mjs ***!
+  \********************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "create": () => (/* binding */ create),
+/* harmony export */   "createStore": () => (/* reexport safe */ zustand_vanilla__WEBPACK_IMPORTED_MODULE_0__.createStore),
+/* harmony export */   "default": () => (/* binding */ react),
+/* harmony export */   "useStore": () => (/* binding */ useStore)
+/* harmony export */ });
+/* harmony import */ var zustand_vanilla__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! zustand/vanilla */ "./node_modules/zustand/esm/vanilla.mjs");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var use_sync_external_store_shim_with_selector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! use-sync-external-store/shim/with-selector.js */ "./node_modules/use-sync-external-store/shim/with-selector.js");
+
+
+
+
+
+const { useSyncExternalStoreWithSelector } = use_sync_external_store_shim_with_selector_js__WEBPACK_IMPORTED_MODULE_2__;
+function useStore(api, selector = api.getState, equalityFn) {
+  const slice = useSyncExternalStoreWithSelector(
+    api.subscribe,
+    api.getState,
+    api.getServerState || api.getState,
+    selector,
+    equalityFn
+  );
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useDebugValue)(slice);
+  return slice;
+}
+const createImpl = (createState) => {
+  var _a;
+  if (((_a = /* unsupported import.meta.env */ undefined) == null ? void 0 : _a.MODE) !== "production" && typeof createState !== "function") {
+    console.warn(
+      "[DEPRECATED] Passing a vanilla store will be unsupported in a future version. Instead use `import { useStore } from 'zustand'`."
+    );
+  }
+  const api = typeof createState === "function" ? (0,zustand_vanilla__WEBPACK_IMPORTED_MODULE_0__.createStore)(createState) : createState;
+  const useBoundStore = (selector, equalityFn) => useStore(api, selector, equalityFn);
+  Object.assign(useBoundStore, api);
+  return useBoundStore;
+};
+const create = (createState) => createState ? createImpl(createState) : createImpl;
+var react = (createState) => {
+  var _a;
+  if (((_a = /* unsupported import.meta.env */ undefined) == null ? void 0 : _a.MODE) !== "production") {
+    console.warn(
+      "[DEPRECATED] Default export is deprecated. Instead use `import { create } from 'zustand'`."
+    );
+  }
+  return create(createState);
+};
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/zustand/esm/middleware.mjs":
+/*!*************************************************!*\
+  !*** ./node_modules/zustand/esm/middleware.mjs ***!
+  \*************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "combine": () => (/* binding */ combine),
+/* harmony export */   "createJSONStorage": () => (/* binding */ createJSONStorage),
+/* harmony export */   "devtools": () => (/* binding */ devtools),
+/* harmony export */   "persist": () => (/* binding */ persist),
+/* harmony export */   "redux": () => (/* binding */ redux),
+/* harmony export */   "subscribeWithSelector": () => (/* binding */ subscribeWithSelector)
+/* harmony export */ });
+const reduxImpl = (reducer, initial) => (set, _get, api) => {
+  api.dispatch = (action) => {
+    set((state) => reducer(state, action), false, action);
+    return action;
+  };
+  api.dispatchFromDevtools = true;
+  return { dispatch: (...a) => api.dispatch(...a), ...initial };
+};
+const redux = reduxImpl;
+
+const trackedConnections = /* @__PURE__ */ new Map();
+const getTrackedConnectionState = (name) => {
+  const api = trackedConnections.get(name);
+  if (!api)
+    return {};
+  return Object.fromEntries(
+    Object.entries(api.stores).map(([key, api2]) => [key, api2.getState()])
+  );
+};
+const extractConnectionInformation = (store, extensionConnector, options) => {
+  if (store === void 0) {
+    return {
+      type: "untracked",
+      connection: extensionConnector.connect(options)
+    };
+  }
+  const existingConnection = trackedConnections.get(options.name);
+  if (existingConnection) {
+    return { type: "tracked", store, ...existingConnection };
+  }
+  const newConnection = {
+    connection: extensionConnector.connect(options),
+    stores: {}
+  };
+  trackedConnections.set(options.name, newConnection);
+  return { type: "tracked", store, ...newConnection };
+};
+const devtoolsImpl = (fn, devtoolsOptions = {}) => (set, get, api) => {
+  var _a, _b;
+  const { enabled, anonymousActionType, store, ...options } = devtoolsOptions;
+  let extensionConnector;
+  try {
+    extensionConnector = (enabled != null ? enabled : ((_a = /* unsupported import.meta.env */ undefined) == null ? void 0 : _a.MODE) !== "production") && window.__REDUX_DEVTOOLS_EXTENSION__;
+  } catch (e) {
+  }
+  if (!extensionConnector) {
+    if (((_b = /* unsupported import.meta.env */ undefined) == null ? void 0 : _b.MODE) !== "production" && enabled) {
+      console.warn(
+        "[zustand devtools middleware] Please install/enable Redux devtools extension"
+      );
+    }
+    return fn(set, get, api);
+  }
+  const { connection, ...connectionInformation } = extractConnectionInformation(store, extensionConnector, options);
+  let isRecording = true;
+  api.setState = (state, replace, nameOrAction) => {
+    const r = set(state, replace);
+    if (!isRecording)
+      return r;
+    const action = nameOrAction === void 0 ? { type: anonymousActionType || "anonymous" } : typeof nameOrAction === "string" ? { type: nameOrAction } : nameOrAction;
+    if (store === void 0) {
+      connection == null ? void 0 : connection.send(action, get());
+      return r;
+    }
+    connection == null ? void 0 : connection.send(
+      {
+        ...action,
+        type: `${store}/${action.type}`
+      },
+      {
+        ...getTrackedConnectionState(options.name),
+        [store]: api.getState()
+      }
+    );
+    return r;
+  };
+  const setStateFromDevtools = (...a) => {
+    const originalIsRecording = isRecording;
+    isRecording = false;
+    set(...a);
+    isRecording = originalIsRecording;
+  };
+  const initialState = fn(api.setState, get, api);
+  if (connectionInformation.type === "untracked") {
+    connection == null ? void 0 : connection.init(initialState);
+  } else {
+    connectionInformation.stores[connectionInformation.store] = api;
+    connection == null ? void 0 : connection.init(
+      Object.fromEntries(
+        Object.entries(connectionInformation.stores).map(([key, store2]) => [
+          key,
+          key === connectionInformation.store ? initialState : store2.getState()
+        ])
+      )
+    );
+  }
+  if (api.dispatchFromDevtools && typeof api.dispatch === "function") {
+    let didWarnAboutReservedActionType = false;
+    const originalDispatch = api.dispatch;
+    api.dispatch = (...a) => {
+      var _a2;
+      if (((_a2 = /* unsupported import.meta.env */ undefined) == null ? void 0 : _a2.MODE) !== "production" && a[0].type === "__setState" && !didWarnAboutReservedActionType) {
+        console.warn(
+          '[zustand devtools middleware] "__setState" action type is reserved to set state from the devtools. Avoid using it.'
+        );
+        didWarnAboutReservedActionType = true;
+      }
+      originalDispatch(...a);
+    };
+  }
+  connection.subscribe((message) => {
+    var _a2;
+    switch (message.type) {
+      case "ACTION":
+        if (typeof message.payload !== "string") {
+          console.error(
+            "[zustand devtools middleware] Unsupported action format"
+          );
+          return;
+        }
+        return parseJsonThen(
+          message.payload,
+          (action) => {
+            if (action.type === "__setState") {
+              if (store === void 0) {
+                setStateFromDevtools(action.state);
+                return;
+              }
+              if (Object.keys(action.state).length !== 1) {
+                console.error(
+                  `
+                    [zustand devtools middleware] Unsupported __setState action format. 
+                    When using 'store' option in devtools(), the 'state' should have only one key, which is a value of 'store' that was passed in devtools(),
+                    and value of this only key should be a state object. Example: { "type": "__setState", "state": { "abc123Store": { "foo": "bar" } } }
+                    `
+                );
+              }
+              const stateFromDevtools = action.state[store];
+              if (stateFromDevtools === void 0 || stateFromDevtools === null) {
+                return;
+              }
+              if (JSON.stringify(api.getState()) !== JSON.stringify(stateFromDevtools)) {
+                setStateFromDevtools(stateFromDevtools);
+              }
+              return;
+            }
+            if (!api.dispatchFromDevtools)
+              return;
+            if (typeof api.dispatch !== "function")
+              return;
+            api.dispatch(action);
+          }
+        );
+      case "DISPATCH":
+        switch (message.payload.type) {
+          case "RESET":
+            setStateFromDevtools(initialState);
+            if (store === void 0) {
+              return connection == null ? void 0 : connection.init(api.getState());
+            }
+            return connection == null ? void 0 : connection.init(getTrackedConnectionState(options.name));
+          case "COMMIT":
+            if (store === void 0) {
+              connection == null ? void 0 : connection.init(api.getState());
+              return;
+            }
+            return connection == null ? void 0 : connection.init(getTrackedConnectionState(options.name));
+          case "ROLLBACK":
+            return parseJsonThen(message.state, (state) => {
+              if (store === void 0) {
+                setStateFromDevtools(state);
+                connection == null ? void 0 : connection.init(api.getState());
+                return;
+              }
+              setStateFromDevtools(state[store]);
+              connection == null ? void 0 : connection.init(getTrackedConnectionState(options.name));
+            });
+          case "JUMP_TO_STATE":
+          case "JUMP_TO_ACTION":
+            return parseJsonThen(message.state, (state) => {
+              if (store === void 0) {
+                setStateFromDevtools(state);
+                return;
+              }
+              if (JSON.stringify(api.getState()) !== JSON.stringify(state[store])) {
+                setStateFromDevtools(state[store]);
+              }
+            });
+          case "IMPORT_STATE": {
+            const { nextLiftedState } = message.payload;
+            const lastComputedState = (_a2 = nextLiftedState.computedStates.slice(-1)[0]) == null ? void 0 : _a2.state;
+            if (!lastComputedState)
+              return;
+            if (store === void 0) {
+              setStateFromDevtools(lastComputedState);
+            } else {
+              setStateFromDevtools(lastComputedState[store]);
+            }
+            connection == null ? void 0 : connection.send(
+              null,
+              // FIXME no-any
+              nextLiftedState
+            );
+            return;
+          }
+          case "PAUSE_RECORDING":
+            return isRecording = !isRecording;
+        }
+        return;
+    }
+  });
+  return initialState;
+};
+const devtools = devtoolsImpl;
+const parseJsonThen = (stringified, f) => {
+  let parsed;
+  try {
+    parsed = JSON.parse(stringified);
+  } catch (e) {
+    console.error(
+      "[zustand devtools middleware] Could not parse the received json",
+      e
+    );
+  }
+  if (parsed !== void 0)
+    f(parsed);
+};
+
+const subscribeWithSelectorImpl = (fn) => (set, get, api) => {
+  const origSubscribe = api.subscribe;
+  api.subscribe = (selector, optListener, options) => {
+    let listener = selector;
+    if (optListener) {
+      const equalityFn = (options == null ? void 0 : options.equalityFn) || Object.is;
+      let currentSlice = selector(api.getState());
+      listener = (state) => {
+        const nextSlice = selector(state);
+        if (!equalityFn(currentSlice, nextSlice)) {
+          const previousSlice = currentSlice;
+          optListener(currentSlice = nextSlice, previousSlice);
+        }
+      };
+      if (options == null ? void 0 : options.fireImmediately) {
+        optListener(currentSlice, currentSlice);
+      }
+    }
+    return origSubscribe(listener);
+  };
+  const initialState = fn(set, get, api);
+  return initialState;
+};
+const subscribeWithSelector = subscribeWithSelectorImpl;
+
+const combine = (initialState, create) => (...a) => Object.assign({}, initialState, create(...a));
+
+function createJSONStorage(getStorage) {
+  let storage;
+  try {
+    storage = getStorage();
+  } catch (e) {
+    return;
+  }
+  const persistStorage = {
+    getItem: (name) => {
+      var _a;
+      const parse = (str2) => {
+        if (str2 === null) {
+          return null;
+        }
+        return JSON.parse(str2);
+      };
+      const str = (_a = storage.getItem(name)) != null ? _a : null;
+      if (str instanceof Promise) {
+        return str.then(parse);
+      }
+      return parse(str);
+    },
+    setItem: (name, newValue) => storage.setItem(name, JSON.stringify(newValue)),
+    removeItem: (name) => storage.removeItem(name)
+  };
+  return persistStorage;
+}
+const toThenable = (fn) => (input) => {
+  try {
+    const result = fn(input);
+    if (result instanceof Promise) {
+      return result;
+    }
+    return {
+      then(onFulfilled) {
+        return toThenable(onFulfilled)(result);
+      },
+      catch(_onRejected) {
+        return this;
+      }
+    };
+  } catch (e) {
+    return {
+      then(_onFulfilled) {
+        return this;
+      },
+      catch(onRejected) {
+        return toThenable(onRejected)(e);
+      }
+    };
+  }
+};
+const oldImpl = (config, baseOptions) => (set, get, api) => {
+  let options = {
+    getStorage: () => localStorage,
+    serialize: JSON.stringify,
+    deserialize: JSON.parse,
+    partialize: (state) => state,
+    version: 0,
+    merge: (persistedState, currentState) => ({
+      ...currentState,
+      ...persistedState
+    }),
+    ...baseOptions
+  };
+  let hasHydrated = false;
+  const hydrationListeners = /* @__PURE__ */ new Set();
+  const finishHydrationListeners = /* @__PURE__ */ new Set();
+  let storage;
+  try {
+    storage = options.getStorage();
+  } catch (e) {
+  }
+  if (!storage) {
+    return config(
+      (...args) => {
+        console.warn(
+          `[zustand persist middleware] Unable to update item '${options.name}', the given storage is currently unavailable.`
+        );
+        set(...args);
+      },
+      get,
+      api
+    );
+  }
+  const thenableSerialize = toThenable(options.serialize);
+  const setItem = () => {
+    const state = options.partialize({ ...get() });
+    let errorInSync;
+    const thenable = thenableSerialize({ state, version: options.version }).then(
+      (serializedValue) => storage.setItem(options.name, serializedValue)
+    ).catch((e) => {
+      errorInSync = e;
+    });
+    if (errorInSync) {
+      throw errorInSync;
+    }
+    return thenable;
+  };
+  const savedSetState = api.setState;
+  api.setState = (state, replace) => {
+    savedSetState(state, replace);
+    void setItem();
+  };
+  const configResult = config(
+    (...args) => {
+      set(...args);
+      void setItem();
+    },
+    get,
+    api
+  );
+  let stateFromStorage;
+  const hydrate = () => {
+    var _a;
+    if (!storage)
+      return;
+    hasHydrated = false;
+    hydrationListeners.forEach((cb) => cb(get()));
+    const postRehydrationCallback = ((_a = options.onRehydrateStorage) == null ? void 0 : _a.call(options, get())) || void 0;
+    return toThenable(storage.getItem.bind(storage))(options.name).then((storageValue) => {
+      if (storageValue) {
+        return options.deserialize(storageValue);
+      }
+    }).then((deserializedStorageValue) => {
+      if (deserializedStorageValue) {
+        if (typeof deserializedStorageValue.version === "number" && deserializedStorageValue.version !== options.version) {
+          if (options.migrate) {
+            return options.migrate(
+              deserializedStorageValue.state,
+              deserializedStorageValue.version
+            );
+          }
+          console.error(
+            `State loaded from storage couldn't be migrated since no migrate function was provided`
+          );
+        } else {
+          return deserializedStorageValue.state;
+        }
+      }
+    }).then((migratedState) => {
+      var _a2;
+      stateFromStorage = options.merge(
+        migratedState,
+        (_a2 = get()) != null ? _a2 : configResult
+      );
+      set(stateFromStorage, true);
+      return setItem();
+    }).then(() => {
+      postRehydrationCallback == null ? void 0 : postRehydrationCallback(stateFromStorage, void 0);
+      hasHydrated = true;
+      finishHydrationListeners.forEach((cb) => cb(stateFromStorage));
+    }).catch((e) => {
+      postRehydrationCallback == null ? void 0 : postRehydrationCallback(void 0, e);
+    });
+  };
+  api.persist = {
+    setOptions: (newOptions) => {
+      options = {
+        ...options,
+        ...newOptions
+      };
+      if (newOptions.getStorage) {
+        storage = newOptions.getStorage();
+      }
+    },
+    clearStorage: () => {
+      storage == null ? void 0 : storage.removeItem(options.name);
+    },
+    getOptions: () => options,
+    rehydrate: () => hydrate(),
+    hasHydrated: () => hasHydrated,
+    onHydrate: (cb) => {
+      hydrationListeners.add(cb);
+      return () => {
+        hydrationListeners.delete(cb);
+      };
+    },
+    onFinishHydration: (cb) => {
+      finishHydrationListeners.add(cb);
+      return () => {
+        finishHydrationListeners.delete(cb);
+      };
+    }
+  };
+  hydrate();
+  return stateFromStorage || configResult;
+};
+const newImpl = (config, baseOptions) => (set, get, api) => {
+  let options = {
+    storage: createJSONStorage(() => localStorage),
+    partialize: (state) => state,
+    version: 0,
+    merge: (persistedState, currentState) => ({
+      ...currentState,
+      ...persistedState
+    }),
+    ...baseOptions
+  };
+  let hasHydrated = false;
+  const hydrationListeners = /* @__PURE__ */ new Set();
+  const finishHydrationListeners = /* @__PURE__ */ new Set();
+  let storage = options.storage;
+  if (!storage) {
+    return config(
+      (...args) => {
+        console.warn(
+          `[zustand persist middleware] Unable to update item '${options.name}', the given storage is currently unavailable.`
+        );
+        set(...args);
+      },
+      get,
+      api
+    );
+  }
+  const setItem = () => {
+    const state = options.partialize({ ...get() });
+    return storage.setItem(options.name, {
+      state,
+      version: options.version
+    });
+  };
+  const savedSetState = api.setState;
+  api.setState = (state, replace) => {
+    savedSetState(state, replace);
+    void setItem();
+  };
+  const configResult = config(
+    (...args) => {
+      set(...args);
+      void setItem();
+    },
+    get,
+    api
+  );
+  let stateFromStorage;
+  const hydrate = () => {
+    var _a;
+    if (!storage)
+      return;
+    hasHydrated = false;
+    hydrationListeners.forEach((cb) => cb(get()));
+    const postRehydrationCallback = ((_a = options.onRehydrateStorage) == null ? void 0 : _a.call(options, get())) || void 0;
+    return toThenable(storage.getItem.bind(storage))(options.name).then((deserializedStorageValue) => {
+      if (deserializedStorageValue) {
+        if (typeof deserializedStorageValue.version === "number" && deserializedStorageValue.version !== options.version) {
+          if (options.migrate) {
+            return options.migrate(
+              deserializedStorageValue.state,
+              deserializedStorageValue.version
+            );
+          }
+          console.error(
+            `State loaded from storage couldn't be migrated since no migrate function was provided`
+          );
+        } else {
+          return deserializedStorageValue.state;
+        }
+      }
+    }).then((migratedState) => {
+      var _a2;
+      stateFromStorage = options.merge(
+        migratedState,
+        (_a2 = get()) != null ? _a2 : configResult
+      );
+      set(stateFromStorage, true);
+      return setItem();
+    }).then(() => {
+      postRehydrationCallback == null ? void 0 : postRehydrationCallback(stateFromStorage, void 0);
+      hasHydrated = true;
+      finishHydrationListeners.forEach((cb) => cb(stateFromStorage));
+    }).catch((e) => {
+      postRehydrationCallback == null ? void 0 : postRehydrationCallback(void 0, e);
+    });
+  };
+  api.persist = {
+    setOptions: (newOptions) => {
+      options = {
+        ...options,
+        ...newOptions
+      };
+      if (newOptions.storage) {
+        storage = newOptions.storage;
+      }
+    },
+    clearStorage: () => {
+      storage == null ? void 0 : storage.removeItem(options.name);
+    },
+    getOptions: () => options,
+    rehydrate: () => hydrate(),
+    hasHydrated: () => hasHydrated,
+    onHydrate: (cb) => {
+      hydrationListeners.add(cb);
+      return () => {
+        hydrationListeners.delete(cb);
+      };
+    },
+    onFinishHydration: (cb) => {
+      finishHydrationListeners.add(cb);
+      return () => {
+        finishHydrationListeners.delete(cb);
+      };
+    }
+  };
+  hydrate();
+  return stateFromStorage || configResult;
+};
+const persistImpl = (config, baseOptions) => {
+  var _a;
+  if ("getStorage" in baseOptions || "serialize" in baseOptions || "deserialize" in baseOptions) {
+    if (((_a = /* unsupported import.meta.env */ undefined) == null ? void 0 : _a.MODE) !== "production") {
+      console.warn(
+        "[DEPRECATED] `getStorage`, `serialize` and `deserialize` options are deprecated. Use `storage` option instead."
+      );
+    }
+    return oldImpl(config, baseOptions);
+  }
+  return newImpl(config, baseOptions);
+};
+const persist = persistImpl;
+
+
+
+
+/***/ }),
+
+/***/ "./node_modules/zustand/esm/vanilla.mjs":
+/*!**********************************************!*\
+  !*** ./node_modules/zustand/esm/vanilla.mjs ***!
+  \**********************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "createStore": () => (/* binding */ createStore),
+/* harmony export */   "default": () => (/* binding */ vanilla)
+/* harmony export */ });
+const createStoreImpl = (createState) => {
+  let state;
+  const listeners = /* @__PURE__ */ new Set();
+  const setState = (partial, replace) => {
+    const nextState = typeof partial === "function" ? partial(state) : partial;
+    if (!Object.is(nextState, state)) {
+      const previousState = state;
+      state = (replace != null ? replace : typeof nextState !== "object") ? nextState : Object.assign({}, state, nextState);
+      listeners.forEach((listener) => listener(state, previousState));
+    }
+  };
+  const getState = () => state;
+  const subscribe = (listener) => {
+    listeners.add(listener);
+    return () => listeners.delete(listener);
+  };
+  const destroy = () => {
+    var _a;
+    if (((_a = /* unsupported import.meta.env */ undefined) == null ? void 0 : _a.MODE) !== "production") {
+      console.warn(
+        "[DEPRECATED] The `destroy` method will be unsupported in a future version. Instead use unsubscribe function returned by subscribe. Everything will be garbage-collected if store is garbage-collected."
+      );
+    }
+    listeners.clear();
+  };
+  const api = { setState, getState, subscribe, destroy };
+  state = createState(setState, getState, api);
+  return api;
+};
+const createStore = (createState) => createState ? createStoreImpl(createState) : createStoreImpl;
+var vanilla = (createState) => {
+  var _a;
+  if (((_a = /* unsupported import.meta.env */ undefined) == null ? void 0 : _a.MODE) !== "production") {
+    console.warn(
+      "[DEPRECATED] Default export is deprecated. Instead use import { createStore } from 'zustand/vanilla'."
+    );
+  }
+  return createStore(createState);
+};
+
+
+
 
 /***/ }),
 
