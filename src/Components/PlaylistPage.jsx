@@ -9,23 +9,35 @@ import SongRow from "./SongRow.jsx";
 import useContextMenu from "./useContextMenu.jsx";
 import "../styles/PlaylistPage.scss";
 import uniqueId from "lodash/uniqueId";
+import useQueue from "../store";
+import { useActions } from "../store";
+import shuffle from "./pics/shuffle.png";
+import { useEffect } from "react";
+import axios from "axios";
+import { useSpotify } from "../store";
 
 function PlaylistPage({ spotify }) {
   //⌄ Data values extracted from data layer
-  const [{ discover_weekly, device_id, playing, item, queue }, dispatch] =
+  const [{ discover_weekly, device_id, playing, item }, dispatch] =
     useDataLayerValue();
   const { clicked, setClicked, points, setPoints } = useContextMenu();
+  const queue = useQueue((state) => state.queue);
+  const addQueue = useQueue((state) => state.addQueue);
+  const addFrontQueue = useQueue((state) => state.addFrontQueue);
+  const skip = useActions((state) => state.skip);
+  const reverse = useActions((state) => state.reverse);
+  const back = useQueue((state) => state.back);
+  const getAddToPlaylistClicked = useActions(
+    (state) => state.getAddToPlaylistClicked
+  );
 
   const handlePlaylist = (playlist) => {
     for (let i = 0; i < playlist.tracks.items.length; i++) {
       if (playlist.tracks.items[i].track.track !== undefined) {
         const newItem = { item: playlist.tracks.items[i], platform: "Spotify" };
-        dispatch({
-          type: "SET_QUEUE",
-          queue: newItem,
-        });
+        addQueue(newItem);
         console.log("added to queue", newItem);
-      }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    
+      }
     }
     console.log(queue);
   };
@@ -93,7 +105,13 @@ function PlaylistPage({ spotify }) {
 
   return (
     <div className="playlistPage">
-      <div className="playlistPage_info">
+      <div
+        className={
+          getAddToPlaylistClicked()
+            ? "blurTitle playlistPage_info"
+            : "playlistPage_info"
+        }
+      >
         <img src={discover_weekly?.images[0].url} alt="" />
         <div className="playlistPage_infoText">
           <strong>PLAYLIST</strong>
@@ -102,18 +120,29 @@ function PlaylistPage({ spotify }) {
         </div>
       </div>
       <div className="playlistPage_songs">
-        <div className="playlistPage_icons">
+        <div
+          className={
+            getAddToPlaylistClicked()
+              ? "blurTitle playlistPage_icons"
+              : "playlistPage_icons"
+          }
+        >
           {playing && discover_weekly.id === item.id ? (
             <PauseCircleFilledIcon
-              className="playlistPage_shuffle"
+              className="playlistPage_play"
               onClick={() => setPlayer(discover_weekly)}
             />
           ) : (
             <PlayCircleFilledIcon
-              className="playlistPage_shuffle"
+              className="playlistPage_play"
               onClick={() => handlePlaylist(discover_weekly)}
             />
           )}
+          <img
+            src={shuffle}
+            className="playlistPage_shuffle"
+            onClick={() => {}}
+          />
           <FavoriteIcon fontSize="large" />
           <MoreHorizIcon />
         </div>
@@ -123,7 +152,10 @@ function PlaylistPage({ spotify }) {
             <div
               id={item.track.id}
               key={item.track.id}
-              onClick={() => setPlayer(item.track)}
+              // onClick={() => {
+              //   addFrontQueue({ item: item, platform: "Spotify" });
+              //   skip();
+              // }}
               onContextMenu={(e) => updateContextMenu(e, item.track)}
             >
               <SongRow

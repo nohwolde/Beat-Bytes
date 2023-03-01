@@ -1,9 +1,5 @@
 import * as cheerio from "cheerio";
 import axios from "axios";
-const instance = axios.create({
-  baseURL: "https://soundcloud.com/",
-});
-
 var __awaiter =
   (this && this.__awaiter) ||
   function (thisArg, _arguments, P, generator) {

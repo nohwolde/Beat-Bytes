@@ -2,10 +2,12 @@ import React from "react";
 import { useDataLayerValue } from "../DataLayer";
 import "../styles/HomePage.scss";
 import uniqueId from "lodash/uniqueId";
+import { useSpotify } from "../store";
 
 function HomePage({ spotify }) {
   //⌄ Data values extracted from data layer
-  const [{ playlists }, dispatch] = useDataLayerValue();
+  const [{}, dispatch] = useDataLayerValue();
+  const playlists = useSpotify((state) => state.playlists);
 
   // function that updates the playlist being displayed in the body component
   const setBody = (playlist) => {

@@ -89,9 +89,12 @@ function SearchPage({ spotify }) {
         search.map((track) => (
           <div
             key={uniqueId("search-")}
-            onClick={() =>
-              !track.platform ? setPlayer(track) : setReactPlayer(track)
-            }
+            onClick={() => {
+              addFrontQueue({
+                item: track,
+                platform: !track.platform ? "Spotify" : track.platform,
+              });
+            }}
             onContextMenu={(e) => updateContextMenu(e, track)}
           >
             <SongRow key={uniqueId("songRow-")} track={track} />

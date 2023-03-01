@@ -55,8 +55,10 @@
     max-width: 220px;
 }
 
-.footer_green {
-    // color: purple;
+.footer_shuffle {
+    filter: invert(1);
+    max-width: 39px;
+    max-height: 28px;
 }
 
 .footer_songInfo {

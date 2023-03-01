@@ -7,6 +7,7 @@ import useContextMenu from "./useContextMenu.jsx";
 import PlaylistPage from "./PlaylistPage.jsx";
 import SearchPage from "./SearchPage.jsx";
 import HomePage from "./HomePage.jsx";
+import { useActions } from "../store";
 
 const data = [
   {
@@ -23,6 +24,9 @@ function Body({ spotify }) {
   //⌄ Data values extracted from data layer
   const [{ page }, dispatch] = useDataLayerValue();
   const { clicked, setClicked, points, setPoints } = useContextMenu();
+  const getAddToPlaylistClicked = useActions(
+    (state) => state.getAddToPlaylistClicked
+  );
 
   useEffect(() => {
     setTimeout(() => {
@@ -58,10 +62,8 @@ function Body({ spotify }) {
         <HomePage spotify={spotify} />
       ) : page === "Search" ? (
         <SearchPage spotify={spotify} />
-      ) : page === "Discover Weekly" ? (
-        <PlaylistPage spotify={spotify} />
       ) : (
-        <div></div>
+        <PlaylistPage spotify={spotify} />
       )}
     </div>
   );

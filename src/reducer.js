@@ -9,9 +9,7 @@ export const initialState = {
     device_id: null,
     refresh_token: null,
     volume: null,
-    search_term: "",
     search: [],
-    queue: [],
     platform: "Spotify",
     link: "https://soundcloud.com/liltjay/f-n", //https://www.youtube.com/watch?v=jx96Twg-Aew"
     //Remove after finished developing
@@ -29,16 +27,6 @@ const reducer = (state, action) => {
                 ...state,
                 queue: [...state.queue, action.queue]
             };
-        // case 'REMOVE_FROM_QUEUE':
-        //     let newQueue = [...state.queue];
-        //     if (newQueue.index(action.item) !== 0) {
-        //         newQueue.splice(action.index, 1);
-        //         return {
-        //             ...state,
-        //             queue: newQueue
-        //         };
-        //     };
-        //     break;
         case 'SET_PAGE':
             return {
                 ...state,
@@ -62,7 +50,7 @@ const reducer = (state, action) => {
         case 'SET_DISCOVER_WEEKLY':
             console.log(action.discover_weekly)
             return {
-                ...state, 
+                ...state,
                 discover_weekly: action.discover_weekly
             };
         case "SET_ITEM":
