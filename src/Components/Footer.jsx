@@ -1,22 +1,22 @@
 import React, { useState, useEffect, useRef } from "react";
 import "../styles/Footer.scss";
+
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
 import SkipPreviousIcon from "@material-ui/icons/SkipPrevious";
 import SkipNextIcon from "@material-ui/icons/SkipNext";
-import ShuffleIcon from "@material-ui/icons/Shuffle";
 import RepeatIcon from "@material-ui/icons/Repeat";
 import { Grid, Slider } from "@material-ui/core";
 import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
 import VolumeDownIcon from "@material-ui/icons/VolumeDown";
-import { useDataLayerValue } from "../DataLayer";
+import VolumeUpIcon from "@material-ui/icons/VolumeUp";
+
 import Sc from "./pics/soundcloud.svg";
 import Spot from "./pics/spot.svg";
 import Yt from "./pics/yt.svg";
 import ReactPlayer from "react-player";
-import useQueue from "../store";
+import { useQueue, useSpotify } from "../store";
 import { useActions } from "../store";
-import { useSpotify } from "../store";
 import shuffle from "./pics/shuffle.png";
 
 var script = document.createElement("script");
@@ -28,26 +28,52 @@ document.body.appendChild(script);
 
 // creates the footer/player element for the application
 function Footer({ spotify }) {
-  const [{ item, soundcloud, youtube }, dispatch] = useDataLayerValue();
   const skipButton = useRef(null);
-  const prevButton = useRef(null);
+  const reverseButton = useRef(null);
+  const pauseButton = useRef(null);
+  const playerRef = useRef(null);
 
   // Queue actions
   const getQueue = useQueue((state) => state.getQueue);
+  const getFullQueue = useQueue((state) => state.getFullQueue);
   const getPlaying = useQueue((state) => state.getPlaying);
   const pop = useQueue((state) => state.pop);
   const back = useQueue((state) => state.back);
+  const getQueuePosition = useQueue((state) => state.getQueuePosition);
+  const getQueueLength = useQueue((state) => state.getQueueLength);
+  const addQueue = useQueue((state) => state.addQueue);
+  const addFrontQueue = useQueue((state) => state.addFrontQueue);
+  const resetPlaylistPosition = useQueue(
+    (state) => state.resetPlaylistPosition
+  );
+  // ReactPlayer actions
+  const soundcloud = useQueue((state) => state.soundcloud);
+  const youtube = useQueue((state) => state.youtube);
+  const setSoundcloud = useQueue((state) => state.setSoundcloud);
+  const setYoutube = useQueue((state) => state.setYoutube);
+  const getSoundcloud = useQueue((state) => state.getSoundcloud);
+  const getYoutube = useQueue((state) => state.getYoutube);
+  const setFirstRender = useQueue((state) => state.setFirstRender);
+  const getFirstRender = useQueue((state) => state.getFirstRender);
+
+  // Spotify actions
+  const setPlaylist = useQueue((state) => state.setPlaylist);
+  const getPlaylist = useQueue((state) => state.getPlaylist);
+  const getPlaylistNext = useQueue((state) => state.getPlaylistNext);
+  const skipPlaylist = useQueue((state) => state.skipPlaylist);
+  const getPlaylistPosition = useQueue((state) => state.getPlaylistPosition);
+  const setPlaylistPosition = useQueue((state) => state.setPlaylistPosition);
 
   // Reverse actions
-  const getReverseStatus = useActions((state) => state.getReverseStatus);
-  const reverse = useActions((state) => state.reverse);
-  const resetReverse = useActions((state) => state.resetReverse);
   const setPlaybackStatus = useActions((state) => state.setPlaybackStatus);
   const getPlaybackStatus = useActions((state) => state.getPlaybackStatus);
   const setVolume = useActions((state) => state.setVolume);
   const volume = useActions((state) => state.volume);
   const playing = useActions((state) => state.playing);
   const setPlaying = useActions((state) => state.setPlaying);
+  const getShuffleState = useActions((state) => state.getShuffleState);
+  const setShuffleState = useActions((state) => state.setShuffleState);
+  const shuffleState = useActions((state) => state.shuffleState);
 
   // Platform actions
   const setPlatform = useActions((state) => state.setPlatform);
@@ -55,15 +81,36 @@ function Footer({ spotify }) {
   const platform = useActions((state) => state.platform);
   const setSkipButton = useActions((state) => state.setSkipButton);
   const setReverseButton = useActions((state) => state.setReverseButton);
+  const setPauseButton = useActions((state) => state.setPauseButton);
+  const getPlayingStatus = useActions((state) => state.getPlayingStatus);
+  const setEmbedController = useSpotify((state) => state.setEmbedController);
+
+  // Page actions
+  const setPage = useActions((state) => state.setPage);
 
   const [rPlaying, setrPlaying] = useState(false);
   const [api, setApi] = useState(null);
   const [spotifyPos, setSpotifyPos] = useState(null);
 
   useEffect(() => {
+    getQueue();
+  }, [getQueue()]);
+
+  useEffect(() => {
     setSkipButton(skipButton);
-    setReverseButton(prevButton);
-  });
+  }, [skipButton]);
+
+  useEffect(() => {
+    setReverseButton(reverseButton);
+  }, [reverseButton]);
+
+  useEffect(() => {
+    setPauseButton(pauseButton);
+  }, [pauseButton]);
+
+  useEffect(() => {
+    getShuffleState();
+  }, [shuffleState]);
 
   useEffect(() => {
     if (getPlatform() === "Spotify") {
@@ -73,181 +120,283 @@ function Footer({ spotify }) {
           setApi(IFrameAPI);
           console.log(IFrameAPI);
           setIframe(IFrameAPI);
+          console.log(getFullQueue());
         };
       } else {
         console.log("spotify player already loaded");
+        // figure out if we can do this without removing the iframe
         setIframe(api, spotifyPos);
       }
     }
-  }, [platform, item]);
+  }, [platform]);
 
-  const setIframe = (IFrameAPI, seek = 0) => {
+  const setIframe = (IFrameAPI) => {
     let element = document.getElementById("embed-iframe");
     console.log(element);
     let options = {
-      width: "300",
+      width: "400",
       height: "95",
-      uri: getQueue()?.item.track.uri,
+      uri:
+        getQueue()?.item.uri ||
+        getPlaylistNext()?.item.uri ||
+        "spotify:track:2Y0wPrPQBrGhoLn14xRYCG",
       allow: "encrypted-media",
     };
     let callback = (EmbedController) => {
       EmbedController.addListener("ready", () => {
         console.log("The Embed has initialized");
-        EmbedController.seek(seek);
-        setPlaying(true);
-        EmbedController.play();
+        if (!getFirstRender()) {
+          console.log("playing as normal");
+          setPlaying(true);
+          EmbedController.togglePlay();
+        } else setFirstRender(false);
+        setEmbedController(EmbedController);
       });
       EmbedController.addListener("playback_update", (e) => {
         setPlaybackStatus(e.data);
-        if (e.data.position === e.data.duration) {
+        if (e.data.position === e.data.duration && !e.data.isPaused) {
+          console.log(e.data);
           console.log("Song Ended");
-          console.log(getQueue());
-          if (getQueue().platform === "Spotify") {
-            const nextItem = getQueue().item.track.uri;
-            EmbedController.loadUri(nextItem);
-          }
-          handleQueue();
+          console.log(getPlaylist());
+          // setPlaying(false);
+          skipNext();
+        }
+        if (e.data.isPaused !== !getPlayingStatus()) {
+          setPlaying(!e.data.isPaused);
         }
       });
       document.getElementById("toggle").addEventListener("click", () => {
         if (getPlatform() === "Spotify") {
-          setPlaying(true);
-          EmbedController.togglePlay();
-        }
-      });
-      document.getElementById("next").addEventListener("click", () => {
-        if (getPlatform() === "Spotify") {
-          console.log("next");
-          if (getQueue() ? true : false) {
-            if (getQueue()?.platform === "Spotify") {
-              pop();
-              const nextItem = getQueue().item.track.uri;
-              EmbedController.loadUri(nextItem);
-            } else handleQueue();
+          if (getPlaybackStatus() === null || getPlaybackStatus().isPaused) {
+            setPlaying(true);
+            EmbedController.togglePlay();
           } else {
-            EmbedController.play();
+            setPlaying(false);
+            EmbedController.pause();
           }
         }
       });
-      document.getElementById("prev").addEventListener("click", () => {
+
+      function handleItem(nextItem, backwards = false) {
+        if (nextItem.platform === "Spotify") {
+          console.log(nextItem);
+          EmbedController.loadUri(nextItem.item.uri);
+          console.log(getPlaybackStatus());
+        } else {
+          document
+            .getElementById("next")
+            .removeEventListener("click", skipNext);
+          document.getElementById("prev").removeEventListener("click", goBack);
+          EmbedController.destroy();
+          if (!backwards) back();
+          else pop();
+          setPlatform(nextItem.platform);
+          console.log("Platform:", nextItem.platform);
+        }
+      }
+
+      function skipNext() {
+        console.log("Queue Position:", getQueuePosition());
+        console.log("Full Queue:", getFullQueue());
+        console.log("Playlist Position:", getPlaylistPosition());
+        console.log("Playlist:", getPlaylist());
+        console.log("Queue Next", getQueue());
+        console.log("Playlist Next", getPlaylistNext());
         if (getPlatform() === "Spotify") {
-          if (
-            getPlaybackStatus().position > 4000 || getQueue() ? true : false
-          ) {
+          if (getQueueLength() === getQueuePosition() + 1) {
+            if (getPlaylist().playlist.length !== getPlaylistPosition() + 1) {
+              skipPlaylist();
+              const nextItem = getPlaylistNext();
+              if (nextItem !== undefined) {
+                addFrontQueue(nextItem);
+                pop();
+                handleItem(nextItem);
+              } else console.log("ERROR: nextItem is undefined");
+            } else {
+              resetPlaylistPosition();
+              const nextItem = getPlaylistNext();
+              if (nextItem !== undefined) {
+                addFrontQueue(nextItem);
+                pop();
+                handleItem(nextItem);
+              } else console.log("ERROR: nextItem is undefined");
+            }
+          } else {
+            pop();
+            console.log("next");
+            const nextItem = getQueue();
+            console.log("Skipping to: ", nextItem);
+            console.log(getQueuePosition());
+            if (nextItem !== undefined) {
+              handleItem(nextItem);
+            } else console.log("ERROR: nextItem is undefined");
+          }
+        }
+      }
+
+      function goBack() {
+        console.log(getQueuePosition());
+        if (getPlatform() === "Spotify") {
+          if (getPlaybackStatus().position < 4000 && getQueuePosition() > 0) {
+            back();
+            const prevItem = getQueue();
+            console.log(prevItem);
+            console.log(getFullQueue());
+            console.log(getQueuePosition());
             // go back one song in the queue
-            if (getQueue().platform === "Spotify") {
-              back();
-              EmbedController.loadUri(getQueue().item.track.uri);
-            } else handleQueue();
+            handleItem(prevItem, true);
           } else {
-            EmbedController.play();
+            // restart the current song
+            console.log("restarting song");
+            EmbedController.seek(0);
           }
         }
-      });
-      // { item: { track: { uri: "spotify:track:6Q0Cw0qZzZ4zjxYQZ7QoZa" }, platform="Spotify"}
-      document.getElementById("sc").addEventListener("click", () => {
+      }
+
+      function destroy() {
         console.log("destroying spotify player");
         EmbedController.destroy();
-      });
-      document.getElementById("yt").addEventListener("click", () => {
-        console.log("destroying spotify player");
-        EmbedController.destroy();
-      });
+      }
+      document.getElementById("next").addEventListener("click", skipNext);
+      document.getElementById("prev").addEventListener("click", goBack);
     };
     IFrameAPI.createController(element, options, callback);
   };
 
   //adds to youtube queue and/or removes the first element from the queue
-  const handleQueue = () => {
-    if (getQueue().platform === "Spotify") {
-      // remove first element from queue
+  const handleQueue = (item) => {
+    console.log(getFullQueue());
+    console.log(getQueuePosition());
+    setPlatform(item.platform);
+    if (item.platform === "Spotify") {
       setPlatform("Spotify");
     } else {
+      console.log(getPlaying());
+      console.log(item);
       // play from react player
-      if (getQueue().platform === "SoundCloud") {
-        if (platform !== "Soundcloud") setPlatform("SoundCloud");
-        dispatch({
-          type: "SET_SOUNDCLOUD",
-          soundcloud: getQueue().item,
-        });
+      if (item.platform === "Soundcloud") {
+        setSoundcloud(item);
+        setPlatform("Soundcloud");
       } else {
-        if (platform !== "YouTube") setPlatform("YouTube");
-        dispatch({
-          type: "SET_YOUTUBE",
-          youtube: getQueue().item,
-        });
+        setYoutube(item);
+        setPlatform("Youtube");
       }
-    }
-    pop();
-  };
-
-  //Updates currently playing song and play/pause status of the player
-  // useEffect(() => {
-  //   spotify.getMyCurrentPlaybackState().then((r) => {
-  //     if(r !== null && r !== undefined){
-  //       dispatch({
-  //           type: "SET_ITEM",
-  //           item: r.item
-  //       });
-  //     }
-  //   });
-  //   console.log(item)
-  // }, [item, playing]);
-
-  //Updates the volume bar to match the levels in the spotify player
-  // useEffect(() => {
-  //     spotify.getVolume().then((vol) => {
-  //         console.log(vol)
-  //         dispatch({
-  //             type: "SET_VOLUME",
-  //             volume: vol
-  //         });
-  //     })
-  // }, [item, playing, dispatch])
-
-  //Pauses and plays the spotify player
-  const handlePlayPause = () => {
-    if (getPlatform() === "Spotify") {
-      // const spotifyEmbedWindow = document.querySelector(
-      //   'iframe[src*="spotify.com/embed"]'
-      // ).contentWindow;
-      // spotifyEmbedWindow.postMessage({ command: "toggle" }, "*");
-      if (playing === null) {
-        dispatch({
-          type: "SET_PLAYING",
-          playing: true,
-        });
-      } else if (!playing) {
-        dispatch({
-          type: "SET_PLAYING",
-          playing: !playing,
-        });
-      } else {
-        dispatch({
-          type: "SET_PLAYING",
-          playing: !playing,
-        });
-      }
-    } else {
-      if (rPlaying) {
-        setrPlaying(false);
-        dispatch({
-          type: "SET_PLAYING",
-          playing: !rPlaying,
-        });
-      }
-      setrPlaying(!rPlaying);
-      dispatch({
-        type: "SET_PLAYING",
-        playing: !rPlaying,
-      });
     }
   };
 
   const handleEnded = () => {
-    console.log("song ended");
-    setPlaying(true);
-    handleQueue();
+    if (
+      getQueueLength() === getQueuePosition() + 1 &&
+      getPlaylist().playlist.length === 0
+    )
+      setPlaying(false);
+    handleNext();
+  };
+
+  const handleReverse = () => {
+    console.log("reverse");
+    if (getPlatform() !== "Spotify") {
+      if (playerRef.current.getCurrentTime() <= 4) {
+        // go back one song in the queue
+        back();
+        if (getQueue() !== undefined) handleQueue(getQueue());
+        else console.log("Error in handleReverse");
+      } else {
+        playerRef.current.seekTo(0, "seconds");
+      }
+    }
+  };
+
+  const handleNext = () => {
+    if (getPlatform() !== "Spotify") {
+      console.log("Normal Actions for Youtube Skip");
+      console.log("Queue Position:", getQueuePosition());
+      console.log("Full Queue:", getFullQueue());
+      console.log("Playlist Position:", getPlaylistPosition());
+      console.log("Playlist:", getPlaylist());
+      console.log("Queue Next", getQueue());
+      console.log("Playlist Next", getPlaylistNext());
+      if (getQueueLength() === getQueuePosition() + 1) {
+        if (getPlaylist().playlist.length !== getPlaylistPosition() + 1) {
+          skipPlaylist();
+          console.log("Getting Playlist:", getPlaylist());
+          const nextItem = getPlaylistNext();
+          if (nextItem !== undefined) {
+            addFrontQueue(nextItem);
+            pop();
+            handleQueue(nextItem);
+            console.log("nextItem", nextItem);
+          } else console.log("ERROR: nextItem is undefined");
+        } else {
+          console.log("Playlist is over");
+          resetPlaylistPosition();
+          const nextItem = getPlaylistNext();
+          if (nextItem !== undefined) {
+            addFrontQueue(nextItem);
+            pop();
+            handleQueue(nextItem);
+            console.log("nextItem", nextItem);
+          } else console.log("ERROR: nextItem is undefined");
+        }
+      } else {
+        pop();
+        const nextItem = getQueue();
+        console.log("Skipping to: ", nextItem);
+        console.log(getQueuePosition());
+        if (nextItem !== undefined) {
+          handleQueue(nextItem);
+          console.log("nextItem", nextItem);
+        } else console.log("ERROR: nextItem is undefined");
+      }
+    }
+  };
+
+  const handleUnshuffle = () => {
+    setShuffleState(!getShuffleState());
+    console.log("Unshuffling: ", getShuffleState());
+    if (getPlaylist() !== null) {
+      console.log("Unshuffling playlist:");
+      let position = 0;
+
+      for (let i = 0; i < getPlaylist().playlist.length; i++) {
+        if (getPlaylist().playlist[i].item.id === getQueue().item.id) {
+          console.log("Found position: ", i);
+          position = i;
+          break;
+        }
+      }
+
+      let playlist = getPlaylist().playlist.filter(
+        (song) => song.item.id !== getQueue().item.id
+      );
+
+      setPlaylist({
+        ...getPlaylist(),
+        playlist: playlist,
+      });
+      setPlaylistPosition(position - 1);
+    }
+  };
+
+  const handleShuffle = () => {
+    setShuffleState(!getShuffleState());
+    if (getPlaylist() !== null) {
+      let position = 0;
+
+      for (let i = 0; i < getPlaylist().playlist.length; i++) {
+        if (getDiscoverWeekly().playlist[i].item.id === getQueue().item.id) {
+          position = i;
+          break;
+        }
+      }
+
+      const playlist = getDiscoverWeekly().playlist.slice(position);
+
+      setPlaylist({
+        ...getDiscoverWeekly(),
+        playlist: playlist,
+      });
+    }
   };
 
   return (
@@ -260,20 +409,15 @@ function Footer({ spotify }) {
       }}
     >
       <div className="footer_left">
-        <img alt="" src={Spot} onClick={() => setPlatform("Spotify")}></img>
-        <img
-          id="sc"
-          alt=""
-          className="footer_playerLogo"
-          src={Sc}
-          onClick={() => setPlatform("Soundcloud")}
-        ></img>
-        <img
-          alt=""
-          id="yt"
-          src={Yt}
-          onClick={() => setPlatform("Youtube")}
-        ></img>
+        {platform === "Spotify" && (
+          <img alt="" className="footer_playerLogo" src={Spot}></img>
+        )}
+        {getPlatform() === "Soundcloud" && (
+          <img id="sc" alt="" className="footer_playerLogo" src={Sc}></img>
+        )}
+        {getPlatform() === "Youtube" && (
+          <img alt="" id="yt" className="footer_playerLogo" src={Yt}></img>
+        )}
         {getPlatform() === "Spotify" && ( // displays a spotify song
           <div>
             <div id="embed-iframe"></div>
@@ -282,15 +426,19 @@ function Footer({ spotify }) {
         {getPlatform() !== "Spotify" && ( //displays a youtube or soundcloud song
           <div className="footer_spotifyInfo">
             <ReactPlayer
+              ref={playerRef}
               url={
-                getPlatform() === "Soundcloud" ? soundcloud.link : youtube.link
+                getPlatform() === "Soundcloud"
+                  ? getSoundcloud().link
+                  : getYoutube().link
               }
+              onPlay={() => setPlaying(true)}
+              onPause={() => setPlaying(false)}
               playing={playing}
               volume={volume}
-              onProgress={(e) => {}}
-              onEnded={handleEnded}
-              height="90px"
-              width="300px"
+              onEnded={() => handleEnded()}
+              height={getPlatform() === "Soundcloud" ? "120px" : "110px"}
+              width="500px"
               config={{
                 soundcloud: {
                   options: {
@@ -313,47 +461,73 @@ function Footer({ spotify }) {
         )}
       </div>
       <div className="footer_center">
-        <img src={shuffle} className="footer_shuffle" onClick={() => {}} />
-        <div id="prev" ref={prevButton}>
-          <SkipPreviousIcon className="footer_icon" />
+        {!getShuffleState() ? (
+          <img
+            src={shuffle}
+            className="footer_shuffle footer_icon"
+            onClick={() => handleShuffle()}
+          />
+        ) : (
+          <img
+            src={shuffle}
+            className="footer_shuffle footer_icon active"
+            onClick={() => handleUnshuffle()}
+          />
+        )}
+        <div id="prev" ref={reverseButton}>
+          <SkipPreviousIcon
+            className="footer_icon"
+            onClick={() => handleReverse()}
+          />
         </div>
-        <div id="toggle">
+        <div
+          id="toggle"
+          ref={pauseButton}
+          onClick={() => {
+            if (getPlatform() !== "Spotify") setPlaying(!playing);
+          }}
+        >
           {playing ? (
-            <PauseCircleFilledIcon
-              onClick={() => setPlaying(false)}
-              fontSize="large"
-              className="footer_icon"
-            />
+            <PauseCircleFilledIcon className="footer_icon" />
           ) : (
-            <PlayCircleFilledIcon
-              onClick={() => setPlaying(true)}
-              fontSize="large"
-              className="footer_icon"
-            />
+            <PlayCircleFilledIcon className="footer_icon" />
           )}
         </div>
-        <div id="next" ref={skipButton}>
+        <div id="next" ref={skipButton} onClick={() => handleNext()}>
           <SkipNextIcon className="footer_icon" />
         </div>
         <RepeatIcon className="footer_icon" />
       </div>
       <div className="footer_right">
         <Grid container spacing={2}>
-          <Grid item>
-            <PlaylistPlayIcon />
+          <Grid
+            item
+            onClick={() => {
+              setPage("Queue");
+            }}
+          >
+            <PlaylistPlayIcon className="footer_icon" fontSize="large" />
           </Grid>
-          <Grid item>
-            <VolumeDownIcon />
-          </Grid>
-          <Grid item xs>
-            <Slider
-              defaultValue={volume * 100}
-              onChange={(_, value) => {
-                setVolume(value * 0.01);
-                console.log(value);
-              }}
-            />
-          </Grid>
+          {platform !== "Spotify" && (
+            <>
+              <Grid item>
+                <VolumeDownIcon fontSize="medium" />
+              </Grid>
+              <Grid item xs>
+                <Slider
+                  size="small"
+                  defaultValue={volume * 100}
+                  onChange={(_, value) => {
+                    setVolume(value * 0.01);
+                    console.log(value);
+                  }}
+                />
+              </Grid>
+              <Grid item>
+                <VolumeUpIcon fontSize="medium" />
+              </Grid>
+            </>
+          )}
         </Grid>
       </div>
     </div>

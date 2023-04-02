@@ -1,15 +1,10 @@
 .playlistPage {
     padding: 30px;
     flex: 0.8;
-    height: 100vh;
-    // background: linear-gradient(rgb(123, 119, 148), rgb(0, 0, 61));
     margin-bottom: 50px;
     color: white;
 }
 
-.blurTitle {
-    opacity: .5;
-}
 .playlistPage::-webkit-scrollbar {
     display: none;
 }
@@ -25,7 +20,7 @@
 }
 
 .playlistPage_info > img {
-    height: 20vw;
+    height: 18vw;
     margin: 0 20px;
     box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);
 }
@@ -36,11 +31,11 @@
 
 .playlistPage_play {
     font-size: 80px !important;
-    margin-left: 50px;
     margin-right: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
+
 .playlistPage_play:hover {
     transition: 100ms transform ease-in;
     transform: scale(1.08);
@@ -58,9 +53,22 @@
     transform: scale(1.08);
 }
 
+.playlistPage_shuffleBlur {
+    max-width: 60px;
+    max-height: 40px;
+    margin-right: 10px;
+    filter: brightness(0) invert(1) blur(5px);
+}
+
+.active {
+    filter: invert(92%) sepia(22%) saturate(6653%) hue-rotate(149deg) brightness(89%) contrast(91%);
+    color: #34c6da;
+}
+
 .playlistPage_icons {
     display: flex;
     align-items: center;
+    margin-left: 50px;
 }
 
 .playlistPage_icons > .MuiSvgIcon {

@@ -108,20 +108,20 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  // resolve: {
-  //   fallback: {
-  //     "fs": false,
-  //     "tls": false,
-  //     "net": false,
-  //     "path": false,
-  //     "zlib": false,
-  //     "http": false,
-  //     "https": false,
-  //     "stream": false,
-  //     "crypto": false,
-  //     "crypto-browserify": require.resolve('crypto-browserify'), //if you want to use this module also don't forget npm i crypto-browserify
-  //   }
-  // },
+  resolve: {
+    fallback: {
+      fs: false,
+      tls: false,
+      net: false,
+      path: false,
+      zlib: false,
+      http: require.resolve("stream-http"),
+      https: require.resolve("https-browserify"),
+      stream: false,
+      crypto: false,
+      "crypto-browserify": require.resolve("crypto-browserify"), //if you want to use this module also don't forget npm i crypto-browserify
+    },
+  },
   entry: {
     bundle: path.resolve(__dirname, "src/index.js"),
   },
@@ -142,9 +142,9 @@ module.exports = {
     // hot: true,
     // compress: true,
     // historyApiFallback: true,
-    // headers: {
-    //   "Access-Control-Allow-Origin": "*",
-    // },
+    headers: {
+      "Access-Control-Allow-Origin": "*",
+    },
     devMiddleware: {
       index: true, // specify to enable root proxying
     },

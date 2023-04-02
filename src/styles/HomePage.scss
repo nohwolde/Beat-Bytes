@@ -27,10 +27,13 @@
     margin-left: 40px;
     margin-right: 40px;
     padding: 20px;
+    border-radius: 10px;
+    max-width: 200px;
+    word-break: break-all;
 }
 
 .homePage_playlist_box:hover {
-    background: #290186;
+    background: #070019;
 }
 
 .homePage_playlist_box > h4 {

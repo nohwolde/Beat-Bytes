@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "../styles/Sidebar.scss";
 import logo from "./logo.png";
 import SidebarOption from "./SidebarOption.jsx";
@@ -10,20 +10,29 @@ import { AddBox } from "@material-ui/icons";
 import uniqueId from "lodash/uniqueId";
 import { useSpotify } from "../store";
 import { useActions } from "../store";
+import axios from "axios";
+import playlistImg from "./pics/mImg.jpeg";
 
-function Sidebar({ spotify }) {
+function Sidebar({ spotify, popup, togglePopup, setPopupType }) {
   // function that updates the playlist being displayed in the body component
   const [{}, dispatch] = useDataLayerValue();
+  const user = useSpotify((state) => state.user);
   const playlists = useSpotify((state) => state.playlists);
-  const [className, setClassName] = useState("side");
+  const setPlaylists = useSpotify((state) => state.setPlaylists);
   const setAddToPlaylistClicked = useActions(
     (state) => state.setAddToPlaylistClicked
   );
   const getAddToPlaylistClicked = useActions(
     (state) => state.getAddToPlaylistClicked
   );
-  const selectedSong = useActions((state) => state.selectedSong);
   const getSelectedSong = useActions((state) => state.getSelectedSong);
+  const setPage = useActions((state) => state.setPage);
+  const setDiscoverWeekly = useActions((state) => state.setDiscoverWeekly);
+
+  // useEffect(() => {
+  //   setPlaylists(playlists);
+  //   console.log(playlists);
+  // }, [playlists]);
 
   const onSelectedPlaylist = (playlist) => {
     console.log("PlaylistID: ", playlist.id);
@@ -43,42 +52,13 @@ function Sidebar({ spotify }) {
   const setBody = (playlist) => {
     console.log("Playlist:");
     console.log(playlist.id);
-    dispatch({
-      type: "SET_DISCOVER_WEEKLY",
-      discover_weekly: playlist,
-    });
-    dispatch({
-      type: "SET_PAGE",
-      page: "Discover Weekly",
-    });
+    setDiscoverWeekly(playlist);
+    setPage("Playlist");
   };
 
-  const createPlaylist = () => {};
-
-  // function that modifies the page to either "Search" or "Home"
-  const modifyPage = (page) => {
-    if (page === "Search") {
-      console.log("Search");
-      dispatch({
-        type: "SET_DISCOVER_WEEKLY",
-        discover_weekly: null,
-      });
-      dispatch({
-        type: "SET_PAGE",
-        page: "Search",
-      });
-    } else if (page === "Home") {
-      console.log("Home");
-      console.log(playlists);
-      dispatch({
-        type: "SET_DISCOVER_WEEKLY",
-        discover_weekly: null,
-      });
-      dispatch({
-        type: "SET_PAGE",
-        page: "Home",
-      });
-    }
+  const createPlaylist = () => {
+    togglePopup(true);
+    setPopupType("Create");
   };
 
   return (
@@ -95,15 +75,16 @@ function Sidebar({ spotify }) {
         <font size="+2" face="verdana"></font>
       </p>
       <br></br>
-      <div className={getAddToPlaylistClicked() ? "blurred" : ""}>
-        <div onClick={() => modifyPage("Home")}>
+      <div>
+        <div onClick={() => setPage("Home")}>
           <SidebarOption Icon={HomeIcon} title="Home" />
         </div>
-        <div onClick={() => modifyPage("Search")}>
+        <div onClick={() => setPage("Search")}>
           <SidebarOption Icon={SearchIcon} title="Search" />
         </div>
-        <SidebarOption Icon={LibraryMusicIcon} title="Your Library" />
-        <br></br>
+        <div onClick={() => setPage("Your Library")}>
+          <SidebarOption Icon={LibraryMusicIcon} title="Your Library" />
+        </div>
         <div onClick={() => createPlaylist()}>
           <SidebarOption Icon={AddBox} title="Create Playlist" />
         </div>
@@ -113,17 +94,12 @@ function Sidebar({ spotify }) {
       <div id="playlistSection">
         {playlists?.map((playlist) => (
           <div
-            key={playlist.id}
+            key={uniqueId("playlist-")}
             id="playlistSection"
-            onClick={
-              getAddToPlaylistClicked()
-                ? () => onSelectedPlaylist(playlist)
-                : () => setBody(playlist)
-            }
+            onClick={() => setBody(playlist)}
           >
             <SidebarOption
-              key={uniqueId("playlist-")}
-              id="playlistSection"
+              id="playlist"
               playlist={playlist}
               title={playlist.name}
             />

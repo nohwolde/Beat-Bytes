@@ -8,6 +8,13 @@
     background: rgb(5, 0, 95);
     padding: 20px;
     border: 1px solid rgb(49, 15, 77);
+    z-index: 3;
+}
+
+.footer_icon {
+    min-width: 35px;
+    min-height: 35px;
+    padding: 7px;
 }
 
 .footer_green:hover,
@@ -34,12 +41,13 @@
 
 .footer_center {
     flex: 0.3;
-    padding: 0 100px;
+    // padding: 0 100px;
+    padding : 0 30px;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 300px;
+    max-width: 140px;
 }
 
 .footer_right {
@@ -61,6 +69,11 @@
     max-height: 28px;
 }
 
+.active {
+    filter: invert(92%) sepia(22%) saturate(6653%) hue-rotate(149deg) brightness(89%) contrast(91%);
+    color: #34c6da;
+}
+
 .footer_songInfo {
     font-size: 14px;
 }
@@ -72,11 +85,11 @@
 }
 
 .footer_spotifyInfo {
-    align-items: center;
     display: flex;
     width: 100%;
+    margin-top: 12px;
 }
 
 .footer_playerLogo {
-    margin-left: 20px;
+    margin-right: 20px;
 }

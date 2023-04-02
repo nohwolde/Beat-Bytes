@@ -1,19 +1,37 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import "../styles/SongRow.scss";
 import { CloudDownloadOutlined } from "@material-ui/icons";
-import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
-import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
-import QueueMusicIcon from "@material-ui/icons/QueueMusic";
 import queueFront from "./pics/queueTop.svg";
-import AddBoxIcon from "@material-ui/icons/AddBox";
 import addPlaylist from "./pics/addPlaylist.png";
-import useQueue from "../store";
+import trash from "./pics/trash.svg";
+import { useQueue } from "../store";
 import { useActions } from "../store";
 import { useSpotify } from "../store";
+import { useEffect } from "react";
+import soundcloudDark from "./pics/soundcloudDark.svg";
+import ytDark from "./pics/ytDark.svg";
+import spotDark from "./pics/spotDark.svg";
+import playlistImg from "./pics/mImg.jpeg";
+import removePlaylist from "./pics/removePlaylist.svg";
 
-function SongRow({ track, search = true }) {
+function SongRow({
+  track,
+  search = true,
+  popup,
+  togglePopup,
+  setPopupType,
+  queuePage = false,
+  platform,
+  setRemoveTrack,
+  playlist = null,
+}) {
+  const [deletePopup, toggleDeletePopup] = useState(false);
+
+  const currentPlaylist = useQueue((state) => state.playlist);
+  const pop = useQueue((state) => state.pop);
   const addFrontQueue = useQueue((state) => state.addFrontQueue);
   const addQueue = useQueue((state) => state.addQueue);
+  const getFullQueue = useQueue((state) => state.getFullQueue);
   const playlists = useSpotify((state) => state.playlists);
   const sidebarRef = useRef(null);
   const setAddToPlaylistClicked = useActions(
@@ -21,6 +39,11 @@ function SongRow({ track, search = true }) {
   );
   const setSelectedSong = useActions((state) => state.setSelectedSong);
   const getSelectedSong = useActions((state) => state.getSelectedSong);
+  let iconsClass = popup ? "songRow_controlsBlur" : "songRow_controls";
+
+  useEffect(() => {
+    iconsClass = popup ? "songRow_controlsBlur" : "songRow_controls";
+  }, [popup]);
 
   const handleAddToPlaylistClick = (playlistID, track) => {
     console.log("Adding to playlist: ", playlistID);
@@ -44,17 +67,14 @@ function SongRow({ track, search = true }) {
     await axios.post("/db/user/addToPlaylist", { playlistID, track });
   };
 
-  if (typeof track.track !== "undefined" || track.type === "track") {
+  if (track.platform === "Spotify") {
     return (
-      <div
-        className={
-          !(track.is_local ? track.is_local === false : true) ||
-          !(getSelectedSong()?.id === track.id)
-            ? "songRow  blurSong"
-            : "songRow"
-        }
-      >
-        {(track.is_local ? track.is_local === true : false) ? (
+      <div className="songRow">
+        {(
+          !queuePage || track.item.is_local
+            ? track.item.is_local === true
+            : false
+        ) ? (
           <CloudDownloadOutlined
             fontSize="large"
             className="songRow_download"
@@ -62,34 +82,45 @@ function SongRow({ track, search = true }) {
         ) : (
           <img
             className="songRow_search"
-            src={track.album.images[0].url}
+            src={
+              track.item.album.images[0]
+                ? track.item.album.images[0]
+                : playlistImg
+            }
             alt=""
           />
         )}
         <div className="songRow_info">
-          <h1>{track.name}</h1>
-          {(track.is_local ? track.is_local === false : true) && (
+          <h1>{track.item.name}</h1>
+          {(track.item.is_local ? track.item.is_local === false : true) && (
             <p>
-              {track.artists.map((artist) => artist.name).join(", ")} -{" "}
-              {track.album.name}{" "}
+              {track.item.artists.map((artist) => artist.name).join(", ")} -{" "}
+              {track.item.album.name}{" "}
             </p>
           )}
         </div>
-        {(track.is_local ? track.is_local === false : true) && (
+        {(queuePage || track.item.is_local
+          ? track.item.is_local === false
+          : true && !popup) && (
           <div className="songRow_controls">
+            <img src={spotDark} className="songRow_platform"></img>
             <div
-              onClick={() => {
+              onClick={(e) => {
+                e.stopPropagation();
                 console.log("Queue Front");
-                addFrontQueue({ item: track, platform: "Spotify" });
+                console.log(getFullQueue());
+                addFrontQueue(track);
               }}
               aria-label="Play Next"
             >
               <img className="songRow_controlsIcons" src={queueFront} alt="" />
             </div>
             <div
-              onClick={() => {
+              onClick={(e) => {
+                e.stopPropagation();
                 console.log("Queue Last");
-                addQueue({ item: track, platform: "Spotify" });
+                console.log(track);
+                addQueue(track);
               }}
               aria-label="Play Last"
             >
@@ -100,12 +131,13 @@ function SongRow({ track, search = true }) {
               />
             </div>
             <div
-              onClick={() => {
+              onClick={(e) => {
+                e.stopPropagation();
+                setPopupType("Add");
                 console.log("Add to Playlist");
-                setAddToPlaylistClicked(true);
                 console.log("Selected Song: ", track);
                 setSelectedSong(track);
-                document.body.style.opacity = 1;
+                togglePopup(true);
               }}
             >
               <img
@@ -115,6 +147,26 @@ function SongRow({ track, search = true }) {
                 aria-label="Add to Playlist"
               />
             </div>
+            {(queuePage || playlist !== null) && (
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setRemoveTrack(track);
+                  console.log("Remove track: ", track);
+                  if (!queuePage) {
+                    setPopupType("DeletePlaylist");
+                    togglePopup(true);
+                  }
+                }}
+              >
+                <img
+                  className="songRow_controlsDelete"
+                  src={trash}
+                  alt=""
+                  aria-label="Delete"
+                />
+              </div>
+            )}
           </div>
         )}
       </div>
@@ -123,32 +175,91 @@ function SongRow({ track, search = true }) {
     return (
       <div className="songRow">
         {search ? ( // if searching make the image a bit larger
-          <img className="songRow_search" src={track.pic} alt="" />
+          <img
+            className="songRow_search"
+            src={track.pic ? track.pic : playlistImg}
+            alt=""
+          />
         ) : (
-          <img className="songRow_album" src={track.pic} alt="" />
+          <img
+            className="songRow_album"
+            src={track.pic ? track.pic : playlistImg}
+            alt=""
+          />
         )}
         <div className="songRow_info">
           <h1>{track.title}</h1>
           <p>{track.artist}</p>
         </div>
-        <div className="songRow_controls">
-          <div onClick={() => addFrontQueue(track)} aria-label="Play Next">
-            <img className="songRow_controlsIcons" src={queueFront} alt="" />
-          </div>
-          <div onClick={() => addQueue(track)} aria-label="Play Last">
+        {!popup && (
+          <div className={iconsClass}>
             <img
-              className="songRow_controlsIcons upsideDown"
-              src={queueFront}
-              alt=""
-            />
+              src={platform === "Soundcloud" ? soundcloudDark : ytDark}
+              className="songRow_platform"
+            ></img>
+            <div
+              onClick={(e) => {
+                e.stopPropagation();
+                addFrontQueue(track);
+                console.log(track);
+              }}
+              aria-label="Play Next"
+            >
+              <img className="songRow_controlsIcons" src={queueFront} alt="" />
+            </div>
+            <div
+              onClick={(e) => {
+                e.stopPropagation();
+                addQueue(track);
+                console.log(track);
+              }}
+              aria-label="Play Last"
+            >
+              <img
+                className="songRow_controlsIcons upsideDown"
+                src={queueFront}
+                alt=""
+              />
+            </div>
+            <div
+              onClick={(e) => {
+                e.stopPropagation();
+                console.log("Add to Playlist");
+                console.log("Selected Song: ", track);
+                setPopupType("Add");
+                setSelectedSong(track);
+                togglePopup(true);
+              }}
+            >
+              <img
+                className="songRow_controlsAdd"
+                src={addPlaylist}
+                alt=""
+                aria-label="Add to Playlist"
+              />
+            </div>
+            {(queuePage || playlist !== null) && (
+              <div
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setRemoveTrack(track);
+                  console.log("Remove track: ", track);
+                  if (!queuePage) {
+                    setPopupType("DeletePlaylist");
+                    togglePopup(true);
+                  }
+                }}
+              >
+                <img
+                  className="songRow_controlsDelete"
+                  src={trash}
+                  alt=""
+                  aria-label="Remove from Queue"
+                />
+              </div>
+            )}
           </div>
-          <img
-            className="songRow_controlsIcons"
-            src={addPlaylist}
-            alt=""
-            aria-label="Add to Playlist"
-          />
-        </div>
+        )}
       </div>
     );
   }

@@ -1,22 +1,12 @@
 .body {
     padding: 30px;
-    flex: 0.8;
-    height: 100vh;
-    background: linear-gradient(#7bbfff, rgb(0, 0, 61));
+    flex: 0.85;
+    width: 100%;
+    height: 100%;
+    // background: linear-gradient(to right, rgb(0, 0, 100), #389fff);
     margin-bottom: 50px;
     color: white;
 }
-
-// .blur {
-//     opacity: .5;
-//     padding: 30px;
-//     flex: 0.8;
-//     height: 100vh;
-//     background: linear-gradient(#7bbfff, rgb(0, 0, 61));
-//     margin-bottom: 50px;
-//     color: white;
-//     z-index: 1;
-// }
 
 .body_homepage {
     align-items: center;
