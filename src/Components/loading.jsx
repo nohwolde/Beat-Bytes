@@ -1,24 +1,34 @@
 import React from "react";
 import logo from "./logo.png";
-import "../styles/loading.scss";
+import "../styles/Loading.scss";
 import { accessUrl } from "./spotify";
+import { useSpotify } from "../store";
 const Loading = () => {
+  const setToken = useSpotify((state) => state.setToken);
+  const loginTest = () => {
+    console.log("test");
+  };
   return (
     <div className="loading">
-      <img src={logo} />
-      <a
-        href={accessUrl}
-        style={{
-          padding: 20,
-          borderRadius: 99,
-          backgroundColor: "#1db954",
-          fontWeight: 800,
-          color: "white",
-          textDecoration: "none",
-        }}
-      >
+      <div className="loginTitle" onClick={() => loginTest()}>
         {" "}
-        Login to Spotify{" "}
+        User Options{" "}
+      </div>
+      <img className="loginLogo" src={logo} />
+      <div className="loginInfo"> Try Beatbytes without Account</div>
+      <div className="loginTest" onClick={() => loginTest()}>
+        {" "}
+        Try with Test User{" "}
+      </div>
+      <br></br>
+      <div className="loginInfo"> Or Login/Sign Up with Account </div>
+      <div className="loginBeatbytes" onClick={() => loginTest()}>
+        {" "}
+        Login/Sign Up with Beatbytes{" "}
+      </div>
+      <a href={accessUrl} className="loginSpotify">
+        {" "}
+        Login with Spotify{" "}
       </a>
     </div>
   );

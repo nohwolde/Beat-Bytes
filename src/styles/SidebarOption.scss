@@ -2,14 +2,25 @@
     display: flex;
     align-items: center;
     color: grey;
-    height: 40px;
+    max-width: 270px;
+    min-height: auto;
     cursor: pointer;
     transition: 200ms color ease-in;
+    word-break: break-all;
+}
+
+.sidebarHeader {
+    display: flex;
+    align-items: center;
+    color: grey;
+    max-width: 270px;
+    max-height: 50px;
+    cursor: pointer;
+    transition: 200ms color ease-in;
+    word-break: break-all; 
 }
 
 .sidebarOption > p {
-    margin-top: 10px;
-    margin-left: 10px;
     font-size: 14px;
 }
  

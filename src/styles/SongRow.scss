@@ -4,20 +4,33 @@
     display: flex;
     align-items: center;
     color: white;
+    opacity: 0.8;
+    border-radius: 10px;
 }
 
-.blurSong {
-    opacity: .5;
+.songRow_platform {
+    height: 3em;
+    width: 3em;
+    margin-left: 5px;
+    align-items: center;
+    filter: invert(17%) sepia(65%) saturate(3149%) hue-rotate(235deg) brightness(78%) contrast(144%);
+    margin-bottom: 5px;
+}
+
+.songRow_platform:hover {
+    filter: invert(57%) sepia(24%) saturate(6958%) hue-rotate(190deg) brightness(104%) contrast(101%);
+    cursor: default;
 }
 
 .songRow:hover {
     cursor: pointer;
-    background: #050394;
+    background: #000b1d;
+    // background: #050394;
     opacity: 0.8;
 }
 
 .songRow_info {
-    margin-left: 20px;
+    margin-left: 5px;
 }
 
 .songRow_info > h1 {
@@ -57,6 +70,15 @@
     margin: 0px 0px 0px auto;
 }
 
+.songRow_controlsBlur {
+    filter: blur(5px);
+    margin-right: 20px;
+    display: inline-flex;
+    text-align: right;
+    align-items: end;
+    margin: 0px 0px 0px auto;
+}
+
 .songRow_controlsIcons {
     min-width: 35px;
     min-height: 35px;
@@ -88,7 +110,52 @@
     max-height: 50px;
     filter: brightness(0) invert(1);
     margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 5px;
+    margin-bottom: 2px;
     position: relative;
 }
+
+.songRow_controlsAdd:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+}
+
+.songRow_controlsDelete {
+    margin-bottom: 16px;
+    filter: brightness(0) invert(1);
+    transform: scale(1.5) !important;
+}
+
+.download {
+    margin-bottom: -4px;
+    top: 0;
+    bottom: 0;
+}
+
+.songRow_controlsDeleteActive {
+    margin-bottom: 16px;
+    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);
+    transform: scale(1.5) !important;
+}
+
+.songRow_controlsDelete:hover {
+    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);
+}
+
+.deletePopup {
+    justify-content: right;
+    align-items: right;
+    // display: inline-block;
+}
+
+.deletePopupIcon {
+    max-height: 20px;
+    max-width: 50px;
+    align-items: right;
+
+}
+.deletePopupIcon:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2) !important;
+    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);
+}
+

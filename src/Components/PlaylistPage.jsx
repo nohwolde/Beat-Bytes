@@ -1,118 +1,177 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Body.scss";
 import { useDataLayerValue } from "../DataLayer";
 import PlayCircleFilledIcon from "@material-ui/icons/PlayCircleFilled";
 import PauseCircleFilledIcon from "@material-ui/icons/PauseCircleFilled";
 import FavoriteIcon from "@material-ui/icons/Favorite";
-import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 import SongRow from "./SongRow.jsx";
-import useContextMenu from "./useContextMenu.jsx";
 import "../styles/PlaylistPage.scss";
 import uniqueId from "lodash/uniqueId";
-import useQueue from "../store";
-import { useActions } from "../store";
+import { useSpotify, useQueue, useActions } from "../store";
 import shuffle from "./pics/shuffle.png";
 import { useEffect } from "react";
-import axios from "axios";
-import { useSpotify } from "../store";
+import playlistImg from "./pics/mImg.jpeg";
 
-function PlaylistPage({ spotify }) {
-  //⌄ Data values extracted from data layer
-  const [{ discover_weekly, device_id, playing, item }, dispatch] =
-    useDataLayerValue();
-  const { clicked, setClicked, points, setPoints } = useContextMenu();
-  const queue = useQueue((state) => state.queue);
-  const addQueue = useQueue((state) => state.addQueue);
-  const addFrontQueue = useQueue((state) => state.addFrontQueue);
+function PlaylistPage({ popup, togglePopup, setPopupType, setRemoveTrack }) {
+  // ACTIONS
+  const discover_weekly = useActions((state) => state.discover_weekly);
+  const setDiscoverWeekly = useActions((state) => state.setDiscoverWeekly);
+  const getDiscoverWeekly = useActions((state) => state.getDiscoverWeekly);
   const skip = useActions((state) => state.skip);
-  const reverse = useActions((state) => state.reverse);
-  const back = useQueue((state) => state.back);
-  const getAddToPlaylistClicked = useActions(
-    (state) => state.getAddToPlaylistClicked
+  const pause = useActions((state) => state.pause);
+  const playing = useActions((state) => state.playing);
+  const getPlayingStatus = useActions((state) => state.getPlayingStatus);
+  const setPlaying = useActions((state) => state.setPlaying);
+
+  // QUEUE
+  const addFrontQueue = useQueue((state) => state.addFrontQueue);
+  const setPlatform = useActions((state) => state.setPlatform);
+  const playlist = useQueue((state) => state.playlist);
+  const getQueueLength = useQueue((state) => state.getQueueLength);
+  const getQueuePosition = useQueue((state) => state.getQueuePosition);
+  const setPlaylist = useQueue((state) => state.setPlaylist);
+  const getFullQueue = useQueue((state) => state.getFullQueue);
+  const getQueue = useQueue((state) => state.getQueue);
+  const getPlaylistPosition = useQueue((state) => state.getPlaylistPosition);
+  const setPlaylistPosition = useQueue((state) => state.setPlaylistPosition);
+  const getPlaylist = useQueue((state) => state.getPlaylist);
+  const skipPlaylist = useQueue((state) => state.skipPlaylist);
+  const resetPlaylistPosition = useQueue(
+    (state) => state.resetPlaylistPosition
   );
+  const pop = useQueue((state) => state.pop);
+
+  // SPOTIFY
+  const EmbedController = useSpotify((state) => state.EmbedController);
+  const getPlaylists = useSpotify((state) => state.getPlaylists);
+
+  const [playlistIsPlayling, setPlaylistIsPlaying] = useState(false);
+
+  const [remove, setRemove] = useState(null);
+
+  const shuffleState = useActions((state) => state.shuffleState);
+  const getShuffleState = useActions((state) => state.getShuffleState);
+  const setShuffleState = useActions((state) => state.setShuffleState);
+
+  useEffect(() => {
+    getPlayingStatus();
+  }, [playing]);
+
+  useEffect(() => {
+    getShuffleState();
+  }, [shuffleState]);
+
+  useEffect(() => {
+    setDiscoverWeekly(
+      getPlaylists().filter(
+        (playlist) => playlist.id === getDiscoverWeekly().id
+      )[0]
+    );
+  }, [getPlaylists()]);
+
+  useEffect(() => {
+    console.log("Playlist: ", playlist);
+    console.log("Discover Weekly: ", discover_weekly);
+    if (playlist.id === discover_weekly.id) {
+      setPlaylistIsPlaying(true);
+    } else {
+      setPlaylistIsPlaying(false);
+    }
+  }, [playlist, discover_weekly]);
 
   const handlePlaylist = (playlist) => {
-    for (let i = 0; i < playlist.tracks.items.length; i++) {
-      if (playlist.tracks.items[i].track.track !== undefined) {
-        const newItem = { item: playlist.tracks.items[i], platform: "Spotify" };
-        addQueue(newItem);
-        console.log("added to queue", newItem);
-      }
+    resetPlaylistPosition();
+    let shuffled = [];
+    console.log("Modified Playlist: ", playlist.playlist);
+    shuffled.push(...playlist.playlist);
+    console.log("Before Shuffle", shuffled);
+    if (getShuffleState()) shuffled = shufflePlaylist(shuffled);
+    if (shuffled.length > 0) {
+      const firstSong = shuffled[0];
+      console.log("Adding first song to queue: ", firstSong);
+      addFrontQueue(firstSong);
+      setPlaylistIsPlaying(true);
+      skip();
+      console.log(getFullQueue());
+      console.log(getQueuePosition());
     }
-    console.log(queue);
-  };
-
-  const updateContextMenu = (e, item) => {
-    const song = document.getElementById(item.id);
-    setClicked(true);
-    setPoints({
-      x: e.clientX - song.scrollTop,
-      y: e.clientY,
-    });
-    console.log("Right Click", e.pageX - song.scrollTop, e.pageY);
-  };
-
-  // function that updates the playlist being displayed in the body component
-  const setBody = (playlist) => {
-    console.log("Playlist:");
-    console.log(playlist);
-    dispatch({
-      type: "SET_DISCOVER_WEEKLY",
-      discover_weekly: playlist,
-    });
-    dispatch({
-      type: "SET_PAGE",
-      page: "Discover Weekly",
+    console.log(shuffled);
+    setPlaylist({
+      ...playlist,
+      playlist: shuffled,
     });
   };
 
-  // sets the spotify player to play a new song
-  var setPlayer = (link) => {
-    console.log(link);
-    console.log("device_id: " + device_id);
-    dispatch({
-      type: "SET_ITEM",
-      item: link,
-    });
-    dispatch({
-      type: "SET_PLATFORM",
-      platform: "Spotify",
-    });
+  const shufflePlaylist = (playlist) => {
+    const shuffle = playlist;
+    for (var i = shuffle.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = shuffle[i];
+      shuffle[i] = shuffle[j];
+      shuffle[j] = temp;
+    }
+    console.log("Playlist shuffled: ", shuffle);
+    return shuffle;
   };
 
-  // sets the soundcloud and youtube player to the correct link
-  var setReactPlayer = (track) => {
-    if (track.platform === "Soundcloud") {
-      dispatch({
-        type: "SET_PLATFORM",
-        platform: "Soundcloud",
+  const handleUnshuffle = () => {
+    setShuffleState(!getShuffleState());
+    console.log("Unshuffling: ", getShuffleState());
+    if (playlistIsPlayling) {
+      console.log("Unshuffling playlist:");
+      let position = 0;
+
+      for (let i = 0; i < getPlaylist().playlist.length; i++) {
+        if (getDiscoverWeekly().playlist[i].item.id === getQueue().item.id) {
+          console.log("Found position: ", i);
+          position = i;
+          break;
+        }
+      }
+
+      let playlist = getDiscoverWeekly().playlist.filter(
+        (song) => song.item.id !== getQueue().item.id
+      );
+
+      setPlaylist({
+        ...getDiscoverWeekly(),
+        playlist: playlist,
       });
-      dispatch({
-        type: "SET_SOUNDCLOUD",
-        soundcloud: track,
-      });
-    } else {
-      dispatch({
-        type: "SET_PLATFORM",
-        platform: "Youtube",
-      });
-      dispatch({
-        type: "SET_YOUTUBE",
-        youtube: track,
+      setPlaylistPosition(position - 1);
+    }
+  };
+
+  const handleShuffle = () => {
+    setShuffleState(!getShuffleState());
+    console.log("Shuffling: ", getShuffleState());
+    if (playlistIsPlayling) {
+      console.log("Shuffling playlist:" + getPlaylist().playlist);
+      const playlistToShuffle = getPlaylist();
+      let shuffledPlaylist = shufflePlaylist(playlistToShuffle.playlist);
+      console.log(getQueue());
+      shuffledPlaylist = shuffledPlaylist.filter(
+        (song) => song.item.id !== getQueue().item.id
+      );
+
+      setPlaylistPosition(0);
+      setPlaylist({
+        ...playlistToShuffle,
+        playlist: shuffledPlaylist,
       });
     }
   };
 
   return (
     <div className="playlistPage">
-      <div
-        className={
-          getAddToPlaylistClicked()
-            ? "blurTitle playlistPage_info"
-            : "playlistPage_info"
-        }
-      >
-        <img src={discover_weekly?.images[0].url} alt="" />
+      <div className="playlistPage_info">
+        <img
+          src={
+            discover_weekly.images[0] && discover_weekly.images[0] !== ""
+              ? discover_weekly.images[0]
+              : playlistImg
+          }
+          alt=""
+        />
         <div className="playlistPage_infoText">
           <strong>PLAYLIST</strong>
           <h2>{discover_weekly?.name}</h2>
@@ -120,54 +179,63 @@ function PlaylistPage({ spotify }) {
         </div>
       </div>
       <div className="playlistPage_songs">
-        <div
-          className={
-            getAddToPlaylistClicked()
-              ? "blurTitle playlistPage_icons"
-              : "playlistPage_icons"
-          }
-        >
-          {playing && discover_weekly.id === item.id ? (
-            <PauseCircleFilledIcon
-              className="playlistPage_play"
-              onClick={() => setPlayer(discover_weekly)}
-            />
-          ) : (
-            <PlayCircleFilledIcon
-              className="playlistPage_play"
-              onClick={() => handlePlaylist(discover_weekly)}
-            />
-          )}
-          <img
-            src={shuffle}
-            className="playlistPage_shuffle"
-            onClick={() => {}}
-          />
-          <FavoriteIcon fontSize="large" />
-          <MoreHorizIcon />
-        </div>
+        {getDiscoverWeekly()?.playlist.length > 0 && (
+          <div className="playlistPage_icons">
+            {playing && playlistIsPlayling ? (
+              <PauseCircleFilledIcon
+                className="playlistPage_play"
+                onClick={() => pause()}
+              />
+            ) : (
+              <PlayCircleFilledIcon
+                className="playlistPage_play"
+                onClick={() =>
+                  playlistIsPlayling ? pause() : handlePlaylist(discover_weekly)
+                }
+              />
+            )}
+            {shuffleState ? (
+              <img
+                src={shuffle}
+                className="playlistPage_shuffle active"
+                onClick={() => handleUnshuffle()}
+              />
+            ) : (
+              <img
+                src={shuffle}
+                className="playlistPage_shuffle"
+                onClick={() => handleShuffle()}
+              />
+            )}
+            <FavoriteIcon fontSize="large" />
+          </div>
+        )}
         {/*List of songs */}
-        {discover_weekly?.tracks.items.map((item) => {
-          return typeof item.track.track !== "undefined" ? (
+        {getDiscoverWeekly()?.playlist.map((item) => {
+          return typeof item !== "undefined" ? (
             <div
-              id={item.track.id}
-              key={item.track.id}
-              // onClick={() => {
-              //   addFrontQueue({ item: item, platform: "Spotify" });
-              //   skip();
-              // }}
-              onContextMenu={(e) => updateContextMenu(e, item.track)}
+              id={item.id}
+              key={item.id}
+              onClick={() => {
+                addFrontQueue(item);
+                skip();
+              }}
             >
               <SongRow
-                key={uniqueId("songRow-")}
-                track={item.track}
-                search={false}
+                key={uniqueId("songRow-spotify")}
+                track={item}
+                popup={popup}
+                togglePopup={togglePopup}
+                setPopupType={setPopupType}
+                platform={item.platform}
+                setRemoveTrack={setRemoveTrack}
+                playlist={getDiscoverWeekly()}
               />
             </div>
           ) : (
             // These are songs that are downloaded on the users local computer,
             // and therefore cannot be embedded into the spotify embedded player iframe.
-            <SongRow track={item.track} />
+            <SongRow track={item} />
           );
         })}
       </div>
