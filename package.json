@@ -33,15 +33,11 @@
     "react-router-dom": "^6.6.1",
     "react-scripts": "^4.0.3",
     "sc-searcher": "^1.0.5",
-    "scrape-soundcloud": "^0.1.7",
-    "scrape-youtube": "^2.3.2",
     "soundcloud": "^3.3.2",
     "soundcloud-widget": "^0.2.1",
     "spotify-web-api-js": "^1.5.2",
     "stream-http": "^3.2.0",
     "web-vitals": "^3.1.0",
-    "youtube-dl": "^3.5.0",
-    "youtube-search": "^1.1.6",
     "zustand": "^4.3.3"
   },
   "scripts": {

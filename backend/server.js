@@ -64,6 +64,7 @@ app.use(
   morgan("dev")
 );
 app.use(express.json());
+app.use(express.static("public"));
 
 const mongoURI =
   "mongodb+srv://nohwolde:Injeralord01@cluster0.yo2uwa5.mongodb.net/test";
@@ -305,6 +306,8 @@ app.post("/sc/track", async function (req, res) {
   // console.log(await results);
 });
 
-app.listen(8000, () => {
+const port = process.env.PORT || 3000;
+
+app.listen(port, () => {
   console.log("Server is running on port 8000");
 });
