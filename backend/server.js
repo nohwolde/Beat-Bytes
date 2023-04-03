@@ -64,6 +64,7 @@ app.use(
   morgan("dev")
 );
 app.use(express.json());
+app.use(express.static("public"));
 
 const mongoURI =
   "mongodb+srv://nohwolde:Injeralord01@cluster0.yo2uwa5.mongodb.net/test";
