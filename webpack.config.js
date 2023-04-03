@@ -41,11 +41,6 @@ module.exports = {
       directory: path.resolve(__dirname, "dist"),
     },
     port: 3000,
-    // host: 'localhost',
-    // open: true,
-    // hot: true,
-    // compress: true,
-    // historyApiFallback: true,
     headers: {
       "Access-Control-Allow-Origin": "*",
     },

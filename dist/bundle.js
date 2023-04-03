@@ -4381,6 +4381,36 @@ function useIsFocusVisible() {
 
 /***/ }),
 
+/***/ "./node_modules/@material-ui/icons/Cancel.js":
+/*!***************************************************!*\
+  !*** ./node_modules/@material-ui/icons/Cancel.js ***!
+  \***************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var React = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
+  d: "M12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm5 13.59L15.59 17 12 13.41 8.41 17 7 15.59 10.59 12 7 8.41 8.41 7 12 10.59 15.59 7 17 8.41 13.41 12 17 15.59z"
+}), 'Cancel');
+
+exports["default"] = _default;
+
+/***/ }),
+
 /***/ "./node_modules/@material-ui/icons/Favorite.js":
 /*!*****************************************************!*\
   !*** ./node_modules/@material-ui/icons/Favorite.js ***!
@@ -4466,36 +4496,6 @@ var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/crea
 var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
   d: "M20 2H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 5h-3v5.5c0 1.38-1.12 2.5-2.5 2.5S10 13.88 10 12.5s1.12-2.5 2.5-2.5c.57 0 1.08.19 1.5.51V5h4v2zM4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6z"
 }), 'LibraryMusic');
-
-exports["default"] = _default;
-
-/***/ }),
-
-/***/ "./node_modules/@material-ui/icons/MoreHoriz.js":
-/*!******************************************************!*\
-  !*** ./node_modules/@material-ui/icons/MoreHoriz.js ***!
-  \******************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-
-var React = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
-
-var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
-  d: "M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
-}), 'MoreHoriz');
 
 exports["default"] = _default;
 
@@ -4651,36 +4651,6 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "./node_modules/@material-ui/icons/Shuffle.js":
-/*!****************************************************!*\
-  !*** ./node_modules/@material-ui/icons/Shuffle.js ***!
-  \****************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
-
-var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = void 0;
-
-var React = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
-
-var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
-
-var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
-  d: "M10.59 9.17L5.41 4 4 5.41l5.17 5.17 1.42-1.41zM14.5 4l2.04 2.04L4 18.59 5.41 20 17.96 7.46 20 9.5V4h-5.5zm.33 9.41l-1.41 1.41 3.13 3.13L14.5 20H20v-5.5l-2.04 2.04-3.13-3.13z"
-}), 'Shuffle');
-
-exports["default"] = _default;
-
-/***/ }),
-
 /***/ "./node_modules/@material-ui/icons/SkipNext.js":
 /*!*****************************************************!*\
   !*** ./node_modules/@material-ui/icons/SkipNext.js ***!
@@ -4766,6 +4736,36 @@ var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/crea
 var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
   d: "M18.5 12c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM5 9v6h4l5 5V4L9 9H5z"
 }), 'VolumeDown');
+
+exports["default"] = _default;
+
+/***/ }),
+
+/***/ "./node_modules/@material-ui/icons/VolumeUp.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/@material-ui/icons/VolumeUp.js ***!
+  \*****************************************************/
+/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
+
+"use strict";
+
+
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "./node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+
+var _interopRequireWildcard = __webpack_require__(/*! @babel/runtime/helpers/interopRequireWildcard */ "./node_modules/@babel/runtime/helpers/interopRequireWildcard.js");
+
+Object.defineProperty(exports, "__esModule", ({
+  value: true
+}));
+exports["default"] = void 0;
+
+var React = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+
+var _createSvgIcon = _interopRequireDefault(__webpack_require__(/*! ./utils/createSvgIcon */ "./node_modules/@material-ui/icons/utils/createSvgIcon.js"));
+
+var _default = (0, _createSvgIcon.default)( /*#__PURE__*/React.createElement("path", {
+  d: "M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"
+}), 'VolumeUp');
 
 exports["default"] = _default;
 
@@ -8577,18 +8577,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Loading_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Loading.jsx */ "./src/Components/Loading.jsx");
 /* harmony import */ var spotify_web_api_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! spotify-web-api-js */ "./node_modules/spotify-web-api-js/src/spotify-web-api.js");
 /* harmony import */ var spotify_web_api_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(spotify_web_api_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
-/* harmony import */ var _Player_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Player.jsx */ "./src/Components/Player.jsx");
+/* harmony import */ var _Player_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Player.jsx */ "./src/Components/Player.jsx");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store */ "./src/store.js");
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
 
 
 
@@ -8597,10 +8607,56 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 var spotify = new (spotify_web_api_js__WEBPACK_IMPORTED_MODULE_3___default())();
 function App() {
-  var _useDataLayerValue = (0,_DataLayer__WEBPACK_IMPORTED_MODULE_4__.useDataLayerValue)(),
-    _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2),
-    token = _useDataLayerValue2[0].token,
-    dispatch = _useDataLayerValue2[1];
+  //SPOTIFY
+  var setSpotify = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.setSpotify;
+  });
+  var token = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.token;
+  });
+  var setToken = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.setToken;
+  });
+  var setUser = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.setUser;
+  });
+  var setPlaylists = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.setPlaylists;
+  });
+  var getPlaylists = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.getPlaylists;
+  });
+  var setTopArtists = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.setTopArtists;
+  });
+  var addToPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.addToPlaylist;
+  });
+  var addPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.addPlaylist;
+  });
+  var addToBeatbytes = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.addToBeatbytes;
+  });
+  var pop = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.pop;
+  });
+
+  //ACTIONS
+  var skip = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.skip;
+  });
+  var reverse = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.reverse;
+  });
+
+  //QUEUE
+  var addQueue = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.addQueue;
+  });
+  var back = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.back;
+  });
   function getHashParams() {
     var hashParams = {};
     var e,
@@ -8613,74 +8669,256 @@ function App() {
     }
     return hashParams;
   }
-  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(function () {
-    var hash = getHashParams();
-    window.location.hash = "";
-    var _token = hash.access_token;
-    var _refresh = hash.refresh_token;
-    if (_token) {
-      dispatch({
-        type: "SET_TOKEN",
-        token: _token
-      });
-      dispatch({
-        type: "SET_REFRESH_TROKEN",
-        refresh_token: _refresh
-      });
-      spotify.setAccessToken(_token);
-      fetchUser();
-      fetchTopArtists();
-      fetchPlaylists();
-      dispatch({
-        type: "SET_SPOTIFY",
-        spotify: spotify
-      });
-    }
-    console.log("I have a token: ", token);
-  }, [token, dispatch]);
+  (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)( /*#__PURE__*/_asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
+    var hash, _token;
+    return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+      while (1) switch (_context4.prev = _context4.next) {
+        case 0:
+          hash = getHashParams();
+          window.location.hash = "";
+          _token = hash.access_token;
+          console.log(hash);
+          if (!_token) {
+            _context4.next = 10;
+            break;
+          }
+          setToken(_token);
+          spotify.setAccessToken(_token);
+          setSpotify(spotify);
+          _context4.next = 10;
+          return Promise.all([fetchPlaylists(), fetchUser(), fetchTopArtists()]).then( /*#__PURE__*/function () {
+            var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(values) {
+              var playlists;
+              return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+                while (1) switch (_context3.prev = _context3.next) {
+                  case 0:
+                    console.log(values);
+                    _context3.next = 3;
+                    return Promise.all([values[0].map(function (playlist) {
+                      return {
+                        id: playlist.id,
+                        name: playlist.name,
+                        playlist: playlist.playlist,
+                        platform: "Spotify",
+                        images: playlist.images,
+                        owner: playlist.owner,
+                        description: playlist.description
+                      };
+                    })]);
+                  case 3:
+                    playlists = _context3.sent;
+                    _context3.t0 = Promise;
+                    _context3.next = 7;
+                    return axios__WEBPACK_IMPORTED_MODULE_5___default().post("/db/user/login_or_create", {
+                      id: values[1].id,
+                      playlists: [],
+                      profilePhoto: values[1].images[0].url,
+                      displayName: values[1].display_name
+                    });
+                  case 7:
+                    _context3.t1 = _context3.sent;
+                    _context3.next = 10;
+                    return _context3.t0.resolve.call(_context3.t0, _context3.t1).then( /*#__PURE__*/function () {
+                      var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(user) {
+                        return _regeneratorRuntime().wrap(function _callee$(_context) {
+                          while (1) switch (_context.prev = _context.next) {
+                            case 0:
+                              if (!(user.data.playlists.length === 0)) {
+                                _context.next = 3;
+                                break;
+                              }
+                              _context.next = 3;
+                              return Promise.all(values[0].map(function (playlist) {
+                                return axios__WEBPACK_IMPORTED_MODULE_5___default().post("/db/user/createPlaylist", {
+                                  id: values[1].id,
+                                  playlist: _objectSpread(_objectSpread({}, playlist), {}, {
+                                    playlist: playlist.playlist.filter(function (track) {
+                                      return !(track.item.is_local ? track.item.is_local : false);
+                                    })
+                                  })
+                                });
+                              }));
+                            case 3:
+                              return _context.abrupt("return", values[1].id);
+                            case 4:
+                            case "end":
+                              return _context.stop();
+                          }
+                        }, _callee);
+                      }));
+                      return function (_x2) {
+                        return _ref3.apply(this, arguments);
+                      };
+                    }()).then( /*#__PURE__*/function () {
+                      var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(id) {
+                        var user;
+                        return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+                          while (1) switch (_context2.prev = _context2.next) {
+                            case 0:
+                              console.log(values);
+                              _context2.next = 3;
+                              return axios__WEBPACK_IMPORTED_MODULE_5___default().get("/db/user/getUser", {
+                                params: {
+                                  id: id
+                                }
+                              });
+                            case 3:
+                              user = _context2.sent;
+                              if (user) {
+                                setPlaylists(user.data.playlists);
+                              }
+                            case 5:
+                            case "end":
+                              return _context2.stop();
+                          }
+                        }, _callee2);
+                      }));
+                      return function (_x3) {
+                        return _ref4.apply(this, arguments);
+                      };
+                    }());
+                  case 10:
+                  case "end":
+                    return _context3.stop();
+                }
+              }, _callee3);
+            }));
+            return function (_x) {
+              return _ref2.apply(this, arguments);
+            };
+          }());
+        case 10:
+          console.log("I have a token: ", _token);
+        case 11:
+        case "end":
+          return _context4.stop();
+      }
+    }, _callee4);
+  })), []);
   function fetchPlaylists() {
     return _fetchPlaylists.apply(this, arguments);
   }
   function _fetchPlaylists() {
-    _fetchPlaylists = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2() {
+    _fetchPlaylists = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee8() {
       var lst;
-      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
-        while (1) switch (_context2.prev = _context2.next) {
+      return _regeneratorRuntime().wrap(function _callee8$(_context8) {
+        while (1) switch (_context8.prev = _context8.next) {
           case 0:
+            // await spotify.getMyCurrentPlayingTrack().then((response) => {
+            //   console.log("User Playlists:", response);
+            //   if (response.item ? response.item !== null : false) {
+            //     addQueue({ item: response.item, platform: "Spotify" });
+            //     pop();
+            //   }
+            // });
             lst = [];
-            _context2.next = 3;
-            return spotify.getUserPlaylists().then(function (playlists) {
-              return playlists.items.forEach( /*#__PURE__*/function () {
-                var _ref = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(playlist) {
-                  return _regeneratorRuntime().wrap(function _callee$(_context) {
-                    while (1) switch (_context.prev = _context.next) {
-                      case 0:
-                        _context.next = 2;
-                        return spotify.getPlaylist(playlist.id).then(function (response) {
-                          lst.push(response);
-                        });
-                      case 2:
-                      case "end":
-                        return _context.stop();
-                    }
-                  }, _callee);
-                }));
-                return function (_x2) {
-                  return _ref.apply(this, arguments);
-                };
-              }());
+            _context8.next = 3;
+            return spotify.getUserPlaylists().then( /*#__PURE__*/function () {
+              var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee7(playlists) {
+                return _regeneratorRuntime().wrap(function _callee7$(_context7) {
+                  while (1) switch (_context7.prev = _context7.next) {
+                    case 0:
+                      _context7.next = 2;
+                      return Promise.all(playlists.items.map( /*#__PURE__*/function () {
+                        var _ref6 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee6(playlist) {
+                          return _regeneratorRuntime().wrap(function _callee6$(_context6) {
+                            while (1) switch (_context6.prev = _context6.next) {
+                              case 0:
+                                _context6.next = 2;
+                                return spotify.getPlaylist(playlist.id).then( /*#__PURE__*/function () {
+                                  var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(response) {
+                                    return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+                                      while (1) switch (_context5.prev = _context5.next) {
+                                        case 0:
+                                          console.log("User's Playlists", response);
+                                          _context5.t0 = lst;
+                                          _context5.next = 4;
+                                          return Promise.all(response.tracks.items.map(function (track) {
+                                            return {
+                                              item: {
+                                                name: track.track.name,
+                                                id: track.track.id,
+                                                is_local: track.is_local,
+                                                artists: _toConsumableArray(track.track.artists.map(function (artist) {
+                                                  return {
+                                                    id: artist.id,
+                                                    name: artist.name,
+                                                    uri: artist.uri
+                                                  };
+                                                })),
+                                                album: {
+                                                  name: track.track.album.name,
+                                                  id: track.track.album.id,
+                                                  images: [track.track.album.images[0] ? track.track.album.images[0].url : ""],
+                                                  is_playable: track.track.album.is_playable,
+                                                  uri: track.track.album.uri
+                                                },
+                                                uri: track.track.uri
+                                              },
+                                              platform: "Spotify"
+                                            };
+                                          }));
+                                        case 4:
+                                          _context5.t1 = _context5.sent;
+                                          _context5.t2 = response.id;
+                                          _context5.t3 = response.name;
+                                          _context5.t4 = response.description;
+                                          _context5.t5 = [response.images[0] ? response.images[0].url : ""];
+                                          _context5.t6 = {
+                                            link: response.owner ? response.owner.external_urls.spotify : ""
+                                          };
+                                          _context5.t7 = {
+                                            playlist: _context5.t1,
+                                            id: _context5.t2,
+                                            name: _context5.t3,
+                                            platform: "Spotify",
+                                            description: _context5.t4,
+                                            images: _context5.t5,
+                                            owner: _context5.t6
+                                          };
+                                          _context5.t0.push.call(_context5.t0, _context5.t7);
+                                        case 12:
+                                        case "end":
+                                          return _context5.stop();
+                                      }
+                                    }, _callee5);
+                                  }));
+                                  return function (_x6) {
+                                    return _ref7.apply(this, arguments);
+                                  };
+                                }());
+                              case 2:
+                              case "end":
+                                return _context6.stop();
+                            }
+                          }, _callee6);
+                        }));
+                        return function (_x5) {
+                          return _ref6.apply(this, arguments);
+                        };
+                      }()));
+                    case 2:
+                      return _context7.abrupt("return", _context7.sent);
+                    case 3:
+                    case "end":
+                      return _context7.stop();
+                  }
+                }, _callee7);
+              }));
+              return function (_x4) {
+                return _ref5.apply(this, arguments);
+              };
+            }()).then(function () {
+              console.log(lst);
+              return lst;
             });
           case 3:
-            dispatch({
-              type: "SET_PLAYLISTS",
-              playlists: lst
-            });
-            console.log(lst);
-          case 5:
+            return _context8.abrupt("return", lst);
+          case 4:
           case "end":
-            return _context2.stop();
+            return _context8.stop();
         }
-      }, _callee2);
+      }, _callee8);
     }));
     return _fetchPlaylists.apply(this, arguments);
   }
@@ -8688,22 +8926,23 @@ function App() {
     return _fetchTopArtists.apply(this, arguments);
   }
   function _fetchTopArtists() {
-    _fetchTopArtists = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
-      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-        while (1) switch (_context3.prev = _context3.next) {
+    _fetchTopArtists = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee9() {
+      return _regeneratorRuntime().wrap(function _callee9$(_context9) {
+        while (1) switch (_context9.prev = _context9.next) {
           case 0:
-            _context3.next = 2;
+            _context9.next = 2;
             return spotify.getMyTopArtists().then(function (response) {
-              return dispatch({
-                type: "SET_TOP_ARTISTS",
-                top_artists: response
-              });
+              console.log(response);
+              setTopArtists(response);
+              return response;
             });
           case 2:
+            return _context9.abrupt("return", _context9.sent);
+          case 3:
           case "end":
-            return _context3.stop();
+            return _context9.stop();
         }
-      }, _callee3);
+      }, _callee9);
     }));
     return _fetchTopArtists.apply(this, arguments);
   }
@@ -8711,31 +8950,33 @@ function App() {
     return _fetchUser.apply(this, arguments);
   }
   function _fetchUser() {
-    _fetchUser = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4() {
-      return _regeneratorRuntime().wrap(function _callee4$(_context4) {
-        while (1) switch (_context4.prev = _context4.next) {
+    _fetchUser = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee10() {
+      return _regeneratorRuntime().wrap(function _callee10$(_context10) {
+        while (1) switch (_context10.prev = _context10.next) {
           case 0:
-            _context4.next = 2;
+            _context10.next = 2;
             return spotify.getMe().then(function (user) {
-              dispatch({
-                type: "SET_USER",
-                user: user
-              });
+              setUser(user);
               console.log(user);
+              return user;
             });
           case 2:
+            return _context10.abrupt("return", _context10.sent);
+          case 3:
           case "end":
-            return _context4.stop();
+            return _context10.stop();
         }
-      }, _callee4);
+      }, _callee10);
     }));
     return _fetchUser.apply(this, arguments);
   }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
-    className: "app"
-  }, token ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Player_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: token ? "" : "disabled"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Player_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     spotify: spotify
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Loading_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+  })), !token && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement("div", {
+    className: "AppBlur"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1__.createElement(_Loading_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (App);
 
@@ -8755,12 +8996,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_Body_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Body.scss */ "./src/styles/Body.scss");
 /* harmony import */ var _Header_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Header.jsx */ "./src/Components/Header.jsx");
-/* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
-/* harmony import */ var _MenuContext_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./MenuContext.jsx */ "./src/Components/MenuContext.jsx");
-/* harmony import */ var _useContextMenu_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./useContextMenu.jsx */ "./src/Components/useContextMenu.jsx");
-/* harmony import */ var _PlaylistPage_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./PlaylistPage.jsx */ "./src/Components/PlaylistPage.jsx");
-/* harmony import */ var _SearchPage_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SearchPage.jsx */ "./src/Components/SearchPage.jsx");
-/* harmony import */ var _HomePage_jsx__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./HomePage.jsx */ "./src/Components/HomePage.jsx");
+/* harmony import */ var _PlaylistPage_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./PlaylistPage.jsx */ "./src/Components/PlaylistPage.jsx");
+/* harmony import */ var _SearchPage_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SearchPage.jsx */ "./src/Components/SearchPage.jsx");
+/* harmony import */ var _HomePage_jsx__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./HomePage.jsx */ "./src/Components/HomePage.jsx");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _QueuePage_jsx__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./QueuePage.jsx */ "./src/Components/QueuePage.jsx");
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -8775,62 +9015,52 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-
-var data = [{
-  id: 1,
-  title: "Play Now"
-}, {
-  id: 2,
-  title: "Add to Queue"
-}];
 function Body(_ref) {
-  var spotify = _ref.spotify;
-  //⌄ Data values extracted from data layer
-  var _useDataLayerValue = (0,_DataLayer__WEBPACK_IMPORTED_MODULE_3__.useDataLayerValue)(),
-    _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2),
-    page = _useDataLayerValue2[0].page,
-    dispatch = _useDataLayerValue2[1];
-  var _useContextMenu = (0,_useContextMenu_jsx__WEBPACK_IMPORTED_MODULE_5__["default"])(),
-    clicked = _useContextMenu.clicked,
-    setClicked = _useContextMenu.setClicked,
-    points = _useContextMenu.points,
-    setPoints = _useContextMenu.setPoints;
+  var spotify = _ref.spotify,
+    popup = _ref.popup,
+    togglePopup = _ref.togglePopup,
+    setPopupType = _ref.setPopupType,
+    setRemoveTrack = _ref.setRemoveTrack,
+    removeFromPlaylist = _ref.removeFromPlaylist;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    loading = _useState2[0],
+    setLoading = _useState2[1];
+  var page = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.page;
+  });
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    setTimeout(function () {
-      if (page === "Home") {
-        dispatch({
-          type: "SET_PAGE",
-          page: "Home"
-        });
-      }
-    }, 1500);
-  }, []);
-  var updateContextMenu = function updateContextMenu(e, item) {
-    var song = document.getElementById(item.id);
-    setClicked(true);
-    setPoints({
-      x: e.clientX - song.scrollTop,
-      y: e.clientY
-    });
-    console.log("Right Click", e.pageX - song.scrollTop, e.pageY);
-  };
+    setLoading(loading);
+  }, [loading]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "body",
     id: "body"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Header_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    spotify: spotify,
+    setLoading: setLoading
+  }), page === "Home" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomePage_jsx__WEBPACK_IMPORTED_MODULE_5__["default"], {
     spotify: spotify
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_MenuContext_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    data: data,
-    click: clicked,
-    pointX: points.x,
-    pointY: points.y
-  }), page === "Home" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_HomePage_jsx__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    spotify: spotify
-  }) : page === "Search" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SearchPage_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    spotify: spotify
-  }) : page === "Discover Weekly" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_PlaylistPage_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    spotify: spotify
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null));
+  }) : page === "Search" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SearchPage_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    spotify: spotify,
+    popup: popup,
+    togglePopup: togglePopup,
+    loading: loading,
+    setPopupType: setPopupType,
+    SearchPage: true
+  }) : page === "Playlist" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_PlaylistPage_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    spotify: spotify,
+    popup: popup,
+    togglePopup: togglePopup,
+    setPopupType: setPopupType,
+    setRemoveTrack: setRemoveTrack
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_QueuePage_jsx__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    spotify: spotify,
+    popup: popup,
+    togglePopup: togglePopup,
+    setPopupType: setPopupType,
+    setRemoveTrack: setRemoveTrack,
+    removeFromPlaylist: removeFromPlaylist
+  }));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Body);
 
@@ -8849,29 +9079,34 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_Footer_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Footer.scss */ "./src/styles/Footer.scss");
-/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
-/* harmony import */ var _material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/PauseCircleFilled */ "./node_modules/@material-ui/icons/PauseCircleFilled.js");
-/* harmony import */ var _material_ui_icons_SkipPrevious__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/SkipPrevious */ "./node_modules/@material-ui/icons/SkipPrevious.js");
-/* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/SkipNext */ "./node_modules/@material-ui/icons/SkipNext.js");
-/* harmony import */ var _material_ui_icons_Shuffle__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/Shuffle */ "./node_modules/@material-ui/icons/Shuffle.js");
-/* harmony import */ var _material_ui_icons_Repeat__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/Repeat */ "./node_modules/@material-ui/icons/Repeat.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Slider/Slider.js");
-/* harmony import */ var _material_ui_icons_PlaylistPlay__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/PlaylistPlay */ "./node_modules/@material-ui/icons/PlaylistPlay.js");
-/* harmony import */ var _material_ui_icons_VolumeDown__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/icons/VolumeDown */ "./node_modules/@material-ui/icons/VolumeDown.js");
-/* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
-/* harmony import */ var _pics_soundcloud_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pics/soundcloud.svg */ "./src/Components/pics/soundcloud.svg");
-/* harmony import */ var _pics_spot_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pics/spot.svg */ "./src/Components/pics/spot.svg");
-/* harmony import */ var _pics_yt_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pics/yt.svg */ "./src/Components/pics/yt.svg");
-/* harmony import */ var react_player__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-player */ "./node_modules/react-player/lib/index.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
+/* harmony import */ var _material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/PauseCircleFilled */ "./node_modules/@material-ui/icons/PauseCircleFilled.js");
+/* harmony import */ var _material_ui_icons_SkipPrevious__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/SkipPrevious */ "./node_modules/@material-ui/icons/SkipPrevious.js");
+/* harmony import */ var _material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/SkipNext */ "./node_modules/@material-ui/icons/SkipNext.js");
+/* harmony import */ var _material_ui_icons_Repeat__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/Repeat */ "./node_modules/@material-ui/icons/Repeat.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Grid/Grid.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Slider/Slider.js");
+/* harmony import */ var _material_ui_icons_PlaylistPlay__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/PlaylistPlay */ "./node_modules/@material-ui/icons/PlaylistPlay.js");
+/* harmony import */ var _material_ui_icons_VolumeDown__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/VolumeDown */ "./node_modules/@material-ui/icons/VolumeDown.js");
+/* harmony import */ var _material_ui_icons_VolumeUp__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/icons/VolumeUp */ "./node_modules/@material-ui/icons/VolumeUp.js");
+/* harmony import */ var _pics_soundcloud_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pics/soundcloud.svg */ "./src/Components/pics/soundcloud.svg");
+/* harmony import */ var _pics_spot_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pics/spot.svg */ "./src/Components/pics/spot.svg");
+/* harmony import */ var _pics_yt_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pics/yt.svg */ "./src/Components/pics/yt.svg");
+/* harmony import */ var react_player__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-player */ "./node_modules/react-player/lib/index.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _pics_shuffle_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pics/shuffle.png */ "./src/Components/pics/shuffle.png");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
 function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
 
 
 
@@ -8897,58 +9132,146 @@ document.body.appendChild(script);
 // creates the footer/player element for the application
 function Footer(_ref) {
   var spotify = _ref.spotify;
-  var _useDataLayerValue = (0,_DataLayer__WEBPACK_IMPORTED_MODULE_2__.useDataLayerValue)(),
-    _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2),
-    _useDataLayerValue2$ = _useDataLayerValue2[0],
-    item = _useDataLayerValue2$.item,
-    playing = _useDataLayerValue2$.playing,
-    volume = _useDataLayerValue2$.volume,
-    soundcloud = _useDataLayerValue2$.soundcloud,
-    youtube = _useDataLayerValue2$.youtube,
-    dispatch = _useDataLayerValue2[1];
   var skipButton = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
-  var prevButton = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var reverseButton = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var pauseButton = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var playerRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
 
   // Queue actions
-  var getQueue = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+  var getQueue = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
     return state.getQueue;
   });
-  var pop = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+  var getFullQueue = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getFullQueue;
+  });
+  var getPlaying = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getPlaying;
+  });
+  var pop = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
     return state.pop;
   });
-  var back = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
+  var back = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
     return state.back;
+  });
+  var getQueuePosition = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getQueuePosition;
+  });
+  var getQueueLength = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getQueueLength;
+  });
+  var addQueue = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.addQueue;
+  });
+  var addFrontQueue = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.addFrontQueue;
+  });
+  var resetPlaylistPosition = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.resetPlaylistPosition;
+  });
+  // ReactPlayer actions
+  var soundcloud = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.soundcloud;
+  });
+  var youtube = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.youtube;
+  });
+  var setSoundcloud = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.setSoundcloud;
+  });
+  var setYoutube = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.setYoutube;
+  });
+  var getSoundcloud = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getSoundcloud;
+  });
+  var getYoutube = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getYoutube;
+  });
+  var setFirstRender = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.setFirstRender;
+  });
+  var getFirstRender = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getFirstRender;
+  });
+
+  // Spotify actions
+  var setPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.setPlaylist;
+  });
+  var getPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getPlaylist;
+  });
+  var getPlaylistNext = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getPlaylistNext;
+  });
+  var skipPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.skipPlaylist;
+  });
+  var getPlaylistPosition = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getPlaylistPosition;
+  });
+  var setPlaylistPosition = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.setPlaylistPosition;
   });
 
   // Reverse actions
-  var getReverseStatus = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
-    return state.getReverseStatus;
-  });
-  var reverse = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
-    return state.reverse;
-  });
-  var resetReverse = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
-    return state.resetReverse;
-  });
-  var setPlaybackStatus = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+  var setPlaybackStatus = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
     return state.setPlaybackStatus;
   });
-  var getPlaybackStatus = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+  var getPlaybackStatus = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
     return state.getPlaybackStatus;
+  });
+  var setVolume = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.setVolume;
+  });
+  var volume = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.volume;
+  });
+  var playing = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.playing;
+  });
+  var setPlaying = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.setPlaying;
+  });
+  var getShuffleState = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.getShuffleState;
+  });
+  var setShuffleState = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.setShuffleState;
+  });
+  var shuffleState = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.shuffleState;
   });
 
   // Platform actions
-  var setPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+  var setPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
     return state.setPlatform;
   });
-  var getPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+  var getPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
     return state.getPlatform;
   });
-  var platform = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+  var platform = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
     return state.platform;
   });
-  var setSkipButton = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+  var setSkipButton = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
     return state.setSkipButton;
+  });
+  var setReverseButton = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.setReverseButton;
+  });
+  var setPauseButton = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.setPauseButton;
+  });
+  var getPlayingStatus = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.getPlayingStatus;
+  });
+  var setEmbedController = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
+    return state.setEmbedController;
+  });
+
+  // Page actions
+  var setPage = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.setPage;
   });
   var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
     _useState2 = _slicedToArray(_useState, 2),
@@ -8963,8 +9286,20 @@ function Footer(_ref) {
     spotifyPos = _useState6[0],
     setSpotifyPos = _useState6[1];
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    getQueue();
+  }, [getQueue()]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     setSkipButton(skipButton);
-  });
+  }, [skipButton]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    setReverseButton(reverseButton);
+  }, [reverseButton]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    setPauseButton(pauseButton);
+  }, [pauseButton]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    getShuffleState();
+  }, [shuffleState]);
   (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
     if (getPlatform() === "Spotify") {
       console.log("loading spotify player");
@@ -8973,195 +9308,280 @@ function Footer(_ref) {
           setApi(IFrameAPI);
           console.log(IFrameAPI);
           setIframe(IFrameAPI);
+          console.log(getFullQueue());
         };
       } else {
         console.log("spotify player already loaded");
+        // figure out if we can do this without removing the iframe
         setIframe(api, spotifyPos);
       }
     }
-  }, [platform, item]);
+  }, [platform]);
   var setIframe = function setIframe(IFrameAPI) {
-    var seek = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
+    var _getQueue, _getPlaylistNext;
     var element = document.getElementById("embed-iframe");
     console.log(element);
     var options = {
-      width: "300",
+      width: "400",
       height: "95",
-      uri: "spotify:".concat(item.type, ":").concat(item.id)
+      uri: ((_getQueue = getQueue()) === null || _getQueue === void 0 ? void 0 : _getQueue.item.uri) || ((_getPlaylistNext = getPlaylistNext()) === null || _getPlaylistNext === void 0 ? void 0 : _getPlaylistNext.item.uri) || "spotify:track:2Y0wPrPQBrGhoLn14xRYCG",
+      allow: "encrypted-media"
     };
     var callback = function callback(EmbedController) {
       EmbedController.addListener("ready", function () {
         console.log("The Embed has initialized");
-        EmbedController.seek(seek);
+        if (!getFirstRender()) {
+          console.log("playing as normal");
+          setPlaying(true);
+          EmbedController.togglePlay();
+        } else setFirstRender(false);
+        setEmbedController(EmbedController);
       });
       EmbedController.addListener("playback_update", function (e) {
         setPlaybackStatus(e.data);
-        if (getReverseStatus()) {}
-        if (e.data.position === e.data.duration) {
+        if (e.data.position === e.data.duration && !e.data.isPaused) {
+          console.log(e.data);
           console.log("Song Ended");
-          console.log(getQueue());
-          if (getQueue().platform === "Spotify") {
-            var nextItem = getQueue().item.track.uri;
-            EmbedController.loadUri(nextItem);
-            handleQueue();
-          } else handleQueue();
+          console.log(getPlaylist());
+          // setPlaying(false);
+          skipNext();
+        }
+        if (e.data.isPaused !== !getPlayingStatus()) {
+          setPlaying(!e.data.isPaused);
         }
       });
       document.getElementById("toggle").addEventListener("click", function () {
         if (getPlatform() === "Spotify") {
-          handlePlayPause();
-          EmbedController.togglePlay();
-        }
-      });
-      document.getElementById("next").addEventListener("click", function () {
-        if (getPlatform() === "Spotify") {
-          console.log("next");
-          if (getQueue().platform === "Spotify") {
-            var nextItem = getQueue().item.track.uri;
-            EmbedController.loadUri(nextItem);
+          if (getPlaybackStatus() === null || getPlaybackStatus().isPaused) {
+            setPlaying(true);
             EmbedController.togglePlay();
-            handleQueue();
-          } else handleQueue();
-        }
-      });
-      document.getElementById("prev").addEventListener("click", function () {
-        if (getPlatform() === "Spotify") {
-          if (e.data.position < 4000) {
-            resetReverse(); // set reverse status back to false
-            back(); // go back one song in the queue
-            back();
-            if (getQueue().platform === "Spotify") {
-              var nextItem = getQueue().item.track.uri;
-              EmbedController.loadUri(nextItem);
-              handleQueue();
-            } else handleQueue();
           } else {
-            EmbedController.togglePlay();
+            setPlaying(false);
+            EmbedController.pause();
           }
         }
       });
-      document.getElementById("sc").addEventListener("click", function () {
+      function handleItem(nextItem) {
+        var backwards = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+        if (nextItem.platform === "Spotify") {
+          console.log(nextItem);
+          EmbedController.loadUri(nextItem.item.uri);
+          console.log(getPlaybackStatus());
+        } else {
+          document.getElementById("next").removeEventListener("click", skipNext);
+          document.getElementById("prev").removeEventListener("click", goBack);
+          EmbedController.destroy();
+          if (!backwards) back();else pop();
+          setPlatform(nextItem.platform);
+          console.log("Platform:", nextItem.platform);
+        }
+      }
+      function skipNext() {
+        console.log("Queue Position:", getQueuePosition());
+        console.log("Full Queue:", getFullQueue());
+        console.log("Playlist Position:", getPlaylistPosition());
+        console.log("Playlist:", getPlaylist());
+        console.log("Queue Next", getQueue());
+        console.log("Playlist Next", getPlaylistNext());
+        if (getPlatform() === "Spotify") {
+          if (getQueueLength() === getQueuePosition() + 1) {
+            if (getPlaylist().playlist.length !== getPlaylistPosition() + 1) {
+              skipPlaylist();
+              var nextItem = getPlaylistNext();
+              if (nextItem !== undefined) {
+                addFrontQueue(nextItem);
+                pop();
+                handleItem(nextItem);
+              } else console.log("ERROR: nextItem is undefined");
+            } else {
+              resetPlaylistPosition();
+              var _nextItem = getPlaylistNext();
+              if (_nextItem !== undefined) {
+                addFrontQueue(_nextItem);
+                pop();
+                handleItem(_nextItem);
+              } else console.log("ERROR: nextItem is undefined");
+            }
+          } else {
+            pop();
+            console.log("next");
+            var _nextItem2 = getQueue();
+            console.log("Skipping to: ", _nextItem2);
+            console.log(getQueuePosition());
+            if (_nextItem2 !== undefined) {
+              handleItem(_nextItem2);
+            } else console.log("ERROR: nextItem is undefined");
+          }
+        }
+      }
+      function goBack() {
+        console.log(getQueuePosition());
+        if (getPlatform() === "Spotify") {
+          if (getPlaybackStatus().position < 4000 && getQueuePosition() > 0) {
+            back();
+            var prevItem = getQueue();
+            console.log(prevItem);
+            console.log(getFullQueue());
+            console.log(getQueuePosition());
+            // go back one song in the queue
+            handleItem(prevItem, true);
+          } else {
+            // restart the current song
+            console.log("restarting song");
+            EmbedController.seek(0);
+          }
+        }
+      }
+      function destroy() {
         console.log("destroying spotify player");
         EmbedController.destroy();
-      });
-      document.getElementById("yt").addEventListener("click", function () {
-        console.log("destroying spotify player");
-        EmbedController.destroy();
-      });
+      }
+      document.getElementById("next").addEventListener("click", skipNext);
+      document.getElementById("prev").addEventListener("click", goBack);
     };
     IFrameAPI.createController(element, options, callback);
   };
 
   //adds to youtube queue and/or removes the first element from the queue
-  var handleQueue = function handleQueue() {
-    if (getQueue().platform === "Spotify") {
-      // remove first element from queue
-      pop();
+  var handleQueue = function handleQueue(item) {
+    console.log(getFullQueue());
+    console.log(getQueuePosition());
+    setPlatform(item.platform);
+    if (item.platform === "Spotify") {
+      setPlatform("Spotify");
     } else {
+      console.log(getPlaying());
+      console.log(item);
       // play from react player
-    }
-  };
-
-  //Updates currently playing song and play/pause status of the player
-  // useEffect(() => {
-  //   spotify.getMyCurrentPlaybackState().then((r) => {
-  //     if(r !== null && r !== undefined){
-  //       dispatch({
-  //           type: "SET_ITEM",
-  //           item: r.item
-  //       });
-  //     }
-  //   });
-  //   console.log(item)
-  // }, [item, playing]);
-
-  //Updates the volume bar to match the levels in the spotify player
-  // useEffect(() => {
-  //     spotify.getVolume().then((vol) => {
-  //         console.log(vol)
-  //         dispatch({
-  //             type: "SET_VOLUME",
-  //             volume: vol
-  //         });
-  //     })
-  // }, [item, playing, dispatch])
-
-  //Pauses and plays the spotify player
-  var handlePlayPause = function handlePlayPause() {
-    if (getPlatform() === "Spotify") {
-      // const spotifyEmbedWindow = document.querySelector(
-      //   'iframe[src*="spotify.com/embed"]'
-      // ).contentWindow;
-      // spotifyEmbedWindow.postMessage({ command: "toggle" }, "*");
-      if (playing === null) {
-        dispatch({
-          type: "SET_PLAYING",
-          playing: true
-        });
-      } else if (!playing) {
-        dispatch({
-          type: "SET_PLAYING",
-          playing: !playing
-        });
+      if (item.platform === "Soundcloud") {
+        setSoundcloud(item);
+        setPlatform("Soundcloud");
       } else {
-        dispatch({
-          type: "SET_PLAYING",
-          playing: !playing
-        });
+        setYoutube(item);
+        setPlatform("Youtube");
       }
-    } else {
-      if (rPlaying) {
-        setrPlaying(false);
-        dispatch({
-          type: "SET_PLAYING",
-          playing: !rPlaying
-        });
-      }
-      setrPlaying(!rPlaying);
-      dispatch({
-        type: "SET_PLAYING",
-        playing: !rPlaying
-      });
     }
   };
-
-  //Changes volume to the value specified
-  var changeVolume = function changeVolume(value) {
-    dispatch({
-      type: "SET_VOLUME",
-      volume: value
-    });
+  var handleEnded = function handleEnded() {
+    if (getQueueLength() === getQueuePosition() + 1 && getPlaylist().playlist.length === 0) setPlaying(false);
+    handleNext();
+  };
+  var handleReverse = function handleReverse() {
+    console.log("reverse");
+    if (getPlatform() !== "Spotify") {
+      if (playerRef.current.getCurrentTime() <= 4) {
+        // go back one song in the queue
+        back();
+        if (getQueue() !== undefined) handleQueue(getQueue());else console.log("Error in handleReverse");
+      } else {
+        playerRef.current.seekTo(0, "seconds");
+      }
+    }
+  };
+  var handleNext = function handleNext() {
+    if (getPlatform() !== "Spotify") {
+      console.log("Normal Actions for Youtube Skip");
+      console.log("Queue Position:", getQueuePosition());
+      console.log("Full Queue:", getFullQueue());
+      console.log("Playlist Position:", getPlaylistPosition());
+      console.log("Playlist:", getPlaylist());
+      console.log("Queue Next", getQueue());
+      console.log("Playlist Next", getPlaylistNext());
+      if (getQueueLength() === getQueuePosition() + 1) {
+        if (getPlaylist().playlist.length !== getPlaylistPosition() + 1) {
+          skipPlaylist();
+          console.log("Getting Playlist:", getPlaylist());
+          var nextItem = getPlaylistNext();
+          if (nextItem !== undefined) {
+            addFrontQueue(nextItem);
+            pop();
+            handleQueue(nextItem);
+            console.log("nextItem", nextItem);
+          } else console.log("ERROR: nextItem is undefined");
+        } else {
+          console.log("Playlist is over");
+          resetPlaylistPosition();
+          var _nextItem3 = getPlaylistNext();
+          if (_nextItem3 !== undefined) {
+            addFrontQueue(_nextItem3);
+            pop();
+            handleQueue(_nextItem3);
+            console.log("nextItem", _nextItem3);
+          } else console.log("ERROR: nextItem is undefined");
+        }
+      } else {
+        pop();
+        var _nextItem4 = getQueue();
+        console.log("Skipping to: ", _nextItem4);
+        console.log(getQueuePosition());
+        if (_nextItem4 !== undefined) {
+          handleQueue(_nextItem4);
+          console.log("nextItem", _nextItem4);
+        } else console.log("ERROR: nextItem is undefined");
+      }
+    }
+  };
+  var handleUnshuffle = function handleUnshuffle() {
+    setShuffleState(!getShuffleState());
+    console.log("Unshuffling: ", getShuffleState());
+    if (getPlaylist() !== null) {
+      console.log("Unshuffling playlist:");
+      var position = 0;
+      for (var i = 0; i < getPlaylist().playlist.length; i++) {
+        if (getPlaylist().playlist[i].item.id === getQueue().item.id) {
+          console.log("Found position: ", i);
+          position = i;
+          break;
+        }
+      }
+      var playlist = getPlaylist().playlist.filter(function (song) {
+        return song.item.id !== getQueue().item.id;
+      });
+      setPlaylist(_objectSpread(_objectSpread({}, getPlaylist()), {}, {
+        playlist: playlist
+      }));
+      setPlaylistPosition(position - 1);
+    }
+  };
+  var handleShuffle = function handleShuffle() {
+    setShuffleState(!getShuffleState());
+    if (getPlaylist() !== null) {
+      var position = 0;
+      for (var i = 0; i < getPlaylist().playlist.length; i++) {
+        if (getDiscoverWeekly().playlist[i].item.id === getQueue().item.id) {
+          position = i;
+          break;
+        }
+      }
+      var playlist = getDiscoverWeekly().playlist.slice(position);
+      setPlaylist(_objectSpread(_objectSpread({}, getDiscoverWeekly()), {}, {
+        playlist: playlist
+      }));
+    }
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "footer",
     onKeyDown: function onKeyDown(e) {
       if (e.key === " ") {
-        handlePlayPause();
+        setPlaying(true);
       }
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "footer_left"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }, platform === "Spotify" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "",
-    src: _pics_spot_svg__WEBPACK_IMPORTED_MODULE_4__,
-    onClick: function onClick() {
-      return setPlatform("Spotify");
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    className: "footer_playerLogo",
+    src: _pics_spot_svg__WEBPACK_IMPORTED_MODULE_3__
+  }), getPlatform() === "Soundcloud" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     id: "sc",
     alt: "",
     className: "footer_playerLogo",
-    src: _pics_soundcloud_svg__WEBPACK_IMPORTED_MODULE_3__,
-    onClick: function onClick() {
-      return setPlatform("Soundcloud");
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: _pics_soundcloud_svg__WEBPACK_IMPORTED_MODULE_2__
+  }), getPlatform() === "Youtube" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "",
     id: "yt",
-    src: _pics_yt_svg__WEBPACK_IMPORTED_MODULE_5__,
-    onClick: function onClick() {
-      return setPlatform("Youtube");
-    }
+    className: "footer_playerLogo",
+    src: _pics_yt_svg__WEBPACK_IMPORTED_MODULE_4__
   }), getPlatform() === "Spotify" &&
   /*#__PURE__*/
   // displays a spotify song
@@ -9172,12 +9592,22 @@ function Footer(_ref) {
   //displays a youtube or soundcloud song
   react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "footer_spotifyInfo"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_player__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    url: getPlatform() === "Soundcloud" ? soundcloud.link : youtube.link,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react_player__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    ref: playerRef,
+    url: getPlatform() === "Soundcloud" ? getSoundcloud().link : getYoutube().link,
+    onPlay: function onPlay() {
+      return setPlaying(true);
+    },
+    onPause: function onPause() {
+      return setPlaying(false);
+    },
     playing: playing,
-    volume: volume ? volume * 0.1 : 0.5,
-    height: "90px",
-    width: "300px",
+    volume: volume,
+    onEnded: function onEnded() {
+      return handleEnded();
+    },
+    height: getPlatform() === "Soundcloud" ? "120px" : "110px",
+    width: "500px",
     config: {
       soundcloud: {
         options: {
@@ -9197,48 +9627,78 @@ function Footer(_ref) {
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "footer_center"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Shuffle__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    className: "footer_green"
+  }, !getShuffleState() ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: _pics_shuffle_png__WEBPACK_IMPORTED_MODULE_6__,
+    className: "footer_shuffle footer_icon",
+    onClick: function onClick() {
+      return handleShuffle();
+    }
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: _pics_shuffle_png__WEBPACK_IMPORTED_MODULE_6__,
+    className: "footer_shuffle footer_icon active",
+    onClick: function onClick() {
+      return handleUnshuffle();
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "prev",
-    ref: prevButton
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_SkipPrevious__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    className: "footer_icon"
+    ref: reverseButton
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_SkipPrevious__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    className: "footer_icon",
+    onClick: function onClick() {
+      return handleReverse();
+    }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "toggle"
-  }, playing ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    onClick: handlePlayPause,
-    fontSize: "large",
+    id: "toggle",
+    ref: pauseButton,
+    onClick: function onClick() {
+      if (getPlatform() !== "Spotify") setPlaying(!playing);
+    }
+  }, playing ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_9__["default"], {
     className: "footer_icon"
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    onClick: handlePlayPause,
-    fontSize: "large",
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_10__["default"], {
     className: "footer_icon"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     id: "next",
-    ref: skipButton
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    ref: skipButton,
+    onClick: function onClick() {
+      return handleNext();
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_SkipNext__WEBPACK_IMPORTED_MODULE_11__["default"], {
     className: "footer_icon"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Repeat__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    className: "footer_green"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Repeat__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    className: "footer_icon"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "footer_right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
     container: true,
     spacing: 2
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    item: true,
+    onClick: function onClick() {
+      setPage("Queue");
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlaylistPlay__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    className: "footer_icon",
+    fontSize: "large"
+  })), platform !== "Spotify" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(react__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
     item: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlaylistPlay__WEBPACK_IMPORTED_MODULE_15__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["default"], {
-    item: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_VolumeDown__WEBPACK_IMPORTED_MODULE_16__["default"], null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_14__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_VolumeDown__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    fontSize: "medium"
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
     item: true,
     xs: true
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_17__["default"], {
-    defaultValue: volume ? volume : 50,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    size: "small",
+    defaultValue: volume * 100,
     onChange: function onChange(_, value) {
-      return changeVolume(value);
+      setVolume(value * 0.01);
+      console.log(value);
     }
-  })))));
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    item: true
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_VolumeUp__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    fontSize: "medium"
+  }))))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Footer);
 
@@ -9257,23 +9717,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_Header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Header.scss */ "./src/styles/Header.scss");
-/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Search */ "./node_modules/@material-ui/icons/Search.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Avatar/Avatar.js");
-/* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
-/* harmony import */ var _SoundcloudScraper_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SoundcloudScraper.jsx */ "./src/Components/SoundcloudScraper.jsx");
-/* harmony import */ var _pics_soundcloudDark_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pics/soundcloudDark.svg */ "./src/Components/pics/soundcloudDark.svg");
-/* harmony import */ var _pics_spotDark_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pics/spotDark.svg */ "./src/Components/pics/spotDark.svg");
-/* harmony import */ var _pics_ytDark_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pics/ytDark.svg */ "./src/Components/pics/ytDark.svg");
+/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/Search */ "./node_modules/@material-ui/icons/Search.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Avatar/Avatar.js");
+/* harmony import */ var _SoundcloudScraper_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SoundcloudScraper.jsx */ "./src/Components/SoundcloudScraper.jsx");
+/* harmony import */ var _pics_soundcloudDark_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pics/soundcloudDark.svg */ "./src/Components/pics/soundcloudDark.svg");
+/* harmony import */ var _pics_spotDark_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pics/spotDark.svg */ "./src/Components/pics/spotDark.svg");
+/* harmony import */ var _pics_ytDark_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pics/ytDark.svg */ "./src/Components/pics/ytDark.svg");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./logo.png */ "./src/Components/logo.png");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_8__);
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
 function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
@@ -9283,114 +9746,147 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
-var opts = {
-  maxResults: 20,
-  key: "AIzaSyA1AZNcvUFb9Cz8eF075CeLJAW4mIq_G7s",
-  type: "video"
-};
+
+
+
+
 function Header(_ref) {
-  var _user$images$;
-  var spotify = _ref.spotify;
-  var _useDataLayerValue = (0,_DataLayer__WEBPACK_IMPORTED_MODULE_2__.useDataLayerValue)(),
-    _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2),
-    user = _useDataLayerValue2[0].user,
-    dispatch = _useDataLayerValue2[1];
-  var loading = true;
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Spotify"),
-    _useState2 = _slicedToArray(_useState, 2),
-    platform = _useState2[0],
-    setPlatform = _useState2[1];
+  var _user$external_urls, _user$images$;
+  var spotify = _ref.spotify,
+    setLoading = _ref.setLoading;
+  // SPOTIFY
+  var user = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.user;
+  });
+  var token = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.token;
+  });
+
+  // ACTIONS
+  var setPage = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.setPage;
+  });
+  var getPage = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.getPage;
+  });
+  var setSearch = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSearch)(function (state) {
+    return state.setSearch;
+  });
+
+  // STATES
+  var searchPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSearch)(function (state) {
+    return state.searchPlatform;
+  });
+  var setSearchPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSearch)(function (state) {
+    return state.setSearchPlatform;
+  });
   var searchRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    if (token !== null && token === "") setSearchPlatform("Youtube");else setSearchPlatform("Spotify");
+  }, [token]);
 
   // Conducts the search for all three platforms, and searches
   // the database to return  all songs that match the search query
   var invokeSearch = /*#__PURE__*/function () {
     var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(platform) {
-      var results, soundScraper, url, res, index, tracklist, start, end, link, resolved, searcher, search;
+      var results, soundScraper, url, res, index, tracklist, start, end, link, resolved, _url;
       return _regeneratorRuntime().wrap(function _callee2$(_context2) {
         while (1) switch (_context2.prev = _context2.next) {
           case 0:
-            setPlatform(platform);
+            setSearchPlatform(platform);
+            console.log(platform);
             // platform can be "Spotify", "Soundcloud", or "Youtube"
             results = []; // results of all the songs that will be added to the search results object
+            setPage("Search");
+            setLoading(false);
             if (!(platform === "Spotify")) {
-              _context2.next = 9;
+              _context2.next = 12;
               break;
             }
-            _context2.next = 5;
+            _context2.next = 8;
             return spotify.searchTracks(searchRef.current.value).then(
             // uses built in spotify search function
             function (data) {
               data.tracks.items.map(function (track // grabs data from each song
               ) {
-                return results.push(track);
+                return results.push({
+                  item: {
+                    name: track.name,
+                    id: track.id,
+                    is_local: track.is_local,
+                    uri: track.uri,
+                    album: {
+                      id: track.album.id,
+                      images: [track.album.images[0] ? track.album.images[0].url : ""],
+                      name: track.album.name,
+                      uri: track.album.uri,
+                      is_playable: track.album.is_playable
+                    },
+                    artists: _toConsumableArray(track.artists.map(function (artist) {
+                      return {
+                        id: artist.id,
+                        name: artist.name,
+                        uri: artist.uri
+                      };
+                    }))
+                  },
+                  platform: platform
+                });
               });
             });
-          case 5:
+          case 8:
+            // const search = await axios.post("/spotify/search", {
+            //   query: searchRef.current.value,
+            // });
+
+            // results.push(search);
+
             console.log(results);
-            dispatch({
-              type: "SET_SEARCH",
-              search: results
-            });
-            _context2.next = 63;
+            setSearch(results);
+            _context2.next = 52;
             break;
-          case 9:
+          case 12:
             if (!(platform === "Soundcloud")) {
-              _context2.next = 53;
+              _context2.next = 46;
               break;
             }
-            soundScraper = new _SoundcloudScraper_jsx__WEBPACK_IMPORTED_MODULE_3__.SoundCloudScraper();
-            url = "/search/sounds?q=".concat(searchRef.current.value);
-            _context2.next = 14;
-            return fetch(url);
-          case 14:
-            res = _context2.sent;
-            _context2.next = 17;
-            return res.text();
-          case 17:
-            res = _context2.sent;
+            setSearch([]);
+            setLoading(true);
+            soundScraper = new _SoundcloudScraper_jsx__WEBPACK_IMPORTED_MODULE_2__.SoundCloudScraper();
+            url = "/sc/search";
+            _context2.next = 19;
+            return axios__WEBPACK_IMPORTED_MODULE_8___default().post(url, {
+              query: searchRef.current.value
+            });
+          case 19:
+            res = _context2.sent.data;
             console.log(res);
-            // let res = await soundScraper.getHtmlFromUrl(url);
-            // await soundScraper.getHtmlFromUrl(url);
             res = res.substring(res.indexOf("<li><h2>"), res.lastIndexOf("</h2></li>"));
             console.log(res);
             index = 0;
             tracklist = [];
-          case 23:
+          case 25:
             if (!(index < res.length)) {
-              _context2.next = 35;
+              _context2.next = 36;
               break;
-            }
-            if (!loading) {
-              loading = true;
             }
             start = res.indexOf('"', index);
             end = res.indexOf('"', start + 1);
             if (!(start === -1 || end === -1)) {
-              _context2.next = 29;
+              _context2.next = 30;
               break;
             }
-            return _context2.abrupt("break", 35);
-          case 29:
+            return _context2.abrupt("break", 36);
+          case 30:
             link = res.substring(start + 1, end);
             tracklist.push(link);
             index = end + 1;
             console.log(link);
-            _context2.next = 23;
+            _context2.next = 25;
             break;
-          case 35:
-            loading = false;
+          case 36:
             console.log(tracklist);
-            _context2.t0 = console;
-            _context2.next = 40;
-            return fetch(tracklist[0]);
-          case 40:
-            _context2.next = 42;
-            return _context2.sent.text();
-          case 42:
-            _context2.t1 = _context2.sent;
-            _context2.t0.log.call(_context2.t0, _context2.t1);
-            _context2.next = 46;
+            _context2.next = 39;
             return Promise.all(tracklist.map( /*#__PURE__*/function () {
               var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(link) {
                 return _regeneratorRuntime().wrap(function _callee$(_context) {
@@ -9398,25 +9894,30 @@ function Header(_ref) {
                     case 0:
                       _context.t0 = soundScraper;
                       _context.next = 3;
-                      return fetch(link);
+                      return axios__WEBPACK_IMPORTED_MODULE_8___default().post("/sc/track", {
+                        trackID: link
+                      });
                     case 3:
-                      _context.t1 = _context.sent;
-                      return _context.abrupt("return", _context.t0.extractSound.call(_context.t0, _context.t1));
-                    case 5:
+                      _context.t1 = _context.sent.data;
+                      _context.next = 6;
+                      return _context.t0.extractSound.call(_context.t0, _context.t1);
+                    case 6:
+                      return _context.abrupt("return", _context.sent);
+                    case 7:
                     case "end":
                       return _context.stop();
                   }
                 }, _callee);
               }));
-              return function (_x3) {
+              return function (_x2) {
                 return _ref3.apply(this, arguments);
               };
             }()));
-          case 46:
+          case 39:
             resolved = _context2.sent;
-            console.log(resolved);
             resolved.map(function (song) {
               return results.push({
+                item: song,
                 platform: "Soundcloud",
                 title: song.title,
                 artist: song.user.username,
@@ -9425,50 +9926,44 @@ function Header(_ref) {
               });
             });
             console.log(results);
-            dispatch({
-              type: "SET_SEARCH",
-              search: results
-            });
-            _context2.next = 63;
+            setSearch(results);
+            setLoading(false);
+            _context2.next = 52;
             break;
-          case 53:
+          case 46:
             if (!(platform === "Youtube")) {
-              _context2.next = 63;
+              _context2.next = 52;
               break;
             }
-            searcher = __webpack_require__(/*! youtube-search */ "./node_modules/youtube-search/index.js");
-            console.log(searchRef.current.value);
-            _context2.next = 58;
-            return searcher(searchRef.current.value, opts);
-          case 58:
-            search = _context2.sent.results;
-            search.map(function (video) {
-              results.push({
-                platform: "Youtube",
-                title: video.title,
-                artist: video.channelTitle,
-                pic: video.thumbnails.high.url,
-                link: "http://www.youtube.com/watch?v=" + video.id
-              });
+            _url = "/yt/search";
+            _context2.next = 50;
+            return axios__WEBPACK_IMPORTED_MODULE_8___default().post(_url, {
+              query: searchRef.current.value
+            }).then(function (res) {
+              console.log(res.data[0]);
+              results.push.apply(results, _toConsumableArray(res.data.map(function (song) {
+                return {
+                  item: song,
+                  platform: "Youtube",
+                  title: song.title,
+                  artist: song.channelTitle,
+                  pic: song.thumbnails["default"].url,
+                  link: song.link
+                };
+              })));
             });
-            console.log(search);
+          case 50:
             console.log(results);
-            dispatch({
-              type: "SET_SEARCH",
-              search: results
-            });
-          case 63:
-            dispatch({
-              type: "SET_PAGE",
-              page: "Search"
-            });
-          case 64:
+            setSearch(results);
+          case 52:
+            setPage("Search");
+          case 53:
           case "end":
             return _context2.stop();
         }
       }, _callee2);
     }));
-    return function invokeSearch(_x2) {
+    return function invokeSearch(_x) {
       return _ref2.apply(this, arguments);
     };
   }();
@@ -9476,41 +9971,48 @@ function Header(_ref) {
     className: "header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "header_left"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7__["default"], null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
-    placeholder: "Search",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    fontSize: "large"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    placeholder: "Search from ".concat(searchPlatform),
     type: "search",
     id: "searchBar",
-    onKeyDown: function onKeyDown() {
-      return invokeSearch(platform);
+    onKeyDown: function onKeyDown(e) {
+      if (e.key === "Enter" && searchRef.current.value !== "") invokeSearch(searchPlatform);
     },
     ref: searchRef
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "header_leftButtons"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "",
-    className: platform === "Spotify" ? "header_playerLogoActive" : "header_playerLogo",
-    src: _pics_spotDark_svg__WEBPACK_IMPORTED_MODULE_5__,
+    className: searchPlatform === "Spotify" ? "header_playerLogoActive" : "header_playerLogo",
+    src: _pics_spotDark_svg__WEBPACK_IMPORTED_MODULE_4__,
     onClick: function onClick() {
       return invokeSearch("Spotify");
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "",
-    className: platform === "Soundcloud" ? "header_scActive" : "header_sc",
-    src: _pics_soundcloudDark_svg__WEBPACK_IMPORTED_MODULE_4__,
+    className: searchPlatform === "Soundcloud" ? "header_scActive" : "header_sc",
+    src: _pics_soundcloudDark_svg__WEBPACK_IMPORTED_MODULE_3__,
     onClick: function onClick() {
       return invokeSearch("Soundcloud");
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "",
-    className: platform === "Youtube" ? "header_ytActive" : "header_yt",
-    src: _pics_ytDark_svg__WEBPACK_IMPORTED_MODULE_6__,
+    className: searchPlatform === "Youtube" ? "header_ytActive" : "header_yt",
+    src: _pics_ytDark_svg__WEBPACK_IMPORTED_MODULE_5__,
     onClick: function onClick() {
       return invokeSearch("Youtube");
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: user === null || user === void 0 ? void 0 : (_user$external_urls = user.external_urls) === null || _user$external_urls === void 0 ? void 0 : _user$external_urls.spotify,
+    target: "_blank"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "header_right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_10__["default"], {
     src: user === null || user === void 0 ? void 0 : (_user$images$ = user.images[0]) === null || _user$images$ === void 0 ? void 0 : _user$images$.url,
     alt: user
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, user === null || user === void 0 ? void 0 : user.display_name)));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, user === null || user === void 0 ? void 0 : user.display_name))));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Header);
 
@@ -9528,16 +10030,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
-/* harmony import */ var _styles_HomePage_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/HomePage.scss */ "./src/styles/HomePage.scss");
-/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
-/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3__);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+/* harmony import */ var _styles_HomePage_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/HomePage.scss */ "./src/styles/HomePage.scss");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pics/mImg.jpeg */ "./src/Components/pics/mImg.jpeg");
+
 
 
 
@@ -9545,23 +10043,22 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 function HomePage(_ref) {
   var spotify = _ref.spotify;
   //⌄ Data values extracted from data layer
-  var _useDataLayerValue = (0,_DataLayer__WEBPACK_IMPORTED_MODULE_1__.useDataLayerValue)(),
-    _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2),
-    playlists = _useDataLayerValue2[0].playlists,
-    dispatch = _useDataLayerValue2[1];
+  var playlists = (0,_store__WEBPACK_IMPORTED_MODULE_3__.useSpotify)(function (state) {
+    return state.playlists;
+  });
+  var setDiscoverWeekly = (0,_store__WEBPACK_IMPORTED_MODULE_3__.useActions)(function (state) {
+    return state.setDiscoverWeekly;
+  });
+  var setPage = (0,_store__WEBPACK_IMPORTED_MODULE_3__.useActions)(function (state) {
+    return state.setPage;
+  });
 
   // function that updates the playlist being displayed in the body component
   var setBody = function setBody(playlist) {
     console.log("Playlist:");
-    console.log(playlist);
-    dispatch({
-      type: "SET_DISCOVER_WEEKLY",
-      discover_weekly: playlist
-    });
-    dispatch({
-      type: "SET_PAGE",
-      page: "Discover Weekly"
-    });
+    console.log(playlist.id);
+    setDiscoverWeekly(playlist);
+    setPage("Playlist");
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "homePage"
@@ -9569,17 +10066,17 @@ function HomePage(_ref) {
     className: "homePage_playlists"
   }, playlists === null || playlists === void 0 ? void 0 : playlists.map(function (playlist) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3___default()("playlist-"),
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_2___default()("playlist-"),
       className: "homePage_playlist_box",
       onClick: function onClick() {
         return setBody(playlist);
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3___default()("playlistImg-"),
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_2___default()("playlistImg-"),
       alt: "",
-      src: playlist.images[0].url
+      src: playlist.images[0] && playlist.images[0] !== "" ? playlist.images[0] : _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_4__
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
-      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3___default()("playlistName-")
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_2___default()("playlistName-")
     }, playlist.name));
   })));
 }
@@ -9600,73 +10097,51 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./logo.png */ "./src/Components/logo.png");
-/* harmony import */ var _styles_loading_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/loading.scss */ "./src/styles/loading.scss");
+/* harmony import */ var _styles_Loading_scss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/Loading.scss */ "./src/styles/Loading.scss");
 /* harmony import */ var _spotify__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./spotify */ "./src/Components/spotify.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../store */ "./src/store.js");
+
 
 
 
 
 var Loading = function Loading() {
+  var setToken = (0,_store__WEBPACK_IMPORTED_MODULE_4__.useSpotify)(function (state) {
+    return state.setToken;
+  });
+  var loginTest = function loginTest() {
+    console.log("test");
+  };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "loading"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: _logo_png__WEBPACK_IMPORTED_MODULE_1__
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
-    href: _spotify__WEBPACK_IMPORTED_MODULE_3__.accessUrl,
-    style: {
-      padding: 20,
-      borderRadius: 99,
-      backgroundColor: "#1db954",
-      fontWeight: 800,
-      color: "white",
-      textDecoration: "none"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "loginTitle",
+    onClick: function onClick() {
+      return loginTest();
     }
-  }, " ", "Login to Spotify", " "));
+  }, " ", "User Options", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    className: "loginLogo",
+    src: _logo_png__WEBPACK_IMPORTED_MODULE_1__
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "loginInfo"
+  }, " Try Beatbytes without Account"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "loginTest",
+    onClick: function onClick() {
+      return loginTest();
+    }
+  }, " ", "Try with Test User", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "loginInfo"
+  }, " Or Login/Sign Up with Account "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "loginBeatbytes",
+    onClick: function onClick() {
+      return loginTest();
+    }
+  }, " ", "Login/Sign Up with Beatbytes", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("a", {
+    href: _spotify__WEBPACK_IMPORTED_MODULE_3__.accessUrl,
+    className: "loginSpotify"
+  }, " ", "Login with Spotify", " "));
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Loading);
-
-/***/ }),
-
-/***/ "./src/Components/MenuContext.jsx":
-/*!****************************************!*\
-  !*** ./src/Components/MenuContext.jsx ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var _styles_MenuContext_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/MenuContext.scss */ "./src/styles/MenuContext.scss");
-
-
-var MenuContext = function MenuContext(_ref) {
-  var data = _ref.data,
-    click = _ref.click,
-    pointX = _ref.pointX,
-    pointY = _ref.pointY;
-  function handlePlayNow() {
-    console.log("Play Now");
-    var elem = document.elementFromPoint(pointX - 1, pointY);
-    console.log(elem);
-  }
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, click && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    id: "context_menu",
-    className: "context_menu",
-    style: {
-      position: "absolute",
-      left: "".concat(pointX, "px"),
-      top: "".concat(pointY, "px")
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("ul", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    onClick: function onClick() {
-      return handlePlayNow();
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Play Now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Add To Queue"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("li", null, "Add to Playlist"))));
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (MenuContext);
 
 /***/ }),
 
@@ -9686,24 +10161,300 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Sidebar_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Sidebar.jsx */ "./src/Components/Sidebar.jsx");
 /* harmony import */ var _Body_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Body.jsx */ "./src/Components/Body.jsx");
 /* harmony import */ var _Footer_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Footer.jsx */ "./src/Components/Footer.jsx");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SidebarOption.jsx */ "./src/Components/SidebarOption.jsx");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/Cancel */ "./node_modules/@material-ui/icons/Cancel.js");
+/* harmony import */ var _pics_addPlaylist_png__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pics/addPlaylist.png */ "./src/Components/pics/addPlaylist.png");
+/* harmony import */ var _pics_trash_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pics/trash.svg */ "./src/Components/pics/trash.svg");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
 function Player(_ref) {
+  var _selectedSong$item$al, _selectedSong$item$al2, _selectedSong$album, _selectedSong$album$p, _removeTrack$item$alb, _removeTrack$item$alb2, _removeTrack$album, _removeTrack$album$pu;
   var spotify = _ref.spotify;
+  var playlists = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
+    return state.playlists;
+  });
+  var getNumberOfBeatbytes = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
+    return state.getNumberOfBeatbytes;
+  });
+  var getSelectedSong = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.getSelectedSong;
+  });
+  var addToPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
+    return state.addToPlaylist;
+  });
+  var user = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
+    return state.user;
+  });
+  var selectedSong = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.selectedSong;
+  });
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState2 = _slicedToArray(_useState, 2),
+    removeTrack = _useState2[0],
+    setRemoveTrack = _useState2[1];
+  var discover_weekly = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.discover_weekly;
+  });
+  var setDiscoverWeekly = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.setDiscoverWeekly;
+  });
+  var getDiscoverWeekly = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.getDiscoverWeekly;
+  });
+  var playlist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.playlist;
+  });
+  var setPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.setPlaylist;
+  });
+  var getPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getPlaylist;
+  });
+  var addToBeatbytes = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
+    return state.addToBeatbytes;
+  });
+  var addPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
+    return state.addPlaylist;
+  });
+  var removeFromStorePlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
+    return state.removeFromStorePlaylist;
+  });
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(""),
+    _useState4 = _slicedToArray(_useState3, 2),
+    playlistName = _useState4[0],
+    setPlaylistName = _useState4[1];
+  var _useState5 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState6 = _slicedToArray(_useState5, 2),
+    popup = _useState6[0],
+    togglePopup = _useState6[1];
+  var _useState7 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)("Add"),
+    _useState8 = _slicedToArray(_useState7, 2),
+    popupType = _useState8[0],
+    setPopupType = _useState8[1];
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    setRemoveTrack(removeTrack);
+  }, [removeTrack]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    setTimeout(function () {
+      setPlaylistName("Beatbytes Playlist #" + getNumberOfBeatbytes() ? getNumberOfBeatbytes() + 1 : 0);
+    }, 3000);
+  }, [getNumberOfBeatbytes()]);
+  var addToDB = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(playlist) {
+      var song;
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            console.log("Playlist: ", playlist);
+            if (playlist.beatbytes) {
+              console.log("Beatbytes Playlist: ", playlist);
+            }
+            song = getSelectedSong();
+            console.log("Song To Add: ", song);
+            togglePopup(false);
+            // if song's platform is spotify use spotify api endpoint to add song to playlist
+            console.log("Adding to DB", song, playlist);
+            addToBeatbytes(playlist.id, song);
+            _context.next = 9;
+            return axios__WEBPACK_IMPORTED_MODULE_8___default().post("/db/user/addToPlaylist", {
+              id: user.id,
+              playlistID: playlist.id,
+              song: song
+            }).then(function (res) {
+              return console.log(res);
+            });
+          case 9:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee);
+    }));
+    return function addToDB(_x2) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  var createPlaylist = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(playlistName) {
+      var playlistToAdd;
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            console.log("Creating Playlist: ", playlistName);
+            console.log("User: ", user);
+            playlistToAdd = {
+              owner: {
+                link: user.id
+              },
+              name: playlistName,
+              platform: "Beatbytes",
+              images: [],
+              description: "",
+              playlist: []
+            };
+            addPlaylist(playlistToAdd); // add playlist to store
+            _context2.next = 6;
+            return axios__WEBPACK_IMPORTED_MODULE_8___default().post("/db/user/createPlaylist", {
+              //add playlist to db
+              id: user.id,
+              playlist: playlistToAdd
+            });
+          case 6:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2);
+    }));
+    return function createPlaylist(_x3) {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  var removeFromPlaylist = function removeFromPlaylist(playlist) {
+    console.log("Removing song: ", removeTrack);
+    var songID = removeTrack.item.id;
+    // console.log("Removing song from playlist: ", id);
+    // const newPlaylist = playlist;
+    // const newItems = playlist.playlist.filter((song) => song.id !== id);
+    // console.log("Playlist: ", playlist);
+    // setPlaylist({ ...playlist, playlist: newItems});
+    // console.log(getPlaylist());
+    // newPlaylist.playlist = newItems;
+    // console.log("New Playlist: ", newPlaylist);
+
+    // update playlist in db
+    axios__WEBPACK_IMPORTED_MODULE_8___default().post("/db/user/removeFromPlaylist", {
+      userID: user.id,
+      playlistID: playlist.id,
+      songID: songID
+    });
+    removeFromStorePlaylist(playlist.id, songID);
+  };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "player",
     onContextMenu: function onContextMenu(e) {
       e.preventDefault();
     }
+  }, popup && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "playerPopupBg"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "player_body"
+    className: "playerPopup"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "popupHeader"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, popupType === "Add" ? "Add to playlist " : popupType === "Create" ? "Create a playlist" : "Delete from ".concat(popupType === "DeletePlaylist" ? "playlist" : "queue"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: popupType === "Add" ? _pics_addPlaylist_png__WEBPACK_IMPORTED_MODULE_9__ : popupType === "Create" ? _pics_addPlaylist_png__WEBPACK_IMPORTED_MODULE_9__ : _pics_trash_svg__WEBPACK_IMPORTED_MODULE_10__,
+    className: popupType === "Add" || popupType === "Create" ? "popupIcon" : "deleteLogo"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    onClick: function onClick() {
+      return togglePopup(false);
+    },
+    fontSize: "large",
+    className: "cancelIcon"
+  }), popupType === "Add" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "popupBody"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "song"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    className: "song_pic",
+    src: ((_selectedSong$item$al = selectedSong.item.album) === null || _selectedSong$item$al === void 0 ? void 0 : _selectedSong$item$al.images[0]) || selectedSong.pic,
+    alt: ""
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "song_info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, selectedSong.item.name ? selectedSong.item.name : selectedSong.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, selectedSong.item.artists ? selectedSong.item.artists.map(function (artist) {
+    return artist.name;
+  }).join(", ") : selectedSong.artist, " ", "-", " ", ((_selectedSong$item$al2 = selectedSong.item.album) === null || _selectedSong$item$al2 === void 0 ? void 0 : _selectedSong$item$al2.name) || ((_selectedSong$album = selectedSong.album) === null || _selectedSong$album === void 0 ? void 0 : (_selectedSong$album$p = _selectedSong$album.publisher_metadata) === null || _selectedSong$album$p === void 0 ? void 0 : _selectedSong$album$p.album_title), " "))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Select the playlist to add to"), playlists.map(function (playlist) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      key: playlist.id,
+      id: "playlistSection",
+      onClick: function onClick() {
+        return addToDB(playlist);
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_7___default()("playlist-"),
+      id: "playlistSection",
+      playlist: playlist,
+      title: playlist.name
+    }));
+  })), popupType === "Create" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "popupBody"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("label", null, "Playlist Name", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
+    type: "text",
+    value: playlistName,
+    onChange: function onChange(e) {
+      return setPlaylistName(e.target.value);
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    id: "playlist",
+    title: playlistName
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    onClick: function onClick() {
+      createPlaylist(playlistName);
+      togglePopup(false);
+    },
+    className: "createPlaylist"
+  }, "Create")), popupType.startsWith("Delete") && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "popupBody"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "song"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    className: "song_pic",
+    src: ((_removeTrack$item$alb = removeTrack.item.album) === null || _removeTrack$item$alb === void 0 ? void 0 : _removeTrack$item$alb.images[0]) || removeTrack.pic,
+    alt: ""
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "song_info"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, removeTrack.item.name ? removeTrack.item.name : removeTrack.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, removeTrack.item.artists ? removeTrack.item.artists.map(function (artist) {
+    return artist.name;
+  }).join(", ") : removeTrack.artist, " ", "-", " ", ((_removeTrack$item$alb2 = removeTrack.item.album) === null || _removeTrack$item$alb2 === void 0 ? void 0 : _removeTrack$item$alb2.name) || ((_removeTrack$album = removeTrack.album) === null || _removeTrack$album === void 0 ? void 0 : (_removeTrack$album$pu = _removeTrack$album.publisher_metadata) === null || _removeTrack$album$pu === void 0 ? void 0 : _removeTrack$album$pu.album_title), " "))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h3", null, "Are you sure you want to remove this song?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    onClick: function onClick() {
+      togglePopup(false);
+      removeFromPlaylist(getDiscoverWeekly());
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    className: "deleteIcon",
+    src: _pics_trash_svg__WEBPACK_IMPORTED_MODULE_10__,
+    alt: "",
+    "aria-label": "Remove from Queue"
+  }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: popup ? "player_body player_inactive" : "player_body"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Sidebar_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    spotify: spotify
+    spotify: spotify,
+    popup: popup,
+    togglePopup: togglePopup,
+    setPopupType: setPopupType
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Body_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    spotify: spotify
+    spotify: spotify,
+    popup: popup,
+    togglePopup: togglePopup,
+    setPopupType: setPopupType,
+    setRemoveTrack: setRemoveTrack,
+    removeTrack: removeTrack,
+    removeFromPlaylist: removeFromPlaylist
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_Footer_jsx__WEBPACK_IMPORTED_MODULE_4__["default"], {
     spotify: spotify
   })));
@@ -9726,16 +10477,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_Body_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Body.scss */ "./src/styles/Body.scss");
 /* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
-/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
-/* harmony import */ var _material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/PauseCircleFilled */ "./node_modules/@material-ui/icons/PauseCircleFilled.js");
-/* harmony import */ var _material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/Favorite */ "./node_modules/@material-ui/icons/Favorite.js");
-/* harmony import */ var _material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/MoreHoriz */ "./node_modules/@material-ui/icons/MoreHoriz.js");
+/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
+/* harmony import */ var _material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/PauseCircleFilled */ "./node_modules/@material-ui/icons/PauseCircleFilled.js");
+/* harmony import */ var _material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/Favorite */ "./node_modules/@material-ui/icons/Favorite.js");
 /* harmony import */ var _SongRow_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SongRow.jsx */ "./src/Components/SongRow.jsx");
-/* harmony import */ var _useContextMenu_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./useContextMenu.jsx */ "./src/Components/useContextMenu.jsx");
-/* harmony import */ var _styles_PlaylistPage_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/PlaylistPage.scss */ "./src/styles/PlaylistPage.scss");
-/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
-/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _styles_PlaylistPage_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/PlaylistPage.scss */ "./src/styles/PlaylistPage.scss");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _pics_shuffle_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pics/shuffle.png */ "./src/Components/pics/shuffle.png");
+/* harmony import */ var _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pics/mImg.jpeg */ "./src/Components/pics/mImg.jpeg");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
+function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
+function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -9756,110 +10517,195 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 function PlaylistPage(_ref) {
-  var spotify = _ref.spotify;
-  //⌄ Data values extracted from data layer
-  var _useDataLayerValue = (0,_DataLayer__WEBPACK_IMPORTED_MODULE_2__.useDataLayerValue)(),
-    _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2),
-    _useDataLayerValue2$ = _useDataLayerValue2[0],
-    discover_weekly = _useDataLayerValue2$.discover_weekly,
-    device_id = _useDataLayerValue2$.device_id,
-    playing = _useDataLayerValue2$.playing,
-    item = _useDataLayerValue2$.item,
-    dispatch = _useDataLayerValue2[1];
-  var _useContextMenu = (0,_useContextMenu_jsx__WEBPACK_IMPORTED_MODULE_4__["default"])(),
-    clicked = _useContextMenu.clicked,
-    setClicked = _useContextMenu.setClicked,
-    points = _useContextMenu.points,
-    setPoints = _useContextMenu.setPoints;
-  var queue = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
-    return state.queue;
+  var _getDiscoverWeekly, _getDiscoverWeekly2;
+  var popup = _ref.popup,
+    togglePopup = _ref.togglePopup,
+    setPopupType = _ref.setPopupType,
+    setRemoveTrack = _ref.setRemoveTrack;
+  // ACTIONS
+  var discover_weekly = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.discover_weekly;
   });
-  var addQueue = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
-    return state.addQueue;
+  var setDiscoverWeekly = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.setDiscoverWeekly;
   });
-  var addFrontQueue = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
-    return state.addFrontQueue;
+  var getDiscoverWeekly = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.getDiscoverWeekly;
   });
-  var skip = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
+  var skip = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
     return state.skip;
   });
-  var reverse = (0,_store__WEBPACK_IMPORTED_MODULE_7__.useActions)(function (state) {
-    return state.reverse;
+  var pause = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.pause;
   });
-  var back = (0,_store__WEBPACK_IMPORTED_MODULE_7__["default"])(function (state) {
-    return state.back;
+  var playing = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.playing;
   });
-  var handlePlaylist = function handlePlaylist(playlist) {
-    for (var i = 0; i < playlist.tracks.items.length; i++) {
-      if (playlist.tracks.items[i].track.track !== undefined) {
-        var newItem = {
-          item: playlist.tracks.items[i],
-          platform: "Spotify"
-        };
-        addQueue(newItem);
-        console.log("added to queue", newItem);
-      }
-    }
-    console.log(queue);
-  };
-  var updateContextMenu = function updateContextMenu(e, item) {
-    var song = document.getElementById(item.id);
-    setClicked(true);
-    setPoints({
-      x: e.clientX - song.scrollTop,
-      y: e.clientY
-    });
-    console.log("Right Click", e.pageX - song.scrollTop, e.pageY);
-  };
+  var getPlayingStatus = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.getPlayingStatus;
+  });
+  var setPlaying = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.setPlaying;
+  });
 
-  // function that updates the playlist being displayed in the body component
-  var setBody = function setBody(playlist) {
-    console.log("Playlist:");
-    console.log(playlist);
-    dispatch({
-      type: "SET_DISCOVER_WEEKLY",
-      discover_weekly: playlist
-    });
-    dispatch({
-      type: "SET_PAGE",
-      page: "Discover Weekly"
-    });
-  };
+  // QUEUE
+  var addFrontQueue = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.addFrontQueue;
+  });
+  var setPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.setPlatform;
+  });
+  var playlist = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.playlist;
+  });
+  var getQueueLength = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.getQueueLength;
+  });
+  var getQueuePosition = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.getQueuePosition;
+  });
+  var setPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.setPlaylist;
+  });
+  var getFullQueue = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.getFullQueue;
+  });
+  var getQueue = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.getQueue;
+  });
+  var getPlaylistPosition = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.getPlaylistPosition;
+  });
+  var setPlaylistPosition = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.setPlaylistPosition;
+  });
+  var getPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.getPlaylist;
+  });
+  var skipPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.skipPlaylist;
+  });
+  var resetPlaylistPosition = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.resetPlaylistPosition;
+  });
+  var pop = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useQueue)(function (state) {
+    return state.pop;
+  });
 
-  // sets the spotify player to play a new song
-  var setPlayer = function setPlayer(link) {
-    console.log(link);
-    console.log("device_id: " + device_id);
-    dispatch({
-      type: "SET_ITEM",
-      item: link
-    });
-    dispatch({
-      type: "SET_PLATFORM",
-      platform: "Spotify"
-    });
-  };
-
-  // sets the soundcloud and youtube player to the correct link
-  var setReactPlayer = function setReactPlayer(track) {
-    if (track.platform === "Soundcloud") {
-      dispatch({
-        type: "SET_PLATFORM",
-        platform: "Soundcloud"
-      });
-      dispatch({
-        type: "SET_SOUNDCLOUD",
-        soundcloud: track
-      });
+  // SPOTIFY
+  var EmbedController = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.EmbedController;
+  });
+  var getPlaylists = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.getPlaylists;
+  });
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    playlistIsPlayling = _useState2[0],
+    setPlaylistIsPlaying = _useState2[1];
+  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(null),
+    _useState4 = _slicedToArray(_useState3, 2),
+    remove = _useState4[0],
+    setRemove = _useState4[1];
+  var shuffleState = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.shuffleState;
+  });
+  var getShuffleState = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.getShuffleState;
+  });
+  var setShuffleState = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.setShuffleState;
+  });
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    getPlayingStatus();
+  }, [playing]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    getShuffleState();
+  }, [shuffleState]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    setDiscoverWeekly(getPlaylists().filter(function (playlist) {
+      return playlist.id === getDiscoverWeekly().id;
+    })[0]);
+  }, [getPlaylists()]);
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    console.log("Playlist: ", playlist);
+    console.log("Discover Weekly: ", discover_weekly);
+    if (playlist.id === discover_weekly.id) {
+      setPlaylistIsPlaying(true);
     } else {
-      dispatch({
-        type: "SET_PLATFORM",
-        platform: "Youtube"
+      setPlaylistIsPlaying(false);
+    }
+  }, [playlist, discover_weekly]);
+  var handlePlaylist = function handlePlaylist(playlist) {
+    var _shuffled;
+    resetPlaylistPosition();
+    var shuffled = [];
+    console.log("Modified Playlist: ", playlist.playlist);
+    (_shuffled = shuffled).push.apply(_shuffled, _toConsumableArray(playlist.playlist));
+    console.log("Before Shuffle", shuffled);
+    if (getShuffleState()) shuffled = shufflePlaylist(shuffled);
+    if (shuffled.length > 0) {
+      var firstSong = shuffled[0];
+      console.log("Adding first song to queue: ", firstSong);
+      addFrontQueue(firstSong);
+      setPlaylistIsPlaying(true);
+      skip();
+      console.log(getFullQueue());
+      console.log(getQueuePosition());
+    }
+    console.log(shuffled);
+    setPlaylist(_objectSpread(_objectSpread({}, playlist), {}, {
+      playlist: shuffled
+    }));
+  };
+  var shufflePlaylist = function shufflePlaylist(playlist) {
+    var shuffle = playlist;
+    for (var i = shuffle.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var temp = shuffle[i];
+      shuffle[i] = shuffle[j];
+      shuffle[j] = temp;
+    }
+    console.log("Playlist shuffled: ", shuffle);
+    return shuffle;
+  };
+  var handleUnshuffle = function handleUnshuffle() {
+    setShuffleState(!getShuffleState());
+    console.log("Unshuffling: ", getShuffleState());
+    if (playlistIsPlayling) {
+      console.log("Unshuffling playlist:");
+      var position = 0;
+      for (var i = 0; i < getPlaylist().playlist.length; i++) {
+        if (getDiscoverWeekly().playlist[i].item.id === getQueue().item.id) {
+          console.log("Found position: ", i);
+          position = i;
+          break;
+        }
+      }
+      var _playlist = getDiscoverWeekly().playlist.filter(function (song) {
+        return song.item.id !== getQueue().item.id;
       });
-      dispatch({
-        type: "SET_YOUTUBE",
-        youtube: track
+      setPlaylist(_objectSpread(_objectSpread({}, getDiscoverWeekly()), {}, {
+        playlist: _playlist
+      }));
+      setPlaylistPosition(position - 1);
+    }
+  };
+  var handleShuffle = function handleShuffle() {
+    setShuffleState(!getShuffleState());
+    console.log("Shuffling: ", getShuffleState());
+    if (playlistIsPlayling) {
+      console.log("Shuffling playlist:" + getPlaylist().playlist);
+      var playlistToShuffle = getPlaylist();
+      var shuffledPlaylist = shufflePlaylist(playlistToShuffle.playlist);
+      console.log(getQueue());
+      shuffledPlaylist = shuffledPlaylist.filter(function (song) {
+        return song.item.id !== getQueue().item.id;
       });
+      setPlaylistPosition(0);
+      setPlaylist(_objectSpread(_objectSpread({}, playlistToShuffle), {}, {
+        playlist: shuffledPlaylist
+      }));
     }
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
@@ -9867,53 +10713,218 @@ function PlaylistPage(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "playlistPage_info"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
-    src: discover_weekly === null || discover_weekly === void 0 ? void 0 : discover_weekly.images[0].url,
+    src: discover_weekly.images[0] && discover_weekly.images[0] !== "" ? discover_weekly.images[0] : _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_8__,
     alt: ""
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "playlistPage_infoText"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("strong", null, "PLAYLIST"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h2", null, discover_weekly === null || discover_weekly === void 0 ? void 0 : discover_weekly.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, discover_weekly === null || discover_weekly === void 0 ? void 0 : discover_weekly.description))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "playlistPage_songs"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  }, ((_getDiscoverWeekly = getDiscoverWeekly()) === null || _getDiscoverWeekly === void 0 ? void 0 : _getDiscoverWeekly.playlist.length) > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "playlistPage_icons"
-  }, playing && discover_weekly.id === item.id ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, playing && playlistIsPlayling ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PauseCircleFilled__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    className: "playlistPage_play",
+    onClick: function onClick() {
+      return pause();
+    }
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    className: "playlistPage_play",
+    onClick: function onClick() {
+      return playlistIsPlayling ? pause() : handlePlaylist(discover_weekly);
+    }
+  }), shuffleState ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: _pics_shuffle_png__WEBPACK_IMPORTED_MODULE_7__,
+    className: "playlistPage_shuffle active",
+    onClick: function onClick() {
+      return handleUnshuffle();
+    }
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: _pics_shuffle_png__WEBPACK_IMPORTED_MODULE_7__,
     className: "playlistPage_shuffle",
     onClick: function onClick() {
-      return setPlayer(discover_weekly);
+      return handleShuffle();
     }
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    className: "playlistPage_shuffle",
-    onClick: function onClick() {
-      return handlePlaylist(discover_weekly);
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Favorite__WEBPACK_IMPORTED_MODULE_11__["default"], {
     fontSize: "large"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_MoreHoriz__WEBPACK_IMPORTED_MODULE_11__["default"], null)), discover_weekly === null || discover_weekly === void 0 ? void 0 : discover_weekly.tracks.items.map(function (item) {
-    return typeof item.track.track !== "undefined" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      id: item.track.id,
-      key: item.track.id,
+  })), (_getDiscoverWeekly2 = getDiscoverWeekly()) === null || _getDiscoverWeekly2 === void 0 ? void 0 : _getDiscoverWeekly2.playlist.map(function (item) {
+    return typeof item !== "undefined" ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      id: item.id,
+      key: item.id,
       onClick: function onClick() {
-        return addFrontQueue({
-          item: item,
-          platform: "Spotify"
-        });
-      },
-      onContextMenu: function onContextMenu(e) {
-        return updateContextMenu(e, item.track);
+        addFrontQueue(item);
+        skip();
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SongRow_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6___default()("songRow-"),
-      track: item.track,
-      search: false
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_5___default()("songRow-spotify"),
+      track: item,
+      popup: popup,
+      togglePopup: togglePopup,
+      setPopupType: setPopupType,
+      platform: item.platform,
+      setRemoveTrack: setRemoveTrack,
+      playlist: getDiscoverWeekly()
     })) :
     /*#__PURE__*/
     // These are songs that are downloaded on the users local computer,
     // and therefore cannot be embedded into the spotify embedded player iframe.
     react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SongRow_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      track: item.track
+      track: item
     });
   })));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (PlaylistPage);
+
+/***/ }),
+
+/***/ "./src/Components/QueuePage.jsx":
+/*!**************************************!*\
+  !*** ./src/Components/QueuePage.jsx ***!
+  \**************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _SongRow_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SongRow.jsx */ "./src/Components/SongRow.jsx");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _styles_QueuePage_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../styles/QueuePage.scss */ "./src/styles/QueuePage.scss");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
+
+
+
+
+
+function QueuePage(_ref) {
+  var _getPlaylist, _getPlaylist$playlist, _getPlaylist2, _getPlaylist2$playlis;
+  var spotify = _ref.spotify,
+    popup = _ref.popup,
+    togglePopup = _ref.togglePopup,
+    setPopupType = _ref.setPopupType,
+    setRemoveTrack = _ref.setRemoveTrack,
+    removeFromPlaylist = _ref.removeFromPlaylist;
+  //⌄ Data values extracted from data layer
+  var queue = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.queue.slice(1);
+  });
+  var playlist = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.playlist;
+  });
+  var getPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.getPlaylist;
+  });
+  var getPlaying = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.getPlaying;
+  });
+  var getQueue = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.getQueue;
+  });
+  var getPlaylistPosition = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.getPlaylistPosition;
+  });
+  var getFullQueue = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.getFullQueue;
+  });
+  var getQueuePosition = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.getQueuePosition;
+  });
+  var getQueueLength = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.getQueueLength;
+  });
+  var setPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.setPlaylist;
+  });
+  var setFullQueue = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useQueue)(function (state) {
+    return state.setFullQueue;
+  });
+  var removeFromStorePlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_1__.useSpotify)(function (state) {
+    return state.removeFromStorePlaylist;
+  });
+  var deleteFromQueue = function deleteFromQueue(removeTrack) {
+    var newQueue = getFullQueue().filter(function (track) {
+      return removeTrack.platform === "Spotify" ? track.item.id !== removeTrack.item.id : track.link !== removeTrack.link;
+    });
+    setFullQueue(newQueue);
+  };
+  var deleteFromPlaylist = function deleteFromPlaylist(removeTrack) {
+    console.log(removeTrack);
+    var oldPlaylist = getPlaylist();
+    console.log("oldPlaylist: ", oldPlaylist);
+    var newPlaylist = getPlaylist().playlist.filter(function (track) {
+      return removeTrack.platform === "Spotify" ? track.item.id !== removeTrack.item.id : track.link !== removeTrack.link;
+    });
+    console.log("newPlaylist: ", newPlaylist);
+    //this means that the user only wants it remove from the queue not the actual playlist
+    setPlaylist(_objectSpread(_objectSpread({}, playlist), {}, {
+      playlist: newPlaylist
+    }));
+  };
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    getQueue();
+  }, [queue]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "queuePage"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", {
+    className: "queueHeader"
+  }, "Queue"), getQueuePosition() > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
+    className: "queuePage_title"
+  }, "Previous:", " ", getPlaying().platform === "Spotify" ? getPlaying().item.name : getPlaying().title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "queuePage_songs"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
+    className: "queuePage_title"
+  }, "Now playing"), getQueuePosition() < getQueueLength() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SongRow_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3___default()(),
+    track: getQueue(),
+    popup: popup,
+    togglePopup: togglePopup,
+    setPopupType: setPopupType,
+    queuePage: false,
+    platform: getQueue().platform
+  }), getQueuePosition() + 1 < getQueueLength() && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
+    className: "queuePage_title"
+  }, "Next in queue"), getQueuePosition() + 1 < getQueueLength() && getFullQueue(getQueuePosition() + 1).slice(getQueuePosition() + 1).map(function (item) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SongRow_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3___default()(),
+      track: item,
+      popup: popup,
+      togglePopup: togglePopup,
+      setPopupType: setPopupType,
+      queuePage: true,
+      platform: item.platform,
+      setRemoveTrack: function setRemoveTrack(trackToRemove) {
+        return deleteFromQueue(trackToRemove);
+      }
+    });
+  }), ((_getPlaylist = getPlaylist()) === null || _getPlaylist === void 0 ? void 0 : (_getPlaylist$playlist = _getPlaylist.playlist) === null || _getPlaylist$playlist === void 0 ? void 0 : _getPlaylist$playlist.length) > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", {
+    className: "queuePage_title"
+  }, "Next from ", playlist === null || playlist === void 0 ? void 0 : playlist.name, " "), (_getPlaylist2 = getPlaylist()) === null || _getPlaylist2 === void 0 ? void 0 : (_getPlaylist2$playlis = _getPlaylist2.playlist) === null || _getPlaylist2$playlis === void 0 ? void 0 : _getPlaylist2$playlis.slice(getPlaylistPosition() + 1).map(function (item) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      onClick: function onClick() {}
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SongRow_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_3___default()(),
+      track: item,
+      spotify: spotify,
+      popup: popup,
+      togglePopup: togglePopup,
+      setPopupType: setPopupType,
+      queuePage: true,
+      platform: item.platform,
+      setRemoveTrack: function setRemoveTrack(trackToRemove) {
+        return deleteFromPlaylist(trackToRemove);
+      },
+      playlist: getPlaylist()
+    }));
+  })));
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (QueuePage);
 
 /***/ }),
 
@@ -9930,18 +10941,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_Body_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Body.scss */ "./src/styles/Body.scss");
-/* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
-/* harmony import */ var _SongRow_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SongRow.jsx */ "./src/Components/SongRow.jsx");
-/* harmony import */ var _useContextMenu_jsx__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./useContextMenu.jsx */ "./src/Components/useContextMenu.jsx");
-/* harmony import */ var _styles_SearchPage_scss__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../styles/SearchPage.scss */ "./src/styles/SearchPage.scss");
-/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
-/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6__);
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+/* harmony import */ var _SongRow_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SongRow.jsx */ "./src/Components/SongRow.jsx");
+/* harmony import */ var _styles_SearchPage_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../styles/SearchPage.scss */ "./src/styles/SearchPage.scss");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
+/* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./logo.png */ "./src/Components/logo.png");
+
+
 
 
 
@@ -9950,107 +10957,42 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 function SearchPage(_ref) {
-  var spotify = _ref.spotify;
-  //⌄ Data values extracted from data layer
-  var _useDataLayerValue = (0,_DataLayer__WEBPACK_IMPORTED_MODULE_2__.useDataLayerValue)(),
-    _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2),
-    _useDataLayerValue2$ = _useDataLayerValue2[0],
-    search = _useDataLayerValue2$.search,
-    page = _useDataLayerValue2$.page,
-    device_id = _useDataLayerValue2$.device_id,
-    dispatch = _useDataLayerValue2[1];
-  var _useContextMenu = (0,_useContextMenu_jsx__WEBPACK_IMPORTED_MODULE_4__["default"])(),
-    clicked = _useContextMenu.clicked,
-    setClicked = _useContextMenu.setClicked,
-    points = _useContextMenu.points,
-    setPoints = _useContextMenu.setPoints;
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    setTimeout(function () {
-      if (page === "Home") {
-        dispatch({
-          type: "SET_PAGE",
-          page: "Home"
-        });
-      }
-    }, 1500);
-  }, []);
-  var updateContextMenu = function updateContextMenu(e, item) {
-    var song = document.getElementById(item.id);
-    setClicked(true);
-    setPoints({
-      x: e.clientX - song.scrollTop,
-      y: e.clientY
-    });
-    console.log("Right Click", e.pageX - song.scrollTop, e.pageY);
-  };
+  var popup = _ref.popup,
+    togglePopup = _ref.togglePopup,
+    loading = _ref.loading,
+    setPopupType = _ref.setPopupType;
+  var search = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSearch)(function (state) {
+    return state.search;
+  });
 
-  // function that updates the playlist being displayed in the body component
-  var setBody = function setBody(playlist) {
-    console.log("Playlist:");
-    console.log(playlist);
-    dispatch({
-      type: "SET_DISCOVER_WEEKLY",
-      discover_weekly: playlist
-    });
-    dispatch({
-      type: "SET_PAGE",
-      page: "Discover Weekly"
-    });
-  };
-
-  // sets the spotify player to play a new song
-  var setPlayer = function setPlayer(link) {
-    console.log(link);
-    console.log("device_id: " + device_id);
-    dispatch({
-      type: "SET_ITEM",
-      item: link
-    });
-    dispatch({
-      type: "SET_PLATFORM",
-      platform: "Spotify"
-    });
-  };
-
-  // sets the soundcloud and youtube player to the correct link
-  var setReactPlayer = function setReactPlayer(track) {
-    if (track.platform === "Soundcloud") {
-      dispatch({
-        type: "SET_PLATFORM",
-        platform: "Soundcloud"
-      });
-      dispatch({
-        type: "SET_SOUNDCLOUD",
-        soundcloud: track
-      });
-    } else {
-      dispatch({
-        type: "SET_PLATFORM",
-        platform: "Youtube"
-      });
-      dispatch({
-        type: "SET_YOUTUBE",
-        youtube: track
-      });
-    }
-  };
+  //Adding to Queue
+  var addFrontQueue = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.addFrontQueue;
+  });
+  var skip = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.skip;
+  });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "searchPage"
-  }, search.length !== 0 && search.map(function (track) {
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    className: "searchPageLoading"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+    src: _logo_png__WEBPACK_IMPORTED_MODULE_6__
+  })), search.length !== 0 && search.map(function (track) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6___default()("search-"),
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_4___default()("search-"),
       onClick: function onClick() {
-        addFrontQueue({
-          item: track,
-          platform: !track.platform ? "Spotify" : track.platform
-        });
-      },
-      onContextMenu: function onContextMenu(e) {
-        return updateContextMenu(e, track);
+        console.log("Adding to queue: ", track);
+        addFrontQueue(track);
+        skip();
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SongRow_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_6___default()("songRow-"),
-      track: track
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SongRow_jsx__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_4___default()("songRow-"),
+      track: track,
+      popup: popup,
+      togglePopup: togglePopup,
+      setPopupType: setPopupType,
+      platform: track.platform
     }));
   }));
 }
@@ -10073,13 +11015,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _styles_Sidebar_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Sidebar.scss */ "./src/styles/Sidebar.scss");
 /* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./logo.png */ "./src/Components/logo.png");
 /* harmony import */ var _SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SidebarOption.jsx */ "./src/Components/SidebarOption.jsx");
-/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Home */ "./node_modules/@material-ui/icons/Home.js");
-/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Search */ "./node_modules/@material-ui/icons/Search.js");
-/* harmony import */ var _material_ui_icons_LibraryMusic__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/LibraryMusic */ "./node_modules/@material-ui/icons/LibraryMusic.js");
+/* harmony import */ var _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/Home */ "./node_modules/@material-ui/icons/Home.js");
+/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/Search */ "./node_modules/@material-ui/icons/Search.js");
+/* harmony import */ var _material_ui_icons_LibraryMusic__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/LibraryMusic */ "./node_modules/@material-ui/icons/LibraryMusic.js");
 /* harmony import */ var _DataLayer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../DataLayer */ "./src/DataLayer.js");
-/* harmony import */ var _material_ui_icons__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons */ "./node_modules/@material-ui/icons/esm/AddBox.js");
+/* harmony import */ var _material_ui_icons__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons */ "./node_modules/@material-ui/icons/esm/AddBox.js");
 /* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! lodash/uniqueId */ "./node_modules/lodash/uniqueId.js");
 /* harmony import */ var lodash_uniqueId__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(lodash_uniqueId__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pics/mImg.jpeg */ "./src/Components/pics/mImg.jpeg");
+function _objectDestructuringEmpty(obj) { if (obj == null) throw new TypeError("Cannot destructure " + obj); }
 function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
 function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -10096,51 +11043,72 @@ function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
 
 
 
+
+
+
+
 function Sidebar(_ref) {
-  var spotify = _ref.spotify;
+  var spotify = _ref.spotify,
+    popup = _ref.popup,
+    togglePopup = _ref.togglePopup,
+    setPopupType = _ref.setPopupType;
   // function that updates the playlist being displayed in the body component
   var _useDataLayerValue = (0,_DataLayer__WEBPACK_IMPORTED_MODULE_4__.useDataLayerValue)(),
-    _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2),
-    playlists = _useDataLayerValue2[0].playlists,
-    dispatch = _useDataLayerValue2[1];
+    _useDataLayerValue2 = _slicedToArray(_useDataLayerValue, 2);
+  _objectDestructuringEmpty(_useDataLayerValue2[0]);
+  var dispatch = _useDataLayerValue2[1];
+  var user = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.user;
+  });
+  var playlists = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.playlists;
+  });
+  var setPlaylists = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSpotify)(function (state) {
+    return state.setPlaylists;
+  });
+  var setAddToPlaylistClicked = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.setAddToPlaylistClicked;
+  });
+  var getAddToPlaylistClicked = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.getAddToPlaylistClicked;
+  });
+  var getSelectedSong = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.getSelectedSong;
+  });
+  var setPage = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.setPage;
+  });
+  var setDiscoverWeekly = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useActions)(function (state) {
+    return state.setDiscoverWeekly;
+  });
+
+  // useEffect(() => {
+  //   setPlaylists(playlists);
+  //   console.log(playlists);
+  // }, [playlists]);
+
+  var onSelectedPlaylist = function onSelectedPlaylist(playlist) {
+    console.log("PlaylistID: ", playlist.id);
+    console.log("Song To Add: ", getSelectedSong());
+    setAddToPlaylistClicked(false);
+    console.log(getAddToPlaylistClicked());
+  };
+  document.addEventListener("click", function (e) {
+    if (getAddToPlaylistClicked()) {
+      if (e.target.id !== "playlistSection") {
+        setAddToPlaylistClicked(false);
+      }
+    }
+  });
   var setBody = function setBody(playlist) {
     console.log("Playlist:");
     console.log(playlist.id);
-    dispatch({
-      type: "SET_DISCOVER_WEEKLY",
-      discover_weekly: playlist
-    });
-    dispatch({
-      type: "SET_PAGE",
-      page: "Discover Weekly"
-    });
+    setDiscoverWeekly(playlist);
+    setPage("Playlist");
   };
-  var createPlaylist = function createPlaylist() {};
-
-  // function that modifies the page to either "Search" or "Home"
-  var modifyPage = function modifyPage(page) {
-    if (page === "Search") {
-      console.log("Search");
-      dispatch({
-        type: "SET_DISCOVER_WEEKLY",
-        discover_weekly: null
-      });
-      dispatch({
-        type: "SET_PAGE",
-        page: "Search"
-      });
-    } else if (page === "Home") {
-      console.log("Home");
-      console.log(playlists);
-      dispatch({
-        type: "SET_DISCOVER_WEEKLY",
-        discover_weekly: null
-      });
-      dispatch({
-        type: "SET_PAGE",
-        page: "Home"
-      });
-    }
+  var createPlaylist = function createPlaylist() {
+    togglePopup(true);
+    setPopupType("Create");
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "sidebar"
@@ -10158,44 +11126,51 @@ function Sidebar(_ref) {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("font", {
     size: "+2",
     face: "verdana"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     onClick: function onClick() {
-      return modifyPage("Home");
+      return setPage("Home");
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    Icon: _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_6__["default"],
+    Icon: _material_ui_icons_Home__WEBPACK_IMPORTED_MODULE_9__["default"],
     title: "Home"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     onClick: function onClick() {
-      return modifyPage("Search");
+      return setPage("Search");
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    Icon: _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_7__["default"],
+    Icon: _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_10__["default"],
     title: "Search"
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    Icon: _material_ui_icons_LibraryMusic__WEBPACK_IMPORTED_MODULE_8__["default"],
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    onClick: function onClick() {
+      return setPage("Your Library");
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    Icon: _material_ui_icons_LibraryMusic__WEBPACK_IMPORTED_MODULE_11__["default"],
     title: "Your Library"
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("br", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     onClick: function onClick() {
       return createPlaylist();
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    Icon: _material_ui_icons__WEBPACK_IMPORTED_MODULE_9__["default"],
+    Icon: _material_ui_icons__WEBPACK_IMPORTED_MODULE_12__["default"],
     title: "Create Playlist"
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("strong", {
     className: "sidebar_title"
-  }, " PLAYLISTS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null), playlists === null || playlists === void 0 ? void 0 : playlists.map(function (playlist) {
+  }, " PLAYLISTS"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("hr", null)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    id: "playlistSection"
+  }, playlists === null || playlists === void 0 ? void 0 : playlists.map(function (playlist) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      key: playlist.id,
+      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_5___default()("playlist-"),
+      id: "playlistSection",
       onClick: function onClick() {
         return setBody(playlist);
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_SidebarOption_jsx__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      key: lodash_uniqueId__WEBPACK_IMPORTED_MODULE_5___default()("playlist-"),
+      id: "playlist",
       playlist: playlist,
       title: playlist.name
     }));
-  }));
+  })));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Sidebar);
 
@@ -10214,6 +11189,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_SidebarOption_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/SidebarOption.scss */ "./src/styles/SidebarOption.scss");
+/* harmony import */ var _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pics/mImg.jpeg */ "./src/Components/pics/mImg.jpeg");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../store */ "./src/store.js");
+
+
+
 
 
 function SidebarOption(_ref) {
@@ -10222,14 +11202,23 @@ function SidebarOption(_ref) {
     Icon = _ref$Icon === void 0 ? null : _ref$Icon,
     _ref$playlist = _ref.playlist,
     playlist = _ref$playlist === void 0 ? null : _ref$playlist;
+  var getPlayingStatus = (0,_store__WEBPACK_IMPORTED_MODULE_3__.useActions)(function (state) {
+    return state.getPlayingStatus;
+  });
+  var getQueueLength = (0,_store__WEBPACK_IMPORTED_MODULE_3__.useQueue)(function (state) {
+    return state.getQueueLength;
+  });
+  var getQueuePosition = (0,_store__WEBPACK_IMPORTED_MODULE_3__.useQueue)(function (state) {
+    return state.getQueuePosition;
+  });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-    className: "sidebarOption"
+    className: Icon ? "sidebarHeader" : "sidebarOption"
   }, Icon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(Icon, {
     className: "sidebarOption_icon"
   }), playlist && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "",
     className: "sidebarOption_icon",
-    src: playlist.images[0].url
+    src: playlist.images[0] && playlist.images[0] !== "" ? playlist.images[0] : _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_2__
   }), Icon ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, title) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, title));
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SidebarOption);
@@ -10249,9 +11238,33 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_SongRow_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/SongRow.scss */ "./src/styles/SongRow.scss");
-/* harmony import */ var _material_ui_icons__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons */ "./node_modules/@material-ui/icons/esm/CloudDownloadOutlined.js");
-/* harmony import */ var _material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/PlayCircleFilled */ "./node_modules/@material-ui/icons/PlayCircleFilled.js");
-/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _material_ui_icons__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons */ "./node_modules/@material-ui/icons/esm/CloudDownloadOutlined.js");
+/* harmony import */ var _pics_queueTop_svg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./pics/queueTop.svg */ "./src/Components/pics/queueTop.svg");
+/* harmony import */ var _pics_addPlaylist_png__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pics/addPlaylist.png */ "./src/Components/pics/addPlaylist.png");
+/* harmony import */ var _pics_trash_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pics/trash.svg */ "./src/Components/pics/trash.svg");
+/* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../store */ "./src/store.js");
+/* harmony import */ var _pics_soundcloudDark_svg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./pics/soundcloudDark.svg */ "./src/Components/pics/soundcloudDark.svg");
+/* harmony import */ var _pics_ytDark_svg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./pics/ytDark.svg */ "./src/Components/pics/ytDark.svg");
+/* harmony import */ var _pics_spotDark_svg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./pics/spotDark.svg */ "./src/Components/pics/spotDark.svg");
+/* harmony import */ var _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./pics/mImg.jpeg */ "./src/Components/pics/mImg.jpeg");
+/* harmony import */ var _pics_removePlaylist_svg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./pics/removePlaylist.svg */ "./src/Components/pics/removePlaylist.svg");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
+function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
+function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
+function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
+function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
+function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+
+
+
+
+
+
 
 
 
@@ -10261,52 +11274,181 @@ __webpack_require__.r(__webpack_exports__);
 
 
 function SongRow(_ref) {
-  var track = _ref.track;
-  var search = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
-  // const [{ item }, dispatch] =
-  //   useDataLayerValue();
-  // Queue actions
-  var getPlaying = (0,_store__WEBPACK_IMPORTED_MODULE_2__["default"])(function (state) {
-    return state.getPlaying;
+  var track = _ref.track,
+    _ref$search = _ref.search,
+    search = _ref$search === void 0 ? true : _ref$search,
+    popup = _ref.popup,
+    togglePopup = _ref.togglePopup,
+    setPopupType = _ref.setPopupType,
+    _ref$queuePage = _ref.queuePage,
+    queuePage = _ref$queuePage === void 0 ? false : _ref$queuePage,
+    platform = _ref.platform,
+    setRemoveTrack = _ref.setRemoveTrack,
+    _ref$playlist = _ref.playlist,
+    playlist = _ref$playlist === void 0 ? null : _ref$playlist;
+  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
+    _useState2 = _slicedToArray(_useState, 2),
+    deletePopup = _useState2[0],
+    toggleDeletePopup = _useState2[1];
+  var currentPlaylist = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.playlist;
   });
-  var addFrontQueue = (0,_store__WEBPACK_IMPORTED_MODULE_2__["default"])(function (state) {
+  var pop = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.pop;
+  });
+  var addFrontQueue = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
     return state.addFrontQueue;
   });
-  var addQueue = (0,_store__WEBPACK_IMPORTED_MODULE_2__["default"])(function (state) {
+  var addQueue = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
     return state.addQueue;
   });
-  var getPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_2__.useActions)(function (state) {
-    return state.getPlatform;
+  var getFullQueue = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useQueue)(function (state) {
+    return state.getFullQueue;
   });
-  var skip = (0,_store__WEBPACK_IMPORTED_MODULE_2__.useActions)(function (state) {
-    return state.skip;
+  var playlists = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
+    return state.playlists;
   });
+  var sidebarRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(null);
+  var setAddToPlaylistClicked = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.setAddToPlaylistClicked;
+  });
+  var setSelectedSong = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.setSelectedSong;
+  });
+  var getSelectedSong = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.getSelectedSong;
+  });
+  var iconsClass = popup ? "songRow_controlsBlur" : "songRow_controls";
+  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+    iconsClass = popup ? "songRow_controlsBlur" : "songRow_controls";
+  }, [popup]);
+  var handleAddToPlaylistClick = function handleAddToPlaylistClick(playlistID, track) {
+    console.log("Adding to playlist: ", playlistID);
+    console.log("Track: ", track);
 
-  // Controller actions
-  var setSong = (0,_store__WEBPACK_IMPORTED_MODULE_2__.useSpotify)(function (state) {
-    return state.setSong;
-  });
-  if (typeof track.track !== "undefined" || track.type === "track") {
+    // Call the onAddToPlaylist function passed down as a prop
+    // to trigger the setCurrentTab function in the PlaylistPage component
+    addToPlaylist();
+
+    // Call the addToPlaylist function to add the track to the selected playlist
+    addToPlaylist(playlistID, track);
+  };
+  var addToPlaylist = /*#__PURE__*/function () {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(playlistID, track) {
+      return _regeneratorRuntime().wrap(function _callee$(_context) {
+        while (1) switch (_context.prev = _context.next) {
+          case 0:
+            _context.next = 2;
+            return axios.post("/db/user/addToPlaylist", {
+              playlistID: playlistID,
+              track: track
+            });
+          case 2:
+          case "end":
+            return _context.stop();
+        }
+      }, _callee);
+    }));
+    return function addToPlaylist(_x2, _x3) {
+      return _ref2.apply(this, arguments);
+    };
+  }();
+  var handleAddToPlaylist = /*#__PURE__*/function () {
+    var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(playlistID, track) {
+      return _regeneratorRuntime().wrap(function _callee2$(_context2) {
+        while (1) switch (_context2.prev = _context2.next) {
+          case 0:
+            console.log("Adding to playlist: ", playlistID);
+            console.log("Track: ", track);
+            _context2.next = 4;
+            return axios.post("/db/user/addToPlaylist", {
+              playlistID: playlistID,
+              track: track
+            });
+          case 4:
+          case "end":
+            return _context2.stop();
+        }
+      }, _callee2);
+    }));
+    return function handleAddToPlaylist(_x4, _x5) {
+      return _ref3.apply(this, arguments);
+    };
+  }();
+  if (track.platform === "Spotify") {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "songRow"
-    }, track.album.images.length === 0 ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    }, (!queuePage || track.item.is_local ? track.item.is_local === true : false) ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      fontSize: "large",
       className: "songRow_download"
     }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
       className: "songRow_search",
-      src: track.album.images[0].url,
+      src: track.item.album.images[0] ? track.item.album.images[0] : _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_9__,
       alt: ""
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "songRow_info"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, track.name), track.artists.length > 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, track.artists.map(function (artist) {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, track.item.name), (track.item.is_local ? track.item.is_local === false : true) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, track.item.artists.map(function (artist) {
       return artist.name;
-    }).join(", "), " -", " ", track.album.name, " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+    }).join(", "), " -", " ", track.item.album.name, " ")), (queuePage || track.item.is_local ? track.item.is_local === false :  true && !popup) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "songRow_controls"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      onClick: function onClick() {
-        return addFrontQueue(track);
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      src: _pics_spotDark_svg__WEBPACK_IMPORTED_MODULE_8__,
+      className: "songRow_platform"
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        console.log("Queue Front");
+        console.log(getFullQueue());
+        addFrontQueue(track);
+      },
+      "aria-label": "Play Next"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      className: "songRow_controlsIcons",
+      src: _pics_queueTop_svg__WEBPACK_IMPORTED_MODULE_2__,
+      alt: ""
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        console.log("Queue Last");
+        console.log(track);
+        addQueue(track);
+      },
+      "aria-label": "Play Last"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      className: "songRow_controlsIcons upsideDown",
+      src: _pics_queueTop_svg__WEBPACK_IMPORTED_MODULE_2__,
+      alt: ""
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        setPopupType("Add");
+        console.log("Add to Playlist");
+        console.log("Selected Song: ", track);
+        setSelectedSong(track);
+        togglePopup(true);
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_PlayCircleFilled__WEBPACK_IMPORTED_MODULE_4__["default"], null)))));
-  } else if (track.platform !== "undefined" && track.platform !== "Spotify") {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      className: "songRow_controlsAdd",
+      src: _pics_addPlaylist_png__WEBPACK_IMPORTED_MODULE_3__,
+      alt: "",
+      "aria-label": "Add to Playlist"
+    })), (queuePage || playlist !== null) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        setRemoveTrack(track);
+        console.log("Remove track: ", track);
+        if (!queuePage) {
+          setPopupType("DeletePlaylist");
+          togglePopup(true);
+        }
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      className: "songRow_controlsDelete",
+      src: _pics_trash_svg__WEBPACK_IMPORTED_MODULE_4__,
+      alt: "",
+      "aria-label": "Delete"
+    }))));
+  } else {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "songRow"
     }, search ?
@@ -10314,23 +11456,71 @@ function SongRow(_ref) {
     // if searching make the image a bit larger
     react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
       className: "songRow_search",
-      src: track.pic,
+      src: track.pic ? track.pic : _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_9__,
       alt: ""
     }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
       className: "songRow_album",
-      src: track.pic,
+      src: track.pic ? track.pic : _pics_mImg_jpeg__WEBPACK_IMPORTED_MODULE_9__,
       alt: ""
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
       className: "songRow_info"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, track.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, track.artist)));
-  } else {
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: "songRow"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      className: "songRow_download"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, track.title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("p", null, track.artist)), !popup && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      className: iconsClass
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      src: platform === "Soundcloud" ? _pics_soundcloudDark_svg__WEBPACK_IMPORTED_MODULE_6__ : _pics_ytDark_svg__WEBPACK_IMPORTED_MODULE_7__,
+      className: "songRow_platform"
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
-      className: "songRow_info"
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h1", null, track.name)));
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        addFrontQueue(track);
+        console.log(track);
+      },
+      "aria-label": "Play Next"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      className: "songRow_controlsIcons",
+      src: _pics_queueTop_svg__WEBPACK_IMPORTED_MODULE_2__,
+      alt: ""
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        addQueue(track);
+        console.log(track);
+      },
+      "aria-label": "Play Last"
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      className: "songRow_controlsIcons upsideDown",
+      src: _pics_queueTop_svg__WEBPACK_IMPORTED_MODULE_2__,
+      alt: ""
+    })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        console.log("Add to Playlist");
+        console.log("Selected Song: ", track);
+        setPopupType("Add");
+        setSelectedSong(track);
+        togglePopup(true);
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      className: "songRow_controlsAdd",
+      src: _pics_addPlaylist_png__WEBPACK_IMPORTED_MODULE_3__,
+      alt: "",
+      "aria-label": "Add to Playlist"
+    })), (queuePage || playlist !== null) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
+      onClick: function onClick(e) {
+        e.stopPropagation();
+        setRemoveTrack(track);
+        console.log("Remove track: ", track);
+        if (!queuePage) {
+          setPopupType("DeletePlaylist");
+          togglePopup(true);
+        }
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
+      className: "songRow_controlsDelete",
+      src: _pics_trash_svg__WEBPACK_IMPORTED_MODULE_4__,
+      alt: "",
+      "aria-label": "Remove from Queue"
+    }))));
   }
 }
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (SongRow);
@@ -10363,9 +11553,6 @@ function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input ==
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 
-var instance = axios__WEBPACK_IMPORTED_MODULE_1___default().create({
-  baseURL: "https://soundcloud.com/"
-});
 var __awaiter = undefined && undefined.__awaiter || function (thisArg, _arguments, P, generator) {
   function adopt(value) {
     return value instanceof P ? value : new P(function (resolve) {
@@ -10581,7 +11768,7 @@ var authEndpoint = "https://accounts.spotify.com/authorize";
 // Replace with your app's client ID, redirect URI and desired scopes
 var clientId = "3dd065b6dedd47e99ecb7ed63bcde5d6"; // Your client id
 var redirectUri = "http://localhost:3000/";
-var scopes = ["user-read-currently-playing", "user-read-recently-played", "user-read-playback-state", "user-top-read", "user-modify-playback-state", "streaming", "user-read-private"];
+var scopes = ["user-read-currently-playing", "user-read-recently-played", "user-read-playback-state", "user-top-read", "user-modify-playback-state", "streaming", "user-read-private", "playlist-modify-public", "playlist-modify-private", "playlist-read-private", "playlist-read-collaborative"];
 var getTokenFromResponse = function getTokenFromResponse() {
   return window.location.hash.substring(1).split("&").reduce(function (initial, item) {
     var parts = item.split("=");
@@ -10590,57 +11777,6 @@ var getTokenFromResponse = function getTokenFromResponse() {
   }, {});
 };
 var accessUrl = "".concat(authEndpoint, "?client_id=").concat(clientId, "&redirect_uri=").concat(redirectUri, "&scope=").concat(scopes.join("%20"), "&response_type=token&show_dialog=true");
-
-/***/ }),
-
-/***/ "./src/Components/useContextMenu.jsx":
-/*!*******************************************!*\
-  !*** ./src/Components/useContextMenu.jsx ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _unsupportedIterableToArray(arr, i) || _nonIterableRest(); }
-function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
-function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
-function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _iterableToArrayLimit(arr, i) { var _i = null == arr ? null : "undefined" != typeof Symbol && arr[Symbol.iterator] || arr["@@iterator"]; if (null != _i) { var _s, _e, _x, _r, _arr = [], _n = !0, _d = !1; try { if (_x = (_i = _i.call(arr)).next, 0 === i) { if (Object(_i) !== _i) return; _n = !1; } else for (; !(_n = (_s = _x.call(_i)).done) && (_arr.push(_s.value), _arr.length !== i); _n = !0); } catch (err) { _d = !0, _e = err; } finally { try { if (!_n && null != _i["return"] && (_r = _i["return"](), Object(_r) !== _r)) return; } finally { if (_d) throw _e; } } return _arr; } }
-function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
-
-var useContextMenu = function useContextMenu() {
-  var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)(false),
-    _useState2 = _slicedToArray(_useState, 2),
-    clicked = _useState2[0],
-    setClicked = _useState2[1];
-  var _useState3 = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
-      x: 0,
-      y: 0
-    }),
-    _useState4 = _slicedToArray(_useState3, 2),
-    points = _useState4[0],
-    setPoints = _useState4[1];
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    var handleClick = function handleClick() {
-      return setClicked(false);
-    };
-    document.addEventListener("click", handleClick);
-    return function () {
-      document.removeEventListener("click", handleClick);
-    };
-  }, []);
-  return {
-    clicked: clicked,
-    setClicked: setClicked,
-    points: points,
-    setPoints: setPoints
-  };
-};
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useContextMenu);
 
 /***/ }),
 
@@ -10862,12 +11998,19 @@ var reportWebVitals = function reportWebVitals(onPerfEntry) {
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__),
 /* harmony export */   "useActions": () => (/* binding */ useActions),
+/* harmony export */   "useQueue": () => (/* binding */ useQueue),
+/* harmony export */   "useSearch": () => (/* binding */ useSearch),
 /* harmony export */   "useSpotify": () => (/* binding */ useSpotify)
 /* harmony export */ });
 /* harmony import */ var zustand__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! zustand */ "./node_modules/zustand/esm/index.mjs");
 /* harmony import */ var zustand_middleware__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! zustand/middleware */ "./node_modules/zustand/esm/middleware.mjs");
+function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function ownKeys(object, enumerableOnly) { var keys = Object.keys(object); if (Object.getOwnPropertySymbols) { var symbols = Object.getOwnPropertySymbols(object); enumerableOnly && (symbols = symbols.filter(function (sym) { return Object.getOwnPropertyDescriptor(object, sym).enumerable; })), keys.push.apply(keys, symbols); } return keys; }
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = null != arguments[i] ? arguments[i] : {}; i % 2 ? ownKeys(Object(source), !0).forEach(function (key) { _defineProperty(target, key, source[key]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) { Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key)); }); } return target; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
@@ -10878,31 +12021,98 @@ function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len 
 
 var queueStore = function queueStore(set, get) {
   return {
-    queue: [],
+    queue: [{
+      item: {
+        uri: "spotify:track:2Y0wPrPQBrGhoLn14xRYCG",
+        name: "Come & Go (with MarshMello)",
+        artists: [{
+          name: "Juice WRLD"
+        }, {
+          name: "Marshmello"
+        }],
+        album: {
+          name: "Legends Never Die",
+          images: ["https://i.scdn.co/image/ab67616d0000b2733e0698e4ae5ffb82a005aeeb"]
+        },
+        is_local: false,
+        type: "track",
+        id: "2Y0wPrPQBrGhoLn14xRYCG"
+      },
+      platform: "Spotify"
+    }],
+    playlist: {
+      id: "",
+      playlist: []
+    },
+    playlistPosition: 0,
     queuePosition: 0,
+    soundcloud: {
+      link: "https://soundcloud.com/liltjay/f-n"
+    },
+    youtube: {
+      link: "http://www.youtube.com/watch?v=jx96Twg-Aew"
+    },
+    firstRender: true,
+    getFirstRender: function getFirstRender() {
+      return get().firstRender;
+    },
+    setFirstRender: function setFirstRender(firstRender) {
+      return set({
+        firstRender: firstRender
+      });
+    },
+    setSoundcloud: function setSoundcloud(soundcloud) {
+      return set({
+        soundcloud: soundcloud
+      });
+    },
+    getSoundcloud: function getSoundcloud() {
+      return get().soundcloud;
+    },
+    setYoutube: function setYoutube(youtube) {
+      return set({
+        youtube: youtube
+      });
+    },
+    getYoutube: function getYoutube() {
+      return get().youtube;
+    },
     addQueue: function addQueue(song) {
-      return set(function (state) {
+      console.log("adding to front of queue", song);
+      set(function (state) {
         return {
           queue: [].concat(_toConsumableArray(state.queue), [song])
         };
       });
     },
     addFrontQueue: function addFrontQueue(song) {
-      var _get$queue;
-      if (((_get$queue = get().queue) === null || _get$queue === void 0 ? void 0 : _get$queue.length) > 0) {
-        set(function (state) {
-          return {
-            queue: [get().queue[0], song].concat(_toConsumableArray(state.queue.slice[1]))
-          };
-        });
-      } else set(function () {
+      console.log("adding to front of queue", song);
+      set(function (state) {
         return {
-          queue: [song]
+          queue: state.queue.length === 0 ? [song] : state.queue.length === state.queuePosition + 1 ? [].concat(_toConsumableArray(state.queue), [song]) : [].concat(_toConsumableArray(state.queue.slice(0, state.queuePosition + 1)), [song], _toConsumableArray(state.queue.slice(state.queuePosition + 1, state.queue.length)))
         };
       });
     },
+    getFullQueue: function getFullQueue() {
+      return get().queue;
+    },
     getQueue: function getQueue() {
       return get().queue[get().queuePosition];
+    },
+    setFullQueue: function setFullQueue(queue) {
+      return set({
+        queue: queue
+      });
+    },
+    getQueueLength: function getQueueLength() {
+      return get().queue.length;
+    },
+    removeQueue: function removeQueue(songID) {
+      return set(function (state) {
+        return {
+          queue: state.queue.filter(song.item.id === songID)
+        };
+      });
     },
     getQueuePosition: function getQueuePosition() {
       return get().queuePosition;
@@ -10910,29 +12120,135 @@ var queueStore = function queueStore(set, get) {
     pop: function pop() {
       return set(function (state) {
         return {
-          queuePosition: state.queuePosition + 1
+          queuePosition: state.queue.length > state.queuePosition + 1 ? state.queuePosition + 1 : state.queuePosition
         };
       });
     },
     back: function back() {
       return set(function (state) {
         return {
-          queuePosition: state.queuePosition - 1
+          queuePosition: state.queuePosition > 0 ? state.queuePosition - 1 : state.queuePosition
         };
       });
     },
     getPlaying: function getPlaying() {
       return get().queue[get().queuePosition - 1];
+    },
+    setPlaylist: function setPlaylist(playlist) {
+      return set({
+        playlist: playlist
+      });
+    },
+    resetPlaylistPosition: function resetPlaylistPosition() {
+      return set({
+        playlistPosition: 0
+      });
+    },
+    getPlaylist: function getPlaylist() {
+      return get().playlist;
+    },
+    getPlaylistNext: function getPlaylistNext() {
+      return get().playlist.playlist[get().playlistPosition];
+    },
+    skipPlaylist: function skipPlaylist() {
+      console.log("skipping playlist", get().playlist);
+      set(function (state) {
+        return {
+          playlistPosition: state.playlist.playlist.length > state.playlistPosition + 1 ? state.playlistPosition + 1 : state.playlistPosition
+        };
+      });
+    },
+    backPlaylist: function backPlaylist() {
+      return set(function (state) {
+        return {
+          playlistPosition: state.playlistPosition > 0 ? state.playlistPosition - 1 : state.playlistPosition
+        };
+      });
+    },
+    getPlaylistPosition: function getPlaylistPosition() {
+      return get().playlistPosition;
+    },
+    setPlaylistPosition: function setPlaylistPosition(position) {
+      return set({
+        playlistPosition: position
+      });
+    },
+    setPlaylistShuffled: function setPlaylistShuffled(playlist) {
+      return set({
+        playlist: playlist
+      });
     }
   };
 };
 var actionsStore = function actionsStore(set, get) {
   return {
+    discover_weekly: null,
+    page: "Home",
+    playing: false,
     reverseStatus: false,
     reverseButton: null,
     platform: "Spotify",
     skipButton: null,
+    pauseButton: null,
     playbackStatus: null,
+    volume: 0.8,
+    addToPlaylistClicked: false,
+    selectedSong: null,
+    shuffleState: false,
+    getShuffleState: function getShuffleState() {
+      return get().shuffleState;
+    },
+    setShuffleState: function setShuffleState(shuffleState) {
+      set({
+        shuffleState: shuffleState
+      });
+      console.log("shuffle state", get().shuffleState);
+    },
+    setDiscoverWeekly: function setDiscoverWeekly(playlist) {
+      return set({
+        discover_weekly: playlist
+      });
+    },
+    getDiscoverWeekly: function getDiscoverWeekly() {
+      return get().discover_weekly;
+    },
+    setPage: function setPage(page) {
+      return set({
+        page: page
+      });
+    },
+    getPage: function getPage() {
+      return get().page;
+    },
+    setAddToPlaylistClicked: function setAddToPlaylistClicked(clicked) {
+      return set({
+        addToPlaylistClicked: clicked
+      });
+    },
+    getAddToPlaylistClicked: function getAddToPlaylistClicked() {
+      return get().addToPlaylistClicked;
+    },
+    setSelectedSong: function setSelectedSong(song) {
+      return set({
+        selectedSong: song
+      });
+    },
+    getSelectedSong: function getSelectedSong() {
+      return get().selectedSong;
+    },
+    setPlaying: function setPlaying(playing) {
+      return set({
+        playing: playing
+      });
+    },
+    getPlayingStatus: function getPlayingStatus() {
+      return get().playing;
+    },
+    setVolume: function setVolume(volume) {
+      return set({
+        volume: volume
+      });
+    },
     setPlaybackStatus: function setPlaybackStatus(status) {
       return set({
         playbackStatus: status
@@ -10957,12 +12273,26 @@ var actionsStore = function actionsStore(set, get) {
     },
     setReverseButton: function setReverseButton(button) {
       return set({
-        skipButton: button
+        reverseButton: button
       });
     },
     reverse: function reverse() {
       var _get$reverseButton$cu;
       return (_get$reverseButton$cu = get().reverseButton.current) === null || _get$reverseButton$cu === void 0 ? void 0 : _get$reverseButton$cu.dispatchEvent(new MouseEvent("click", {
+        view: window,
+        bubbles: true,
+        cancelable: true,
+        buttons: 1
+      }));
+    },
+    setPauseButton: function setPauseButton(button) {
+      return set({
+        playButton: button
+      });
+    },
+    pause: function pause() {
+      var _get$playButton$curre;
+      return (_get$playButton$curre = get().playButton.current) === null || _get$playButton$curre === void 0 ? void 0 : _get$playButton$curre.dispatchEvent(new MouseEvent("click", {
         view: window,
         bubbles: true,
         cancelable: true,
@@ -10984,26 +12314,142 @@ var actionsStore = function actionsStore(set, get) {
 };
 var spotifyStore = function spotifyStore(set, get) {
   return {
-    song: "",
-    setSong: function setSong(song) {
+    EmbedController: null,
+    spotify: null,
+    token: null,
+    user: null,
+    playlists: [],
+    topArtists: null,
+    setEmbedController: function setEmbedController(controller) {
       return set({
-        song: song
+        EmbedController: controller
       });
     },
-    getSong: function getSong() {
-      return get().song;
+    setSpotify: function setSpotify(spotify) {
+      return set({
+        spotify: spotify
+      });
+    },
+    setToken: function setToken(token) {
+      return set({
+        token: token
+      });
+    },
+    setUser: function setUser(user) {
+      return set({
+        user: user
+      });
+    },
+    addToPlaylist: function addToPlaylist(playlistID, song) {
+      return set(function (state) {
+        return {
+          playlists: state.playlists.map(function (playlist) {
+            return playlist.id === playlistID ? _objectSpread(_objectSpread({}, playlist), {}, {
+              playlist: [].concat(_toConsumableArray(playlist.playlist), [song])
+            }) : playlist;
+          })
+        };
+      });
+    },
+    removeFromStorePlaylist: function removeFromStorePlaylist(playlistID, songID) {
+      set(function (state) {
+        return {
+          playlists: state.playlists.map(function (playlist) {
+            if (playlist.id === playlistID) {
+              console.log("removing song", songID, "from playlist", playlistID);
+              return _objectSpread(_objectSpread({}, playlist), {}, {
+                playlist: playlist.playlist.filter(function (spotSong) {
+                  return spotSong.item.id !== songID;
+                })
+              });
+            } else {
+              return playlist;
+            }
+          })
+        };
+      });
+    },
+    getNumberOfBeatbytes: function getNumberOfBeatbytes() {
+      var count = 0;
+      get().playlists.map(function (playlist) {
+        if (playlist.platform === "Beatbytes") {
+          count++;
+        }
+      });
+      return count;
+    },
+    addToBeatbytes: function addToBeatbytes(playlistID, song) {
+      return set(function (state) {
+        return {
+          playlists: state.playlists.map(function (playlist) {
+            console.log(playlist, playlistID);
+            if (playlist.id === playlistID) {
+              // console.log("adding song", song, "to playlist", playlistID);
+              return _objectSpread(_objectSpread({}, playlist), {}, {
+                playlist: [].concat(_toConsumableArray(playlist.playlist), [song])
+              });
+            } else return playlist;
+          })
+        };
+      });
+    },
+    addPlaylist: function addPlaylist(playlist) {
+      console.log("adding playlist", playlist);
+      set(function (state) {
+        return {
+          playlists: [].concat(_toConsumableArray(state.playlists), [playlist])
+        };
+      });
+    },
+    setPlaylists: function setPlaylists(playlists) {
+      return set({
+        playlists: playlists
+      });
+    },
+    getPlaylists: function getPlaylists() {
+      return get().playlists;
+    },
+    setTopArtists: function setTopArtists(topArtists) {
+      return set({
+        topArtists: topArtists
+      });
     }
   };
 };
+var searchStore = function searchStore(set, get) {
+  return {
+    search: [],
+    searchPlatform: "Spotify",
+    setSearch: function setSearch(search) {
+      return set({
+        search: search
+      });
+    },
+    getSearch: function getSearch() {
+      return get().search;
+    },
+    setSearchPlatform: function setSearchPlatform(platform) {
+      return set({
+        searchPlatform: platform
+      });
+    },
+    getSearchPlatform: function getSearchPlatform() {
+      return get().searchPlatform;
+    }
+  };
+};
+searchStore = (0,zustand_middleware__WEBPACK_IMPORTED_MODULE_0__.devtools)(searchStore);
 spotifyStore = (0,zustand_middleware__WEBPACK_IMPORTED_MODULE_0__.devtools)(spotifyStore);
 actionsStore = (0,zustand_middleware__WEBPACK_IMPORTED_MODULE_0__.devtools)(actionsStore);
 queueStore = (0,zustand_middleware__WEBPACK_IMPORTED_MODULE_0__.devtools)(queueStore);
-var useQueue = (0,zustand__WEBPACK_IMPORTED_MODULE_1__["default"])(queueStore);
-var useActions = (0,zustand__WEBPACK_IMPORTED_MODULE_1__["default"])(actionsStore);
-var useSpotify = (0,zustand__WEBPACK_IMPORTED_MODULE_1__["default"])(spotifyStore);
+var useQueue = (0,zustand__WEBPACK_IMPORTED_MODULE_1__.create)(queueStore);
+var useActions = (0,zustand__WEBPACK_IMPORTED_MODULE_1__.create)(actionsStore);
+var useSpotify = (0,zustand__WEBPACK_IMPORTED_MODULE_1__.create)(spotifyStore);
+var useSearch = (0,zustand__WEBPACK_IMPORTED_MODULE_1__.create)(searchStore);
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (useQueue);
+
+
 
 /***/ }),
 
@@ -11087,7 +12533,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".App {\n  text-align: center;\n  background-color: #00003d;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n.App-pic {\n  height: 10vh;\n  max-height: 20%;\n  margin-right: 40px;\n}\n\n.App-nav {\n  height: 5vh;\n  margin-left: 2px;\n}\n\n.App-next {\n  height: 4.5vh;\n  margin-left: 6px;\n  margin-bottom: 2px;\n}\n\n.App-plat {\n  height: 5vh;\n  margin-left: 20px;\n  align-items: center;\n}\n\n.App-textBox {\n  align-items: middle;\n  margin-bottom: 10px;\n  border: 3px solid purple;\n}\n\n.App-header {\n  background-color: #6796f5;\n  min-height: 10vh;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n  margin-right: 20px;\n}\n\n.App-scroll {\n  overflow: auto;\n  background-color: rgb(148, 156, 255);\n}\n\n.App-thumbnail {\n  max-width: 400px;\n  background-color: cornflowerblue;\n}\n\n.App-song {\n  max-width: 200px;\n  background-color: cornflowerblue;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/App.scss"],"names":[],"mappings":"AAAA;EACE,kBAAA;EACA,yBAAA;AACF;;AAEA;EACE,cAAA;EACA,oBAAA;AACF;;AAEA;EACE;IACE,4CAAA;EACF;AACF;AAEA;EACE,YAAA;EACA,eAAA;EACA,kBAAA;AAAF;;AAGA;EACE,WAAA;EACA,gBAAA;AAAF;;AAGA;EACE,aAAA;EACA,gBAAA;EACA,kBAAA;AAAF;;AAGA;EACE,WAAA;EACA,iBAAA;EACA,mBAAA;AAAF;;AAGA;EACE,mBAAA;EACA,mBAAA;EACA,wBAAA;AAAF;;AAGA;EACE,yBAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,uBAAA;EACA,6BAAA;EACA,YAAA;AAAF;;AAGA;EACE,cAAA;EACA,kBAAA;AAAF;;AAGA;EACE,cAAA;EACA,oCAAA;AAAF;;AAGA;EACE,gBAAA;EACA,gCAAA;AAAF;;AAGA;EACE,gBAAA;EACA,gCAAA;AAAF;;AAGA;EACE;IACE,uBAAA;EAAF;EAEA;IACE,yBAAA;EAAF;AACF","sourcesContent":[".App {\n  text-align: center;\n  background-color: #00003d;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-pic {\n  height: 10vh;\n  max-height: 20%;\n  margin-right: 40px;\n}\n\n.App-nav {\n  height: 5vh;\n  margin-left: 2px;\n}\n\n.App-next {\n  height: 4.5vh;\n  margin-left: 6px;\n  margin-bottom: 2px;\n}\n\n.App-plat {\n  height: 5vh;\n  margin-left: 20px;\n  align-items: center;\n}\n\n.App-textBox {\n  align-items: middle;\n  margin-bottom: 10px;\n  border: 3px solid purple;\n}\n\n.App-header {\n  background-color: #6796f5;\n  min-height: 10vh;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n  margin-right: 20px;\n}\n\n.App-scroll {\n  overflow: auto;\n  background-color: rgb(148, 156, 255);\n}\n\n.App-thumbnail {\n  max-width: 400px;\n  background-color: cornflowerblue\n}\n\n.App-song {\n  max-width: 200px;\n  background-color: cornflowerblue\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".AppBlur {\n  z-index: 3;\n  height: 100%;\n  width: 100%;\n}\n\n.disabled {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(255, 255, 255, 0.7);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 1;\n  opacity: 0.4;\n  pointer-events: none;\n}\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n.App-pic {\n  height: 10vh;\n  max-height: 20%;\n  margin-right: 40px;\n}\n\n.App-nav {\n  height: 5vh;\n  margin-left: 2px;\n}\n\n.App-next {\n  height: 4.5vh;\n  margin-left: 6px;\n  margin-bottom: 2px;\n}\n\n.App-plat {\n  height: 5vh;\n  margin-left: 20px;\n  align-items: center;\n}\n\n.App-textBox {\n  align-items: middle;\n  margin-bottom: 10px;\n  border: 3px solid purple;\n}\n\n.App-header {\n  background-color: #6796f5;\n  min-height: 10vh;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n  margin-right: 20px;\n}\n\n.App-scroll {\n  overflow: auto;\n  background-color: rgb(148, 156, 255);\n}\n\n.App-thumbnail {\n  max-width: 400px;\n  background-color: cornflowerblue;\n}\n\n.App-song {\n  max-width: 200px;\n  background-color: cornflowerblue;\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/App.scss"],"names":[],"mappings":"AAAA;EAEE,UAAA;EACA,YAAA;EACA,WAAA;AAAF;;AAGA;EACE,eAAA;EACA,MAAA;EACA,OAAA;EACA,WAAA;EACA,YAAA;EACA,0CAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,UAAA;EACA,YAAA;EAEA,oBAAA;AADF;;AAKA;EACE,cAAA;EACA,oBAAA;AAFF;;AAKA;EACE;IACE,4CAAA;EAFF;AACF;AAKA;EACE,YAAA;EACA,eAAA;EACA,kBAAA;AAHF;;AAMA;EACE,WAAA;EACA,gBAAA;AAHF;;AAMA;EACE,aAAA;EACA,gBAAA;EACA,kBAAA;AAHF;;AAMA;EACE,WAAA;EACA,iBAAA;EACA,mBAAA;AAHF;;AAMA;EACE,mBAAA;EACA,mBAAA;EACA,wBAAA;AAHF;;AAMA;EACE,yBAAA;EACA,gBAAA;EACA,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,uBAAA;EACA,6BAAA;EACA,YAAA;AAHF;;AAMA;EACE,cAAA;EACA,kBAAA;AAHF;;AAMA;EACE,cAAA;EACA,oCAAA;AAHF;;AAMA;EACE,gBAAA;EACA,gCAAA;AAHF;;AAMA;EACE,gBAAA;EACA,gCAAA;AAHF;;AAMA;EACE;IACE,uBAAA;EAHF;EAKA;IACE,yBAAA;EAHF;AACF","sourcesContent":[".AppBlur {\n  // backdrop-filter: blur(10px);\n  z-index: 3;\n  height: 100%;\n  width: 100%;\n}\n\n.disabled {\n  position: fixed;\n  top: 0;\n  left: 0;\n  width: 100%;\n  height: 100%;\n  background-color: rgba(255, 255, 255, 0.7);\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  z-index: 1;\n  opacity: 0.4;\n  // filter: blur(10px);\n  pointer-events: none;\n}\n\n\n.App-logo {\n  height: 40vmin;\n  pointer-events: none;\n}\n\n@media (prefers-reduced-motion: no-preference) {\n  .App-logo {\n    animation: App-logo-spin infinite 20s linear;\n  }\n}\n\n.App-pic {\n  height: 10vh;\n  max-height: 20%;\n  margin-right: 40px;\n}\n\n.App-nav {\n  height: 5vh;\n  margin-left: 2px;\n}\n\n.App-next {\n  height: 4.5vh;\n  margin-left: 6px;\n  margin-bottom: 2px;\n}\n\n.App-plat {\n  height: 5vh;\n  margin-left: 20px;\n  align-items: center;\n}\n\n.App-textBox {\n  align-items: middle;\n  margin-bottom: 10px;\n  border: 3px solid purple;\n}\n\n.App-header {\n  background-color: #6796f5;\n  min-height: 10vh;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n  font-size: calc(10px + 2vmin);\n  color: white;\n}\n\n.App-link {\n  color: #61dafb;\n  margin-right: 20px;\n}\n\n.App-scroll {\n  overflow: auto;\n  background-color: rgb(148, 156, 255);\n}\n\n.App-thumbnail {\n  max-width: 400px;\n  background-color: cornflowerblue\n}\n\n.App-song {\n  max-width: 200px;\n  background-color: cornflowerblue\n}\n\n@keyframes App-logo-spin {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11114,7 +12560,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".body {\n  padding: 30px;\n  flex: 0.8;\n  height: 100vh;\n  background: linear-gradient(#7bbfff, rgb(0, 0, 61));\n  margin-bottom: 50px;\n  color: white;\n}\n\n.body_homepage {\n  align-items: center;\n  justify-content: center;\n  display: table-row;\n  flex: 0.8;\n}\n\n.body_homepage > h1 {\n  font-size: 35px;\n  margin-bottom: 20px;\n  font: Open Sans Light;\n  align-items: center;\n  justify-content: center;\n}\n\n.body_playlists {\n  align-items: center;\n  justify-content: center;\n  display: inline-table;\n}\n\n.body_playlist_box {\n  align-items: center;\n  justify-content: center;\n  display: inline-table;\n  margin-bottom: 50px;\n  margin-left: 40px;\n  margin-right: 40px;\n  padding: 20px;\n}\n\n.body_playlist_box:hover {\n  background: #290186;\n}\n\n.body_playlist_box > h4 {\n  align-items: center;\n  justify-content: center;\n}\n\n.body_playlist_box > img {\n  max-height: 200px;\n  max-width: 200px;\n}\n\n.body::-webkit-scrollbar {\n  display: none;\n}\n\n.body_info {\n  display: flex;\n  align-items: flex-end;\n  padding: 10px;\n}\n\n.body_infoText {\n  flex: 1;\n}\n\n.body_info > img {\n  height: 20vw;\n  margin: 0 20px;\n  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);\n}\n\n.body_songs {\n  margin: 20px -30px;\n}\n\n.body_shuffle {\n  font-size: 80px !important;\n  margin-left: 50px;\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\n.body_shuffle:hover {\n  transition: 100ms transform ease-in;\n  transform: scale(1.08);\n}\n\n.body_icons {\n  display: flex;\n  align-items: center;\n}\n\n.body_icons > .MuiSvgIcon {\n  margin-right: 20px;\n}\n\n.body_infoText > h2 {\n  font-size: 48px;\n  margin-bottom: 10px;\n}\n\n.body_infoText > p {\n  font-size: 14px;\n}\n\n.card {\n  display: flex;\n  flex: 0.2;\n  align-items: center;\n  max-height: 70px;\n  margin-top: 10px;\n  margin-bottom: 15px;\n}\n\n.card:hover {\n  cursor: pointer;\n  background-color: rgb(92, 6, 92);\n  opacity: 0.8;\n}\n\n.card > img {\n  display: flex;\n  height: 50px;\n  width: 50px;\n  margin-right: 10px;\n}\n\n.card > h1 {\n  display: flex;\n  flex: 0.3;\n  text-align: left;\n  font-size: 16px;\n}\n\n.card > p {\n  display: flex;\n  flex: 0.3;\n  font-size: 14px;\n  margin-top: 3px;\n  color: gray;\n  align-items: right;\n}\n\n.body_playerLogo {\n  height: 4.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n}\n\n.context_menu {\n  position: fixed;\n  z-index: 1000;\n  width: 150px;\n  background: #1b1a1a;\n  border-radius: 5px;\n}\n\n#context-menu.visible {\n  transform: scale(1);\n  transition: transform 200ms ease-in-out;\n}\n\n.context_menu_item {\n  padding: 8px 10px;\n  font-size: 15px;\n  color: #eee;\n  cursor: pointer;\n  border-radius: 5px;\n}\n\n.context_menu_item:hover {\n  background: #343434;\n}", "",{"version":3,"sources":["webpack://./src/styles/Body.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,SAAA;EACA,aAAA;EACA,mDAAA;EACA,mBAAA;EACA,YAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;EACA,kBAAA;EACA,SAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,mBAAA;EACA,uBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;EACA,qBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;EACA,qBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,aAAA;AACJ;;AAEA;EACI,mBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,gBAAA;AACJ;;AAEA;EACI,aAAA;AACJ;;AAEA;EACI,aAAA;EACA,qBAAA;EACA,aAAA;AACJ;;AAEA;EACI,OAAA;AACJ;;AAEA;EACI,YAAA;EACA,cAAA;EACA,yCAAA;AACJ;;AAEA;EACI,kBAAA;AACJ;;AAEA;EACI,0BAAA;EACA,iBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,mCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;AACJ;;AAEA;EACI,kBAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;AACJ;;AAEA;EACI,eAAA;AACJ;;AAEA;EACI,aAAA;EACA,SAAA;EACA,mBAAA;EACA,gBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,eAAA;EACA,gCAAA;EACA,YAAA;AACJ;;AAEA;EACI,aAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;AACJ;;AAEA;EACI,aAAA;EACA,SAAA;EACA,gBAAA;EACA,eAAA;AACJ;;AAGA;EACI,aAAA;EACA,SAAA;EACA,eAAA;EACA,eAAA;EACA,WAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,aAAA;EACA,YAAA;EACA,mBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,uCAAA;AAAJ;;AAGA;EACI,iBAAA;EACA,eAAA;EACA,WAAA;EACA,eAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,mBAAA;AAAJ","sourcesContent":[".body {\n    padding: 30px;\n    flex: 0.8;\n    height: 100vh;\n    background: linear-gradient(#7bbfff, rgb(0, 0, 61));\n    margin-bottom: 50px;\n    color: white;\n}\n\n.body_homepage {\n    align-items: center;\n    justify-content: center;\n    display: table-row;\n    flex: 0.8;\n}\n\n.body_homepage > h1 {\n    font-size: 35px;\n    margin-bottom: 20px;\n    font: Open Sans Light;\n    align-items: center;\n    justify-content: center;\n}\n\n.body_playlists {\n    align-items: center;\n    justify-content: center;\n    display: inline-table;\n}\n\n.body_playlist_box {\n    align-items: center;\n    justify-content: center;\n    display: inline-table;\n    margin-bottom: 50px;\n    margin-left: 40px;\n    margin-right: 40px;\n    padding: 20px;\n}\n\n.body_playlist_box:hover {\n    background: #290186;\n}\n\n.body_playlist_box > h4 {\n    align-items: center;\n    justify-content: center;\n}\n\n.body_playlist_box > img {\n    max-height: 200px;\n    max-width: 200px;\n}\n\n.body::-webkit-scrollbar {\n    display: none;\n}\n\n.body_info {\n    display: flex;\n    align-items: flex-end;\n    padding: 10px;\n}\n\n.body_infoText {\n    flex: 1;\n}\n\n.body_info > img {\n    height: 20vw;\n    margin: 0 20px;\n    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);\n}\n\n.body_songs {\n    margin: 20px -30px;\n}\n\n.body_shuffle {\n    font-size: 80px !important;\n    margin-left: 50px;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n\n.body_shuffle:hover {\n    transition: 100ms transform ease-in;\n    transform: scale(1.08);\n}\n\n.body_icons {\n    display: flex;\n    align-items: center;\n}\n\n.body_icons > .MuiSvgIcon {\n    margin-right: 20px;\n}\n\n.body_infoText > h2 {\n    font-size: 48px;\n    margin-bottom: 10px;\n}\n\n.body_infoText > p {\n    font-size: 14px;\n}\n\n.card {\n    display: flex;\n    flex: 0.2;\n    align-items: center;\n    max-height: 70px;\n    margin-top: 10px;\n    margin-bottom: 15px;\n}\n\n.card:hover {\n    cursor: pointer;\n    background-color: rgb(92, 6, 92);\n    opacity: 0.8;\n}\n\n.card > img {\n    display: flex;\n    height: 50px;\n    width: 50px;\n    margin-right: 10px;\n}\n\n.card > h1 {\n    display: flex;\n    flex: 0.3;\n    text-align: left;\n    font-size: 16px;\n}\n\n\n.card > p {\n    display: flex;\n    flex:0.3;\n    font-size: 14px;\n    margin-top: 3px;\n    color: gray;\n    align-items: right;\n}\n\n.body_playerLogo {\n    height: 4.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px; \n}\n\n.context_menu {\n    position: fixed;\n    z-index: 1000;\n    width: 150px;\n    background: #1b1a1a;\n    border-radius: 5px;\n}\n\n#context-menu.visible {\n    transform: scale(1);\n    transition: transform 200ms ease-in-out;\n}\n\n.context_menu_item {\n    padding: 8px 10px;\n    font-size: 15px;\n    color: #eee;\n    cursor: pointer;\n    border-radius: 5px;\n}\n\n.context_menu_item:hover {\n    background: #343434;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".body {\n  padding: 30px;\n  flex: 0.85;\n  width: 100%;\n  height: 100%;\n  margin-bottom: 50px;\n  color: white;\n}\n\n.body_homepage {\n  align-items: center;\n  justify-content: center;\n  display: table-row;\n  flex: 0.8;\n}\n\n.body_homepage > h1 {\n  font-size: 35px;\n  margin-bottom: 20px;\n  font: Open Sans Light;\n  align-items: center;\n  justify-content: center;\n}\n\n.body_playlists {\n  align-items: center;\n  justify-content: center;\n  display: inline-table;\n}\n\n.body_playlist_box {\n  align-items: center;\n  justify-content: center;\n  display: inline-table;\n  margin-bottom: 50px;\n  margin-left: 40px;\n  margin-right: 40px;\n  padding: 20px;\n}\n\n.body_playlist_box:hover {\n  background: #290186;\n}\n\n.body_playlist_box > h4 {\n  align-items: center;\n  justify-content: center;\n}\n\n.body_playlist_box > img {\n  max-height: 200px;\n  max-width: 200px;\n}\n\n.body::-webkit-scrollbar {\n  display: none;\n}\n\n.body_info {\n  display: flex;\n  align-items: flex-end;\n  padding: 10px;\n}\n\n.body_infoText {\n  flex: 1;\n}\n\n.body_info > img {\n  height: 20vw;\n  margin: 0 20px;\n  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);\n}\n\n.body_songs {\n  margin: 20px -30px;\n}\n\n.body_shuffle {\n  font-size: 80px !important;\n  margin-left: 50px;\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\n.body_shuffle:hover {\n  transition: 100ms transform ease-in;\n  transform: scale(1.08);\n}\n\n.body_icons {\n  display: flex;\n  align-items: center;\n}\n\n.body_icons > .MuiSvgIcon {\n  margin-right: 20px;\n}\n\n.body_infoText > h2 {\n  font-size: 48px;\n  margin-bottom: 10px;\n}\n\n.body_infoText > p {\n  font-size: 14px;\n}\n\n.card {\n  display: flex;\n  flex: 0.2;\n  align-items: center;\n  max-height: 70px;\n  margin-top: 10px;\n  margin-bottom: 15px;\n}\n\n.card:hover {\n  cursor: pointer;\n  background-color: rgb(92, 6, 92);\n  opacity: 0.8;\n}\n\n.card > img {\n  display: flex;\n  height: 50px;\n  width: 50px;\n  margin-right: 10px;\n}\n\n.card > h1 {\n  display: flex;\n  flex: 0.3;\n  text-align: left;\n  font-size: 16px;\n}\n\n.card > p {\n  display: flex;\n  flex: 0.3;\n  font-size: 14px;\n  margin-top: 3px;\n  color: gray;\n  align-items: right;\n}\n\n.body_playerLogo {\n  height: 4.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n}\n\n.context_menu {\n  position: fixed;\n  z-index: 1000;\n  width: 150px;\n  background: #1b1a1a;\n  border-radius: 5px;\n}\n\n#context-menu.visible {\n  transform: scale(1);\n  transition: transform 200ms ease-in-out;\n}\n\n.context_menu_item {\n  padding: 8px 10px;\n  font-size: 15px;\n  color: #eee;\n  cursor: pointer;\n  border-radius: 5px;\n}\n\n.context_menu_item:hover {\n  background: #343434;\n}", "",{"version":3,"sources":["webpack://./src/styles/Body.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,UAAA;EACA,WAAA;EACA,YAAA;EAEA,mBAAA;EACA,YAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,uBAAA;EACA,kBAAA;EACA,SAAA;AAAJ;;AAGA;EACI,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,mBAAA;EACA,uBAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,uBAAA;EACA,qBAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,uBAAA;EACA,qBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,mBAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,uBAAA;AAAJ;;AAGA;EACI,iBAAA;EACA,gBAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ;;AAGA;EACI,aAAA;EACA,qBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,OAAA;AAAJ;;AAGA;EACI,YAAA;EACA,cAAA;EACA,yCAAA;AAAJ;;AAGA;EACI,kBAAA;AAAJ;;AAGA;EACI,0BAAA;EACA,iBAAA;EACA,gBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,mCAAA;EACA,sBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,kBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,eAAA;AAAJ;;AAGA;EACI,aAAA;EACA,SAAA;EACA,mBAAA;EACA,gBAAA;EACA,gBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,gCAAA;EACA,YAAA;AAAJ;;AAGA;EACI,aAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,SAAA;EACA,gBAAA;EACA,eAAA;AAAJ;;AAIA;EACI,aAAA;EACA,SAAA;EACA,eAAA;EACA,eAAA;EACA,WAAA;EACA,kBAAA;AADJ;;AAIA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;AADJ;;AAIA;EACI,eAAA;EACA,aAAA;EACA,YAAA;EACA,mBAAA;EACA,kBAAA;AADJ;;AAIA;EACI,mBAAA;EACA,uCAAA;AADJ;;AAIA;EACI,iBAAA;EACA,eAAA;EACA,WAAA;EACA,eAAA;EACA,kBAAA;AADJ;;AAIA;EACI,mBAAA;AADJ","sourcesContent":[".body {\n    padding: 30px;\n    flex: 0.85;\n    width: 100%;\n    height: 100%;\n    // background: linear-gradient(to right, rgb(0, 0, 100), #389fff);\n    margin-bottom: 50px;\n    color: white;\n}\n\n.body_homepage {\n    align-items: center;\n    justify-content: center;\n    display: table-row;\n    flex: 0.8;\n}\n\n.body_homepage > h1 {\n    font-size: 35px;\n    margin-bottom: 20px;\n    font: Open Sans Light;\n    align-items: center;\n    justify-content: center;\n}\n\n.body_playlists {\n    align-items: center;\n    justify-content: center;\n    display: inline-table;\n}\n\n.body_playlist_box {\n    align-items: center;\n    justify-content: center;\n    display: inline-table;\n    margin-bottom: 50px;\n    margin-left: 40px;\n    margin-right: 40px;\n    padding: 20px;\n}\n\n.body_playlist_box:hover {\n    background: #290186;\n}\n\n.body_playlist_box > h4 {\n    align-items: center;\n    justify-content: center;\n}\n\n.body_playlist_box > img {\n    max-height: 200px;\n    max-width: 200px;\n}\n\n.body::-webkit-scrollbar {\n    display: none;\n}\n\n.body_info {\n    display: flex;\n    align-items: flex-end;\n    padding: 10px;\n}\n\n.body_infoText {\n    flex: 1;\n}\n\n.body_info > img {\n    height: 20vw;\n    margin: 0 20px;\n    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);\n}\n\n.body_songs {\n    margin: 20px -30px;\n}\n\n.body_shuffle {\n    font-size: 80px !important;\n    margin-left: 50px;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n\n.body_shuffle:hover {\n    transition: 100ms transform ease-in;\n    transform: scale(1.08);\n}\n\n.body_icons {\n    display: flex;\n    align-items: center;\n}\n\n.body_icons > .MuiSvgIcon {\n    margin-right: 20px;\n}\n\n.body_infoText > h2 {\n    font-size: 48px;\n    margin-bottom: 10px;\n}\n\n.body_infoText > p {\n    font-size: 14px;\n}\n\n.card {\n    display: flex;\n    flex: 0.2;\n    align-items: center;\n    max-height: 70px;\n    margin-top: 10px;\n    margin-bottom: 15px;\n}\n\n.card:hover {\n    cursor: pointer;\n    background-color: rgb(92, 6, 92);\n    opacity: 0.8;\n}\n\n.card > img {\n    display: flex;\n    height: 50px;\n    width: 50px;\n    margin-right: 10px;\n}\n\n.card > h1 {\n    display: flex;\n    flex: 0.3;\n    text-align: left;\n    font-size: 16px;\n}\n\n\n.card > p {\n    display: flex;\n    flex:0.3;\n    font-size: 14px;\n    margin-top: 3px;\n    color: gray;\n    align-items: right;\n}\n\n.body_playerLogo {\n    height: 4.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px; \n}\n\n.context_menu {\n    position: fixed;\n    z-index: 1000;\n    width: 150px;\n    background: #1b1a1a;\n    border-radius: 5px;\n}\n\n#context-menu.visible {\n    transform: scale(1);\n    transition: transform 200ms ease-in-out;\n}\n\n.context_menu_item {\n    padding: 8px 10px;\n    font-size: 15px;\n    color: #eee;\n    cursor: pointer;\n    border-radius: 5px;\n}\n\n.context_menu_item:hover {\n    background: #343434;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11141,7 +12587,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".footer {\n  position: fixed;\n  display: flex;\n  justify-content: space-between;\n  bottom: 0;\n  height: 65px;\n  width: 100%;\n  background: rgb(5, 0, 95);\n  padding: 20px;\n  border: 1px solid rgb(49, 15, 77);\n}\n\n.footer_green:hover,\n.footer_icon:hover,\n.footer_playerLogo:hover {\n  transition: transform 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n}\n\n.footer_albumLogo {\n  height: 60px;\n  width: 60px;\n  margin-right: 20px;\n  object-fit: contain;\n}\n\n.footer_left {\n  flex: 0.4;\n  display: flex;\n  align-items: center;\n  color: white;\n  max-width: 500px;\n}\n\n.footer_center {\n  flex: 0.3;\n  padding: 0 100px;\n  color: white;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  max-width: 300px;\n}\n\n.footer_right {\n  flex: 0.3;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  color: white;\n}\n\n.footer_right * .MuiSlider-root {\n  color: white;\n  max-width: 220px;\n}\n\n.footer_songInfo {\n  font-size: 14px;\n}\n\n.vl {\n  border-left: 1px solid gray;\n  height: 60px;\n  margin-right: 10px;\n}\n\n.footer_spotifyInfo {\n  align-items: center;\n  display: flex;\n  width: 100%;\n}\n\n.footer_playerLogo {\n  margin-left: 20px;\n}", "",{"version":3,"sources":["webpack://./src/styles/Footer.scss"],"names":[],"mappings":"AAAA;EACI,eAAA;EACA,aAAA;EACA,8BAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;EACA,yBAAA;EACA,aAAA;EACA,iCAAA;AACJ;;AAEA;;;EAGI,sCAAA;EACA,gCAAA;AACJ;;AAEA;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,SAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACJ;;AAEA;EACI,SAAA;EACA,gBAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,gBAAA;AACJ;;AAEA;EACI,SAAA;EACA,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,YAAA;AACJ;;AAEA;EACI,YAAA;EACA,gBAAA;AACJ;;AAMA;EACI,eAAA;AAHJ;;AAMA;EACI,2BAAA;EACA,YAAA;EACA,kBAAA;AAHJ;;AAMA;EACI,mBAAA;EACA,aAAA;EACA,WAAA;AAHJ;;AAMA;EACI,iBAAA;AAHJ","sourcesContent":[".footer {\n    position: fixed;\n    display: flex;\n    justify-content: space-between;\n    bottom: 0;\n    height: 65px;\n    width: 100%;\n    background: rgb(5, 0, 95);\n    padding: 20px;\n    border: 1px solid rgb(49, 15, 77);\n}\n\n.footer_green:hover,\n.footer_icon:hover, \n.footer_playerLogo:hover {\n    transition: transform 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n}\n\n.footer_albumLogo {\n    height: 60px;\n    width: 60px;\n    margin-right: 20px;\n    object-fit: contain;\n}\n\n.footer_left {\n    flex: 0.4;\n    display:flex;\n    align-items: center;\n    color: white;\n    max-width: 500px;\n}\n\n.footer_center {\n    flex: 0.3;\n    padding: 0 100px;\n    color: white;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    max-width: 300px;\n}\n\n.footer_right {\n    flex: 0.3;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    color: white;\n}\n\n.footer_right * .MuiSlider-root {\n    color: white;\n    max-width: 220px;\n}\n\n.footer_green {\n    // color: purple;\n}\n\n.footer_songInfo {\n    font-size: 14px;\n}\n\n.vl {\n    border-left:1px solid gray;\n    height:60px;\n    margin-right: 10px;\n}\n\n.footer_spotifyInfo {\n    align-items: center;\n    display: flex;\n    width: 100%;\n}\n\n.footer_playerLogo {\n    margin-left: 20px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".footer {\n  position: fixed;\n  display: flex;\n  justify-content: space-between;\n  bottom: 0;\n  height: 65px;\n  width: 100%;\n  background: rgb(5, 0, 95);\n  padding: 20px;\n  border: 1px solid rgb(49, 15, 77);\n  z-index: 3;\n}\n\n.footer_icon {\n  min-width: 35px;\n  min-height: 35px;\n  padding: 7px;\n}\n\n.footer_green:hover,\n.footer_icon:hover,\n.footer_playerLogo:hover {\n  transition: transform 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n}\n\n.footer_albumLogo {\n  height: 60px;\n  width: 60px;\n  margin-right: 20px;\n  object-fit: contain;\n}\n\n.footer_left {\n  flex: 0.4;\n  display: flex;\n  align-items: center;\n  color: white;\n  max-width: 500px;\n}\n\n.footer_center {\n  flex: 0.3;\n  padding: 0 30px;\n  color: white;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  max-width: 140px;\n}\n\n.footer_right {\n  flex: 0.3;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  color: white;\n}\n\n.footer_right * .MuiSlider-root {\n  color: white;\n  max-width: 220px;\n}\n\n.footer_shuffle {\n  filter: invert(1);\n  max-width: 39px;\n  max-height: 28px;\n}\n\n.active {\n  filter: invert(92%) sepia(22%) saturate(6653%) hue-rotate(149deg) brightness(89%) contrast(91%);\n  color: #34c6da;\n}\n\n.footer_songInfo {\n  font-size: 14px;\n}\n\n.vl {\n  border-left: 1px solid gray;\n  height: 60px;\n  margin-right: 10px;\n}\n\n.footer_spotifyInfo {\n  display: flex;\n  width: 100%;\n  margin-top: 12px;\n}\n\n.footer_playerLogo {\n  margin-right: 20px;\n}", "",{"version":3,"sources":["webpack://./src/styles/Footer.scss"],"names":[],"mappings":"AAAA;EACI,eAAA;EACA,aAAA;EACA,8BAAA;EACA,SAAA;EACA,YAAA;EACA,WAAA;EACA,yBAAA;EACA,aAAA;EACA,iCAAA;EACA,UAAA;AACJ;;AAEA;EACI,eAAA;EACA,gBAAA;EACA,YAAA;AACJ;;AAEA;;;EAGI,sCAAA;EACA,gCAAA;AACJ;;AAEA;EACI,YAAA;EACA,WAAA;EACA,kBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,SAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;EACA,gBAAA;AACJ;;AAEA;EACI,SAAA;EAEA,eAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,gBAAA;AAAJ;;AAGA;EACI,SAAA;EACA,aAAA;EACA,mBAAA;EACA,8BAAA;EACA,YAAA;AAAJ;;AAGA;EACI,YAAA;EACA,gBAAA;AAAJ;;AAGA;EACI,iBAAA;EACA,eAAA;EACA,gBAAA;AAAJ;;AAGA;EACI,+FAAA;EACA,cAAA;AAAJ;;AAGA;EACI,eAAA;AAAJ;;AAGA;EACI,2BAAA;EACA,YAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,WAAA;EACA,gBAAA;AAAJ;;AAGA;EACI,kBAAA;AAAJ","sourcesContent":[".footer {\n    position: fixed;\n    display: flex;\n    justify-content: space-between;\n    bottom: 0;\n    height: 65px;\n    width: 100%;\n    background: rgb(5, 0, 95);\n    padding: 20px;\n    border: 1px solid rgb(49, 15, 77);\n    z-index: 3;\n}\n\n.footer_icon {\n    min-width: 35px;\n    min-height: 35px;\n    padding: 7px;\n}\n\n.footer_green:hover,\n.footer_icon:hover, \n.footer_playerLogo:hover {\n    transition: transform 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n}\n\n.footer_albumLogo {\n    height: 60px;\n    width: 60px;\n    margin-right: 20px;\n    object-fit: contain;\n}\n\n.footer_left {\n    flex: 0.4;\n    display:flex;\n    align-items: center;\n    color: white;\n    max-width: 500px;\n}\n\n.footer_center {\n    flex: 0.3;\n    // padding: 0 100px;\n    padding : 0 30px;\n    color: white;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    max-width: 140px;\n}\n\n.footer_right {\n    flex: 0.3;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    color: white;\n}\n\n.footer_right * .MuiSlider-root {\n    color: white;\n    max-width: 220px;\n}\n\n.footer_shuffle {\n    filter: invert(1);\n    max-width: 39px;\n    max-height: 28px;\n}\n\n.active {\n    filter: invert(92%) sepia(22%) saturate(6653%) hue-rotate(149deg) brightness(89%) contrast(91%);\n    color: #34c6da;\n}\n\n.footer_songInfo {\n    font-size: 14px;\n}\n\n.vl {\n    border-left:1px solid gray;\n    height:60px;\n    margin-right: 10px;\n}\n\n.footer_spotifyInfo {\n    display: flex;\n    width: 100%;\n    margin-top: 12px;\n}\n\n.footer_playerLogo {\n    margin-right: 20px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11168,7 +12614,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".header {\n  display: flex;\n  justify-content: space-between;\n  margin-bottom: 30px;\n}\n\n.header_left {\n  flex: 0.5;\n  min-width: 70px;\n  background-color: white;\n  color: gray;\n  border-radius: 30px;\n  padding: 10px;\n  display: flex;\n  align-items: center;\n}\n\n.header_left > input {\n  caret-color: purple;\n  border: none;\n  width: 100%;\n}\n\n.header_right {\n  display: flex;\n  align-items: center;\n  margin-right: 10px;\n}\n\n.header_right > h4 {\n  margin-left: 10px;\n}\n\n.header_playerLogo {\n  height: 5.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n}\n\n.header_playerLogoActive {\n  height: 5.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n  background: rgb(73, 103, 255);\n  border-radius: 50px;\n}\n\n.header_yt {\n  height: 7.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n}\n\n.header_ytActive {\n  height: 7.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n  background-color: rgb(73, 103, 255);\n  border-radius: 20%;\n}\n\n.header_sc {\n  margin-left: 4px;\n  margin-right: 10px;\n}\n\n.header_scActive {\n  margin-left: 4px;\n  margin-right: 10px;\n  background-color: rgb(73, 103, 255);\n  border-radius: 40%;\n}", "",{"version":3,"sources":["webpack://./src/styles/Header.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;AACJ;;AAEA;EACI,SAAA;EACA,eAAA;EACA,uBAAA;EACA,WAAA;EACA,mBAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,YAAA;EACA,WAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,kBAAA;AACJ;;AAEA;EACI,iBAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,6BAAA;EACA,mBAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,mCAAA;EACA,kBAAA;AACJ;;AAEA;EACI,gBAAA;EACA,kBAAA;AACJ;;AAEA;EACI,gBAAA;EACA,kBAAA;EACA,mCAAA;EACA,kBAAA;AACJ","sourcesContent":[".header {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 30px;\n}\n\n.header_left {\n    flex: 0.5;\n    min-width: 70px;\n    background-color: white;\n    color: gray;\n    border-radius: 30px;\n    padding: 10px;\n    display: flex;\n    align-items: center;\n}\n\n.header_left > input {\n    caret-color: purple;\n    border: none;\n    width: 100%\n}\n\n.header_right {\n    display: flex;\n    align-items: center;\n    margin-right: 10px;\n}\n\n.header_right > h4 {\n    margin-left: 10px;\n}\n\n.header_playerLogo {\n    height: 5.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px; \n}\n\n.header_playerLogoActive {\n    height: 5.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px; \n    background: rgb(73, 103, 255);\n    border-radius: 50px;\n}\n\n.header_yt {\n    height: 7.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px; \n}\n\n.header_ytActive {\n    height: 7.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px;\n    background-color: rgb(73, 103, 255);\n    border-radius: 20%;\n}\n\n.header_sc {\n    margin-left: 4px;\n    margin-right: 10px;\n}\n\n.header_scActive {\n    margin-left: 4px;\n    margin-right: 10px;\n    background-color: rgb(73, 103, 255);\n    border-radius: 40%;\n}\n\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".header {\n  display: flex;\n  justify-content: space-between;\n  margin-bottom: 5px;\n  padding: 5px;\n}\n\n.header_left {\n  flex: 0.5;\n  min-width: 450px;\n  max-width: 700px;\n  max-height: 50px;\n  min-height: 60px;\n  background: #001a44;\n  color: gray;\n  border-radius: 10px;\n  padding: 5px;\n  display: flex;\n  align-items: center;\n}\n\n.header_leftButtons {\n  display: flex;\n  flex: 1;\n  justify-content: space-evenly;\n  margin-left: 10px;\n}\n\n.header_left > input {\n  font-size: 16px;\n  border: none;\n  height: 40px;\n  width: 500px;\n  outline: none;\n  opacity: 0.5;\n  background: transparent;\n  color: white;\n  font-weight: 600;\n}\n\n.header_right {\n  display: flex;\n  align-items: center;\n  margin-right: 10px;\n}\n\n.header_right > h4 {\n  margin-left: 10px;\n}\n\n.header_playerLogo {\n  height: 4.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n  margin-top: 8px;\n  filter: invert(15%) sepia(34%) saturate(7029%) hue-rotate(220deg) brightness(92%) contrast(113%);\n}\n\n.header_playerLogoActive {\n  height: 4.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n  margin-top: 8px;\n  border-radius: 50px;\n  color: #ffffff;\n  filter: invert(56%) sepia(68%) saturate(545%) hue-rotate(88deg) brightness(89%) contrast(88%);\n}\n\n.header_yt {\n  height: 5.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n  margin-top: 2px;\n  filter: invert(15%) sepia(34%) saturate(7029%) hue-rotate(220deg) brightness(92%) contrast(113%);\n}\n\n.header_yt:hover {\n  filter: invert(21%) sepia(92%) saturate(6218%) hue-rotate(358deg) brightness(95%) contrast(122%);\n}\n\n.header_sc:hover {\n  filter: invert(59%) sepia(31%) saturate(7489%) hue-rotate(359deg) brightness(102%) contrast(107%);\n}\n\n.header_playerLogo:hover {\n  filter: invert(56%) sepia(68%) saturate(545%) hue-rotate(88deg) brightness(89%) contrast(88%);\n}\n\n.header_yt:hover, .header_sc:hover, .header_playerLogo:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n}\n\n.header_ytActive {\n  height: 5.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n  filter: invert(26%) sepia(67%) saturate(5173%) hue-rotate(348deg) brightness(111%) contrast(98%);\n  color: #fc2d2d;\n  border-radius: 20%;\n}\n\n.header_sc {\n  height: 6vh;\n  margin-left: 4px;\n  margin-right: 10px;\n  filter: invert(15%) sepia(34%) saturate(7029%) hue-rotate(220deg) brightness(92%) contrast(113%);\n}\n\n.header_scActive {\n  height: 6vh;\n  margin-left: 4px;\n  margin-right: 10px;\n  filter: invert(59%) sepia(31%) saturate(7489%) hue-rotate(359deg) brightness(102%) contrast(107%);\n  border-radius: 40%;\n}", "",{"version":3,"sources":["webpack://./src/styles/Header.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,8BAAA;EACA,kBAAA;EACA,YAAA;AACJ;;AAEA;EACI,SAAA;EACA,gBAAA;EACA,gBAAA;EACA,gBAAA;EACA,gBAAA;EAEA,mBAAA;EACA,WAAA;EACA,mBAAA;EACA,YAAA;EACA,aAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,OAAA;EACA,6BAAA;EACA,iBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,YAAA;EACA,YAAA;EACA,YAAA;EACA,aAAA;EACA,YAAA;EACA,uBAAA;EACA,YAAA;EACA,gBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,mBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,iBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;EACA,gGAAA;AAAJ;;AAGA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;EACA,mBAAA;EACA,cAAA;EAEA,6FAAA;AADJ;;AAIA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,eAAA;EACA,gGAAA;AADJ;;AAIA;EACI,gGAAA;AADJ;;AAIA;EACI,iGAAA;AADJ;;AAIA;EACI,6FAAA;AADJ;;AAIA;EACI,4BAAA;EACA,gCAAA;AADJ;;AAIA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;EACA,gGAAA;EACA,cAAA;EACA,kBAAA;AADJ;;AAIA;EACI,WAAA;EACA,gBAAA;EACA,kBAAA;EACA,gGAAA;AADJ;;AAIA;EACI,WAAA;EACA,gBAAA;EACA,kBAAA;EACA,iGAAA;EACA,kBAAA;AADJ","sourcesContent":[".header {\n    display: flex;\n    justify-content: space-between;\n    margin-bottom: 5px;\n    padding: 5px;\n}\n\n.header_left {\n    flex: 0.5;\n    min-width: 450px;\n    max-width: 700px;\n    max-height: 50px;\n    min-height: 60px;\n    // background: rgb(11, 39, 195);\n    background: #001a44;\n    color: gray;\n    border-radius: 10px;\n    padding: 5px;\n    display: flex;\n    align-items: center;\n}\n\n.header_leftButtons {\n    display: flex;\n    flex: 1;\n    justify-content: space-evenly;\n    margin-left: 10px;\n}\n\n.header_left > input {\n    font-size: 16px;\n    border: none;\n    height: 40px;\n    width: 500px;\n    outline: none;\n    opacity: 0.5;\n    background: transparent;\n    color: white;\n    font-weight: 600;\n}\n\n.header_right {\n    display: flex;\n    align-items: center;\n    margin-right: 10px;\n}\n\n.header_right > h4 {\n    margin-left: 10px;\n}\n\n.header_playerLogo {\n    height: 4.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px;\n    margin-top: 8px;\n    filter: invert(15%) sepia(34%) saturate(7029%) hue-rotate(220deg) brightness(92%) contrast(113%);\n}\n\n.header_playerLogoActive {\n    height: 4.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px;\n    margin-top: 8px;\n    border-radius: 50px;\n    color:  #ffffff;\n    // filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(72deg) brightness(109%) contrast(109%); //white\n    filter: invert(56%) sepia(68%) saturate(545%) hue-rotate(88deg) brightness(89%) contrast(88%);\n}\n\n.header_yt {\n    height: 5.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px; \n    margin-top: 2px;\n    filter: invert(15%) sepia(34%) saturate(7029%) hue-rotate(220deg) brightness(92%) contrast(113%);\n}\n\n.header_yt:hover{\n    filter: invert(21%) sepia(92%) saturate(6218%) hue-rotate(358deg) brightness(95%) contrast(122%);\n}\n\n.header_sc:hover{\n    filter: invert(59%) sepia(31%) saturate(7489%) hue-rotate(359deg) brightness(102%) contrast(107%);\n}\n\n.header_playerLogo:hover {\n    filter: invert(56%) sepia(68%) saturate(545%) hue-rotate(88deg) brightness(89%) contrast(88%);\n}\n\n.header_yt:hover, .header_sc:hover, .header_playerLogo:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n}\n\n.header_ytActive {\n    height: 5.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px;\n    filter: invert(26%) sepia(67%) saturate(5173%) hue-rotate(348deg) brightness(111%) contrast(98%);\n    color: #fc2d2d;\n    border-radius: 20%;\n}\n\n.header_sc {\n    height: 6vh;\n    margin-left: 4px;\n    margin-right: 10px;\n    filter: invert(15%) sepia(34%) saturate(7029%) hue-rotate(220deg) brightness(92%) contrast(113%);\n}\n\n.header_scActive {\n    height: 6vh;\n    margin-left: 4px;\n    margin-right: 10px;\n    filter: invert(59%) sepia(31%) saturate(7489%) hue-rotate(359deg) brightness(102%) contrast(107%);\n    border-radius: 40%;\n}\n\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11195,17 +12641,17 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".homePage {\n  align-items: center;\n  justify-content: center;\n  display: table-row;\n  flex: 0.8;\n}\n\n.homePage > h1 {\n  font-size: 35px;\n  margin-bottom: 20px;\n  font: Open Sans Light;\n  align-items: center;\n  justify-content: center;\n}\n\n.homePage_playlists {\n  align-items: center;\n  justify-content: center;\n  display: inline-table;\n}\n\n.homePage_playlist_box {\n  align-items: center;\n  justify-content: center;\n  display: inline-table;\n  margin-bottom: 50px;\n  margin-left: 40px;\n  margin-right: 40px;\n  padding: 20px;\n}\n\n.homePage_playlist_box:hover {\n  background: #290186;\n}\n\n.homePage_playlist_box > h4 {\n  align-items: center;\n  justify-content: center;\n}\n\n.homePage_playlist_box > img {\n  max-height: 200px;\n  max-width: 200px;\n}", "",{"version":3,"sources":["webpack://./src/styles/HomePage.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,uBAAA;EACA,kBAAA;EACA,SAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,mBAAA;EACA,uBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;EACA,qBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;EACA,qBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,aAAA;AACJ;;AAEA;EACI,mBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,gBAAA;AACJ","sourcesContent":[".homePage {\n    align-items: center;\n    justify-content: center;\n    display: table-row;\n    flex: 0.8;\n}\n\n.homePage > h1 {\n    font-size: 35px;\n    margin-bottom: 20px;\n    font: Open Sans Light;\n    align-items: center;\n    justify-content: center;\n}\n\n.homePage_playlists {\n    align-items: center;\n    justify-content: center;\n    display: inline-table;\n}\n\n.homePage_playlist_box {\n    align-items: center;\n    justify-content: center;\n    display: inline-table;\n    margin-bottom: 50px;\n    margin-left: 40px;\n    margin-right: 40px;\n    padding: 20px;\n}\n\n.homePage_playlist_box:hover {\n    background: #290186;\n}\n\n.homePage_playlist_box > h4 {\n    align-items: center;\n    justify-content: center;\n}\n\n.homePage_playlist_box > img {\n    max-height: 200px;\n    max-width: 200px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".homePage {\n  align-items: center;\n  justify-content: center;\n  display: table-row;\n  flex: 0.8;\n}\n\n.homePage > h1 {\n  font-size: 35px;\n  margin-bottom: 20px;\n  font: Open Sans Light;\n  align-items: center;\n  justify-content: center;\n}\n\n.homePage_playlists {\n  align-items: center;\n  justify-content: center;\n  display: inline-table;\n}\n\n.homePage_playlist_box {\n  align-items: center;\n  justify-content: center;\n  display: inline-table;\n  margin-bottom: 50px;\n  margin-left: 40px;\n  margin-right: 40px;\n  padding: 20px;\n  border-radius: 10px;\n  max-width: 200px;\n  word-break: break-all;\n}\n\n.homePage_playlist_box:hover {\n  background: #070019;\n}\n\n.homePage_playlist_box > h4 {\n  align-items: center;\n  justify-content: center;\n}\n\n.homePage_playlist_box > img {\n  max-height: 200px;\n  max-width: 200px;\n}", "",{"version":3,"sources":["webpack://./src/styles/HomePage.scss"],"names":[],"mappings":"AAAA;EACI,mBAAA;EACA,uBAAA;EACA,kBAAA;EACA,SAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;EACA,qBAAA;EACA,mBAAA;EACA,uBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;EACA,qBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;EACA,qBAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,aAAA;EACA,mBAAA;EACA,gBAAA;EACA,qBAAA;AACJ;;AAEA;EACI,mBAAA;AACJ;;AAEA;EACI,mBAAA;EACA,uBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,gBAAA;AACJ","sourcesContent":[".homePage {\n    align-items: center;\n    justify-content: center;\n    display: table-row;\n    flex: 0.8;\n}\n\n.homePage > h1 {\n    font-size: 35px;\n    margin-bottom: 20px;\n    font: Open Sans Light;\n    align-items: center;\n    justify-content: center;\n}\n\n.homePage_playlists {\n    align-items: center;\n    justify-content: center;\n    display: inline-table;\n}\n\n.homePage_playlist_box {\n    align-items: center;\n    justify-content: center;\n    display: inline-table;\n    margin-bottom: 50px;\n    margin-left: 40px;\n    margin-right: 40px;\n    padding: 20px;\n    border-radius: 10px;\n    max-width: 200px;\n    word-break: break-all;\n}\n\n.homePage_playlist_box:hover {\n    background: #070019;\n}\n\n.homePage_playlist_box > h4 {\n    align-items: center;\n    justify-content: center;\n}\n\n.homePage_playlist_box > img {\n    max-height: 200px;\n    max-width: 200px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/MenuContext.scss":
-/*!******************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/MenuContext.scss ***!
-  \******************************************************************************************************************/
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/Loading.scss":
+/*!**************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/Loading.scss ***!
+  \**************************************************************************************************************/
 /***/ ((module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -11222,7 +12668,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".context_menu {\n  position: absolute;\n  width: 200px;\n  background-color: #383838;\n  border-radius: 5px;\n  box-sizing: border-box;\n}\n\n.context_menu > ul {\n  box-sizing: border-box;\n  padding: 10px;\n  margin: 0;\n  list-style: none;\n}\n\n.context_menu > ul li {\n  padding: 18px 12px;\n}\n\n/* hover */\n.context_menu > ul li:hover {\n  cursor: pointer;\n  background-color: #000000;\n}", "",{"version":3,"sources":["webpack://./src/styles/MenuContext.scss"],"names":[],"mappings":"AAAA;EACI,kBAAA;EACA,YAAA;EACA,yBAAA;EACA,kBAAA;EACA,sBAAA;AACJ;;AAEA;EACI,sBAAA;EACA,aAAA;EACA,SAAA;EACA,gBAAA;AACJ;;AAEA;EACI,kBAAA;AACJ;;AAEA,UAAA;AACA;EACI,eAAA;EACA,yBAAA;AACJ","sourcesContent":[".context_menu {\n    position: absolute;\n    width: 200px;\n    background-color: #383838;\n    border-radius: 5px;\n    box-sizing: border-box;\n}\n\n.context_menu > ul {\n    box-sizing: border-box;\n    padding: 10px;\n    margin: 0;\n    list-style: none;\n}\n\n.context_menu > ul li {\n    padding: 18px 12px;\n}\n\n/* hover */\n.context_menu > ul li:hover {\n    cursor: pointer;\n    background-color: #000000;\n}\n\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".loading {\n  display: grid;\n  place-items: center;\n  height: 500px;\n  width: 320px;\n  background-color: rgb(45, 25, 118);\n  border-radius: 20px;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  z-index: 4;\n}\n\n.loginTitle {\n  font-size: 24px;\n  font-weight: 600;\n  color: white;\n  border-radius: 10px;\n  margin-top: 20px;\n}\n\n.loginInfo {\n  font-size: 16px;\n  font-weight: 600;\n  color: white;\n  border-radius: 10px;\n}\n\n.loginLogo {\n  max-height: 100px;\n  max-width: 100px;\n}\n\n.loginTest {\n  padding: 20px;\n  border-radius: 99px;\n  background: #8f1db9;\n  font-weight: 800;\n  color: white;\n}\n\n.loginBeatbytes {\n  padding: 20px;\n  border-radius: 99px;\n  background: #0020ae;\n  font-weight: 800;\n  color: white;\n  text-decoration: none;\n}\n\n.loginSpotify {\n  padding: 20px;\n  border-radius: 99px;\n  background: #1db954;\n  font-weight: 800;\n  color: white;\n  text-decoration: none;\n  margin-bottom: 20px;\n}\n\n.loginTest:hover, .loginBeatbytes:hover, .loginSpotify:hover {\n  cursor: pointer;\n}", "",{"version":3,"sources":["webpack://./src/styles/Loading.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,aAAA;EACA,YAAA;EACA,kCAAA;EACA,mBAAA;EACA,eAAA;EACA,QAAA;EACA,SAAA;EACA,gCAAA;EACA,UAAA;AACJ;;AAEA;EACI,eAAA;EACA,gBAAA;EACA,YAAA;EACA,mBAAA;EACA,gBAAA;AACJ;;AAEA;EACI,eAAA;EACA,gBAAA;EACA,YAAA;EACA,mBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,gBAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,gBAAA;EACA,YAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,gBAAA;EACA,YAAA;EACA,qBAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,gBAAA;EACA,YAAA;EACA,qBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,eAAA;AACJ","sourcesContent":[".loading {\n    display: grid;\n    place-items: center;\n    height: 500px;\n    width: 320px;\n    background-color: rgb(45, 25, 118);\n    border-radius: 20px;\n    position: fixed;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    z-index: 4;\n}\n\n.loginTitle {\n    font-size: 24px;\n    font-weight: 600;\n    color: white;\n    border-radius: 10px;\n    margin-top: 20px;\n}\n\n.loginInfo {\n    font-size: 16px;\n    font-weight: 600;\n    color: white;\n    border-radius: 10px;\n}\n\n.loginLogo {\n    max-height: 100px;\n    max-width: 100px;\n}\n\n.loginTest {\n    padding: 20px;\n    border-radius: 99px;\n    background: #8f1db9;\n    font-weight: 800;\n    color: white;\n}\n\n.loginBeatbytes {\n    padding: 20px;\n    border-radius: 99px;\n    background: #0020ae;\n    font-weight: 800;\n    color: white;\n    text-decoration: none,\n}\n\n.loginSpotify {\n    padding: 20px;\n    border-radius: 99px;\n    background: #1db954;\n    font-weight: 800;\n    color: white;\n    text-decoration: none;\n    margin-bottom: 20px;\n}\n\n.loginTest:hover, .loginBeatbytes:hover, .loginSpotify:hover {\n    cursor: pointer;\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11249,7 +12695,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".player_body {\n  background-color: #00003d;\n  display: flex;\n  width: 100%;\n}", "",{"version":3,"sources":["webpack://./src/styles/Player.scss"],"names":[],"mappings":"AAAA;EACI,yBAAA;EACA,aAAA;EACA,WAAA;AACJ","sourcesContent":[".player_body {\n    background-color: #00003d;\n    display: flex;\n    width: 100%;\n}\n\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".player_body {\n  background: linear-gradient(to right, rgb(0, 0, 100), #389fff);\n  display: flex;\n  width: 100%;\n  height: 100%;\n}\n\n.player {\n  display: flex;\n  width: 100%;\n  height: 100%;\n}\n\n.playerPopupBg {\n  position: fixed;\n  top: 0px;\n  width: 100vw;\n  height: 100vw;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  color: white;\n  z-index: 2;\n}\n\n.player_inactive {\n  opacity: 0.5;\n}\n\n.playerPopup {\n  opacity: 1;\n  z-index: 5;\n  position: fixed;\n  top: 50%;\n  left: 50%;\n  transform: translate(-50%, -50%);\n  background-color: #0101ad;\n  opacity: 0.5;\n  padding-left: 10px;\n  padding-right: 10px;\n  padding-bottom: 5px;\n  opacity: 0.8;\n  border-radius: 10px;\n  max-height: 800px;\n  overflow-y: scroll;\n  -ms-overflow-style: none; /* IE and Edge */\n  scrollbar-width: none; /* Firefox */\n  align-items: center;\n}\n.playerPopup > h1 {\n  align-items: center;\n  display: inline-block;\n}\n\n.playerPopup::-webkit-scrollbar {\n  display: none;\n}\n\n.song {\n  display: inline-flex;\n  align-items: center;\n}\n\n.song_pic {\n  height: 80px;\n  width: 80px;\n  margin-right: 10px;\n}\n\n.cancelIcon {\n  top: 10px;\n  right: 10px;\n  min-height: 30px;\n}\n\n.cancelIcon:hover {\n  cursor: pointer;\n}\n\n.deleteLogo {\n  padding: 10px;\n  margin-bottom: -18px;\n  min-height: 40px;\n  filter: invert(93%) sepia(100%) saturate(28%) hue-rotate(109deg) brightness(107%) contrast(109%);\n}\n\n.deleteIcon {\n  justify-content: center;\n  height: 80px;\n  filter: brightness(0) invert(1);\n  margin: 10px;\n}\n\n.deleteIcon:hover {\n  cursor: pointer;\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n.popupIcon {\n  max-width: 60px;\n  max-height: 60px;\n  margin-bottom: -20px;\n  filter: invert(93%) sepia(100%) saturate(28%) hue-rotate(109deg) brightness(107%) contrast(109%);\n}\n\n.popupHeader {\n  align-items: center;\n  display: inline-block;\n}\n\n.popupBody {\n  opacity: 1;\n  display: flex;\n  flex-direction: column;\n  margin-top: 10px;\n  margin-bottom: 10px;\n}\n\n.playlistSection {\n  align-items: left;\n  justify-content: left;\n}\n\n.createPlaylist {\n  width: 50px;\n  height: 25px;\n  color: rgb(0, 0, 100);\n  border-radius: 10px;\n}", "",{"version":3,"sources":["webpack://./src/styles/Player.scss"],"names":[],"mappings":"AAAA;EAEI,8DAAA;EACA,aAAA;EACA,WAAA;EACA,YAAA;AAAJ;;AAGA;EACI,aAAA;EACA,WAAA;EACA,YAAA;AAAJ;;AAIA;EACI,eAAA;EACA,QAAA;EACA,YAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,YAAA;EACA,UAAA;AADJ;;AAIA;EACI,YAAA;AADJ;;AAIA;EACI,UAAA;EACA,UAAA;EACA,eAAA;EACA,QAAA;EACA,SAAA;EACA,gCAAA;EACA,yBAAA;EAEA,YAAA;EACA,kBAAA;EACA,mBAAA;EACA,mBAAA;EACA,YAAA;EACA,mBAAA;EACA,iBAAA;EACA,kBAAA;EACA,wBAAA,EAAA,gBAAA;EACA,qBAAA,EAAA,YAAA;EACA,mBAAA;AAFJ;AAGI;EACI,mBAAA;EACA,qBAAA;AADR;;AAKA;EACI,aAAA;AAFJ;;AAOA;EACI,oBAAA;EACA,mBAAA;AAJJ;;AAOA;EACI,YAAA;EACA,WAAA;EACA,kBAAA;AAJJ;;AAQA;EACI,SAAA;EACA,WAAA;EACA,gBAAA;AALJ;;AAQA;EACI,eAAA;AALJ;;AAQA;EACI,aAAA;EACA,oBAAA;EACA,gBAAA;EACA,gGAAA;AALJ;;AAQA;EACI,uBAAA;EACA,YAAA;EACA,+BAAA;EACA,YAAA;AALJ;;AAQA;EACI,eAAA;EACA,iGAAA;AALJ;;AAQA;EACI,eAAA;EACA,gBAAA;EACA,oBAAA;EACA,gGAAA;AALJ;;AAQA;EACI,mBAAA;EACA,qBAAA;AALJ;;AAiBA;EACI,UAAA;EACA,aAAA;EACA,sBAAA;EAEA,gBAAA;EACA,mBAAA;AAfJ;;AAkBA;EACI,iBAAA;EACA,qBAAA;AAfJ;;AAkBA;EACI,WAAA;EACA,YAAA;EACA,qBAAA;EACA,mBAAA;AAfJ","sourcesContent":[".player_body {\n    // background-color: #00003d;\n    background: linear-gradient(to right, rgb(0, 0, 100), #389fff);\n    display: flex;\n    width: 100%;\n    height: 100%;\n}\n\n.player {\n    display: flex;\n    width: 100%;\n    height: 100%;\n}\n\n\n.playerPopupBg {\n    position: fixed;\n    top: 0px;\n    width: 100vw;\n    height: 100vw;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    color: white;\n    z-index: 2;\n}\n\n.player_inactive {\n    opacity: 0.5;\n}\n\n.playerPopup {\n    opacity: 1;\n    z-index: 5;\n    position: fixed;\n    top: 50%;\n    left: 50%;\n    transform: translate(-50%, -50%);\n    background-color: #0101ad;\n    // backdrop-filter: blur(10px);\n    opacity: 0.5;\n    padding-left: 10px;\n    padding-right: 10px;\n    padding-bottom: 5px;\n    opacity: 0.8;\n    border-radius: 10px;\n    max-height: 800px;\n    overflow-y: scroll;\n    -ms-overflow-style: none; /* IE and Edge */\n    scrollbar-width: none; /* Firefox */\n    align-items: center;\n    > h1 {\n        align-items: center;\n        display: inline-block;\n    }\n}\n\n.playerPopup::-webkit-scrollbar {\n    display: none;\n}\n\n\n\n.song {\n    display: inline-flex;\n    align-items: center;\n}\n\n.song_pic {\n    height: 80px;\n    width: 80px;\n    margin-right: 10px;\n\n}\n\n.cancelIcon {\n    top: 10px;\n    right: 10px;\n    min-height: 30px;\n}\n\n.cancelIcon:hover {\n    cursor: pointer;\n}\n\n.deleteLogo {\n    padding: 10px;\n    margin-bottom: -18px;\n    min-height: 40px;\n    filter: invert(93%) sepia(100%) saturate(28%) hue-rotate(109deg) brightness(107%) contrast(109%);\n}\n\n.deleteIcon {\n    justify-content: center;\n    height: 80px;\n    filter: brightness(0) invert(1);\n    margin: 10px;\n}\n\n.deleteIcon:hover {\n    cursor: pointer;\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n.popupIcon {\n    max-width: 60px;\n    max-height: 60px;\n    margin-bottom: -20px;\n    filter: invert(93%) sepia(100%) saturate(28%) hue-rotate(109deg) brightness(107%) contrast(109%);\n}\n\n.popupHeader {\n    align-items: center;\n    display: inline-block;\n    // align-self: center;\n    // justify-content: bottom;\n    // align-items: bottom;\n    // > h1 {\n    //     align-items: top;\n    //     display: inline-block;\n    // }\n}\n\n\n\n.popupBody {\n    opacity: 1;\n    display: flex;\n    flex-direction: column;\n    // justify-content: left;\n    margin-top: 10px;\n    margin-bottom: 10px;\n}\n\n.playlistSection {\n    align-items: left;\n    justify-content: left;\n}\n\n.createPlaylist {\n    width: 50px;\n    height: 25px;\n    color: rgb(0, 0, 100);\n    border-radius: 10px;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11276,7 +12722,34 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".playlistPage {\n  padding: 30px;\n  flex: 0.8;\n  height: 100vh;\n  margin-bottom: 50px;\n  color: white;\n}\n\n.playlistPage::-webkit-scrollbar {\n  display: none;\n}\n\n.playlistPage_info {\n  display: flex;\n  align-items: flex-end;\n  padding: 10px;\n}\n\n.playlistPage_infoText {\n  flex: 1;\n}\n\n.playlistPage_info > img {\n  height: 20vw;\n  margin: 0 20px;\n  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);\n}\n\n.playlistPage_songs {\n  margin: 20px -30px;\n}\n\n.playlistPage_shuffle {\n  font-size: 80px !important;\n  margin-left: 50px;\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\n.playlistPage_shuffle:hover {\n  transition: 100ms transform ease-in;\n  transform: scale(1.08);\n}\n\n.playlistPage_icons {\n  display: flex;\n  align-items: center;\n}\n\n.playlistPage_icons > .MuiSvgIcon {\n  margin-right: 20px;\n}\n\n.playlistPage_infoText > h2 {\n  font-size: 48px;\n  margin-bottom: 10px;\n}\n\n.playlistPage_infoText > p {\n  font-size: 14px;\n}", "",{"version":3,"sources":["webpack://./src/styles/PlaylistPage.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,SAAA;EACA,aAAA;EAEA,mBAAA;EACA,YAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ;;AAGA;EACI,aAAA;EACA,qBAAA;EACA,aAAA;AAAJ;;AAGA;EACI,OAAA;AAAJ;;AAGA;EACI,YAAA;EACA,cAAA;EACA,yCAAA;AAAJ;;AAGA;EACI,kBAAA;AAAJ;;AAGA;EACI,0BAAA;EACA,iBAAA;EACA,gBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,mCAAA;EACA,sBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,kBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,eAAA;AAAJ","sourcesContent":[".playlistPage {\n    padding: 30px;\n    flex: 0.8;\n    height: 100vh;\n    // background: linear-gradient(rgb(123, 119, 148), rgb(0, 0, 61));\n    margin-bottom: 50px;\n    color: white;\n}\n\n.playlistPage::-webkit-scrollbar {\n    display: none;\n}\n\n.playlistPage_info {\n    display: flex;\n    align-items: flex-end;\n    padding: 10px;\n}\n\n.playlistPage_infoText {\n    flex: 1;\n}\n\n.playlistPage_info > img {\n    height: 20vw;\n    margin: 0 20px;\n    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);\n}\n\n.playlistPage_songs {\n    margin: 20px -30px;\n}\n\n.playlistPage_shuffle {\n    font-size: 80px !important;\n    margin-left: 50px;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n\n.playlistPage_shuffle:hover {\n    transition: 100ms transform ease-in;\n    transform: scale(1.08);\n}\n\n.playlistPage_icons {\n    display: flex;\n    align-items: center;\n}\n\n.playlistPage_icons > .MuiSvgIcon {\n    margin-right: 20px;\n}\n\n.playlistPage_infoText > h2 {\n    font-size: 48px;\n    margin-bottom: 10px;\n}\n\n.playlistPage_infoText > p {\n    font-size: 14px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".playlistPage {\n  padding: 30px;\n  flex: 0.8;\n  margin-bottom: 50px;\n  color: white;\n}\n\n.playlistPage::-webkit-scrollbar {\n  display: none;\n}\n\n.playlistPage_info {\n  display: flex;\n  align-items: flex-end;\n  padding: 10px;\n}\n\n.playlistPage_infoText {\n  flex: 1;\n}\n\n.playlistPage_info > img {\n  height: 18vw;\n  margin: 0 20px;\n  box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);\n}\n\n.playlistPage_songs {\n  margin: 20px -30px;\n}\n\n.playlistPage_play {\n  font-size: 80px !important;\n  margin-right: 10px;\n  margin-top: 20px;\n  margin-bottom: 20px;\n}\n\n.playlistPage_play:hover {\n  transition: 100ms transform ease-in;\n  transform: scale(1.08);\n}\n\n.playlistPage_shuffle {\n  max-width: 60px;\n  max-height: 40px;\n  margin-right: 10px;\n  filter: brightness(0) invert(1);\n}\n\n.playlistPage_shuffle:hover {\n  transition: 100ms transform ease-in;\n  transform: scale(1.08);\n}\n\n.playlistPage_shuffleBlur {\n  max-width: 60px;\n  max-height: 40px;\n  margin-right: 10px;\n  filter: brightness(0) invert(1) blur(5px);\n}\n\n.active {\n  filter: invert(92%) sepia(22%) saturate(6653%) hue-rotate(149deg) brightness(89%) contrast(91%);\n  color: #34c6da;\n}\n\n.playlistPage_icons {\n  display: flex;\n  align-items: center;\n  margin-left: 50px;\n}\n\n.playlistPage_icons > .MuiSvgIcon {\n  margin-right: 20px;\n}\n\n.playlistPage_infoText > h2 {\n  font-size: 48px;\n  margin-bottom: 10px;\n}\n\n.playlistPage_infoText > p {\n  font-size: 14px;\n}", "",{"version":3,"sources":["webpack://./src/styles/PlaylistPage.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,SAAA;EACA,mBAAA;EACA,YAAA;AACJ;;AAEA;EACI,aAAA;AACJ;;AAEA;EACI,aAAA;EACA,qBAAA;EACA,aAAA;AACJ;;AAEA;EACI,OAAA;AACJ;;AAEA;EACI,YAAA;EACA,cAAA;EACA,yCAAA;AACJ;;AAEA;EACI,kBAAA;AACJ;;AAEA;EACI,0BAAA;EACA,kBAAA;EACA,gBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,mCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,eAAA;EACA,gBAAA;EACA,kBAAA;EACA,+BAAA;AACJ;;AAEA;EACI,mCAAA;EACA,sBAAA;AACJ;;AAEA;EACI,eAAA;EACA,gBAAA;EACA,kBAAA;EACA,yCAAA;AACJ;;AAEA;EACI,+FAAA;EACA,cAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,iBAAA;AACJ;;AAEA;EACI,kBAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;AACJ;;AAEA;EACI,eAAA;AACJ","sourcesContent":[".playlistPage {\n    padding: 30px;\n    flex: 0.8;\n    margin-bottom: 50px;\n    color: white;\n}\n\n.playlistPage::-webkit-scrollbar {\n    display: none;\n}\n\n.playlistPage_info {\n    display: flex;\n    align-items: flex-end;\n    padding: 10px;\n}\n\n.playlistPage_infoText {\n    flex: 1;\n}\n\n.playlistPage_info > img {\n    height: 18vw;\n    margin: 0 20px;\n    box-shadow: 0 4px 60px rgba(0, 0, 0, 0.5);\n}\n\n.playlistPage_songs {\n    margin: 20px -30px;\n}\n\n.playlistPage_play {\n    font-size: 80px !important;\n    margin-right: 10px;\n    margin-top: 20px;\n    margin-bottom: 20px;\n}\n\n.playlistPage_play:hover {\n    transition: 100ms transform ease-in;\n    transform: scale(1.08);\n}\n\n.playlistPage_shuffle {\n    max-width: 60px;\n    max-height: 40px;\n    margin-right: 10px;\n    filter: brightness(0) invert(1);\n}\n\n.playlistPage_shuffle:hover {\n    transition: 100ms transform ease-in;\n    transform: scale(1.08);\n}\n\n.playlistPage_shuffleBlur {\n    max-width: 60px;\n    max-height: 40px;\n    margin-right: 10px;\n    filter: brightness(0) invert(1) blur(5px);\n}\n\n.active {\n    filter: invert(92%) sepia(22%) saturate(6653%) hue-rotate(149deg) brightness(89%) contrast(91%);\n    color: #34c6da;\n}\n\n.playlistPage_icons {\n    display: flex;\n    align-items: center;\n    margin-left: 50px;\n}\n\n.playlistPage_icons > .MuiSvgIcon {\n    margin-right: 20px;\n}\n\n.playlistPage_infoText > h2 {\n    font-size: 48px;\n    margin-bottom: 10px;\n}\n\n.playlistPage_infoText > p {\n    font-size: 14px;\n}"],"sourceRoot":""}]);
+// Exports
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/QueuePage.scss":
+/*!****************************************************************************************************************!*\
+  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/QueuePage.scss ***!
+  \****************************************************************************************************************/
+/***/ ((module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+// Imports
+
+
+var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+// Module
+___CSS_LOADER_EXPORT___.push([module.id, ".queuePage_title {\n  color: rgba(172, 230, 255, 0.731);\n}", "",{"version":3,"sources":["webpack://./src/styles/QueuePage.scss"],"names":[],"mappings":"AAAA;EACI,iCAAA;AACJ","sourcesContent":[".queuePage_title {\n    color: rgba(172, 230, 255, 0.731);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11303,7 +12776,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".searchPage_playerLogo {\n  height: 4.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n}", "",{"version":3,"sources":["webpack://./src/styles/SearchPage.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;AACJ","sourcesContent":[".searchPage_playerLogo {\n    height: 4.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px; \n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".searchPage_playerLogo {\n  height: 4.5vh;\n  align-items: center;\n  object-fit: contain;\n  margin-right: 10px;\n}\n\n.searchPage {\n  align-items: center;\n}\n\n.searchPageLoading div {\n  text-align: center;\n}\n.searchPageLoading img {\n  margin: 20px;\n  max-width: 100px;\n  max-height: 100px;\n  animation: rotation 2s infinite linear;\n}\n\n@keyframes rotation {\n  from {\n    transform: rotate(0deg);\n  }\n  to {\n    transform: rotate(360deg);\n  }\n}", "",{"version":3,"sources":["webpack://./src/styles/SearchPage.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,mBAAA;EACA,kBAAA;AACJ;;AAEA;EACI,mBAAA;AACJ;;AAGI;EACI,kBAAA;AAAR;AAEI;EACI,YAAA;EACA,gBAAA;EACA,iBAAA;EACA,sCAAA;AAAR;;AA4DA;EACI;IACI,uBAAA;EAzDN;EA4DE;IACI,yBAAA;EA1DN;AACF","sourcesContent":[".searchPage_playerLogo {\n    height: 4.5vh;\n    align-items: center;\n    object-fit: contain;\n    margin-right: 10px;\n}\n\n.searchPage {\n    align-items: center;\n}\n\n.searchPageLoading{\n    div {\n        text-align: center;\n    }\n    img { \n        margin: 20px;\n        max-width: 100px;\n        max-height: 100px;\n        animation: rotation 2s infinite linear;\n    }\n    // -webkit-animation-name: spin;\n    // -webkit-animation-duration: 4000ms;\n    // -webkit-animation-iteration-count: infinite;\n    // -webkit-animation-timing-function: linear;\n    // -moz-animation-name: spin;\n    // -moz-animation-duration: 4000ms;\n    // -moz-animation-iteration-count: infinite;\n    // -moz-animation-timing-function: linear;\n    // -ms-animation-name: spin;\n    // -ms-animation-duration: 4000ms;\n    // -ms-animation-iteration-count: infinite;\n    // -ms-animation-timing-function: linear;\n\n    // animation-name: spin;\n    // animation-duration: 4000ms;\n    // animation-iteration-count: infinite;\n    // animation-timing-function: linear;\n\n    // @-ms-keyframes spin {\n    //     from {\n    //         -ms-transform: rotate(0deg);\n    //     }\n\n    //     to {\n    //         -ms-transform: rotate(360deg);\n    //     }\n    // }\n\n    // @-moz-keyframes spin {\n    //     from {\n    //         -moz-transform: rotate(0deg);\n    //     }\n\n    //     to {\n    //         -moz-transform: rotate(360deg);\n    //     }\n    // }\n\n    // @-webkit-keyframes spin {\n    //     from {\n    //         -webkit-transform: rotate(0deg);\n    //     }\n\n    //     to {\n    //         -webkit-transform: rotate(360deg);\n    //     }\n    // }\n\n    // @keyframes spin {\n    //     from {\n    //         transform: rotate(0deg);\n    //     }\n\n    //     to {\n    //         transform: rotate(360deg);\n    //     }\n    // }\n}\n@keyframes rotation {\n    from {\n        transform: rotate(0deg);\n    }\n\n    to {\n        transform: rotate(360deg);\n    }\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11330,7 +12803,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".sidebar {\n  border: 1px solid black;\n  height: 1000vh;\n  flex: 0.2;\n  color: white;\n  background: linear-gradient(to right, #001843, rgb(0, 0, 0));\n  min-width: 230px;\n  min-height: 230vh;\n  max-width: 275px;\n  padding-left: 10px;\n  padding-right: 10px;\n  padding-bottom: 500px;\n}\n\n.sidebar > hr {\n  border: 1px solid #282828;\n  width: 90%;\n  margin: 10px auto;\n}\n\n.sidebar_logo {\n  height: 65px;\n  padding: 10px;\n  float: left;\n  margin-left: 80px;\n}\n\n.sidebar_title {\n  margin-left: 10px;\n  padding: 5px;\n  font-size: 12px;\n}", "",{"version":3,"sources":["webpack://./src/styles/Sidebar.scss"],"names":[],"mappings":"AAAA;EACI,uBAAA;EACA,cAAA;EACA,SAAA;EACA,YAAA;EACA,4DAAA;EACA,gBAAA;EACA,iBAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;EACA,qBAAA;AACJ;;AAEA;EACI,yBAAA;EACA,UAAA;EACA,iBAAA;AACJ;;AAEA;EACI,YAAA;EACA,aAAA;EACA,WAAA;EACA,iBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,YAAA;EACA,eAAA;AACJ","sourcesContent":[".sidebar {\n    border: 1px solid black;\n    height: 1000vh;\n    flex: 0.2;\n    color: white;\n    background: linear-gradient(to right, #001843, rgb(0, 0, 0));\n    min-width: 230px;\n    min-height: 230vh;\n    max-width: 275px;\n    padding-left: 10px;\n    padding-right: 10px;\n    padding-bottom: 500px;\n}\n\n.sidebar > hr {\n    border: 1px solid #282828;\n    width: 90%;\n    margin: 10px auto;\n}\n\n.sidebar_logo {\n    height: 65px;\n    padding: 10px;\n    float: left;\n    margin-left: 80px;\n}\n\n.sidebar_title {\n    margin-left: 10px;\n    padding: 5px;\n    font-size: 12px;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".sidebar {\n  border: 1px solid black;\n  height: 1000vh;\n  flex: 0.2;\n  color: white;\n  background: linear-gradient(to right, #001843, rgb(0, 0, 0));\n  min-width: 230px;\n  min-height: 230vh;\n  max-width: 275px;\n  padding-left: 10px;\n  padding-right: 10px;\n  padding-bottom: 500px;\n}\n\n.sidebar > hr {\n  border: 1px solid #282828;\n  width: 90%;\n  margin: 10px auto;\n}\n\n.sidebar_logo {\n  height: 65px;\n  padding: 10px;\n  float: left;\n  margin-left: 80px;\n}\n\n.sidebar_title {\n  margin-left: 10px;\n  padding: 5px;\n  font-size: 12px;\n}\n\n.blurred {\n  filter: blur(5px);\n}", "",{"version":3,"sources":["webpack://./src/styles/Sidebar.scss"],"names":[],"mappings":"AAAA;EACI,uBAAA;EACA,cAAA;EACA,SAAA;EACA,YAAA;EACA,4DAAA;EACA,gBAAA;EACA,iBAAA;EACA,gBAAA;EACA,kBAAA;EACA,mBAAA;EACA,qBAAA;AACJ;;AAEA;EACI,yBAAA;EACA,UAAA;EACA,iBAAA;AACJ;;AAEA;EACI,YAAA;EACA,aAAA;EACA,WAAA;EACA,iBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,YAAA;EACA,eAAA;AACJ;;AAEA;EACI,iBAAA;AACJ","sourcesContent":[".sidebar {\n    border: 1px solid black;\n    height: 1000vh;\n    flex: 0.2;\n    color: white;\n    background: linear-gradient(to right, #001843, rgb(0, 0, 0));\n    min-width: 230px;\n    min-height: 230vh;\n    max-width: 275px;\n    padding-left: 10px;\n    padding-right: 10px;\n    padding-bottom: 500px;\n}\n\n.sidebar > hr {\n    border: 1px solid #282828;\n    width: 90%;\n    margin: 10px auto;\n}\n\n.sidebar_logo {\n    height: 65px;\n    padding: 10px;\n    float: left;\n    margin-left: 80px;\n}\n\n.sidebar_title {\n    margin-left: 10px;\n    padding: 5px;\n    font-size: 12px;\n}\n\n.blurred {\n    filter: blur(5px);\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11357,7 +12830,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".sidebarOption {\n  display: flex;\n  align-items: center;\n  color: grey;\n  height: 40px;\n  cursor: pointer;\n  transition: 200ms color ease-in;\n}\n\n.sidebarOption > p {\n  margin-top: 10px;\n  margin-left: 10px;\n  font-size: 14px;\n}\n\n.sidebarOption:hover {\n  color: white;\n}\n\n.sidebarOption_icon {\n  padding-left: 10px;\n  padding-right: 10px;\n}\n\n.sidebarOption > img {\n  margin-left: 10px;\n  max-width: 25px;\n  max-height: 25px;\n}", "",{"version":3,"sources":["webpack://./src/styles/SidebarOption.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,WAAA;EACA,YAAA;EACA,eAAA;EACA,+BAAA;AACJ;;AAEA;EACI,gBAAA;EACA,iBAAA;EACA,eAAA;AACJ;;AAEA;EACI,YAAA;AACJ;;AAEA;EACI,kBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,eAAA;EACA,gBAAA;AACJ","sourcesContent":[".sidebarOption {\n    display: flex;\n    align-items: center;\n    color: grey;\n    height: 40px;\n    cursor: pointer;\n    transition: 200ms color ease-in;\n}\n\n.sidebarOption > p {\n    margin-top: 10px;\n    margin-left: 10px;\n    font-size: 14px;\n}\n \n.sidebarOption:hover {\n    color: white;\n}\n\n.sidebarOption_icon {\n    padding-left: 10px;\n    padding-right: 10px;\n}\n\n.sidebarOption > img {\n    margin-left: 10px;\n    max-width: 25px;\n    max-height: 25px;\n}\n "],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".sidebarOption {\n  display: flex;\n  align-items: center;\n  color: grey;\n  max-width: 270px;\n  min-height: auto;\n  cursor: pointer;\n  transition: 200ms color ease-in;\n  word-break: break-all;\n}\n\n.sidebarHeader {\n  display: flex;\n  align-items: center;\n  color: grey;\n  max-width: 270px;\n  max-height: 50px;\n  cursor: pointer;\n  transition: 200ms color ease-in;\n  word-break: break-all;\n}\n\n.sidebarOption > p {\n  font-size: 14px;\n}\n\n.sidebarOption:hover {\n  color: white;\n}\n\n.sidebarOption_icon {\n  padding-left: 10px;\n  padding-right: 10px;\n}\n\n.sidebarOption > img {\n  margin-left: 10px;\n  max-width: 25px;\n  max-height: 25px;\n}", "",{"version":3,"sources":["webpack://./src/styles/SidebarOption.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,gBAAA;EACA,eAAA;EACA,+BAAA;EACA,qBAAA;AACJ;;AAEA;EACI,aAAA;EACA,mBAAA;EACA,WAAA;EACA,gBAAA;EACA,gBAAA;EACA,eAAA;EACA,+BAAA;EACA,qBAAA;AACJ;;AAEA;EACI,eAAA;AACJ;;AAEA;EACI,YAAA;AACJ;;AAEA;EACI,kBAAA;EACA,mBAAA;AACJ;;AAEA;EACI,iBAAA;EACA,eAAA;EACA,gBAAA;AACJ","sourcesContent":[".sidebarOption {\n    display: flex;\n    align-items: center;\n    color: grey;\n    max-width: 270px;\n    min-height: auto;\n    cursor: pointer;\n    transition: 200ms color ease-in;\n    word-break: break-all;\n}\n\n.sidebarHeader {\n    display: flex;\n    align-items: center;\n    color: grey;\n    max-width: 270px;\n    max-height: 50px;\n    cursor: pointer;\n    transition: 200ms color ease-in;\n    word-break: break-all; \n}\n\n.sidebarOption > p {\n    font-size: 14px;\n}\n \n.sidebarOption:hover {\n    color: white;\n}\n\n.sidebarOption_icon {\n    padding-left: 10px;\n    padding-right: 10px;\n}\n\n.sidebarOption > img {\n    margin-left: 10px;\n    max-width: 25px;\n    max-height: 25px;\n}\n "],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -11384,34 +12857,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".songRow {\n  margin-left: 20px;\n  padding: 20px;\n  display: flex;\n  align-items: center;\n  color: white;\n}\n\n.songRow:hover {\n  cursor: pointer;\n  background: #050394;\n  opacity: 0.8;\n}\n\n.songRow_info {\n  margin-left: 20px;\n}\n\n.songRow_info > h1 {\n  font-size: 16px;\n}\n\n.songRow_info > p {\n  font-size: 14px;\n  margin-top: 3px;\n  color: lightgray;\n}\n\n.songRow_album {\n  height: 3em;\n  width: 3em;\n  margin-right: 30px;\n  color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n  height: 3em;\n  width: 3em;\n  margin-left: 10px;\n  margin-right: 45px;\n  color: rgb(172, 246, 246);\n}\n\n.songRow_search {\n  max-height: 80px;\n}\n\n.songRow_controls {\n  display: flex;\n  align-items: left;\n}", "",{"version":3,"sources":["webpack://./src/styles/SongRow.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;EACA,YAAA;AACJ;;AAEA;EACI,iBAAA;AACJ;;AAEA;EACI,eAAA;AACJ;;AAEA;EACI,eAAA;EACA,eAAA;EACA,gBAAA;AACJ;;AAEA;EACI,WAAA;EACA,UAAA;EACA,kBAAA;EACA,yBAAA;AACJ;;AAEA;EACI,WAAA;EACA,UAAA;EACA,iBAAA;EACA,kBAAA;EACA,yBAAA;AACJ;;AAEA;EACI,gBAAA;AACJ;;AAEA;EACI,aAAA;EACA,iBAAA;AACJ","sourcesContent":[".songRow {\n    margin-left: 20px;\n    padding: 20px;\n    display: flex;\n    align-items: center;\n    color: white;\n}\n\n.songRow:hover {\n    cursor: pointer;\n    background: #050394;\n    opacity: 0.8;\n}\n\n.songRow_info {\n    margin-left: 20px;\n}\n\n.songRow_info > h1 {\n    font-size: 16px;\n}\n\n.songRow_info > p {\n    font-size: 14px;\n    margin-top: 3px;\n    color: lightgray;\n}\n\n.songRow_album {\n    height: 3em;\n    width: 3em;\n    margin-right: 30px;\n    color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n    height: 3em;\n    width: 3em;\n    margin-left: 10px;\n    margin-right: 45px;\n    color: rgb(172, 246, 246);\n}\n\n.songRow_search {\n    max-height: 80px;\n}\n\n.songRow_controls {\n    display: flex;\n    align-items: left;\n}"],"sourceRoot":""}]);
-// Exports
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
-
-
-/***/ }),
-
-/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/loading.scss":
-/*!**************************************************************************************************************!*\
-  !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/loading.scss ***!
-  \**************************************************************************************************************/
-/***/ ((module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/sourceMaps.js */ "./node_modules/css-loader/dist/runtime/sourceMaps.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
-/* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
-// Imports
-
-
-var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
-// Module
-___CSS_LOADER_EXPORT___.push([module.id, ".loading {\n  display: grid;\n  place-items: center;\n  height: 100vh;\n  background-color: black;\n}", "",{"version":3,"sources":["webpack://./src/styles/loading.scss"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,mBAAA;EACA,aAAA;EACA,uBAAA;AACJ","sourcesContent":[".loading {\n    display: grid;\n    place-items: center;\n    height: 100vh;\n    background-color: black;\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".songRow {\n  margin-left: 20px;\n  padding: 20px;\n  display: flex;\n  align-items: center;\n  color: white;\n  opacity: 0.8;\n  border-radius: 10px;\n}\n\n.songRow_platform {\n  height: 3em;\n  width: 3em;\n  margin-left: 5px;\n  align-items: center;\n  filter: invert(17%) sepia(65%) saturate(3149%) hue-rotate(235deg) brightness(78%) contrast(144%);\n  margin-bottom: 5px;\n}\n\n.songRow_platform:hover {\n  filter: invert(57%) sepia(24%) saturate(6958%) hue-rotate(190deg) brightness(104%) contrast(101%);\n  cursor: default;\n}\n\n.songRow:hover {\n  cursor: pointer;\n  background: #000b1d;\n  opacity: 0.8;\n}\n\n.songRow_info {\n  margin-left: 5px;\n}\n\n.songRow_info > h1 {\n  font-size: 16px;\n}\n\n.songRow_info > p {\n  font-size: 14px;\n  margin-top: 3px;\n  color: lightgray;\n}\n\n.songRow_album {\n  height: 3em;\n  width: 3em;\n  margin-right: 30px;\n  color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n  height: 3em;\n  width: 3em;\n  margin-left: 22px;\n  margin-right: 24px;\n  color: white;\n}\n\n.songRow_search {\n  max-height: 80px;\n}\n\n.songRow_controls {\n  margin-right: 20px;\n  display: inline-flex;\n  text-align: right;\n  align-items: end;\n  margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsBlur {\n  filter: blur(5px);\n  margin-right: 20px;\n  display: inline-flex;\n  text-align: right;\n  align-items: end;\n  margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsIcons {\n  min-width: 35px;\n  min-height: 35px;\n  color: white;\n  fill: white;\n  margin-right: 10px;\n  margin-left: 10px;\n  margin-bottom: 10px;\n  position: relative;\n}\n\n.songRow_controlsIcons:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n}\n\n.songRow_controlsIcons.upsideDown:hover {\n  transition: 0.2s ease-in-out;\n  transform: scaleY(-1.2) scaleX(-1.2) !important;\n}\n\n.upsideDown {\n  margin-right: 10px;\n  transform: rotate(180deg);\n}\n\n.songRow_controlsAdd {\n  max-width: 50px;\n  max-height: 50px;\n  filter: brightness(0) invert(1);\n  margin-right: 10px;\n  margin-bottom: 2px;\n  position: relative;\n}\n\n.songRow_controlsAdd:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n}\n\n.songRow_controlsDelete {\n  margin-bottom: 16px;\n  filter: brightness(0) invert(1);\n  transform: scale(1.5) !important;\n}\n\n.download {\n  margin-bottom: -4px;\n  top: 0;\n  bottom: 0;\n}\n\n.songRow_controlsDeleteActive {\n  margin-bottom: 16px;\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n  transform: scale(1.5) !important;\n}\n\n.songRow_controlsDelete:hover {\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n.deletePopup {\n  justify-content: right;\n  align-items: right;\n}\n\n.deletePopupIcon {\n  max-height: 20px;\n  max-width: 50px;\n  align-items: right;\n}\n\n.deletePopupIcon:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}", "",{"version":3,"sources":["webpack://./src/styles/SongRow.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;EACA,YAAA;EACA,mBAAA;AACJ;;AAEA;EACI,WAAA;EACA,UAAA;EACA,gBAAA;EACA,mBAAA;EACA,gGAAA;EACA,kBAAA;AACJ;;AAEA;EACI,iGAAA;EACA,eAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;EAEA,YAAA;AAAJ;;AAGA;EACI,gBAAA;AAAJ;;AAGA;EACI,eAAA;AAAJ;;AAGA;EACI,eAAA;EACA,eAAA;EACA,gBAAA;AAAJ;;AAGA;EACI,WAAA;EACA,UAAA;EACA,kBAAA;EACA,yBAAA;AAAJ;;AAGA;EACI,WAAA;EACA,UAAA;EACA,iBAAA;EACA,kBAAA;EACA,YAAA;AAAJ;;AAGA;EACI,gBAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,oBAAA;EACA,iBAAA;EACA,gBAAA;EACA,wBAAA;AAAJ;;AAGA;EACI,iBAAA;EACA,kBAAA;EACA,oBAAA;EACA,iBAAA;EACA,gBAAA;EACA,wBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,gBAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,mBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,4BAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,4BAAA;EACA,+CAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,yBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,gBAAA;EACA,+BAAA;EACA,kBAAA;EACA,kBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,4BAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,+BAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,MAAA;EACA,SAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,iGAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,iGAAA;AAAJ;;AAGA;EACI,sBAAA;EACA,kBAAA;AAAJ;;AAIA;EACI,gBAAA;EACA,eAAA;EACA,kBAAA;AADJ;;AAIA;EACI,4BAAA;EACA,gCAAA;EACA,iGAAA;AADJ","sourcesContent":[".songRow {\n    margin-left: 20px;\n    padding: 20px;\n    display: flex;\n    align-items: center;\n    color: white;\n    opacity: 0.8;\n    border-radius: 10px;\n}\n\n.songRow_platform {\n    height: 3em;\n    width: 3em;\n    margin-left: 5px;\n    align-items: center;\n    filter: invert(17%) sepia(65%) saturate(3149%) hue-rotate(235deg) brightness(78%) contrast(144%);\n    margin-bottom: 5px;\n}\n\n.songRow_platform:hover {\n    filter: invert(57%) sepia(24%) saturate(6958%) hue-rotate(190deg) brightness(104%) contrast(101%);\n    cursor: default;\n}\n\n.songRow:hover {\n    cursor: pointer;\n    background: #000b1d;\n    // background: #050394;\n    opacity: 0.8;\n}\n\n.songRow_info {\n    margin-left: 5px;\n}\n\n.songRow_info > h1 {\n    font-size: 16px;\n}\n\n.songRow_info > p {\n    font-size: 14px;\n    margin-top: 3px;\n    color: lightgray;\n}\n\n.songRow_album {\n    height: 3em;\n    width: 3em;\n    margin-right: 30px;\n    color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n    height: 3em;\n    width: 3em;\n    margin-left: 22px;\n    margin-right: 24px;\n    color: white;\n}\n\n.songRow_search {\n    max-height: 80px;\n}\n\n.songRow_controls {\n    margin-right: 20px;\n    display: inline-flex;\n    text-align: right;\n    align-items: end;\n    margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsBlur {\n    filter: blur(5px);\n    margin-right: 20px;\n    display: inline-flex;\n    text-align: right;\n    align-items: end;\n    margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsIcons {\n    min-width: 35px;\n    min-height: 35px;\n    color: white;\n    fill: white;\n    margin-right: 10px;\n    margin-left: 10px;\n    margin-bottom: 10px;\n    position: relative;\n}\n\n.songRow_controlsIcons:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n}\n\n.songRow_controlsIcons.upsideDown:hover {\n    transition: 0.2s ease-in-out;\n    transform: (scaleY(-1.2) scaleX(-1.2)) !important;\n}\n\n.upsideDown {\n    margin-right: 10px;\n    transform: rotate(180deg);\n}\n\n.songRow_controlsAdd {\n    max-width: 50px;\n    max-height: 50px;\n    filter: brightness(0) invert(1);\n    margin-right: 10px;\n    margin-bottom: 2px;\n    position: relative;\n}\n\n.songRow_controlsAdd:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n}\n\n.songRow_controlsDelete {\n    margin-bottom: 16px;\n    filter: brightness(0) invert(1);\n    transform: scale(1.5) !important;\n}\n\n.download {\n    margin-bottom: -4px;\n    top: 0;\n    bottom: 0;\n}\n\n.songRow_controlsDeleteActive {\n    margin-bottom: 16px;\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n    transform: scale(1.5) !important;\n}\n\n.songRow_controlsDelete:hover {\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n.deletePopup {\n    justify-content: right;\n    align-items: right;\n    // display: inline-block;\n}\n\n.deletePopupIcon {\n    max-height: 20px;\n    max-width: 50px;\n    align-items: right;\n\n}\n.deletePopupIcon:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -18022,187 +19468,6 @@ exports.typeOf = typeOf;
 if (false) {} else {
   module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/prop-types/node_modules/react-is/cjs/react-is.development.js");
 }
-
-
-/***/ }),
-
-/***/ "./node_modules/querystring/decode.js":
-/*!********************************************!*\
-  !*** ./node_modules/querystring/decode.js ***!
-  \********************************************/
-/***/ ((module) => {
-
-"use strict";
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-// If obj.hasOwnProperty has been overridden, then calling
-// obj.hasOwnProperty(prop) will break.
-// See: https://github.com/joyent/node/issues/1707
-function hasOwnProperty(obj, prop) {
-  return Object.prototype.hasOwnProperty.call(obj, prop);
-}
-
-module.exports = function(qs, sep, eq, options) {
-  sep = sep || '&';
-  eq = eq || '=';
-  var obj = {};
-
-  if (typeof qs !== 'string' || qs.length === 0) {
-    return obj;
-  }
-
-  var regexp = /\+/g;
-  qs = qs.split(sep);
-
-  var maxKeys = 1000;
-  if (options && typeof options.maxKeys === 'number') {
-    maxKeys = options.maxKeys;
-  }
-
-  var len = qs.length;
-  // maxKeys <= 0 means that we should not limit keys count
-  if (maxKeys > 0 && len > maxKeys) {
-    len = maxKeys;
-  }
-
-  for (var i = 0; i < len; ++i) {
-    var x = qs[i].replace(regexp, '%20'),
-        idx = x.indexOf(eq),
-        kstr, vstr, k, v;
-
-    if (idx >= 0) {
-      kstr = x.substr(0, idx);
-      vstr = x.substr(idx + 1);
-    } else {
-      kstr = x;
-      vstr = '';
-    }
-
-    k = decodeURIComponent(kstr);
-    v = decodeURIComponent(vstr);
-
-    if (!hasOwnProperty(obj, k)) {
-      obj[k] = v;
-    } else if (Array.isArray(obj[k])) {
-      obj[k].push(v);
-    } else {
-      obj[k] = [obj[k], v];
-    }
-  }
-
-  return obj;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/querystring/encode.js":
-/*!********************************************!*\
-  !*** ./node_modules/querystring/encode.js ***!
-  \********************************************/
-/***/ ((module) => {
-
-"use strict";
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-var stringifyPrimitive = function(v) {
-  switch (typeof v) {
-    case 'string':
-      return v;
-
-    case 'boolean':
-      return v ? 'true' : 'false';
-
-    case 'number':
-      return isFinite(v) ? v : '';
-
-    default:
-      return '';
-  }
-};
-
-module.exports = function(obj, sep, eq, name) {
-  sep = sep || '&';
-  eq = eq || '=';
-  if (obj === null) {
-    obj = undefined;
-  }
-
-  if (typeof obj === 'object') {
-    return Object.keys(obj).map(function(k) {
-      var ks = encodeURIComponent(stringifyPrimitive(k)) + eq;
-      if (Array.isArray(obj[k])) {
-        return obj[k].map(function(v) {
-          return ks + encodeURIComponent(stringifyPrimitive(v));
-        }).join(sep);
-      } else {
-        return ks + encodeURIComponent(stringifyPrimitive(obj[k]));
-      }
-    }).filter(Boolean).join(sep);
-
-  }
-
-  if (!name) return '';
-  return encodeURIComponent(stringifyPrimitive(name)) + eq +
-         encodeURIComponent(stringifyPrimitive(obj));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/querystring/index.js":
-/*!*******************************************!*\
-  !*** ./node_modules/querystring/index.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-exports.decode = exports.parse = __webpack_require__(/*! ./decode */ "./node_modules/querystring/decode.js");
-exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node_modules/querystring/encode.js");
 
 
 /***/ }),
@@ -45490,7 +46755,7 @@ var Preview = /*#__PURE__*/function (_Component) {
         return response.json();
       }).then(function (data) {
         if (data.thumbnail_url && _this2.mounted) {
-          var image = data.thumbnail_url.replace('height=100', 'height=480');
+          var image = data.thumbnail_url.replace('height=100', 'height=480').replace('-d_295x166', '-d_640');
 
           _this2.setState({
             image: image
@@ -45928,7 +47193,7 @@ function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o =
 
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) { arr2[i] = arr[i]; } return arr2; }
 
-var MATCH_URL_YOUTUBE = /(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\/|watch\?v=|watch\?.+&v=|shorts\/))((\w|-){11})|youtube\.com\/playlist\?list=|youtube\.com\/user\//;
+var MATCH_URL_YOUTUBE = /(?:youtu\.be\/|youtube(?:-nocookie)?\.com\/(?:embed\/|v\/|watch\/|watch\?v=|watch\?.+&v=|shorts\/|live\/))((\w|-){11})|youtube\.com\/playlist\?list=|youtube\.com\/user\//;
 exports.MATCH_URL_YOUTUBE = MATCH_URL_YOUTUBE;
 var MATCH_URL_SOUNDCLOUD = /(?:soundcloud\.com|snd\.sc)\/[^.]+$/;
 exports.MATCH_URL_SOUNDCLOUD = MATCH_URL_SOUNDCLOUD;
@@ -45946,7 +47211,7 @@ var MATCH_URL_TWITCH_VIDEO = /(?:www\.|go\.)?twitch\.tv\/videos\/(\d+)($|\?)/;
 exports.MATCH_URL_TWITCH_VIDEO = MATCH_URL_TWITCH_VIDEO;
 var MATCH_URL_TWITCH_CHANNEL = /(?:www\.|go\.)?twitch\.tv\/([a-zA-Z0-9_]+)($|\?)/;
 exports.MATCH_URL_TWITCH_CHANNEL = MATCH_URL_TWITCH_CHANNEL;
-var MATCH_URL_DAILYMOTION = /^(?:(?:https?):)?(?:\/\/)?(?:www\.)?(?:(?:dailymotion\.com(?:\/embed)?\/video)|dai\.ly)\/([a-zA-Z0-9]+)(?:_[\w_-]+)?$/;
+var MATCH_URL_DAILYMOTION = /^(?:(?:https?):)?(?:\/\/)?(?:www\.)?(?:(?:dailymotion\.com(?:\/embed)?\/video)|dai\.ly)\/([a-zA-Z0-9]+)(?:_[\w_-]+)?(?:[\w.#_-]+)?/;
 exports.MATCH_URL_DAILYMOTION = MATCH_URL_DAILYMOTION;
 var MATCH_URL_MIXCLOUD = /mixcloud\.com\/([^/]+\/[^/]+)/;
 exports.MATCH_URL_MIXCLOUD = MATCH_URL_MIXCLOUD;
@@ -46551,6 +47816,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 var HAS_NAVIGATOR = typeof navigator !== 'undefined';
 var IS_IPAD_PRO = HAS_NAVIGATOR && navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1;
 var IS_IOS = HAS_NAVIGATOR && (/iPad|iPhone|iPod/.test(navigator.userAgent) || IS_IPAD_PRO) && !window.MSStream;
+var IS_SAFARI = HAS_NAVIGATOR && /^((?!chrome|android).)*safari/i.test(navigator.userAgent) && !window.MSStream;
 var HLS_SDK_URL = 'https://cdn.jsdelivr.net/npm/hls.js@VERSION/dist/hls.min.js';
 var HLS_GLOBAL = 'Hls';
 var DASH_SDK_URL = 'https://cdnjs.cloudflare.com/ajax/libs/dashjs/VERSION/dash.all.min.js';
@@ -46700,6 +47966,7 @@ var FilePlayer = /*#__PURE__*/function (_Component) {
     value: function componentDidMount() {
       this.props.onMount && this.props.onMount(this);
       this.addListeners(this.player);
+      this.player.src = this.getSource(this.props.url); // Ensure src is set in strict mode
 
       if (IS_IOS) {
         this.player.load();
@@ -46795,6 +48062,10 @@ var FilePlayer = /*#__PURE__*/function (_Component) {
     key: "shouldUseHLS",
     value: function shouldUseHLS(url) {
       if (this.props.config.forceHLS) {
+        return true;
+      }
+
+      if (IS_SAFARI && this.props.config.forceSafariHLS) {
         return true;
       }
 
@@ -48443,13 +49714,11 @@ var Vimeo = /*#__PURE__*/function (_Component) {
     _defineProperty(_assertThisInitialized(_this), "secondsLoaded", null);
 
     _defineProperty(_assertThisInitialized(_this), "mute", function () {
-      _this.setVolume(0);
+      _this.setMuted(true);
     });
 
     _defineProperty(_assertThisInitialized(_this), "unmute", function () {
-      if (_this.props.volume !== null) {
-        _this.setVolume(_this.props.volume);
-      }
+      _this.setMuted(false);
     });
 
     _defineProperty(_assertThisInitialized(_this), "ref", function (container) {
@@ -48573,6 +49842,11 @@ var Vimeo = /*#__PURE__*/function (_Component) {
     key: "setVolume",
     value: function setVolume(fraction) {
       this.callPlayer('setVolume', fraction);
+    }
+  }, {
+    key: "setMuted",
+    value: function setMuted(muted) {
+      this.callPlayer('setMuted', muted);
     }
   }, {
     key: "setLoop",
@@ -49471,6 +50745,7 @@ var propTypes = {
       forceVideo: bool,
       forceAudio: bool,
       forceHLS: bool,
+      forceSafariHLS: bool,
       forceDASH: bool,
       forceFLV: bool,
       hlsOptions: object,
@@ -55722,10 +56997,10 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 /***/ }),
 
-/***/ "./src/styles/MenuContext.scss":
-/*!*************************************!*\
-  !*** ./src/styles/MenuContext.scss ***!
-  \*************************************/
+/***/ "./src/styles/Loading.scss":
+/*!*********************************!*\
+  !*** ./src/styles/Loading.scss ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -55745,7 +57020,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
 /* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_MenuContext_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./MenuContext.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/MenuContext.scss");
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Loading_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./Loading.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/Loading.scss");
 
       
       
@@ -55767,12 +57042,12 @@ options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWi
 options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
 options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
 
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_MenuContext_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Loading_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
 
 
 
 
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_MenuContext_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_MenuContext_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_MenuContext_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Loading_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Loading_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_Loading_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -55883,6 +57158,61 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_PlaylistPage_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_PlaylistPage_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_PlaylistPage_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
+
+
+/***/ }),
+
+/***/ "./src/styles/QueuePage.scss":
+/*!***********************************!*\
+  !*** ./src/styles/QueuePage.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
+/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_QueuePage_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./QueuePage.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/QueuePage.scss");
+
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
+var options = {};
+
+options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
+options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
+
+      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
+    
+options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
+options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
+
+var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_QueuePage_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
+
+
+
+
+       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_QueuePage_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_QueuePage_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_QueuePage_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -56103,61 +57433,6 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 
 
        /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SongRow_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SongRow_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_SongRow_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
-
-
-/***/ }),
-
-/***/ "./src/styles/loading.scss":
-/*!*********************************!*\
-  !*** ./src/styles/loading.scss ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js */ "./node_modules/style-loader/dist/runtime/injectStylesIntoStyleTag.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleDomAPI.js */ "./node_modules/style-loader/dist/runtime/styleDomAPI.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertBySelector.js */ "./node_modules/style-loader/dist/runtime/insertBySelector.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js */ "./node_modules/style-loader/dist/runtime/setAttributesWithoutAttributes.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/insertStyleElement.js */ "./node_modules/style-loader/dist/runtime/insertStyleElement.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! !../../node_modules/style-loader/dist/runtime/styleTagTransform.js */ "./node_modules/style-loader/dist/runtime/styleTagTransform.js");
-/* harmony import */ var _node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_loading_scss__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! !!../../node_modules/css-loader/dist/cjs.js!../../node_modules/sass-loader/dist/cjs.js!./loading.scss */ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/loading.scss");
-
-      
-      
-      
-      
-      
-      
-      
-      
-      
-
-var options = {};
-
-options.styleTagTransform = (_node_modules_style_loader_dist_runtime_styleTagTransform_js__WEBPACK_IMPORTED_MODULE_5___default());
-options.setAttributes = (_node_modules_style_loader_dist_runtime_setAttributesWithoutAttributes_js__WEBPACK_IMPORTED_MODULE_3___default());
-
-      options.insert = _node_modules_style_loader_dist_runtime_insertBySelector_js__WEBPACK_IMPORTED_MODULE_2___default().bind(null, "head");
-    
-options.domAPI = (_node_modules_style_loader_dist_runtime_styleDomAPI_js__WEBPACK_IMPORTED_MODULE_1___default());
-options.insertStyleElement = (_node_modules_style_loader_dist_runtime_insertStyleElement_js__WEBPACK_IMPORTED_MODULE_4___default());
-
-var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js__WEBPACK_IMPORTED_MODULE_0___default()(_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_loading_scss__WEBPACK_IMPORTED_MODULE_6__["default"], options);
-
-
-
-
-       /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_loading_scss__WEBPACK_IMPORTED_MODULE_6__["default"] && _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_loading_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals ? _node_modules_css_loader_dist_cjs_js_node_modules_sass_loader_dist_cjs_js_loading_scss__WEBPACK_IMPORTED_MODULE_6__["default"].locals : undefined);
 
 
 /***/ }),
@@ -56967,2179 +58242,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/youtube-search/index.js":
-/*!**********************************************!*\
-  !*** ./node_modules/youtube-search/index.js ***!
-  \**********************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-var querystring = __webpack_require__(/*! querystring */ "./node_modules/querystring/index.js")
-var axios = __webpack_require__(/*! axios */ "./node_modules/youtube-search/node_modules/axios/index.js")
-
-var allowedProperties = [
-  'fields',
-  'channelId',
-  'channelType',
-  'eventType',
-  'forContentOwner',
-  'forDeveloper',
-  'forMine',
-  'location',
-  'locationRadius',
-  'onBehalfOfContentOwner',
-  'order',
-  'pageToken',
-  'publishedAfter',
-  'publishedBefore',
-  'regionCode',
-  'relatedToVideoId',
-  'relevanceLanguage',
-  'safeSearch',
-  'topicId',
-  'type',
-  'videoCaption',
-  'videoCategoryId',
-  'videoDefinition',
-  'videoDimension',
-  'videoDuration',
-  'videoEmbeddable',
-  'videoLicense',
-  'videoSyndicated',
-  'videoType',
-  'key'
-]
-
-module.exports = function search (term, opts, cb) {
-  if (typeof opts === 'function') {
-    cb = opts
-    opts = {}
-  }
-
-  if (!opts) opts = {}
-
-  if (!cb) {
-    return new Promise(function (resolve, reject) {
-      search(term, opts, function (err, results, pageInfo) {
-        if (err) return reject(err)
-        resolve({results: results, pageInfo: pageInfo})
-      })
-    })
-  }
-
-  var params = {
-    q: term,
-    part: opts.part || 'snippet',
-    maxResults: opts.maxResults || 30
-  }
-
-  Object.keys(opts).map(function (k) {
-    if (allowedProperties.indexOf(k) > -1) params[k] = opts[k]
-  })
-
-  axios.get('https://www.googleapis.com/youtube/v3/search?' + querystring.stringify(params))
-    .then(function (response) {
-      var result = response.data
-
-      var pageInfo = {
-        totalResults: result.pageInfo.totalResults,
-        resultsPerPage: result.pageInfo.resultsPerPage,
-        nextPageToken: result.nextPageToken,
-        prevPageToken: result.prevPageToken
-      }
-
-      var findings = result.items.map(function (item) {
-        var link = ''
-        var id = ''
-        switch (item.id.kind) {
-          case 'youtube#channel':
-            link = 'https://www.youtube.com/channel/' + item.id.channelId
-            id = item.id.channelId
-            break
-          case 'youtube#playlist':
-            link = 'https://www.youtube.com/playlist?list=' + item.id.playlistId
-            id = item.id.playlistId
-            break
-          default:
-            link = 'https://www.youtube.com/watch?v=' + item.id.videoId
-            id = item.id.videoId
-            break
-        }
-
-        return {
-          id: id,
-          link: link,
-          kind: item.id.kind,
-          publishedAt: item.snippet.publishedAt,
-          channelId: item.snippet.channelId,
-          channelTitle: item.snippet.channelTitle,
-          title: item.snippet.title,
-          description: item.snippet.description,
-          thumbnails: item.snippet.thumbnails
-        }
-      })
-
-      return cb(null, findings, pageInfo)
-    })
-    .catch(function (err) {
-      return cb(err)
-    })
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/index.js":
-/*!*****************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/index.js ***!
-  \*****************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-module.exports = __webpack_require__(/*! ./lib/axios */ "./node_modules/youtube-search/node_modules/axios/lib/axios.js");
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/adapters/xhr.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/adapters/xhr.js ***!
-  \****************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-var settle = __webpack_require__(/*! ./../core/settle */ "./node_modules/youtube-search/node_modules/axios/lib/core/settle.js");
-var cookies = __webpack_require__(/*! ./../helpers/cookies */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/cookies.js");
-var buildURL = __webpack_require__(/*! ./../helpers/buildURL */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/buildURL.js");
-var buildFullPath = __webpack_require__(/*! ../core/buildFullPath */ "./node_modules/youtube-search/node_modules/axios/lib/core/buildFullPath.js");
-var parseHeaders = __webpack_require__(/*! ./../helpers/parseHeaders */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/parseHeaders.js");
-var isURLSameOrigin = __webpack_require__(/*! ./../helpers/isURLSameOrigin */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/isURLSameOrigin.js");
-var createError = __webpack_require__(/*! ../core/createError */ "./node_modules/youtube-search/node_modules/axios/lib/core/createError.js");
-
-module.exports = function xhrAdapter(config) {
-  return new Promise(function dispatchXhrRequest(resolve, reject) {
-    var requestData = config.data;
-    var requestHeaders = config.headers;
-    var responseType = config.responseType;
-
-    if (utils.isFormData(requestData)) {
-      delete requestHeaders['Content-Type']; // Let the browser set it
-    }
-
-    var request = new XMLHttpRequest();
-
-    // HTTP basic authentication
-    if (config.auth) {
-      var username = config.auth.username || '';
-      var password = config.auth.password ? unescape(encodeURIComponent(config.auth.password)) : '';
-      requestHeaders.Authorization = 'Basic ' + btoa(username + ':' + password);
-    }
-
-    var fullPath = buildFullPath(config.baseURL, config.url);
-    request.open(config.method.toUpperCase(), buildURL(fullPath, config.params, config.paramsSerializer), true);
-
-    // Set the request timeout in MS
-    request.timeout = config.timeout;
-
-    function onloadend() {
-      if (!request) {
-        return;
-      }
-      // Prepare the response
-      var responseHeaders = 'getAllResponseHeaders' in request ? parseHeaders(request.getAllResponseHeaders()) : null;
-      var responseData = !responseType || responseType === 'text' ||  responseType === 'json' ?
-        request.responseText : request.response;
-      var response = {
-        data: responseData,
-        status: request.status,
-        statusText: request.statusText,
-        headers: responseHeaders,
-        config: config,
-        request: request
-      };
-
-      settle(resolve, reject, response);
-
-      // Clean up request
-      request = null;
-    }
-
-    if ('onloadend' in request) {
-      // Use onloadend if available
-      request.onloadend = onloadend;
-    } else {
-      // Listen for ready state to emulate onloadend
-      request.onreadystatechange = function handleLoad() {
-        if (!request || request.readyState !== 4) {
-          return;
-        }
-
-        // The request errored out and we didn't get a response, this will be
-        // handled by onerror instead
-        // With one exception: request that using file: protocol, most browsers
-        // will return status as 0 even though it's a successful request
-        if (request.status === 0 && !(request.responseURL && request.responseURL.indexOf('file:') === 0)) {
-          return;
-        }
-        // readystate handler is calling before onerror or ontimeout handlers,
-        // so we should call onloadend on the next 'tick'
-        setTimeout(onloadend);
-      };
-    }
-
-    // Handle browser request cancellation (as opposed to a manual cancellation)
-    request.onabort = function handleAbort() {
-      if (!request) {
-        return;
-      }
-
-      reject(createError('Request aborted', config, 'ECONNABORTED', request));
-
-      // Clean up request
-      request = null;
-    };
-
-    // Handle low level network errors
-    request.onerror = function handleError() {
-      // Real errors are hidden from us by the browser
-      // onerror should only fire if it's a network error
-      reject(createError('Network Error', config, null, request));
-
-      // Clean up request
-      request = null;
-    };
-
-    // Handle timeout
-    request.ontimeout = function handleTimeout() {
-      var timeoutErrorMessage = 'timeout of ' + config.timeout + 'ms exceeded';
-      if (config.timeoutErrorMessage) {
-        timeoutErrorMessage = config.timeoutErrorMessage;
-      }
-      reject(createError(
-        timeoutErrorMessage,
-        config,
-        config.transitional && config.transitional.clarifyTimeoutError ? 'ETIMEDOUT' : 'ECONNABORTED',
-        request));
-
-      // Clean up request
-      request = null;
-    };
-
-    // Add xsrf header
-    // This is only done if running in a standard browser environment.
-    // Specifically not if we're in a web worker, or react-native.
-    if (utils.isStandardBrowserEnv()) {
-      // Add xsrf header
-      var xsrfValue = (config.withCredentials || isURLSameOrigin(fullPath)) && config.xsrfCookieName ?
-        cookies.read(config.xsrfCookieName) :
-        undefined;
-
-      if (xsrfValue) {
-        requestHeaders[config.xsrfHeaderName] = xsrfValue;
-      }
-    }
-
-    // Add headers to the request
-    if ('setRequestHeader' in request) {
-      utils.forEach(requestHeaders, function setRequestHeader(val, key) {
-        if (typeof requestData === 'undefined' && key.toLowerCase() === 'content-type') {
-          // Remove Content-Type if data is undefined
-          delete requestHeaders[key];
-        } else {
-          // Otherwise add header to the request
-          request.setRequestHeader(key, val);
-        }
-      });
-    }
-
-    // Add withCredentials to request if needed
-    if (!utils.isUndefined(config.withCredentials)) {
-      request.withCredentials = !!config.withCredentials;
-    }
-
-    // Add responseType to request if needed
-    if (responseType && responseType !== 'json') {
-      request.responseType = config.responseType;
-    }
-
-    // Handle progress if needed
-    if (typeof config.onDownloadProgress === 'function') {
-      request.addEventListener('progress', config.onDownloadProgress);
-    }
-
-    // Not all browsers support upload events
-    if (typeof config.onUploadProgress === 'function' && request.upload) {
-      request.upload.addEventListener('progress', config.onUploadProgress);
-    }
-
-    if (config.cancelToken) {
-      // Handle cancellation
-      config.cancelToken.promise.then(function onCanceled(cancel) {
-        if (!request) {
-          return;
-        }
-
-        request.abort();
-        reject(cancel);
-        // Clean up request
-        request = null;
-      });
-    }
-
-    if (!requestData) {
-      requestData = null;
-    }
-
-    // Send the request
-    request.send(requestData);
-  });
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/axios.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/axios.js ***!
-  \*********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-var bind = __webpack_require__(/*! ./helpers/bind */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/bind.js");
-var Axios = __webpack_require__(/*! ./core/Axios */ "./node_modules/youtube-search/node_modules/axios/lib/core/Axios.js");
-var mergeConfig = __webpack_require__(/*! ./core/mergeConfig */ "./node_modules/youtube-search/node_modules/axios/lib/core/mergeConfig.js");
-var defaults = __webpack_require__(/*! ./defaults */ "./node_modules/youtube-search/node_modules/axios/lib/defaults.js");
-
-/**
- * Create an instance of Axios
- *
- * @param {Object} defaultConfig The default config for the instance
- * @return {Axios} A new instance of Axios
- */
-function createInstance(defaultConfig) {
-  var context = new Axios(defaultConfig);
-  var instance = bind(Axios.prototype.request, context);
-
-  // Copy axios.prototype to instance
-  utils.extend(instance, Axios.prototype, context);
-
-  // Copy context to instance
-  utils.extend(instance, context);
-
-  return instance;
-}
-
-// Create the default instance to be exported
-var axios = createInstance(defaults);
-
-// Expose Axios class to allow class inheritance
-axios.Axios = Axios;
-
-// Factory for creating new instances
-axios.create = function create(instanceConfig) {
-  return createInstance(mergeConfig(axios.defaults, instanceConfig));
-};
-
-// Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(/*! ./cancel/Cancel */ "./node_modules/youtube-search/node_modules/axios/lib/cancel/Cancel.js");
-axios.CancelToken = __webpack_require__(/*! ./cancel/CancelToken */ "./node_modules/youtube-search/node_modules/axios/lib/cancel/CancelToken.js");
-axios.isCancel = __webpack_require__(/*! ./cancel/isCancel */ "./node_modules/youtube-search/node_modules/axios/lib/cancel/isCancel.js");
-
-// Expose all/spread
-axios.all = function all(promises) {
-  return Promise.all(promises);
-};
-axios.spread = __webpack_require__(/*! ./helpers/spread */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/spread.js");
-
-// Expose isAxiosError
-axios.isAxiosError = __webpack_require__(/*! ./helpers/isAxiosError */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/isAxiosError.js");
-
-module.exports = axios;
-
-// Allow use of default import syntax in TypeScript
-module.exports["default"] = axios;
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/cancel/Cancel.js":
-/*!*****************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/cancel/Cancel.js ***!
-  \*****************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/**
- * A `Cancel` is an object that is thrown when an operation is canceled.
- *
- * @class
- * @param {string=} message The message.
- */
-function Cancel(message) {
-  this.message = message;
-}
-
-Cancel.prototype.toString = function toString() {
-  return 'Cancel' + (this.message ? ': ' + this.message : '');
-};
-
-Cancel.prototype.__CANCEL__ = true;
-
-module.exports = Cancel;
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/cancel/CancelToken.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/cancel/CancelToken.js ***!
-  \**********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var Cancel = __webpack_require__(/*! ./Cancel */ "./node_modules/youtube-search/node_modules/axios/lib/cancel/Cancel.js");
-
-/**
- * A `CancelToken` is an object that can be used to request cancellation of an operation.
- *
- * @class
- * @param {Function} executor The executor function.
- */
-function CancelToken(executor) {
-  if (typeof executor !== 'function') {
-    throw new TypeError('executor must be a function.');
-  }
-
-  var resolvePromise;
-  this.promise = new Promise(function promiseExecutor(resolve) {
-    resolvePromise = resolve;
-  });
-
-  var token = this;
-  executor(function cancel(message) {
-    if (token.reason) {
-      // Cancellation has already been requested
-      return;
-    }
-
-    token.reason = new Cancel(message);
-    resolvePromise(token.reason);
-  });
-}
-
-/**
- * Throws a `Cancel` if cancellation has been requested.
- */
-CancelToken.prototype.throwIfRequested = function throwIfRequested() {
-  if (this.reason) {
-    throw this.reason;
-  }
-};
-
-/**
- * Returns an object that contains a new `CancelToken` and a function that, when called,
- * cancels the `CancelToken`.
- */
-CancelToken.source = function source() {
-  var cancel;
-  var token = new CancelToken(function executor(c) {
-    cancel = c;
-  });
-  return {
-    token: token,
-    cancel: cancel
-  };
-};
-
-module.exports = CancelToken;
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/cancel/isCancel.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/cancel/isCancel.js ***!
-  \*******************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function isCancel(value) {
-  return !!(value && value.__CANCEL__);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/core/Axios.js":
-/*!**************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/core/Axios.js ***!
-  \**************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-var buildURL = __webpack_require__(/*! ../helpers/buildURL */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/buildURL.js");
-var InterceptorManager = __webpack_require__(/*! ./InterceptorManager */ "./node_modules/youtube-search/node_modules/axios/lib/core/InterceptorManager.js");
-var dispatchRequest = __webpack_require__(/*! ./dispatchRequest */ "./node_modules/youtube-search/node_modules/axios/lib/core/dispatchRequest.js");
-var mergeConfig = __webpack_require__(/*! ./mergeConfig */ "./node_modules/youtube-search/node_modules/axios/lib/core/mergeConfig.js");
-var validator = __webpack_require__(/*! ../helpers/validator */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/validator.js");
-
-var validators = validator.validators;
-/**
- * Create a new instance of Axios
- *
- * @param {Object} instanceConfig The default config for the instance
- */
-function Axios(instanceConfig) {
-  this.defaults = instanceConfig;
-  this.interceptors = {
-    request: new InterceptorManager(),
-    response: new InterceptorManager()
-  };
-}
-
-/**
- * Dispatch a request
- *
- * @param {Object} config The config specific for this request (merged with this.defaults)
- */
-Axios.prototype.request = function request(config) {
-  /*eslint no-param-reassign:0*/
-  // Allow for axios('example/url'[, config]) a la fetch API
-  if (typeof config === 'string') {
-    config = arguments[1] || {};
-    config.url = arguments[0];
-  } else {
-    config = config || {};
-  }
-
-  config = mergeConfig(this.defaults, config);
-
-  // Set config.method
-  if (config.method) {
-    config.method = config.method.toLowerCase();
-  } else if (this.defaults.method) {
-    config.method = this.defaults.method.toLowerCase();
-  } else {
-    config.method = 'get';
-  }
-
-  var transitional = config.transitional;
-
-  if (transitional !== undefined) {
-    validator.assertOptions(transitional, {
-      silentJSONParsing: validators.transitional(validators.boolean, '1.0.0'),
-      forcedJSONParsing: validators.transitional(validators.boolean, '1.0.0'),
-      clarifyTimeoutError: validators.transitional(validators.boolean, '1.0.0')
-    }, false);
-  }
-
-  // filter out skipped interceptors
-  var requestInterceptorChain = [];
-  var synchronousRequestInterceptors = true;
-  this.interceptors.request.forEach(function unshiftRequestInterceptors(interceptor) {
-    if (typeof interceptor.runWhen === 'function' && interceptor.runWhen(config) === false) {
-      return;
-    }
-
-    synchronousRequestInterceptors = synchronousRequestInterceptors && interceptor.synchronous;
-
-    requestInterceptorChain.unshift(interceptor.fulfilled, interceptor.rejected);
-  });
-
-  var responseInterceptorChain = [];
-  this.interceptors.response.forEach(function pushResponseInterceptors(interceptor) {
-    responseInterceptorChain.push(interceptor.fulfilled, interceptor.rejected);
-  });
-
-  var promise;
-
-  if (!synchronousRequestInterceptors) {
-    var chain = [dispatchRequest, undefined];
-
-    Array.prototype.unshift.apply(chain, requestInterceptorChain);
-    chain = chain.concat(responseInterceptorChain);
-
-    promise = Promise.resolve(config);
-    while (chain.length) {
-      promise = promise.then(chain.shift(), chain.shift());
-    }
-
-    return promise;
-  }
-
-
-  var newConfig = config;
-  while (requestInterceptorChain.length) {
-    var onFulfilled = requestInterceptorChain.shift();
-    var onRejected = requestInterceptorChain.shift();
-    try {
-      newConfig = onFulfilled(newConfig);
-    } catch (error) {
-      onRejected(error);
-      break;
-    }
-  }
-
-  try {
-    promise = dispatchRequest(newConfig);
-  } catch (error) {
-    return Promise.reject(error);
-  }
-
-  while (responseInterceptorChain.length) {
-    promise = promise.then(responseInterceptorChain.shift(), responseInterceptorChain.shift());
-  }
-
-  return promise;
-};
-
-Axios.prototype.getUri = function getUri(config) {
-  config = mergeConfig(this.defaults, config);
-  return buildURL(config.url, config.params, config.paramsSerializer).replace(/^\?/, '');
-};
-
-// Provide aliases for supported request methods
-utils.forEach(['delete', 'get', 'head', 'options'], function forEachMethodNoData(method) {
-  /*eslint func-names:0*/
-  Axios.prototype[method] = function(url, config) {
-    return this.request(mergeConfig(config || {}, {
-      method: method,
-      url: url,
-      data: (config || {}).data
-    }));
-  };
-});
-
-utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-  /*eslint func-names:0*/
-  Axios.prototype[method] = function(url, data, config) {
-    return this.request(mergeConfig(config || {}, {
-      method: method,
-      url: url,
-      data: data
-    }));
-  };
-});
-
-module.exports = Axios;
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/core/InterceptorManager.js":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/core/InterceptorManager.js ***!
-  \***************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-
-function InterceptorManager() {
-  this.handlers = [];
-}
-
-/**
- * Add a new interceptor to the stack
- *
- * @param {Function} fulfilled The function to handle `then` for a `Promise`
- * @param {Function} rejected The function to handle `reject` for a `Promise`
- *
- * @return {Number} An ID used to remove interceptor later
- */
-InterceptorManager.prototype.use = function use(fulfilled, rejected, options) {
-  this.handlers.push({
-    fulfilled: fulfilled,
-    rejected: rejected,
-    synchronous: options ? options.synchronous : false,
-    runWhen: options ? options.runWhen : null
-  });
-  return this.handlers.length - 1;
-};
-
-/**
- * Remove an interceptor from the stack
- *
- * @param {Number} id The ID that was returned by `use`
- */
-InterceptorManager.prototype.eject = function eject(id) {
-  if (this.handlers[id]) {
-    this.handlers[id] = null;
-  }
-};
-
-/**
- * Iterate over all the registered interceptors
- *
- * This method is particularly useful for skipping over any
- * interceptors that may have become `null` calling `eject`.
- *
- * @param {Function} fn The function to call for each interceptor
- */
-InterceptorManager.prototype.forEach = function forEach(fn) {
-  utils.forEach(this.handlers, function forEachHandler(h) {
-    if (h !== null) {
-      fn(h);
-    }
-  });
-};
-
-module.exports = InterceptorManager;
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/core/buildFullPath.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/core/buildFullPath.js ***!
-  \**********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var isAbsoluteURL = __webpack_require__(/*! ../helpers/isAbsoluteURL */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/isAbsoluteURL.js");
-var combineURLs = __webpack_require__(/*! ../helpers/combineURLs */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/combineURLs.js");
-
-/**
- * Creates a new URL by combining the baseURL with the requestedURL,
- * only when the requestedURL is not already an absolute URL.
- * If the requestURL is absolute, this function returns the requestedURL untouched.
- *
- * @param {string} baseURL The base URL
- * @param {string} requestedURL Absolute or relative URL to combine
- * @returns {string} The combined full path
- */
-module.exports = function buildFullPath(baseURL, requestedURL) {
-  if (baseURL && !isAbsoluteURL(requestedURL)) {
-    return combineURLs(baseURL, requestedURL);
-  }
-  return requestedURL;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/core/createError.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/core/createError.js ***!
-  \********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var enhanceError = __webpack_require__(/*! ./enhanceError */ "./node_modules/youtube-search/node_modules/axios/lib/core/enhanceError.js");
-
-/**
- * Create an Error with the specified message, config, error code, request and response.
- *
- * @param {string} message The error message.
- * @param {Object} config The config.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- * @returns {Error} The created error.
- */
-module.exports = function createError(message, config, code, request, response) {
-  var error = new Error(message);
-  return enhanceError(error, config, code, request, response);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/core/dispatchRequest.js":
-/*!************************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/core/dispatchRequest.js ***!
-  \************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-var transformData = __webpack_require__(/*! ./transformData */ "./node_modules/youtube-search/node_modules/axios/lib/core/transformData.js");
-var isCancel = __webpack_require__(/*! ../cancel/isCancel */ "./node_modules/youtube-search/node_modules/axios/lib/cancel/isCancel.js");
-var defaults = __webpack_require__(/*! ../defaults */ "./node_modules/youtube-search/node_modules/axios/lib/defaults.js");
-
-/**
- * Throws a `Cancel` if cancellation has been requested.
- */
-function throwIfCancellationRequested(config) {
-  if (config.cancelToken) {
-    config.cancelToken.throwIfRequested();
-  }
-}
-
-/**
- * Dispatch a request to the server using the configured adapter.
- *
- * @param {object} config The config that is to be used for the request
- * @returns {Promise} The Promise to be fulfilled
- */
-module.exports = function dispatchRequest(config) {
-  throwIfCancellationRequested(config);
-
-  // Ensure headers exist
-  config.headers = config.headers || {};
-
-  // Transform request data
-  config.data = transformData.call(
-    config,
-    config.data,
-    config.headers,
-    config.transformRequest
-  );
-
-  // Flatten headers
-  config.headers = utils.merge(
-    config.headers.common || {},
-    config.headers[config.method] || {},
-    config.headers
-  );
-
-  utils.forEach(
-    ['delete', 'get', 'head', 'post', 'put', 'patch', 'common'],
-    function cleanHeaderConfig(method) {
-      delete config.headers[method];
-    }
-  );
-
-  var adapter = config.adapter || defaults.adapter;
-
-  return adapter(config).then(function onAdapterResolution(response) {
-    throwIfCancellationRequested(config);
-
-    // Transform response data
-    response.data = transformData.call(
-      config,
-      response.data,
-      response.headers,
-      config.transformResponse
-    );
-
-    return response;
-  }, function onAdapterRejection(reason) {
-    if (!isCancel(reason)) {
-      throwIfCancellationRequested(config);
-
-      // Transform response data
-      if (reason && reason.response) {
-        reason.response.data = transformData.call(
-          config,
-          reason.response.data,
-          reason.response.headers,
-          config.transformResponse
-        );
-      }
-    }
-
-    return Promise.reject(reason);
-  });
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/core/enhanceError.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/core/enhanceError.js ***!
-  \*********************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/**
- * Update an Error with the specified config, error code, and response.
- *
- * @param {Error} error The error to update.
- * @param {Object} config The config.
- * @param {string} [code] The error code (for example, 'ECONNABORTED').
- * @param {Object} [request] The request.
- * @param {Object} [response] The response.
- * @returns {Error} The error.
- */
-module.exports = function enhanceError(error, config, code, request, response) {
-  error.config = config;
-  if (code) {
-    error.code = code;
-  }
-
-  error.request = request;
-  error.response = response;
-  error.isAxiosError = true;
-
-  error.toJSON = function toJSON() {
-    return {
-      // Standard
-      message: this.message,
-      name: this.name,
-      // Microsoft
-      description: this.description,
-      number: this.number,
-      // Mozilla
-      fileName: this.fileName,
-      lineNumber: this.lineNumber,
-      columnNumber: this.columnNumber,
-      stack: this.stack,
-      // Axios
-      config: this.config,
-      code: this.code
-    };
-  };
-  return error;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/core/mergeConfig.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/core/mergeConfig.js ***!
-  \********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-
-/**
- * Config-specific merge-function which creates a new config-object
- * by merging two configuration objects together.
- *
- * @param {Object} config1
- * @param {Object} config2
- * @returns {Object} New object resulting from merging config2 to config1
- */
-module.exports = function mergeConfig(config1, config2) {
-  // eslint-disable-next-line no-param-reassign
-  config2 = config2 || {};
-  var config = {};
-
-  var valueFromConfig2Keys = ['url', 'method', 'data'];
-  var mergeDeepPropertiesKeys = ['headers', 'auth', 'proxy', 'params'];
-  var defaultToConfig2Keys = [
-    'baseURL', 'transformRequest', 'transformResponse', 'paramsSerializer',
-    'timeout', 'timeoutMessage', 'withCredentials', 'adapter', 'responseType', 'xsrfCookieName',
-    'xsrfHeaderName', 'onUploadProgress', 'onDownloadProgress', 'decompress',
-    'maxContentLength', 'maxBodyLength', 'maxRedirects', 'transport', 'httpAgent',
-    'httpsAgent', 'cancelToken', 'socketPath', 'responseEncoding'
-  ];
-  var directMergeKeys = ['validateStatus'];
-
-  function getMergedValue(target, source) {
-    if (utils.isPlainObject(target) && utils.isPlainObject(source)) {
-      return utils.merge(target, source);
-    } else if (utils.isPlainObject(source)) {
-      return utils.merge({}, source);
-    } else if (utils.isArray(source)) {
-      return source.slice();
-    }
-    return source;
-  }
-
-  function mergeDeepProperties(prop) {
-    if (!utils.isUndefined(config2[prop])) {
-      config[prop] = getMergedValue(config1[prop], config2[prop]);
-    } else if (!utils.isUndefined(config1[prop])) {
-      config[prop] = getMergedValue(undefined, config1[prop]);
-    }
-  }
-
-  utils.forEach(valueFromConfig2Keys, function valueFromConfig2(prop) {
-    if (!utils.isUndefined(config2[prop])) {
-      config[prop] = getMergedValue(undefined, config2[prop]);
-    }
-  });
-
-  utils.forEach(mergeDeepPropertiesKeys, mergeDeepProperties);
-
-  utils.forEach(defaultToConfig2Keys, function defaultToConfig2(prop) {
-    if (!utils.isUndefined(config2[prop])) {
-      config[prop] = getMergedValue(undefined, config2[prop]);
-    } else if (!utils.isUndefined(config1[prop])) {
-      config[prop] = getMergedValue(undefined, config1[prop]);
-    }
-  });
-
-  utils.forEach(directMergeKeys, function merge(prop) {
-    if (prop in config2) {
-      config[prop] = getMergedValue(config1[prop], config2[prop]);
-    } else if (prop in config1) {
-      config[prop] = getMergedValue(undefined, config1[prop]);
-    }
-  });
-
-  var axiosKeys = valueFromConfig2Keys
-    .concat(mergeDeepPropertiesKeys)
-    .concat(defaultToConfig2Keys)
-    .concat(directMergeKeys);
-
-  var otherKeys = Object
-    .keys(config1)
-    .concat(Object.keys(config2))
-    .filter(function filterAxiosKeys(key) {
-      return axiosKeys.indexOf(key) === -1;
-    });
-
-  utils.forEach(otherKeys, mergeDeepProperties);
-
-  return config;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/core/settle.js":
-/*!***************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/core/settle.js ***!
-  \***************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var createError = __webpack_require__(/*! ./createError */ "./node_modules/youtube-search/node_modules/axios/lib/core/createError.js");
-
-/**
- * Resolve or reject a Promise based on response status.
- *
- * @param {Function} resolve A function that resolves the promise.
- * @param {Function} reject A function that rejects the promise.
- * @param {object} response The response.
- */
-module.exports = function settle(resolve, reject, response) {
-  var validateStatus = response.config.validateStatus;
-  if (!response.status || !validateStatus || validateStatus(response.status)) {
-    resolve(response);
-  } else {
-    reject(createError(
-      'Request failed with status code ' + response.status,
-      response.config,
-      null,
-      response.request,
-      response
-    ));
-  }
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/core/transformData.js":
-/*!**********************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/core/transformData.js ***!
-  \**********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-var defaults = __webpack_require__(/*! ./../defaults */ "./node_modules/youtube-search/node_modules/axios/lib/defaults.js");
-
-/**
- * Transform the data for a request or a response
- *
- * @param {Object|String} data The data to be transformed
- * @param {Array} headers The headers for the request or response
- * @param {Array|Function} fns A single function or Array of functions
- * @returns {*} The resulting transformed data
- */
-module.exports = function transformData(data, headers, fns) {
-  var context = this || defaults;
-  /*eslint no-param-reassign:0*/
-  utils.forEach(fns, function transform(fn) {
-    data = fn.call(context, data, headers);
-  });
-
-  return data;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/defaults.js":
-/*!************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/defaults.js ***!
-  \************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-var normalizeHeaderName = __webpack_require__(/*! ./helpers/normalizeHeaderName */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/normalizeHeaderName.js");
-var enhanceError = __webpack_require__(/*! ./core/enhanceError */ "./node_modules/youtube-search/node_modules/axios/lib/core/enhanceError.js");
-
-var DEFAULT_CONTENT_TYPE = {
-  'Content-Type': 'application/x-www-form-urlencoded'
-};
-
-function setContentTypeIfUnset(headers, value) {
-  if (!utils.isUndefined(headers) && utils.isUndefined(headers['Content-Type'])) {
-    headers['Content-Type'] = value;
-  }
-}
-
-function getDefaultAdapter() {
-  var adapter;
-  if (typeof XMLHttpRequest !== 'undefined') {
-    // For browsers use XHR adapter
-    adapter = __webpack_require__(/*! ./adapters/xhr */ "./node_modules/youtube-search/node_modules/axios/lib/adapters/xhr.js");
-  } else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
-    // For node use HTTP adapter
-    adapter = __webpack_require__(/*! ./adapters/http */ "./node_modules/youtube-search/node_modules/axios/lib/adapters/xhr.js");
-  }
-  return adapter;
-}
-
-function stringifySafely(rawValue, parser, encoder) {
-  if (utils.isString(rawValue)) {
-    try {
-      (parser || JSON.parse)(rawValue);
-      return utils.trim(rawValue);
-    } catch (e) {
-      if (e.name !== 'SyntaxError') {
-        throw e;
-      }
-    }
-  }
-
-  return (encoder || JSON.stringify)(rawValue);
-}
-
-var defaults = {
-
-  transitional: {
-    silentJSONParsing: true,
-    forcedJSONParsing: true,
-    clarifyTimeoutError: false
-  },
-
-  adapter: getDefaultAdapter(),
-
-  transformRequest: [function transformRequest(data, headers) {
-    normalizeHeaderName(headers, 'Accept');
-    normalizeHeaderName(headers, 'Content-Type');
-
-    if (utils.isFormData(data) ||
-      utils.isArrayBuffer(data) ||
-      utils.isBuffer(data) ||
-      utils.isStream(data) ||
-      utils.isFile(data) ||
-      utils.isBlob(data)
-    ) {
-      return data;
-    }
-    if (utils.isArrayBufferView(data)) {
-      return data.buffer;
-    }
-    if (utils.isURLSearchParams(data)) {
-      setContentTypeIfUnset(headers, 'application/x-www-form-urlencoded;charset=utf-8');
-      return data.toString();
-    }
-    if (utils.isObject(data) || (headers && headers['Content-Type'] === 'application/json')) {
-      setContentTypeIfUnset(headers, 'application/json');
-      return stringifySafely(data);
-    }
-    return data;
-  }],
-
-  transformResponse: [function transformResponse(data) {
-    var transitional = this.transitional;
-    var silentJSONParsing = transitional && transitional.silentJSONParsing;
-    var forcedJSONParsing = transitional && transitional.forcedJSONParsing;
-    var strictJSONParsing = !silentJSONParsing && this.responseType === 'json';
-
-    if (strictJSONParsing || (forcedJSONParsing && utils.isString(data) && data.length)) {
-      try {
-        return JSON.parse(data);
-      } catch (e) {
-        if (strictJSONParsing) {
-          if (e.name === 'SyntaxError') {
-            throw enhanceError(e, this, 'E_JSON_PARSE');
-          }
-          throw e;
-        }
-      }
-    }
-
-    return data;
-  }],
-
-  /**
-   * A timeout in milliseconds to abort a request. If set to 0 (default) a
-   * timeout is not created.
-   */
-  timeout: 0,
-
-  xsrfCookieName: 'XSRF-TOKEN',
-  xsrfHeaderName: 'X-XSRF-TOKEN',
-
-  maxContentLength: -1,
-  maxBodyLength: -1,
-
-  validateStatus: function validateStatus(status) {
-    return status >= 200 && status < 300;
-  }
-};
-
-defaults.headers = {
-  common: {
-    'Accept': 'application/json, text/plain, */*'
-  }
-};
-
-utils.forEach(['delete', 'get', 'head'], function forEachMethodNoData(method) {
-  defaults.headers[method] = {};
-});
-
-utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
-  defaults.headers[method] = utils.merge(DEFAULT_CONTENT_TYPE);
-});
-
-module.exports = defaults;
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/bind.js":
-/*!****************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/bind.js ***!
-  \****************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = function bind(fn, thisArg) {
-  return function wrap() {
-    var args = new Array(arguments.length);
-    for (var i = 0; i < args.length; i++) {
-      args[i] = arguments[i];
-    }
-    return fn.apply(thisArg, args);
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/buildURL.js":
-/*!********************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/buildURL.js ***!
-  \********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-
-function encode(val) {
-  return encodeURIComponent(val).
-    replace(/%3A/gi, ':').
-    replace(/%24/g, '$').
-    replace(/%2C/gi, ',').
-    replace(/%20/g, '+').
-    replace(/%5B/gi, '[').
-    replace(/%5D/gi, ']');
-}
-
-/**
- * Build a URL by appending params to the end
- *
- * @param {string} url The base of the url (e.g., http://www.google.com)
- * @param {object} [params] The params to be appended
- * @returns {string} The formatted url
- */
-module.exports = function buildURL(url, params, paramsSerializer) {
-  /*eslint no-param-reassign:0*/
-  if (!params) {
-    return url;
-  }
-
-  var serializedParams;
-  if (paramsSerializer) {
-    serializedParams = paramsSerializer(params);
-  } else if (utils.isURLSearchParams(params)) {
-    serializedParams = params.toString();
-  } else {
-    var parts = [];
-
-    utils.forEach(params, function serialize(val, key) {
-      if (val === null || typeof val === 'undefined') {
-        return;
-      }
-
-      if (utils.isArray(val)) {
-        key = key + '[]';
-      } else {
-        val = [val];
-      }
-
-      utils.forEach(val, function parseValue(v) {
-        if (utils.isDate(v)) {
-          v = v.toISOString();
-        } else if (utils.isObject(v)) {
-          v = JSON.stringify(v);
-        }
-        parts.push(encode(key) + '=' + encode(v));
-      });
-    });
-
-    serializedParams = parts.join('&');
-  }
-
-  if (serializedParams) {
-    var hashmarkIndex = url.indexOf('#');
-    if (hashmarkIndex !== -1) {
-      url = url.slice(0, hashmarkIndex);
-    }
-
-    url += (url.indexOf('?') === -1 ? '?' : '&') + serializedParams;
-  }
-
-  return url;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/combineURLs.js":
-/*!***********************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/combineURLs.js ***!
-  \***********************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/**
- * Creates a new URL by combining the specified URLs
- *
- * @param {string} baseURL The base URL
- * @param {string} relativeURL The relative URL
- * @returns {string} The combined URL
- */
-module.exports = function combineURLs(baseURL, relativeURL) {
-  return relativeURL
-    ? baseURL.replace(/\/+$/, '') + '/' + relativeURL.replace(/^\/+/, '')
-    : baseURL;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/cookies.js":
-/*!*******************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/cookies.js ***!
-  \*******************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-
-module.exports = (
-  utils.isStandardBrowserEnv() ?
-
-  // Standard browser envs support document.cookie
-    (function standardBrowserEnv() {
-      return {
-        write: function write(name, value, expires, path, domain, secure) {
-          var cookie = [];
-          cookie.push(name + '=' + encodeURIComponent(value));
-
-          if (utils.isNumber(expires)) {
-            cookie.push('expires=' + new Date(expires).toGMTString());
-          }
-
-          if (utils.isString(path)) {
-            cookie.push('path=' + path);
-          }
-
-          if (utils.isString(domain)) {
-            cookie.push('domain=' + domain);
-          }
-
-          if (secure === true) {
-            cookie.push('secure');
-          }
-
-          document.cookie = cookie.join('; ');
-        },
-
-        read: function read(name) {
-          var match = document.cookie.match(new RegExp('(^|;\\s*)(' + name + ')=([^;]*)'));
-          return (match ? decodeURIComponent(match[3]) : null);
-        },
-
-        remove: function remove(name) {
-          this.write(name, '', Date.now() - 86400000);
-        }
-      };
-    })() :
-
-  // Non standard browser env (web workers, react-native) lack needed support.
-    (function nonStandardBrowserEnv() {
-      return {
-        write: function write() {},
-        read: function read() { return null; },
-        remove: function remove() {}
-      };
-    })()
-);
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/isAbsoluteURL.js":
-/*!*************************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/isAbsoluteURL.js ***!
-  \*************************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/**
- * Determines whether the specified URL is absolute
- *
- * @param {string} url The URL to test
- * @returns {boolean} True if the specified URL is absolute, otherwise false
- */
-module.exports = function isAbsoluteURL(url) {
-  // A URL is considered absolute if it begins with "<scheme>://" or "//" (protocol-relative URL).
-  // RFC 3986 defines scheme name as a sequence of characters beginning with a letter and followed
-  // by any combination of letters, digits, plus, period, or hyphen.
-  return /^([a-z][a-z\d\+\-\.]*:)?\/\//i.test(url);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/isAxiosError.js":
-/*!************************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/isAxiosError.js ***!
-  \************************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/**
- * Determines whether the payload is an error thrown by Axios
- *
- * @param {*} payload The value to test
- * @returns {boolean} True if the payload is an error thrown by Axios, otherwise false
- */
-module.exports = function isAxiosError(payload) {
-  return (typeof payload === 'object') && (payload.isAxiosError === true);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/isURLSameOrigin.js":
-/*!***************************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/isURLSameOrigin.js ***!
-  \***************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-
-module.exports = (
-  utils.isStandardBrowserEnv() ?
-
-  // Standard browser envs have full support of the APIs needed to test
-  // whether the request URL is of the same origin as current location.
-    (function standardBrowserEnv() {
-      var msie = /(msie|trident)/i.test(navigator.userAgent);
-      var urlParsingNode = document.createElement('a');
-      var originURL;
-
-      /**
-    * Parse a URL to discover it's components
-    *
-    * @param {String} url The URL to be parsed
-    * @returns {Object}
-    */
-      function resolveURL(url) {
-        var href = url;
-
-        if (msie) {
-        // IE needs attribute set twice to normalize properties
-          urlParsingNode.setAttribute('href', href);
-          href = urlParsingNode.href;
-        }
-
-        urlParsingNode.setAttribute('href', href);
-
-        // urlParsingNode provides the UrlUtils interface - http://url.spec.whatwg.org/#urlutils
-        return {
-          href: urlParsingNode.href,
-          protocol: urlParsingNode.protocol ? urlParsingNode.protocol.replace(/:$/, '') : '',
-          host: urlParsingNode.host,
-          search: urlParsingNode.search ? urlParsingNode.search.replace(/^\?/, '') : '',
-          hash: urlParsingNode.hash ? urlParsingNode.hash.replace(/^#/, '') : '',
-          hostname: urlParsingNode.hostname,
-          port: urlParsingNode.port,
-          pathname: (urlParsingNode.pathname.charAt(0) === '/') ?
-            urlParsingNode.pathname :
-            '/' + urlParsingNode.pathname
-        };
-      }
-
-      originURL = resolveURL(window.location.href);
-
-      /**
-    * Determine if a URL shares the same origin as the current location
-    *
-    * @param {String} requestURL The URL to test
-    * @returns {boolean} True if URL shares the same origin, otherwise false
-    */
-      return function isURLSameOrigin(requestURL) {
-        var parsed = (utils.isString(requestURL)) ? resolveURL(requestURL) : requestURL;
-        return (parsed.protocol === originURL.protocol &&
-            parsed.host === originURL.host);
-      };
-    })() :
-
-  // Non standard browser envs (web workers, react-native) lack needed support.
-    (function nonStandardBrowserEnv() {
-      return function isURLSameOrigin() {
-        return true;
-      };
-    })()
-);
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/normalizeHeaderName.js":
-/*!*******************************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/normalizeHeaderName.js ***!
-  \*******************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-
-module.exports = function normalizeHeaderName(headers, normalizedName) {
-  utils.forEach(headers, function processHeader(value, name) {
-    if (name !== normalizedName && name.toUpperCase() === normalizedName.toUpperCase()) {
-      headers[normalizedName] = value;
-      delete headers[name];
-    }
-  });
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/parseHeaders.js":
-/*!************************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/parseHeaders.js ***!
-  \************************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var utils = __webpack_require__(/*! ./../utils */ "./node_modules/youtube-search/node_modules/axios/lib/utils.js");
-
-// Headers whose duplicates are ignored by node
-// c.f. https://nodejs.org/api/http.html#http_message_headers
-var ignoreDuplicateOf = [
-  'age', 'authorization', 'content-length', 'content-type', 'etag',
-  'expires', 'from', 'host', 'if-modified-since', 'if-unmodified-since',
-  'last-modified', 'location', 'max-forwards', 'proxy-authorization',
-  'referer', 'retry-after', 'user-agent'
-];
-
-/**
- * Parse headers into an object
- *
- * ```
- * Date: Wed, 27 Aug 2014 08:58:49 GMT
- * Content-Type: application/json
- * Connection: keep-alive
- * Transfer-Encoding: chunked
- * ```
- *
- * @param {String} headers Headers needing to be parsed
- * @returns {Object} Headers parsed into an object
- */
-module.exports = function parseHeaders(headers) {
-  var parsed = {};
-  var key;
-  var val;
-  var i;
-
-  if (!headers) { return parsed; }
-
-  utils.forEach(headers.split('\n'), function parser(line) {
-    i = line.indexOf(':');
-    key = utils.trim(line.substr(0, i)).toLowerCase();
-    val = utils.trim(line.substr(i + 1));
-
-    if (key) {
-      if (parsed[key] && ignoreDuplicateOf.indexOf(key) >= 0) {
-        return;
-      }
-      if (key === 'set-cookie') {
-        parsed[key] = (parsed[key] ? parsed[key] : []).concat([val]);
-      } else {
-        parsed[key] = parsed[key] ? parsed[key] + ', ' + val : val;
-      }
-    }
-  });
-
-  return parsed;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/spread.js":
-/*!******************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/spread.js ***!
-  \******************************************************************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-/**
- * Syntactic sugar for invoking a function and expanding an array for arguments.
- *
- * Common use case would be to use `Function.prototype.apply`.
- *
- *  ```js
- *  function f(x, y, z) {}
- *  var args = [1, 2, 3];
- *  f.apply(null, args);
- *  ```
- *
- * With `spread` this example can be re-written.
- *
- *  ```js
- *  spread(function(x, y, z) {})([1, 2, 3]);
- *  ```
- *
- * @param {Function} callback
- * @returns {Function}
- */
-module.exports = function spread(callback) {
-  return function wrap(arr) {
-    return callback.apply(null, arr);
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/helpers/validator.js":
-/*!*********************************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/helpers/validator.js ***!
-  \*********************************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var pkg = __webpack_require__(/*! ./../../package.json */ "./node_modules/youtube-search/node_modules/axios/package.json");
-
-var validators = {};
-
-// eslint-disable-next-line func-names
-['object', 'boolean', 'number', 'function', 'string', 'symbol'].forEach(function(type, i) {
-  validators[type] = function validator(thing) {
-    return typeof thing === type || 'a' + (i < 1 ? 'n ' : ' ') + type;
-  };
-});
-
-var deprecatedWarnings = {};
-var currentVerArr = pkg.version.split('.');
-
-/**
- * Compare package versions
- * @param {string} version
- * @param {string?} thanVersion
- * @returns {boolean}
- */
-function isOlderVersion(version, thanVersion) {
-  var pkgVersionArr = thanVersion ? thanVersion.split('.') : currentVerArr;
-  var destVer = version.split('.');
-  for (var i = 0; i < 3; i++) {
-    if (pkgVersionArr[i] > destVer[i]) {
-      return true;
-    } else if (pkgVersionArr[i] < destVer[i]) {
-      return false;
-    }
-  }
-  return false;
-}
-
-/**
- * Transitional option validator
- * @param {function|boolean?} validator
- * @param {string?} version
- * @param {string} message
- * @returns {function}
- */
-validators.transitional = function transitional(validator, version, message) {
-  var isDeprecated = version && isOlderVersion(version);
-
-  function formatMessage(opt, desc) {
-    return '[Axios v' + pkg.version + '] Transitional option \'' + opt + '\'' + desc + (message ? '. ' + message : '');
-  }
-
-  // eslint-disable-next-line func-names
-  return function(value, opt, opts) {
-    if (validator === false) {
-      throw new Error(formatMessage(opt, ' has been removed in ' + version));
-    }
-
-    if (isDeprecated && !deprecatedWarnings[opt]) {
-      deprecatedWarnings[opt] = true;
-      // eslint-disable-next-line no-console
-      console.warn(
-        formatMessage(
-          opt,
-          ' has been deprecated since v' + version + ' and will be removed in the near future'
-        )
-      );
-    }
-
-    return validator ? validator(value, opt, opts) : true;
-  };
-};
-
-/**
- * Assert object's properties type
- * @param {object} options
- * @param {object} schema
- * @param {boolean?} allowUnknown
- */
-
-function assertOptions(options, schema, allowUnknown) {
-  if (typeof options !== 'object') {
-    throw new TypeError('options must be an object');
-  }
-  var keys = Object.keys(options);
-  var i = keys.length;
-  while (i-- > 0) {
-    var opt = keys[i];
-    var validator = schema[opt];
-    if (validator) {
-      var value = options[opt];
-      var result = value === undefined || validator(value, opt, options);
-      if (result !== true) {
-        throw new TypeError('option ' + opt + ' must be ' + result);
-      }
-      continue;
-    }
-    if (allowUnknown !== true) {
-      throw Error('Unknown option ' + opt);
-    }
-  }
-}
-
-module.exports = {
-  isOlderVersion: isOlderVersion,
-  assertOptions: assertOptions,
-  validators: validators
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/lib/utils.js":
-/*!*********************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/lib/utils.js ***!
-  \*********************************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-var bind = __webpack_require__(/*! ./helpers/bind */ "./node_modules/youtube-search/node_modules/axios/lib/helpers/bind.js");
-
-// utils is a library of generic helper functions non-specific to axios
-
-var toString = Object.prototype.toString;
-
-/**
- * Determine if a value is an Array
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is an Array, otherwise false
- */
-function isArray(val) {
-  return toString.call(val) === '[object Array]';
-}
-
-/**
- * Determine if a value is undefined
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if the value is undefined, otherwise false
- */
-function isUndefined(val) {
-  return typeof val === 'undefined';
-}
-
-/**
- * Determine if a value is a Buffer
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Buffer, otherwise false
- */
-function isBuffer(val) {
-  return val !== null && !isUndefined(val) && val.constructor !== null && !isUndefined(val.constructor)
-    && typeof val.constructor.isBuffer === 'function' && val.constructor.isBuffer(val);
-}
-
-/**
- * Determine if a value is an ArrayBuffer
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is an ArrayBuffer, otherwise false
- */
-function isArrayBuffer(val) {
-  return toString.call(val) === '[object ArrayBuffer]';
-}
-
-/**
- * Determine if a value is a FormData
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is an FormData, otherwise false
- */
-function isFormData(val) {
-  return (typeof FormData !== 'undefined') && (val instanceof FormData);
-}
-
-/**
- * Determine if a value is a view on an ArrayBuffer
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a view on an ArrayBuffer, otherwise false
- */
-function isArrayBufferView(val) {
-  var result;
-  if ((typeof ArrayBuffer !== 'undefined') && (ArrayBuffer.isView)) {
-    result = ArrayBuffer.isView(val);
-  } else {
-    result = (val) && (val.buffer) && (val.buffer instanceof ArrayBuffer);
-  }
-  return result;
-}
-
-/**
- * Determine if a value is a String
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a String, otherwise false
- */
-function isString(val) {
-  return typeof val === 'string';
-}
-
-/**
- * Determine if a value is a Number
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Number, otherwise false
- */
-function isNumber(val) {
-  return typeof val === 'number';
-}
-
-/**
- * Determine if a value is an Object
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is an Object, otherwise false
- */
-function isObject(val) {
-  return val !== null && typeof val === 'object';
-}
-
-/**
- * Determine if a value is a plain Object
- *
- * @param {Object} val The value to test
- * @return {boolean} True if value is a plain Object, otherwise false
- */
-function isPlainObject(val) {
-  if (toString.call(val) !== '[object Object]') {
-    return false;
-  }
-
-  var prototype = Object.getPrototypeOf(val);
-  return prototype === null || prototype === Object.prototype;
-}
-
-/**
- * Determine if a value is a Date
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Date, otherwise false
- */
-function isDate(val) {
-  return toString.call(val) === '[object Date]';
-}
-
-/**
- * Determine if a value is a File
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a File, otherwise false
- */
-function isFile(val) {
-  return toString.call(val) === '[object File]';
-}
-
-/**
- * Determine if a value is a Blob
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Blob, otherwise false
- */
-function isBlob(val) {
-  return toString.call(val) === '[object Blob]';
-}
-
-/**
- * Determine if a value is a Function
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Function, otherwise false
- */
-function isFunction(val) {
-  return toString.call(val) === '[object Function]';
-}
-
-/**
- * Determine if a value is a Stream
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a Stream, otherwise false
- */
-function isStream(val) {
-  return isObject(val) && isFunction(val.pipe);
-}
-
-/**
- * Determine if a value is a URLSearchParams object
- *
- * @param {Object} val The value to test
- * @returns {boolean} True if value is a URLSearchParams object, otherwise false
- */
-function isURLSearchParams(val) {
-  return typeof URLSearchParams !== 'undefined' && val instanceof URLSearchParams;
-}
-
-/**
- * Trim excess whitespace off the beginning and end of a string
- *
- * @param {String} str The String to trim
- * @returns {String} The String freed of excess whitespace
- */
-function trim(str) {
-  return str.trim ? str.trim() : str.replace(/^\s+|\s+$/g, '');
-}
-
-/**
- * Determine if we're running in a standard browser environment
- *
- * This allows axios to run in a web worker, and react-native.
- * Both environments support XMLHttpRequest, but not fully standard globals.
- *
- * web workers:
- *  typeof window -> undefined
- *  typeof document -> undefined
- *
- * react-native:
- *  navigator.product -> 'ReactNative'
- * nativescript
- *  navigator.product -> 'NativeScript' or 'NS'
- */
-function isStandardBrowserEnv() {
-  if (typeof navigator !== 'undefined' && (navigator.product === 'ReactNative' ||
-                                           navigator.product === 'NativeScript' ||
-                                           navigator.product === 'NS')) {
-    return false;
-  }
-  return (
-    typeof window !== 'undefined' &&
-    typeof document !== 'undefined'
-  );
-}
-
-/**
- * Iterate over an Array or an Object invoking a function for each item.
- *
- * If `obj` is an Array callback will be called passing
- * the value, index, and complete array for each item.
- *
- * If 'obj' is an Object callback will be called passing
- * the value, key, and complete object for each property.
- *
- * @param {Object|Array} obj The object to iterate
- * @param {Function} fn The callback to invoke for each item
- */
-function forEach(obj, fn) {
-  // Don't bother if no value provided
-  if (obj === null || typeof obj === 'undefined') {
-    return;
-  }
-
-  // Force an array if not already something iterable
-  if (typeof obj !== 'object') {
-    /*eslint no-param-reassign:0*/
-    obj = [obj];
-  }
-
-  if (isArray(obj)) {
-    // Iterate over array values
-    for (var i = 0, l = obj.length; i < l; i++) {
-      fn.call(null, obj[i], i, obj);
-    }
-  } else {
-    // Iterate over object keys
-    for (var key in obj) {
-      if (Object.prototype.hasOwnProperty.call(obj, key)) {
-        fn.call(null, obj[key], key, obj);
-      }
-    }
-  }
-}
-
-/**
- * Accepts varargs expecting each argument to be an object, then
- * immutably merges the properties of each object and returns result.
- *
- * When multiple objects contain the same key the later object in
- * the arguments list will take precedence.
- *
- * Example:
- *
- * ```js
- * var result = merge({foo: 123}, {foo: 456});
- * console.log(result.foo); // outputs 456
- * ```
- *
- * @param {Object} obj1 Object to merge
- * @returns {Object} Result of all merge properties
- */
-function merge(/* obj1, obj2, obj3, ... */) {
-  var result = {};
-  function assignValue(val, key) {
-    if (isPlainObject(result[key]) && isPlainObject(val)) {
-      result[key] = merge(result[key], val);
-    } else if (isPlainObject(val)) {
-      result[key] = merge({}, val);
-    } else if (isArray(val)) {
-      result[key] = val.slice();
-    } else {
-      result[key] = val;
-    }
-  }
-
-  for (var i = 0, l = arguments.length; i < l; i++) {
-    forEach(arguments[i], assignValue);
-  }
-  return result;
-}
-
-/**
- * Extends object a by mutably adding to it the properties of object b.
- *
- * @param {Object} a The object to be extended
- * @param {Object} b The object to copy properties from
- * @param {Object} thisArg The object to bind function to
- * @return {Object} The resulting value of object a
- */
-function extend(a, b, thisArg) {
-  forEach(b, function assignValue(val, key) {
-    if (thisArg && typeof val === 'function') {
-      a[key] = bind(val, thisArg);
-    } else {
-      a[key] = val;
-    }
-  });
-  return a;
-}
-
-/**
- * Remove byte order marker. This catches EF BB BF (the UTF-8 BOM)
- *
- * @param {string} content with BOM
- * @return {string} content value without BOM
- */
-function stripBOM(content) {
-  if (content.charCodeAt(0) === 0xFEFF) {
-    content = content.slice(1);
-  }
-  return content;
-}
-
-module.exports = {
-  isArray: isArray,
-  isArrayBuffer: isArrayBuffer,
-  isBuffer: isBuffer,
-  isFormData: isFormData,
-  isArrayBufferView: isArrayBufferView,
-  isString: isString,
-  isNumber: isNumber,
-  isObject: isObject,
-  isPlainObject: isPlainObject,
-  isUndefined: isUndefined,
-  isDate: isDate,
-  isFile: isFile,
-  isBlob: isBlob,
-  isFunction: isFunction,
-  isStream: isStream,
-  isURLSearchParams: isURLSearchParams,
-  isStandardBrowserEnv: isStandardBrowserEnv,
-  forEach: forEach,
-  merge: merge,
-  extend: extend,
-  trim: trim,
-  stripBOM: stripBOM
-};
-
-
-/***/ }),
-
 /***/ "./src/Components/logo.png":
 /*!*********************************!*\
   !*** ./src/Components/logo.png ***!
@@ -59148,6 +58250,61 @@ module.exports = {
 
 "use strict";
 module.exports = __webpack_require__.p + "logo.png";
+
+/***/ }),
+
+/***/ "./src/Components/pics/addPlaylist.png":
+/*!*********************************************!*\
+  !*** ./src/Components/pics/addPlaylist.png ***!
+  \*********************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "addPlaylist.png";
+
+/***/ }),
+
+/***/ "./src/Components/pics/mImg.jpeg":
+/*!***************************************!*\
+  !*** ./src/Components/pics/mImg.jpeg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "mImg.jpeg";
+
+/***/ }),
+
+/***/ "./src/Components/pics/queueTop.svg":
+/*!******************************************!*\
+  !*** ./src/Components/pics/queueTop.svg ***!
+  \******************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "queueTop.svg";
+
+/***/ }),
+
+/***/ "./src/Components/pics/removePlaylist.svg":
+/*!************************************************!*\
+  !*** ./src/Components/pics/removePlaylist.svg ***!
+  \************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "removePlaylist.svg";
+
+/***/ }),
+
+/***/ "./src/Components/pics/shuffle.png":
+/*!*****************************************!*\
+  !*** ./src/Components/pics/shuffle.png ***!
+  \*****************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "shuffle.png";
 
 /***/ }),
 
@@ -59192,6 +58349,17 @@ module.exports = __webpack_require__.p + "spot.svg";
 
 "use strict";
 module.exports = __webpack_require__.p + "spotDark.svg";
+
+/***/ }),
+
+/***/ "./src/Components/pics/trash.svg":
+/*!***************************************!*\
+  !*** ./src/Components/pics/trash.svg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "trash.svg";
 
 /***/ }),
 
@@ -78724,17 +77892,6 @@ var vanilla = (createState) => {
 
 
 
-
-/***/ }),
-
-/***/ "./node_modules/youtube-search/node_modules/axios/package.json":
-/*!*********************************************************************!*\
-  !*** ./node_modules/youtube-search/node_modules/axios/package.json ***!
-  \*********************************************************************/
-/***/ ((module) => {
-
-"use strict";
-module.exports = JSON.parse('{"name":"axios","version":"0.21.4","description":"Promise based HTTP client for the browser and node.js","main":"index.js","scripts":{"test":"grunt test","start":"node ./sandbox/server.js","build":"NODE_ENV=production grunt build","preversion":"npm test","version":"npm run build && grunt version && git add -A dist && git add CHANGELOG.md bower.json package.json","postversion":"git push && git push --tags","examples":"node ./examples/server.js","coveralls":"cat coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js","fix":"eslint --fix lib/**/*.js"},"repository":{"type":"git","url":"https://github.com/axios/axios.git"},"keywords":["xhr","http","ajax","promise","node"],"author":"Matt Zabriskie","license":"MIT","bugs":{"url":"https://github.com/axios/axios/issues"},"homepage":"https://axios-http.com","devDependencies":{"coveralls":"^3.0.0","es6-promise":"^4.2.4","grunt":"^1.3.0","grunt-banner":"^0.6.0","grunt-cli":"^1.2.0","grunt-contrib-clean":"^1.1.0","grunt-contrib-watch":"^1.0.0","grunt-eslint":"^23.0.0","grunt-karma":"^4.0.0","grunt-mocha-test":"^0.13.3","grunt-ts":"^6.0.0-beta.19","grunt-webpack":"^4.0.2","istanbul-instrumenter-loader":"^1.0.0","jasmine-core":"^2.4.1","karma":"^6.3.2","karma-chrome-launcher":"^3.1.0","karma-firefox-launcher":"^2.1.0","karma-jasmine":"^1.1.1","karma-jasmine-ajax":"^0.1.13","karma-safari-launcher":"^1.0.0","karma-sauce-launcher":"^4.3.6","karma-sinon":"^1.0.5","karma-sourcemap-loader":"^0.3.8","karma-webpack":"^4.0.2","load-grunt-tasks":"^3.5.2","minimist":"^1.2.0","mocha":"^8.2.1","sinon":"^4.5.0","terser-webpack-plugin":"^4.2.3","typescript":"^4.0.5","url-search-params":"^0.10.0","webpack":"^4.44.2","webpack-dev-server":"^3.11.0"},"browser":{"./lib/adapters/http.js":"./lib/adapters/xhr.js"},"jsdelivr":"dist/axios.min.js","unpkg":"dist/axios.min.js","typings":"./index.d.ts","dependencies":{"follow-redirects":"^1.14.0"},"bundlesize":[{"path":"./dist/axios.min.js","threshold":"5kB"}]}');
 
 /***/ })
 
