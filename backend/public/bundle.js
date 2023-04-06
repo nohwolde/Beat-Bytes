@@ -8712,8 +8712,7 @@ function App() {
                     return axios__WEBPACK_IMPORTED_MODULE_5___default().post("/db/user/login_or_create", {
                       id: values[1].id,
                       playlists: [],
-                      profilePhoto: values[1].images[0].url,
-                      displayName: values[1].display_name
+                      profilePhoto: values[1].images[0].url
                     });
                   case 7:
                     _context3.t1 = _context3.sent;
