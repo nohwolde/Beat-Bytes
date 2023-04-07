@@ -8712,7 +8712,8 @@ function App() {
                     return axios__WEBPACK_IMPORTED_MODULE_5___default().post("/db/user/login_or_create", {
                       id: values[1].id,
                       playlists: [],
-                      profilePhoto: values[1].images[0].url
+                      profilePhoto: values[1].images[0].url,
+                      displayName: values[1].display_name
                     });
                   case 7:
                     _context3.t1 = _context3.sent;
@@ -8803,13 +8804,6 @@ function App() {
       return _regeneratorRuntime().wrap(function _callee8$(_context8) {
         while (1) switch (_context8.prev = _context8.next) {
           case 0:
-            // await spotify.getMyCurrentPlayingTrack().then((response) => {
-            //   console.log("User Playlists:", response);
-            //   if (response.item ? response.item !== null : false) {
-            //     addQueue({ item: response.item, platform: "Spotify" });
-            //     pop();
-            //   }
-            // });
             lst = [];
             _context8.next = 3;
             return spotify.getUserPlaylists().then( /*#__PURE__*/function () {
@@ -11766,7 +11760,7 @@ __webpack_require__.r(__webpack_exports__);
 var authEndpoint = "https://accounts.spotify.com/authorize";
 // Replace with your app's client ID, redirect URI and desired scopes
 var clientId = "3dd065b6dedd47e99ecb7ed63bcde5d6"; // Your client id
-var redirectUri = "https://beatbytes.app/";
+var redirectUri = "http://localhost:3000/";
 var scopes = ["user-read-currently-playing", "user-read-recently-played", "user-read-playback-state", "user-top-read", "user-modify-playback-state", "streaming", "user-read-private", "playlist-modify-public", "playlist-modify-private", "playlist-read-private", "playlist-read-collaborative"];
 var getTokenFromResponse = function getTokenFromResponse() {
   return window.location.hash.substring(1).split("&").reduce(function (initial, item) {
