@@ -85,6 +85,8 @@ function Footer({ spotify }) {
   const getPlayingStatus = useActions((state) => state.getPlayingStatus);
   const setEmbedController = useSpotify((state) => state.setEmbedController);
 
+  const skip = useActions((state) => state.skip);
+
   // Page actions
   const setPage = useActions((state) => state.setPage);
 
@@ -158,8 +160,7 @@ function Footer({ spotify }) {
           console.log(e.data);
           console.log("Song Ended");
           console.log(getPlaylist());
-          // setPlaying(false);
-          skipNext();
+          skip();
         }
         if (e.data.isPaused !== !getPlayingStatus()) {
           setPlaying(!e.data.isPaused);
@@ -282,15 +283,6 @@ function Footer({ spotify }) {
         setPlatform("Youtube");
       }
     }
-  };
-
-  const handleEnded = () => {
-    if (
-      getQueueLength() === getQueuePosition() + 1 &&
-      getPlaylist().playlist.length === 0
-    )
-      setPlaying(false);
-    handleNext();
   };
 
   const handleReverse = () => {
@@ -436,7 +428,7 @@ function Footer({ spotify }) {
               onPause={() => setPlaying(false)}
               playing={playing}
               volume={volume}
-              onEnded={() => handleEnded()}
+              onEnded={() => handleNext()}
               height={getPlatform() === "Soundcloud" ? "120px" : "110px"}
               width="500px"
               config={{
