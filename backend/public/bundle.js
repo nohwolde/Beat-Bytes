@@ -9268,6 +9268,9 @@ function Footer(_ref) {
   var setEmbedController = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useSpotify)(function (state) {
     return state.setEmbedController;
   });
+  var skip = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
+    return state.skip;
+  });
 
   // Page actions
   var setPage = (0,_store__WEBPACK_IMPORTED_MODULE_5__.useActions)(function (state) {
@@ -9343,8 +9346,7 @@ function Footer(_ref) {
           console.log(e.data);
           console.log("Song Ended");
           console.log(getPlaylist());
-          // setPlaying(false);
-          skipNext();
+          skip();
         }
         if (e.data.isPaused !== !getPlayingStatus()) {
           setPlaying(!e.data.isPaused);
@@ -9461,10 +9463,6 @@ function Footer(_ref) {
         setPlatform("Youtube");
       }
     }
-  };
-  var handleEnded = function handleEnded() {
-    if (getQueueLength() === getQueuePosition() + 1 && getPlaylist().playlist.length === 0) setPlaying(false);
-    handleNext();
   };
   var handleReverse = function handleReverse() {
     console.log("reverse");
@@ -9604,7 +9602,7 @@ function Footer(_ref) {
     playing: playing,
     volume: volume,
     onEnded: function onEnded() {
-      return handleEnded();
+      return handleNext();
     },
     height: getPlatform() === "Soundcloud" ? "120px" : "110px",
     width: "500px",

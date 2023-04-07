@@ -307,8 +307,8 @@ app.post("/sc/track", async function (req, res) {
   // console.log(await results);
 });
 
-const port = process.env.PORT || 8000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
-  console.log("Server is running on port 8000");
+  console.log("Server is running on port 3000");
 });
