@@ -78,6 +78,7 @@ function App() {
             id: values[1].id,
             playlists: [],
             profilePhoto: values[1].images[0].url,
+            displayName: values[1].display_name,
           }) //add an error check for the next line to add the playlist one by one using create playlist if it fails
         )
           .then(async (user) => {
