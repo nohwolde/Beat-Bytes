@@ -106,6 +106,7 @@ const userSchema = mongoose.Schema({
     },
   ],
   profilePhoto: { type: String, required: true, default: "" },
+  displayName: String,
 });
 
 userSchema.methods.createPlaylist = function (playlist) {
@@ -306,8 +307,8 @@ app.post("/sc/track", async function (req, res) {
   // console.log(await results);
 });
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 8000;
 
 app.listen(port, () => {
-  console.log("Server is running on port 3000");
+  console.log("Server is running on port 8000");
 });
