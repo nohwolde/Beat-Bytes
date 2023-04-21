@@ -1,5 +1,6 @@
 import { create } from "zustand";
 import { devtools, persist } from "zustand/middleware";
+import playlists from "./playlists.js";
 
 let queueStore = (set, get) => ({
   queue: [
@@ -171,7 +172,7 @@ let spotifyStore = (set, get) => ({
   spotify: null,
   token: null,
   user: null,
-  playlists: [],
+  playlists: playlists,
   topArtists: null,
   setEmbedController: (controller) => set({ EmbedController: controller }),
   setSpotify: (spotify) => set({ spotify: spotify }),

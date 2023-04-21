@@ -40,13 +40,15 @@
     color: white;
 }
 
-.loginBeatbytes {
+.loginBeatbytesDisabled {
     padding: 20px;
     border-radius: 99px;
     background: #0020ae;
     font-weight: 800;
     color: white;
-    text-decoration: none,
+    text-decoration: none;
+    opacity: 0.3;
+    pointer-events: none;
 }
 
 .loginSpotify {

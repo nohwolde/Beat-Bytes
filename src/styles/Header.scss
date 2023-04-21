@@ -70,6 +70,17 @@
     filter: invert(56%) sepia(68%) saturate(545%) hue-rotate(88deg) brightness(89%) contrast(88%);
 }
 
+.header_playerLogoDisabled {
+    height: 4.5vh;
+    align-items: center;
+    object-fit: contain;
+    margin-right: 10px;
+    margin-top: 8px;
+    filter: invert(11%) sepia(28%) saturate(5892%) hue-rotate(206deg) brightness(96%) contrast(106%);
+    pointer-events: none;
+    opacity: 0.5;
+}
+
 .header_yt {
     height: 5.5vh;
     align-items: center;

@@ -429,7 +429,7 @@ function Footer({ spotify }) {
               playing={playing}
               volume={volume}
               onEnded={() => handleNext()}
-              height={getPlatform() === "Soundcloud" ? "120px" : "110px"}
+              height={getPlatform() === "Soundcloud" ? "120px" : "115px"}
               width="500px"
               config={{
                 soundcloud: {

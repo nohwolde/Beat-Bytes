@@ -207,10 +207,10 @@ function App() {
 
   return (
     <div>
-      <div className={token ? "" : "disabled"}>
+      <div className={token !== null ? "" : "disabled"}>
         <Player spotify={spotify}></Player>
       </div>
-      {!token && (
+      {token === null && (
         <div className="AppBlur">
           <Loading />
         </div>
