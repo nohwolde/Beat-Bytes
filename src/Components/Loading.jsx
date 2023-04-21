@@ -7,6 +7,7 @@ const Loading = () => {
   const setToken = useSpotify((state) => state.setToken);
   const loginTest = () => {
     console.log("test");
+    setToken("");
   };
   return (
     <div className="loading">
@@ -22,7 +23,7 @@ const Loading = () => {
       </div>
       <br></br>
       <div className="loginInfo"> Or Login/Sign Up with Account </div>
-      <div className="loginBeatbytes" onClick={() => loginTest()}>
+      <div className="loginBeatbytesDisabled" onClick={() => loginTest()}>
         {" "}
         Login/Sign Up with Beatbytes{" "}
       </div>

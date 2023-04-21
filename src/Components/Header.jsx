@@ -11,6 +11,10 @@ import { useActions } from "../store";
 import { useSearch } from "../store";
 import logo from "./logo.png";
 import axios from "axios";
+import { parse } from "himalaya";
+import spotify from "spotify-url-info";
+import fetch from "cross-fetch";
+const { getTracks, getPreview } = spotify(axios);
 
 function Header({ spotify, setLoading }) {
   // SPOTIFY
@@ -32,6 +36,46 @@ function Header({ spotify, setLoading }) {
     if (token !== null && token === "") setSearchPlatform("Youtube");
     else setSearchPlatform("Spotify");
   }, [token]);
+
+  const createGetData = async (url, opts) => {
+    const embedURL = "https://open.spotify.com/track/" + url;
+
+    const response = await axios.get(embedURL, opts);
+    const text = await response.text();
+    const embed = parse(text);
+
+    let scripts = embed.find((el) => el.tagName === "html");
+
+    if (scripts === undefined) return new TypeError("ERROR.NOT_SCRIPTS");
+
+    scripts = scripts.children
+      .find((el) => el.tagName === "body")
+      .children.filter(({ tagName }) => tagName === "script");
+
+    let script = scripts.find((script) =>
+      script.attributes.some(({ value }) => value === "resource")
+    );
+
+    if (script !== undefined) {
+      // found data in the older embed style
+      return normalizeData({
+        data: JSON.parse(Buffer.from(script.children[0].content, "base64")),
+      });
+    }
+
+    script = scripts.find((script) =>
+      script.attributes.some(({ value }) => value === "initial-state")
+    );
+
+    if (script !== undefined) {
+      // found data in the new embed style
+      const data = JSON.parse(Buffer.from(script.children[0].content, "base64"))
+        .data.entity;
+      return data;
+    }
+
+    return new TypeError("ERROR.NOT_DATA");
+  };
 
   // Conducts the search for all three platforms, and searches
   // the database to return  all songs that match the search query
@@ -84,6 +128,8 @@ function Header({ spotify, setLoading }) {
       // const search = await axios.post("/spotify/search", {
       //   query: searchRef.current.value,
       // });
+
+      // console.log("Spotify Song", getTracks(search[0]));
 
       // results.push(search);
 
@@ -146,9 +192,15 @@ function Header({ spotify, setLoading }) {
           ...res.data.map((song) => ({
             item: song,
             platform: "Youtube",
-            title: song.title,
+            title: song.title.replace(/&#(\d+);/g, (match, dec) =>
+              String.fromCharCode(dec)
+            ),
             artist: song.channelTitle,
-            pic: song.thumbnails.default.url,
+            pic: song.thumbnails.high.url
+              ? song.thumbnails.high.url
+              : song.thumbnails.medium.url
+              ? song.thumbnails.medium.url
+              : song.thumbnails.default,
             link: song.link,
           }))
         );
@@ -177,9 +229,11 @@ function Header({ spotify, setLoading }) {
           <img
             alt=""
             className={
-              searchPlatform === "Spotify"
-                ? "header_playerLogoActive"
-                : "header_playerLogo"
+              !(token === "")
+                ? (searchPlatform === "Spotify") | (token === null)
+                  ? "header_playerLogoActive"
+                  : "header_playerLogo"
+                : "header_playerLogoDisabled"
             }
             src={Spot}
             onClick={() => invokeSearch("Spotify")}
