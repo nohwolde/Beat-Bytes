@@ -23,4 +23,5 @@
 # yarn-error.log*
 
 node_modules
+public
 .env

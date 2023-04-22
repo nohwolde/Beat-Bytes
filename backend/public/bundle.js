@@ -11851,7 +11851,7 @@ __webpack_require__.r(__webpack_exports__);
 var authEndpoint = "https://accounts.spotify.com/authorize";
 // Replace with your app's client ID, redirect URI and desired scopes
 var clientId = "3dd065b6dedd47e99ecb7ed63bcde5d6"; // Your client id
-var redirectUri = "http://localhost:3000/";
+var redirectUri = "https://beatbytes.app/";
 var scopes = ["user-read-currently-playing", "user-read-recently-played", "user-read-playback-state", "user-top-read", "user-modify-playback-state", "streaming", "user-read-private", "playlist-modify-public", "playlist-modify-private", "playlist-read-private", "playlist-read-collaborative"];
 var getTokenFromResponse = function getTokenFromResponse() {
   return window.location.hash.substring(1).split("&").reduce(function (initial, item) {
