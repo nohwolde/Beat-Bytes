@@ -66,64 +66,6 @@ app.use(
 app.use(express.json());
 app.use(express.static("public"));
 
-const opts = {
-  maxResults: 50,
-  key: "AIzaSyA1AZNcvUFb9Cz8eF075CeLJAW4mIq_G7s",
-  type: "video",
-};
-
-app.post("/yt/search", async (req, res) => {
-  const query = req.body.query;
-  await ytSearch(query, opts, (err, results) => {
-    if (err) {
-      console.log(err);
-      res.sendStatus(500);
-    } else res.send(results);
-  });
-});
-
-app.post("/spotify/search", async (req, res) => {
-  console.log("Searching on Spotify...");
-  const query = req.body.query;
-  console.log("Query:", query);
-  const searchQuery = `${query} site:open.spotify.com/track/`;
-  console.log("Searching for tracks:", searchQuery);
-
-  try {
-    const googleResults = await googleIt({
-      query: searchQuery,
-      limit: 50,
-      "only-urls": true,
-    });
-    const spotifyUrls = googleResults.map((result) => result.link);
-
-    res.json(spotifyUrls);
-  } catch (error) {
-    console.error("Error searching for tracks:", error);
-    res.sendStatus(500);
-  }
-});
-
-const soundScrape = new SoundCloudScraper();
-app.post("/sc/search", async function (req, res) {
-  const query = req.body.query;
-  const url = `https://soundcloud.com/search/sounds?q=${query}`;
-  console.log("URL:", url);
-  const results = await soundScrape.getHtmlFromUrl(url);
-  res.send(await results);
-  console.log(await results);
-});
-
-app.post("/sc/track", async function (req, res) {
-  const trackId = req.body.trackID;
-  console.log("Track ID:", trackId);
-  const results = await soundScrape.getHtmlFromUrl(
-    `https://soundcloud.com${trackId}`
-  );
-  res.send(await results);
-  // console.log(await results);
-});
-
 const connectDB = async () => {
   // Connect to MongoDB
   mongoose.connect(
@@ -319,5 +261,63 @@ connectDB().then(() => {
       console.error(error);
       res.sendStatus(500);
     }
+  });
+
+  const opts = {
+    maxResults: 50,
+    key: "AIzaSyA1AZNcvUFb9Cz8eF075CeLJAW4mIq_G7s",
+    type: "video",
+  };
+
+  app.post("/yt/search", async (req, res) => {
+    const query = req.body.query;
+    await ytSearch(query, opts, (err, results) => {
+      if (err) {
+        console.log(err);
+        res.sendStatus(500);
+      } else res.send(results);
+    });
+  });
+
+  app.post("/spotify/search", async (req, res) => {
+    console.log("Searching on Spotify...");
+    const query = req.body.query;
+    console.log("Query:", query);
+    const searchQuery = `${query} site:open.spotify.com/track/`;
+    console.log("Searching for tracks:", searchQuery);
+
+    try {
+      const googleResults = await googleIt({
+        query: searchQuery,
+        limit: 50,
+        "only-urls": true,
+      });
+      const spotifyUrls = googleResults.map((result) => result.link);
+
+      res.json(spotifyUrls);
+    } catch (error) {
+      console.error("Error searching for tracks:", error);
+      res.sendStatus(500);
+    }
+  });
+
+  const soundScrape = new SoundCloudScraper();
+  app.post("/sc/search", async function (req, res) {
+    const query = req.body.query;
+    const url = `https://soundcloud.com/search/sounds?q=${query}`;
+    console.log("URL:", url);
+    const results = await soundScrape.getHtmlFromUrl(url);
+    res.send(await results);
+    console.log(await results);
+  });
+
+  app.post("/sc/track", async function (req, res) {
+    const trackId = req.body.trackID;
+    console.log("Track ID:", trackId);
+    const results = await soundScrape.getHtmlFromUrl(
+      `https://soundcloud.com${trackId}`
+    );
+    res.send(await results);
+    // console.log(await results);
   });
 });
