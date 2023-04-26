@@ -8679,13 +8679,14 @@ function App() {
           _token = hash.access_token;
           console.log(hash);
           if (!_token) {
-            _context4.next = 10;
+            _context4.next = 11;
             break;
           }
           setToken(_token);
           spotify.setAccessToken(_token);
           setSpotify(spotify);
-          _context4.next = 10;
+          setPlaylists([]);
+          _context4.next = 11;
           return Promise.all([fetchPlaylists(), fetchUser(), fetchTopArtists()]).then( /*#__PURE__*/function () {
             var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(values) {
               var playlists;
@@ -8787,9 +8788,9 @@ function App() {
               return _ref2.apply(this, arguments);
             };
           }());
-        case 10:
-          console.log("I have a token: ", _token);
         case 11:
+          console.log("I have a token: ", _token);
+        case 12:
         case "end":
           return _context4.stop();
       }
@@ -9715,29 +9716,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var _styles_Header_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../styles/Header.scss */ "./src/styles/Header.scss");
-/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/Search */ "./node_modules/@material-ui/icons/Search.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Avatar/Avatar.js");
+/* harmony import */ var _material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/Search */ "./node_modules/@material-ui/icons/Search.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/Avatar/Avatar.js");
 /* harmony import */ var _SoundcloudScraper_jsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SoundcloudScraper.jsx */ "./src/Components/SoundcloudScraper.jsx");
 /* harmony import */ var _pics_soundcloudDark_svg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./pics/soundcloudDark.svg */ "./src/Components/pics/soundcloudDark.svg");
 /* harmony import */ var _pics_spotDark_svg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./pics/spotDark.svg */ "./src/Components/pics/spotDark.svg");
 /* harmony import */ var _pics_ytDark_svg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./pics/ytDark.svg */ "./src/Components/pics/ytDark.svg");
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../store */ "./src/store.js");
-/* harmony import */ var _logo_png__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./logo.png */ "./src/Components/logo.png");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var himalaya__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! himalaya */ "./node_modules/himalaya/lib/index.js");
-/* harmony import */ var spotify_url_info__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! spotify-url-info */ "./node_modules/spotify-url-info/src/index.js");
-/* harmony import */ var spotify_url_info__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(spotify_url_info__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! cross-fetch */ "./node_modules/cross-fetch/dist/browser-ponyfill.js");
-/* harmony import */ var cross_fetch__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(cross_fetch__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_7__);
 function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
 function _toConsumableArray(arr) { return _arrayWithoutHoles(arr) || _iterableToArray(arr) || _unsupportedIterableToArray(arr) || _nonIterableSpread(); }
 function _nonIterableSpread() { throw new TypeError("Invalid attempt to spread non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method."); }
 function _unsupportedIterableToArray(o, minLen) { if (!o) return; if (typeof o === "string") return _arrayLikeToArray(o, minLen); var n = Object.prototype.toString.call(o).slice(8, -1); if (n === "Object" && o.constructor) n = o.constructor.name; if (n === "Map" || n === "Set") return Array.from(o); if (n === "Arguments" || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return _arrayLikeToArray(o, minLen); }
 function _iterableToArray(iter) { if (typeof Symbol !== "undefined" && iter[Symbol.iterator] != null || iter["@@iterator"] != null) return Array.from(iter); }
 function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) return _arrayLikeToArray(arr); }
 function _arrayLikeToArray(arr, len) { if (len == null || len > arr.length) len = arr.length; for (var i = 0, arr2 = new Array(len); i < len; i++) arr2[i] = arr[i]; return arr2; }
-function _regeneratorRuntime() { "use strict"; /*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */ _regeneratorRuntime = function _regeneratorRuntime() { return exports; }; var exports = {}, Op = Object.prototype, hasOwn = Op.hasOwnProperty, defineProperty = Object.defineProperty || function (obj, key, desc) { obj[key] = desc.value; }, $Symbol = "function" == typeof Symbol ? Symbol : {}, iteratorSymbol = $Symbol.iterator || "@@iterator", asyncIteratorSymbol = $Symbol.asyncIterator || "@@asyncIterator", toStringTagSymbol = $Symbol.toStringTag || "@@toStringTag"; function define(obj, key, value) { return Object.defineProperty(obj, key, { value: value, enumerable: !0, configurable: !0, writable: !0 }), obj[key]; } try { define({}, ""); } catch (err) { define = function define(obj, key, value) { return obj[key] = value; }; } function wrap(innerFn, outerFn, self, tryLocsList) { var protoGenerator = outerFn && outerFn.prototype instanceof Generator ? outerFn : Generator, generator = Object.create(protoGenerator.prototype), context = new Context(tryLocsList || []); return defineProperty(generator, "_invoke", { value: makeInvokeMethod(innerFn, self, context) }), generator; } function tryCatch(fn, obj, arg) { try { return { type: "normal", arg: fn.call(obj, arg) }; } catch (err) { return { type: "throw", arg: err }; } } exports.wrap = wrap; var ContinueSentinel = {}; function Generator() {} function GeneratorFunction() {} function GeneratorFunctionPrototype() {} var IteratorPrototype = {}; define(IteratorPrototype, iteratorSymbol, function () { return this; }); var getProto = Object.getPrototypeOf, NativeIteratorPrototype = getProto && getProto(getProto(values([]))); NativeIteratorPrototype && NativeIteratorPrototype !== Op && hasOwn.call(NativeIteratorPrototype, iteratorSymbol) && (IteratorPrototype = NativeIteratorPrototype); var Gp = GeneratorFunctionPrototype.prototype = Generator.prototype = Object.create(IteratorPrototype); function defineIteratorMethods(prototype) { ["next", "throw", "return"].forEach(function (method) { define(prototype, method, function (arg) { return this._invoke(method, arg); }); }); } function AsyncIterator(generator, PromiseImpl) { function invoke(method, arg, resolve, reject) { var record = tryCatch(generator[method], generator, arg); if ("throw" !== record.type) { var result = record.arg, value = result.value; return value && "object" == _typeof(value) && hasOwn.call(value, "__await") ? PromiseImpl.resolve(value.__await).then(function (value) { invoke("next", value, resolve, reject); }, function (err) { invoke("throw", err, resolve, reject); }) : PromiseImpl.resolve(value).then(function (unwrapped) { result.value = unwrapped, resolve(result); }, function (error) { return invoke("throw", error, resolve, reject); }); } reject(record.arg); } var previousPromise; defineProperty(this, "_invoke", { value: function value(method, arg) { function callInvokeWithMethodAndArg() { return new PromiseImpl(function (resolve, reject) { invoke(method, arg, resolve, reject); }); } return previousPromise = previousPromise ? previousPromise.then(callInvokeWithMethodAndArg, callInvokeWithMethodAndArg) : callInvokeWithMethodAndArg(); } }); } function makeInvokeMethod(innerFn, self, context) { var state = "suspendedStart"; return function (method, arg) { if ("executing" === state) throw new Error("Generator is already running"); if ("completed" === state) { if ("throw" === method) throw arg; return doneResult(); } for (context.method = method, context.arg = arg;;) { var delegate = context.delegate; if (delegate) { var delegateResult = maybeInvokeDelegate(delegate, context); if (delegateResult) { if (delegateResult === ContinueSentinel) continue; return delegateResult; } } if ("next" === context.method) context.sent = context._sent = context.arg;else if ("throw" === context.method) { if ("suspendedStart" === state) throw state = "completed", context.arg; context.dispatchException(context.arg); } else "return" === context.method && context.abrupt("return", context.arg); state = "executing"; var record = tryCatch(innerFn, self, context); if ("normal" === record.type) { if (state = context.done ? "completed" : "suspendedYield", record.arg === ContinueSentinel) continue; return { value: record.arg, done: context.done }; } "throw" === record.type && (state = "completed", context.method = "throw", context.arg = record.arg); } }; } function maybeInvokeDelegate(delegate, context) { var methodName = context.method, method = delegate.iterator[methodName]; if (undefined === method) return context.delegate = null, "throw" === methodName && delegate.iterator["return"] && (context.method = "return", context.arg = undefined, maybeInvokeDelegate(delegate, context), "throw" === context.method) || "return" !== methodName && (context.method = "throw", context.arg = new TypeError("The iterator does not provide a '" + methodName + "' method")), ContinueSentinel; var record = tryCatch(method, delegate.iterator, context.arg); if ("throw" === record.type) return context.method = "throw", context.arg = record.arg, context.delegate = null, ContinueSentinel; var info = record.arg; return info ? info.done ? (context[delegate.resultName] = info.value, context.next = delegate.nextLoc, "return" !== context.method && (context.method = "next", context.arg = undefined), context.delegate = null, ContinueSentinel) : info : (context.method = "throw", context.arg = new TypeError("iterator result is not an object"), context.delegate = null, ContinueSentinel); } function pushTryEntry(locs) { var entry = { tryLoc: locs[0] }; 1 in locs && (entry.catchLoc = locs[1]), 2 in locs && (entry.finallyLoc = locs[2], entry.afterLoc = locs[3]), this.tryEntries.push(entry); } function resetTryEntry(entry) { var record = entry.completion || {}; record.type = "normal", delete record.arg, entry.completion = record; } function Context(tryLocsList) { this.tryEntries = [{ tryLoc: "root" }], tryLocsList.forEach(pushTryEntry, this), this.reset(!0); } function values(iterable) { if (iterable) { var iteratorMethod = iterable[iteratorSymbol]; if (iteratorMethod) return iteratorMethod.call(iterable); if ("function" == typeof iterable.next) return iterable; if (!isNaN(iterable.length)) { var i = -1, next = function next() { for (; ++i < iterable.length;) if (hasOwn.call(iterable, i)) return next.value = iterable[i], next.done = !1, next; return next.value = undefined, next.done = !0, next; }; return next.next = next; } } return { next: doneResult }; } function doneResult() { return { value: undefined, done: !0 }; } return GeneratorFunction.prototype = GeneratorFunctionPrototype, defineProperty(Gp, "constructor", { value: GeneratorFunctionPrototype, configurable: !0 }), defineProperty(GeneratorFunctionPrototype, "constructor", { value: GeneratorFunction, configurable: !0 }), GeneratorFunction.displayName = define(GeneratorFunctionPrototype, toStringTagSymbol, "GeneratorFunction"), exports.isGeneratorFunction = function (genFun) { var ctor = "function" == typeof genFun && genFun.constructor; return !!ctor && (ctor === GeneratorFunction || "GeneratorFunction" === (ctor.displayName || ctor.name)); }, exports.mark = function (genFun) { return Object.setPrototypeOf ? Object.setPrototypeOf(genFun, GeneratorFunctionPrototype) : (genFun.__proto__ = GeneratorFunctionPrototype, define(genFun, toStringTagSymbol, "GeneratorFunction")), genFun.prototype = Object.create(Gp), genFun; }, exports.awrap = function (arg) { return { __await: arg }; }, defineIteratorMethods(AsyncIterator.prototype), define(AsyncIterator.prototype, asyncIteratorSymbol, function () { return this; }), exports.AsyncIterator = AsyncIterator, exports.async = function (innerFn, outerFn, self, tryLocsList, PromiseImpl) { void 0 === PromiseImpl && (PromiseImpl = Promise); var iter = new AsyncIterator(wrap(innerFn, outerFn, self, tryLocsList), PromiseImpl); return exports.isGeneratorFunction(outerFn) ? iter : iter.next().then(function (result) { return result.done ? result.value : iter.next(); }); }, defineIteratorMethods(Gp), define(Gp, toStringTagSymbol, "Generator"), define(Gp, iteratorSymbol, function () { return this; }), define(Gp, "toString", function () { return "[object Generator]"; }), exports.keys = function (val) { var object = Object(val), keys = []; for (var key in object) keys.push(key); return keys.reverse(), function next() { for (; keys.length;) { var key = keys.pop(); if (key in object) return next.value = key, next.done = !1, next; } return next.done = !0, next; }; }, exports.values = values, Context.prototype = { constructor: Context, reset: function reset(skipTempReset) { if (this.prev = 0, this.next = 0, this.sent = this._sent = undefined, this.done = !1, this.delegate = null, this.method = "next", this.arg = undefined, this.tryEntries.forEach(resetTryEntry), !skipTempReset) for (var name in this) "t" === name.charAt(0) && hasOwn.call(this, name) && !isNaN(+name.slice(1)) && (this[name] = undefined); }, stop: function stop() { this.done = !0; var rootRecord = this.tryEntries[0].completion; if ("throw" === rootRecord.type) throw rootRecord.arg; return this.rval; }, dispatchException: function dispatchException(exception) { if (this.done) throw exception; var context = this; function handle(loc, caught) { return record.type = "throw", record.arg = exception, context.next = loc, caught && (context.method = "next", context.arg = undefined), !!caught; } for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i], record = entry.completion; if ("root" === entry.tryLoc) return handle("end"); if (entry.tryLoc <= this.prev) { var hasCatch = hasOwn.call(entry, "catchLoc"), hasFinally = hasOwn.call(entry, "finallyLoc"); if (hasCatch && hasFinally) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } else if (hasCatch) { if (this.prev < entry.catchLoc) return handle(entry.catchLoc, !0); } else { if (!hasFinally) throw new Error("try statement without catch or finally"); if (this.prev < entry.finallyLoc) return handle(entry.finallyLoc); } } } }, abrupt: function abrupt(type, arg) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc <= this.prev && hasOwn.call(entry, "finallyLoc") && this.prev < entry.finallyLoc) { var finallyEntry = entry; break; } } finallyEntry && ("break" === type || "continue" === type) && finallyEntry.tryLoc <= arg && arg <= finallyEntry.finallyLoc && (finallyEntry = null); var record = finallyEntry ? finallyEntry.completion : {}; return record.type = type, record.arg = arg, finallyEntry ? (this.method = "next", this.next = finallyEntry.finallyLoc, ContinueSentinel) : this.complete(record); }, complete: function complete(record, afterLoc) { if ("throw" === record.type) throw record.arg; return "break" === record.type || "continue" === record.type ? this.next = record.arg : "return" === record.type ? (this.rval = this.arg = record.arg, this.method = "return", this.next = "end") : "normal" === record.type && afterLoc && (this.next = afterLoc), ContinueSentinel; }, finish: function finish(finallyLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.finallyLoc === finallyLoc) return this.complete(entry.completion, entry.afterLoc), resetTryEntry(entry), ContinueSentinel; } }, "catch": function _catch(tryLoc) { for (var i = this.tryEntries.length - 1; i >= 0; --i) { var entry = this.tryEntries[i]; if (entry.tryLoc === tryLoc) { var record = entry.completion; if ("throw" === record.type) { var thrown = record.arg; resetTryEntry(entry); } return thrown; } } throw new Error("illegal catch attempt"); }, delegateYield: function delegateYield(iterable, resultName, nextLoc) { return this.delegate = { iterator: values(iterable), resultName: resultName, nextLoc: nextLoc }, "next" === this.method && (this.arg = undefined), ContinueSentinel; } }, exports; }
 function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { Promise.resolve(value).then(_next, _throw); } }
 function _asyncToGenerator(fn) { return function () { var self = this, args = arguments; return new Promise(function (resolve, reject) { var gen = fn.apply(self, args); function _next(value) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value); } function _throw(err) { asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err); } _next(undefined); }); }; }
 
@@ -9752,13 +9747,6 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
 
 
-
-
-
-
-var _spotify = spotify_url_info__WEBPACK_IMPORTED_MODULE_10___default()((axios__WEBPACK_IMPORTED_MODULE_8___default())),
-  getTracks = _spotify.getTracks,
-  getPreview = _spotify.getPreview;
 function Header(_ref) {
   var _user$external_urls, _user$images$;
   var spotify = _ref.spotify,
@@ -9781,6 +9769,9 @@ function Header(_ref) {
   var setSearch = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSearch)(function (state) {
     return state.setSearch;
   });
+  var pushSearch = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSearch)(function (state) {
+    return state.pushSearch;
+  });
 
   // STATES
   var searchPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSearch)(function (state) {
@@ -9789,88 +9780,18 @@ function Header(_ref) {
   var setSearchPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSearch)(function (state) {
     return state.setSearchPlatform;
   });
+  var getSearchPlatform = (0,_store__WEBPACK_IMPORTED_MODULE_6__.useSearch)(function (state) {
+    return state.getSearchPlatform;
+  });
   var searchRef = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)();
-  (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
-    if (token !== null && token === "") setSearchPlatform("Youtube");else setSearchPlatform("Spotify");
-  }, [token]);
-  var createGetData = /*#__PURE__*/function () {
-    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(url, opts) {
-      var embedURL, response, text, embed, scripts, script, data;
-      return _regeneratorRuntime().wrap(function _callee$(_context) {
-        while (1) switch (_context.prev = _context.next) {
-          case 0:
-            embedURL = "https://open.spotify.com/track/" + url;
-            _context.next = 3;
-            return axios__WEBPACK_IMPORTED_MODULE_8___default().get(embedURL, opts);
-          case 3:
-            response = _context.sent;
-            _context.next = 6;
-            return response.text();
-          case 6:
-            text = _context.sent;
-            embed = (0,himalaya__WEBPACK_IMPORTED_MODULE_9__.parse)(text);
-            scripts = embed.find(function (el) {
-              return el.tagName === "html";
-            });
-            if (!(scripts === undefined)) {
-              _context.next = 11;
-              break;
-            }
-            return _context.abrupt("return", new TypeError("ERROR.NOT_SCRIPTS"));
-          case 11:
-            scripts = scripts.children.find(function (el) {
-              return el.tagName === "body";
-            }).children.filter(function (_ref3) {
-              var tagName = _ref3.tagName;
-              return tagName === "script";
-            });
-            script = scripts.find(function (script) {
-              return script.attributes.some(function (_ref4) {
-                var value = _ref4.value;
-                return value === "resource";
-              });
-            });
-            if (!(script !== undefined)) {
-              _context.next = 15;
-              break;
-            }
-            return _context.abrupt("return", normalizeData({
-              data: JSON.parse(Buffer.from(script.children[0].content, "base64"))
-            }));
-          case 15:
-            script = scripts.find(function (script) {
-              return script.attributes.some(function (_ref5) {
-                var value = _ref5.value;
-                return value === "initial-state";
-              });
-            });
-            if (!(script !== undefined)) {
-              _context.next = 19;
-              break;
-            }
-            // found data in the new embed style
-            data = JSON.parse(Buffer.from(script.children[0].content, "base64")).data.entity;
-            return _context.abrupt("return", data);
-          case 19:
-            return _context.abrupt("return", new TypeError("ERROR.NOT_DATA"));
-          case 20:
-          case "end":
-            return _context.stop();
-        }
-      }, _callee);
-    }));
-    return function createGetData(_x, _x2) {
-      return _ref2.apply(this, arguments);
-    };
-  }();
 
   // Conducts the search for all three platforms, and searches
   // the database to return  all songs that match the search query
   var invokeSearch = /*#__PURE__*/function () {
-    var _ref6 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3(platform) {
-      var results, soundScraper, url, res, index, tracklist, start, end, link, resolved, _url;
-      return _regeneratorRuntime().wrap(function _callee3$(_context3) {
-        while (1) switch (_context3.prev = _context3.next) {
+    var _ref2 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee5(platform) {
+      var results, delay, processBatch, searchTracks, soundScraper, url, res, index, tracklist, start, end, link, resolved, _url;
+      return _regeneratorRuntime().wrap(function _callee5$(_context5) {
+        while (1) switch (_context5.prev = _context5.next) {
           case 0:
             setSearchPlatform(platform);
             console.log(platform);
@@ -9879,125 +9800,217 @@ function Header(_ref) {
             setPage("Search");
             setLoading(false);
             if (!(platform === "Spotify")) {
-              _context3.next = 12;
-              break;
-            }
-            _context3.next = 8;
-            return spotify.searchTracks(searchRef.current.value).then(
-            // uses built in spotify search function
-            function (data) {
-              data.tracks.items.map(function (track // grabs data from each song
-              ) {
-                return results.push({
-                  item: {
-                    name: track.name,
-                    id: track.id,
-                    is_local: track.is_local,
-                    uri: track.uri,
-                    album: {
-                      id: track.album.id,
-                      images: [track.album.images[0] ? track.album.images[0].url : ""],
-                      name: track.album.name,
-                      uri: track.album.uri,
-                      is_playable: track.album.is_playable
-                    },
-                    artists: _toConsumableArray(track.artists.map(function (artist) {
-                      return {
-                        id: artist.id,
-                        name: artist.name,
-                        uri: artist.uri
-                      };
-                    }))
-                  },
-                  platform: platform
-                });
-              });
-            });
-          case 8:
-            // const search = await axios.post("/spotify/search", {
-            //   query: searchRef.current.value,
-            // });
-
-            // console.log("Spotify Song", getTracks(search[0]));
-
-            // results.push(search);
-
-            console.log(results);
-            setSearch(results);
-            _context3.next = 52;
-            break;
-          case 12:
-            if (!(platform === "Soundcloud")) {
-              _context3.next = 46;
+              _context5.next = 14;
               break;
             }
             setSearch([]);
-            setLoading(true);
-            soundScraper = new _SoundcloudScraper_jsx__WEBPACK_IMPORTED_MODULE_2__.SoundCloudScraper();
-            url = "/sc/search";
-            _context3.next = 19;
-            return axios__WEBPACK_IMPORTED_MODULE_8___default().post(url, {
-              query: searchRef.current.value
-            });
-          case 19:
-            res = _context3.sent.data;
-            console.log(res);
-            res = res.substring(res.indexOf("<li><h2>"), res.lastIndexOf("</h2></li>"));
-            console.log(res);
-            index = 0;
-            tracklist = [];
-          case 25:
-            if (!(index < res.length)) {
-              _context3.next = 36;
-              break;
-            }
-            start = res.indexOf('"', index);
-            end = res.indexOf('"', start + 1);
-            if (!(start === -1 || end === -1)) {
-              _context3.next = 30;
-              break;
-            }
-            return _context3.abrupt("break", 36);
-          case 30:
-            link = res.substring(start + 1, end);
-            tracklist.push(link);
-            index = end + 1;
-            console.log(link);
-            _context3.next = 25;
-            break;
-          case 36:
-            console.log(tracklist);
-            _context3.next = 39;
-            return Promise.all(tracklist.map( /*#__PURE__*/function () {
-              var _ref7 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(link) {
+            delay = function delay(ms) {
+              return new Promise(function (resolve) {
+                return setTimeout(resolve, ms);
+              });
+            };
+            processBatch = /*#__PURE__*/function () {
+              var _ref3 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee2(urls, query) {
+                var trackRequests, tracks;
                 return _regeneratorRuntime().wrap(function _callee2$(_context2) {
                   while (1) switch (_context2.prev = _context2.next) {
                     case 0:
-                      _context2.t0 = soundScraper;
+                      trackRequests = urls.map( /*#__PURE__*/function () {
+                        var _ref4 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee(url) {
+                          var trackResponse;
+                          return _regeneratorRuntime().wrap(function _callee$(_context) {
+                            while (1) switch (_context.prev = _context.next) {
+                              case 0:
+                                _context.next = 2;
+                                return axios__WEBPACK_IMPORTED_MODULE_7___default().post("/spotify/getTrack", {
+                                  url: url
+                                }).then(function (track) {
+                                  return {
+                                    item: {
+                                      name: track.data.name,
+                                      id: track.data.id,
+                                      is_local: false,
+                                      uri: track.data.uri,
+                                      title: track.data.name,
+                                      type: "track",
+                                      album: {
+                                        id: track.id,
+                                        images: [track.data.coverArt.sources[0] ? track.data.coverArt.sources[0].url : ""],
+                                        name: track.data.name,
+                                        uri: track.data.uri,
+                                        is_playable: true
+                                      },
+                                      artists: _toConsumableArray(track.data.artists)
+                                    },
+                                    platform: platform
+                                  };
+                                });
+                              case 2:
+                                trackResponse = _context.sent;
+                                return _context.abrupt("return", trackResponse);
+                              case 4:
+                              case "end":
+                                return _context.stop();
+                            }
+                          }, _callee);
+                        }));
+                        return function (_x4) {
+                          return _ref4.apply(this, arguments);
+                        };
+                      }());
                       _context2.next = 3;
-                      return axios__WEBPACK_IMPORTED_MODULE_8___default().post("/sc/track", {
-                        trackID: link
-                      });
+                      return Promise.all(trackRequests);
                     case 3:
-                      _context2.t1 = _context2.sent.data;
-                      _context2.next = 6;
-                      return _context2.t0.extractSound.call(_context2.t0, _context2.t1);
-                    case 6:
-                      return _context2.abrupt("return", _context2.sent);
+                      tracks = _context2.sent;
+                      console.log(tracks);
+                      if (getSearchPlatform() === "Spotify" && query === searchRef.current.value) pushSearch(tracks);
+                      return _context2.abrupt("return", tracks);
                     case 7:
                     case "end":
                       return _context2.stop();
                   }
                 }, _callee2);
               }));
-              return function (_x4) {
-                return _ref7.apply(this, arguments);
+              return function processBatch(_x2, _x3) {
+                return _ref3.apply(this, arguments);
+              };
+            }();
+            searchTracks = /*#__PURE__*/function () {
+              var _ref5 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee3() {
+                var query, searchResponse, urls, batchSize, trackResults, i, batch, tracks;
+                return _regeneratorRuntime().wrap(function _callee3$(_context3) {
+                  while (1) switch (_context3.prev = _context3.next) {
+                    case 0:
+                      _context3.prev = 0;
+                      query = searchRef.current.value;
+                      _context3.next = 4;
+                      return axios__WEBPACK_IMPORTED_MODULE_7___default().post("/spotify/search", {
+                        query: query
+                      });
+                    case 4:
+                      searchResponse = _context3.sent;
+                      urls = searchResponse.data;
+                      batchSize = 10;
+                      trackResults = [];
+                      i = 0;
+                    case 9:
+                      if (!(i < urls.length)) {
+                        _context3.next = 24;
+                        break;
+                      }
+                      batch = urls.slice(i, i + batchSize);
+                      _context3.next = 13;
+                      return processBatch(batch, query);
+                    case 13:
+                      tracks = _context3.sent;
+                      if (getSearchPlatform() === "Spotify" && query === searchRef.current.value) {
+                        _context3.next = 18;
+                        break;
+                      }
+                      return _context3.abrupt("break", 24);
+                    case 18:
+                      results.push.apply(results, _toConsumableArray(tracks));
+                    case 19:
+                      _context3.next = 21;
+                      return delay(500);
+                    case 21:
+                      i += batchSize;
+                      _context3.next = 9;
+                      break;
+                    case 24:
+                      console.log(trackResults);
+                      return _context3.abrupt("return", trackResults);
+                    case 28:
+                      _context3.prev = 28;
+                      _context3.t0 = _context3["catch"](0);
+                      console.error("Error:", _context3.t0);
+                    case 31:
+                    case "end":
+                      return _context3.stop();
+                  }
+                }, _callee3, null, [[0, 28]]);
+              }));
+              return function searchTracks() {
+                return _ref5.apply(this, arguments);
+              };
+            }();
+            _context5.next = 12;
+            return searchTracks();
+          case 12:
+            _context5.next = 54;
+            break;
+          case 14:
+            if (!(platform === "Soundcloud")) {
+              _context5.next = 48;
+              break;
+            }
+            setSearch([]);
+            setLoading(true);
+            soundScraper = new _SoundcloudScraper_jsx__WEBPACK_IMPORTED_MODULE_2__.SoundCloudScraper();
+            url = "/sc/search";
+            _context5.next = 21;
+            return axios__WEBPACK_IMPORTED_MODULE_7___default().post(url, {
+              query: searchRef.current.value
+            });
+          case 21:
+            res = _context5.sent.data;
+            console.log(res);
+            res = res.substring(res.indexOf("<li><h2>"), res.lastIndexOf("</h2></li>"));
+            console.log(res);
+            index = 0;
+            tracklist = [];
+          case 27:
+            if (!(index < res.length)) {
+              _context5.next = 38;
+              break;
+            }
+            start = res.indexOf('"', index);
+            end = res.indexOf('"', start + 1);
+            if (!(start === -1 || end === -1)) {
+              _context5.next = 32;
+              break;
+            }
+            return _context5.abrupt("break", 38);
+          case 32:
+            link = res.substring(start + 1, end);
+            tracklist.push(link);
+            index = end + 1;
+            console.log(link);
+            _context5.next = 27;
+            break;
+          case 38:
+            console.log(tracklist);
+            _context5.next = 41;
+            return Promise.all(tracklist.map( /*#__PURE__*/function () {
+              var _ref6 = _asyncToGenerator( /*#__PURE__*/_regeneratorRuntime().mark(function _callee4(link) {
+                return _regeneratorRuntime().wrap(function _callee4$(_context4) {
+                  while (1) switch (_context4.prev = _context4.next) {
+                    case 0:
+                      _context4.t0 = soundScraper;
+                      _context4.next = 3;
+                      return axios__WEBPACK_IMPORTED_MODULE_7___default().post("/sc/track", {
+                        trackID: link
+                      });
+                    case 3:
+                      _context4.t1 = _context4.sent.data;
+                      _context4.next = 6;
+                      return _context4.t0.extractSound.call(_context4.t0, _context4.t1);
+                    case 6:
+                      return _context4.abrupt("return", _context4.sent);
+                    case 7:
+                    case "end":
+                      return _context4.stop();
+                  }
+                }, _callee4);
+              }));
+              return function (_x5) {
+                return _ref6.apply(this, arguments);
               };
             }()));
-          case 39:
-            resolved = _context3.sent;
+          case 41:
+            resolved = _context5.sent;
             resolved.map(function (song) {
-              return results.push({
+              results.push({
                 item: song,
                 platform: "Soundcloud",
                 title: song.title,
@@ -10009,16 +10022,16 @@ function Header(_ref) {
             console.log(results);
             setSearch(results);
             setLoading(false);
-            _context3.next = 52;
+            _context5.next = 54;
             break;
-          case 46:
+          case 48:
             if (!(platform === "Youtube")) {
-              _context3.next = 52;
+              _context5.next = 54;
               break;
             }
             _url = "/yt/search";
-            _context3.next = 50;
-            return axios__WEBPACK_IMPORTED_MODULE_8___default().post(_url, {
+            _context5.next = 52;
+            return axios__WEBPACK_IMPORTED_MODULE_7___default().post(_url, {
               query: searchRef.current.value
             }).then(function (res) {
               console.log(res.data[0]);
@@ -10035,26 +10048,26 @@ function Header(_ref) {
                 };
               })));
             });
-          case 50:
+          case 52:
             console.log(results);
             setSearch(results);
-          case 52:
+          case 54:
             setPage("Search");
-          case 53:
+          case 55:
           case "end":
-            return _context3.stop();
+            return _context5.stop();
         }
-      }, _callee3);
+      }, _callee5);
     }));
-    return function invokeSearch(_x3) {
-      return _ref6.apply(this, arguments);
+    return function invokeSearch(_x) {
+      return _ref2.apply(this, arguments);
     };
   }();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "header"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "header_left"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_icons_Search__WEBPACK_IMPORTED_MODULE_8__["default"], {
     fontSize: "large"
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("input", {
     placeholder: "Search from ".concat(searchPlatform),
@@ -10068,7 +10081,7 @@ function Header(_ref) {
     className: "header_leftButtons"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("img", {
     alt: "",
-    className: !(token === "") ? searchPlatform === "Spotify" | token === null ? "header_playerLogoActive" : "header_playerLogo" : "header_playerLogoDisabled",
+    className: searchPlatform === "Spotify" | token === null ? "header_playerLogoActive" : "header_playerLogo",
     src: _pics_spotDark_svg__WEBPACK_IMPORTED_MODULE_4__,
     onClick: function onClick() {
       return invokeSearch("Spotify");
@@ -10092,7 +10105,7 @@ function Header(_ref) {
     target: "_blank"
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("div", {
     className: "header_right"
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_13__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_9__["default"], {
     src: user === null || user === void 0 ? void 0 : (_user$images$ = user.images[0]) === null || _user$images$ === void 0 ? void 0 : _user$images$.url,
     alt: user
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0__.createElement("h4", null, user === null || user === void 0 ? void 0 : user.display_name))));
@@ -10191,6 +10204,9 @@ __webpack_require__.r(__webpack_exports__);
 var Loading = function Loading() {
   var setToken = (0,_store__WEBPACK_IMPORTED_MODULE_4__.useSpotify)(function (state) {
     return state.setToken;
+  });
+  var setPlaylists = (0,_store__WEBPACK_IMPORTED_MODULE_4__.useSpotify)(function (state) {
+    return state.setPlaylists;
   });
   var loginTest = function loginTest() {
     console.log("test");
@@ -20765,6 +20781,13 @@ var searchStore = function searchStore(set, get) {
   return {
     search: [],
     searchPlatform: "Spotify",
+    pushSearch: function pushSearch(songs) {
+      return set(function (state) {
+        return {
+          search: [].concat(_toConsumableArray(state.search), _toConsumableArray(songs))
+        };
+      });
+    },
     setSearch: function setSearch(search) {
       return set({
         search: search
@@ -20828,570 +20851,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function r(e){var t,f,n="";if("string"==typeof e||"number"==typeof e)n+=e;else if("object"==typeof e)if(Array.isArray(e))for(t=0;t<e.length;t++)e[t]&&(f=r(e[t]))&&(n&&(n+=" "),n+=f);else for(t in e)e[t]&&(n&&(n+=" "),n+=t);return n}function clsx(){for(var e,t,f=0,n="";f<arguments.length;)(e=arguments[f++])&&(t=r(e))&&(n&&(n+=" "),n+=t);return n}/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (clsx);
-
-/***/ }),
-
-/***/ "./node_modules/cross-fetch/dist/browser-ponyfill.js":
-/*!***********************************************************!*\
-  !*** ./node_modules/cross-fetch/dist/browser-ponyfill.js ***!
-  \***********************************************************/
-/***/ (function(module, exports) {
-
-var global = typeof self !== 'undefined' ? self : this;
-var __self__ = (function () {
-function F() {
-this.fetch = false;
-this.DOMException = global.DOMException
-}
-F.prototype = global;
-return new F();
-})();
-(function(self) {
-
-var irrelevant = (function (exports) {
-
-  var support = {
-    searchParams: 'URLSearchParams' in self,
-    iterable: 'Symbol' in self && 'iterator' in Symbol,
-    blob:
-      'FileReader' in self &&
-      'Blob' in self &&
-      (function() {
-        try {
-          new Blob();
-          return true
-        } catch (e) {
-          return false
-        }
-      })(),
-    formData: 'FormData' in self,
-    arrayBuffer: 'ArrayBuffer' in self
-  };
-
-  function isDataView(obj) {
-    return obj && DataView.prototype.isPrototypeOf(obj)
-  }
-
-  if (support.arrayBuffer) {
-    var viewClasses = [
-      '[object Int8Array]',
-      '[object Uint8Array]',
-      '[object Uint8ClampedArray]',
-      '[object Int16Array]',
-      '[object Uint16Array]',
-      '[object Int32Array]',
-      '[object Uint32Array]',
-      '[object Float32Array]',
-      '[object Float64Array]'
-    ];
-
-    var isArrayBufferView =
-      ArrayBuffer.isView ||
-      function(obj) {
-        return obj && viewClasses.indexOf(Object.prototype.toString.call(obj)) > -1
-      };
-  }
-
-  function normalizeName(name) {
-    if (typeof name !== 'string') {
-      name = String(name);
-    }
-    if (/[^a-z0-9\-#$%&'*+.^_`|~]/i.test(name)) {
-      throw new TypeError('Invalid character in header field name')
-    }
-    return name.toLowerCase()
-  }
-
-  function normalizeValue(value) {
-    if (typeof value !== 'string') {
-      value = String(value);
-    }
-    return value
-  }
-
-  // Build a destructive iterator for the value list
-  function iteratorFor(items) {
-    var iterator = {
-      next: function() {
-        var value = items.shift();
-        return {done: value === undefined, value: value}
-      }
-    };
-
-    if (support.iterable) {
-      iterator[Symbol.iterator] = function() {
-        return iterator
-      };
-    }
-
-    return iterator
-  }
-
-  function Headers(headers) {
-    this.map = {};
-
-    if (headers instanceof Headers) {
-      headers.forEach(function(value, name) {
-        this.append(name, value);
-      }, this);
-    } else if (Array.isArray(headers)) {
-      headers.forEach(function(header) {
-        this.append(header[0], header[1]);
-      }, this);
-    } else if (headers) {
-      Object.getOwnPropertyNames(headers).forEach(function(name) {
-        this.append(name, headers[name]);
-      }, this);
-    }
-  }
-
-  Headers.prototype.append = function(name, value) {
-    name = normalizeName(name);
-    value = normalizeValue(value);
-    var oldValue = this.map[name];
-    this.map[name] = oldValue ? oldValue + ', ' + value : value;
-  };
-
-  Headers.prototype['delete'] = function(name) {
-    delete this.map[normalizeName(name)];
-  };
-
-  Headers.prototype.get = function(name) {
-    name = normalizeName(name);
-    return this.has(name) ? this.map[name] : null
-  };
-
-  Headers.prototype.has = function(name) {
-    return this.map.hasOwnProperty(normalizeName(name))
-  };
-
-  Headers.prototype.set = function(name, value) {
-    this.map[normalizeName(name)] = normalizeValue(value);
-  };
-
-  Headers.prototype.forEach = function(callback, thisArg) {
-    for (var name in this.map) {
-      if (this.map.hasOwnProperty(name)) {
-        callback.call(thisArg, this.map[name], name, this);
-      }
-    }
-  };
-
-  Headers.prototype.keys = function() {
-    var items = [];
-    this.forEach(function(value, name) {
-      items.push(name);
-    });
-    return iteratorFor(items)
-  };
-
-  Headers.prototype.values = function() {
-    var items = [];
-    this.forEach(function(value) {
-      items.push(value);
-    });
-    return iteratorFor(items)
-  };
-
-  Headers.prototype.entries = function() {
-    var items = [];
-    this.forEach(function(value, name) {
-      items.push([name, value]);
-    });
-    return iteratorFor(items)
-  };
-
-  if (support.iterable) {
-    Headers.prototype[Symbol.iterator] = Headers.prototype.entries;
-  }
-
-  function consumed(body) {
-    if (body.bodyUsed) {
-      return Promise.reject(new TypeError('Already read'))
-    }
-    body.bodyUsed = true;
-  }
-
-  function fileReaderReady(reader) {
-    return new Promise(function(resolve, reject) {
-      reader.onload = function() {
-        resolve(reader.result);
-      };
-      reader.onerror = function() {
-        reject(reader.error);
-      };
-    })
-  }
-
-  function readBlobAsArrayBuffer(blob) {
-    var reader = new FileReader();
-    var promise = fileReaderReady(reader);
-    reader.readAsArrayBuffer(blob);
-    return promise
-  }
-
-  function readBlobAsText(blob) {
-    var reader = new FileReader();
-    var promise = fileReaderReady(reader);
-    reader.readAsText(blob);
-    return promise
-  }
-
-  function readArrayBufferAsText(buf) {
-    var view = new Uint8Array(buf);
-    var chars = new Array(view.length);
-
-    for (var i = 0; i < view.length; i++) {
-      chars[i] = String.fromCharCode(view[i]);
-    }
-    return chars.join('')
-  }
-
-  function bufferClone(buf) {
-    if (buf.slice) {
-      return buf.slice(0)
-    } else {
-      var view = new Uint8Array(buf.byteLength);
-      view.set(new Uint8Array(buf));
-      return view.buffer
-    }
-  }
-
-  function Body() {
-    this.bodyUsed = false;
-
-    this._initBody = function(body) {
-      this._bodyInit = body;
-      if (!body) {
-        this._bodyText = '';
-      } else if (typeof body === 'string') {
-        this._bodyText = body;
-      } else if (support.blob && Blob.prototype.isPrototypeOf(body)) {
-        this._bodyBlob = body;
-      } else if (support.formData && FormData.prototype.isPrototypeOf(body)) {
-        this._bodyFormData = body;
-      } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
-        this._bodyText = body.toString();
-      } else if (support.arrayBuffer && support.blob && isDataView(body)) {
-        this._bodyArrayBuffer = bufferClone(body.buffer);
-        // IE 10-11 can't handle a DataView body.
-        this._bodyInit = new Blob([this._bodyArrayBuffer]);
-      } else if (support.arrayBuffer && (ArrayBuffer.prototype.isPrototypeOf(body) || isArrayBufferView(body))) {
-        this._bodyArrayBuffer = bufferClone(body);
-      } else {
-        this._bodyText = body = Object.prototype.toString.call(body);
-      }
-
-      if (!this.headers.get('content-type')) {
-        if (typeof body === 'string') {
-          this.headers.set('content-type', 'text/plain;charset=UTF-8');
-        } else if (this._bodyBlob && this._bodyBlob.type) {
-          this.headers.set('content-type', this._bodyBlob.type);
-        } else if (support.searchParams && URLSearchParams.prototype.isPrototypeOf(body)) {
-          this.headers.set('content-type', 'application/x-www-form-urlencoded;charset=UTF-8');
-        }
-      }
-    };
-
-    if (support.blob) {
-      this.blob = function() {
-        var rejected = consumed(this);
-        if (rejected) {
-          return rejected
-        }
-
-        if (this._bodyBlob) {
-          return Promise.resolve(this._bodyBlob)
-        } else if (this._bodyArrayBuffer) {
-          return Promise.resolve(new Blob([this._bodyArrayBuffer]))
-        } else if (this._bodyFormData) {
-          throw new Error('could not read FormData body as blob')
-        } else {
-          return Promise.resolve(new Blob([this._bodyText]))
-        }
-      };
-
-      this.arrayBuffer = function() {
-        if (this._bodyArrayBuffer) {
-          return consumed(this) || Promise.resolve(this._bodyArrayBuffer)
-        } else {
-          return this.blob().then(readBlobAsArrayBuffer)
-        }
-      };
-    }
-
-    this.text = function() {
-      var rejected = consumed(this);
-      if (rejected) {
-        return rejected
-      }
-
-      if (this._bodyBlob) {
-        return readBlobAsText(this._bodyBlob)
-      } else if (this._bodyArrayBuffer) {
-        return Promise.resolve(readArrayBufferAsText(this._bodyArrayBuffer))
-      } else if (this._bodyFormData) {
-        throw new Error('could not read FormData body as text')
-      } else {
-        return Promise.resolve(this._bodyText)
-      }
-    };
-
-    if (support.formData) {
-      this.formData = function() {
-        return this.text().then(decode)
-      };
-    }
-
-    this.json = function() {
-      return this.text().then(JSON.parse)
-    };
-
-    return this
-  }
-
-  // HTTP methods whose capitalization should be normalized
-  var methods = ['DELETE', 'GET', 'HEAD', 'OPTIONS', 'POST', 'PUT'];
-
-  function normalizeMethod(method) {
-    var upcased = method.toUpperCase();
-    return methods.indexOf(upcased) > -1 ? upcased : method
-  }
-
-  function Request(input, options) {
-    options = options || {};
-    var body = options.body;
-
-    if (input instanceof Request) {
-      if (input.bodyUsed) {
-        throw new TypeError('Already read')
-      }
-      this.url = input.url;
-      this.credentials = input.credentials;
-      if (!options.headers) {
-        this.headers = new Headers(input.headers);
-      }
-      this.method = input.method;
-      this.mode = input.mode;
-      this.signal = input.signal;
-      if (!body && input._bodyInit != null) {
-        body = input._bodyInit;
-        input.bodyUsed = true;
-      }
-    } else {
-      this.url = String(input);
-    }
-
-    this.credentials = options.credentials || this.credentials || 'same-origin';
-    if (options.headers || !this.headers) {
-      this.headers = new Headers(options.headers);
-    }
-    this.method = normalizeMethod(options.method || this.method || 'GET');
-    this.mode = options.mode || this.mode || null;
-    this.signal = options.signal || this.signal;
-    this.referrer = null;
-
-    if ((this.method === 'GET' || this.method === 'HEAD') && body) {
-      throw new TypeError('Body not allowed for GET or HEAD requests')
-    }
-    this._initBody(body);
-  }
-
-  Request.prototype.clone = function() {
-    return new Request(this, {body: this._bodyInit})
-  };
-
-  function decode(body) {
-    var form = new FormData();
-    body
-      .trim()
-      .split('&')
-      .forEach(function(bytes) {
-        if (bytes) {
-          var split = bytes.split('=');
-          var name = split.shift().replace(/\+/g, ' ');
-          var value = split.join('=').replace(/\+/g, ' ');
-          form.append(decodeURIComponent(name), decodeURIComponent(value));
-        }
-      });
-    return form
-  }
-
-  function parseHeaders(rawHeaders) {
-    var headers = new Headers();
-    // Replace instances of \r\n and \n followed by at least one space or horizontal tab with a space
-    // https://tools.ietf.org/html/rfc7230#section-3.2
-    var preProcessedHeaders = rawHeaders.replace(/\r?\n[\t ]+/g, ' ');
-    preProcessedHeaders.split(/\r?\n/).forEach(function(line) {
-      var parts = line.split(':');
-      var key = parts.shift().trim();
-      if (key) {
-        var value = parts.join(':').trim();
-        headers.append(key, value);
-      }
-    });
-    return headers
-  }
-
-  Body.call(Request.prototype);
-
-  function Response(bodyInit, options) {
-    if (!options) {
-      options = {};
-    }
-
-    this.type = 'default';
-    this.status = options.status === undefined ? 200 : options.status;
-    this.ok = this.status >= 200 && this.status < 300;
-    this.statusText = 'statusText' in options ? options.statusText : 'OK';
-    this.headers = new Headers(options.headers);
-    this.url = options.url || '';
-    this._initBody(bodyInit);
-  }
-
-  Body.call(Response.prototype);
-
-  Response.prototype.clone = function() {
-    return new Response(this._bodyInit, {
-      status: this.status,
-      statusText: this.statusText,
-      headers: new Headers(this.headers),
-      url: this.url
-    })
-  };
-
-  Response.error = function() {
-    var response = new Response(null, {status: 0, statusText: ''});
-    response.type = 'error';
-    return response
-  };
-
-  var redirectStatuses = [301, 302, 303, 307, 308];
-
-  Response.redirect = function(url, status) {
-    if (redirectStatuses.indexOf(status) === -1) {
-      throw new RangeError('Invalid status code')
-    }
-
-    return new Response(null, {status: status, headers: {location: url}})
-  };
-
-  exports.DOMException = self.DOMException;
-  try {
-    new exports.DOMException();
-  } catch (err) {
-    exports.DOMException = function(message, name) {
-      this.message = message;
-      this.name = name;
-      var error = Error(message);
-      this.stack = error.stack;
-    };
-    exports.DOMException.prototype = Object.create(Error.prototype);
-    exports.DOMException.prototype.constructor = exports.DOMException;
-  }
-
-  function fetch(input, init) {
-    return new Promise(function(resolve, reject) {
-      var request = new Request(input, init);
-
-      if (request.signal && request.signal.aborted) {
-        return reject(new exports.DOMException('Aborted', 'AbortError'))
-      }
-
-      var xhr = new XMLHttpRequest();
-
-      function abortXhr() {
-        xhr.abort();
-      }
-
-      xhr.onload = function() {
-        var options = {
-          status: xhr.status,
-          statusText: xhr.statusText,
-          headers: parseHeaders(xhr.getAllResponseHeaders() || '')
-        };
-        options.url = 'responseURL' in xhr ? xhr.responseURL : options.headers.get('X-Request-URL');
-        var body = 'response' in xhr ? xhr.response : xhr.responseText;
-        resolve(new Response(body, options));
-      };
-
-      xhr.onerror = function() {
-        reject(new TypeError('Network request failed'));
-      };
-
-      xhr.ontimeout = function() {
-        reject(new TypeError('Network request failed'));
-      };
-
-      xhr.onabort = function() {
-        reject(new exports.DOMException('Aborted', 'AbortError'));
-      };
-
-      xhr.open(request.method, request.url, true);
-
-      if (request.credentials === 'include') {
-        xhr.withCredentials = true;
-      } else if (request.credentials === 'omit') {
-        xhr.withCredentials = false;
-      }
-
-      if ('responseType' in xhr && support.blob) {
-        xhr.responseType = 'blob';
-      }
-
-      request.headers.forEach(function(value, name) {
-        xhr.setRequestHeader(name, value);
-      });
-
-      if (request.signal) {
-        request.signal.addEventListener('abort', abortXhr);
-
-        xhr.onreadystatechange = function() {
-          // DONE (success or failure)
-          if (xhr.readyState === 4) {
-            request.signal.removeEventListener('abort', abortXhr);
-          }
-        };
-      }
-
-      xhr.send(typeof request._bodyInit === 'undefined' ? null : request._bodyInit);
-    })
-  }
-
-  fetch.polyfill = true;
-
-  if (!self.fetch) {
-    self.fetch = fetch;
-    self.Headers = Headers;
-    self.Request = Request;
-    self.Response = Response;
-  }
-
-  exports.Headers = Headers;
-  exports.Request = Request;
-  exports.Response = Response;
-  exports.fetch = fetch;
-
-  Object.defineProperty(exports, '__esModule', { value: true });
-
-  return exports;
-
-})({});
-})(__self__);
-__self__.fetch.ponyfill = true;
-// Remove "polyfill" property added by whatwg-fetch
-delete __self__.fetch.polyfill;
-// Choose between native implementation (global) or custom implementation (__self__)
-// var ctx = global.fetch ? global : __self__;
-var ctx = __self__; // this line disable service worker support temporarily
-exports = ctx.fetch // To enable: import fetch from 'cross-fetch'
-exports["default"] = ctx.fetch // For TypeScript consumers without esModuleInterop.
-exports.fetch = ctx.fetch // To enable: import {fetch} from 'cross-fetch'
-exports.Headers = ctx.Headers
-exports.Request = ctx.Request
-exports.Response = ctx.Response
-module.exports = exports
-
 
 /***/ }),
 
@@ -21766,7 +21225,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ".songRow {\n  margin-left: 20px;\n  padding: 20px;\n  display: flex;\n  align-items: center;\n  color: white;\n  opacity: 0.8;\n  border-radius: 10px;\n}\n\n.songRow_platform {\n  height: 3em;\n  width: 3em;\n  margin-left: 5px;\n  align-items: center;\n  filter: invert(17%) sepia(65%) saturate(3149%) hue-rotate(235deg) brightness(78%) contrast(144%);\n  margin-bottom: 5px;\n}\n\n.songRow_platform:hover {\n  filter: invert(57%) sepia(24%) saturate(6958%) hue-rotate(190deg) brightness(104%) contrast(101%);\n  cursor: default;\n}\n\n.songRow:hover {\n  cursor: pointer;\n  background: #000b1d;\n  opacity: 0.8;\n}\n\n.songRow_info {\n  margin-left: 5px;\n}\n\n.songRow_info > h1 {\n  font-size: 16px;\n}\n\n.songRow_info > p {\n  font-size: 14px;\n  margin-top: 3px;\n  color: lightgray;\n}\n\n.songRow_album {\n  height: 3em;\n  width: 3em;\n  margin-right: 30px;\n  color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n  height: 3em;\n  width: 3em;\n  margin-left: 22px;\n  margin-right: 24px;\n  color: white;\n}\n\n.songRow_search {\n  max-height: 80px;\n}\n\n.songRow_controls {\n  margin-right: 20px;\n  display: inline-flex;\n  text-align: right;\n  align-items: end;\n  margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsBlur {\n  filter: blur(5px);\n  margin-right: 20px;\n  display: inline-flex;\n  text-align: right;\n  align-items: end;\n  margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsIcons {\n  min-width: 35px;\n  min-height: 35px;\n  color: white;\n  fill: white;\n  margin-right: 10px;\n  margin-left: 10px;\n  margin-bottom: 10px;\n  position: relative;\n}\n\n.songRow_controlsIcons:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n}\n\n.songRow_controlsIcons.upsideDown:hover {\n  transition: 0.2s ease-in-out;\n  transform: scaleY(-1.2) scaleX(-1.2) !important;\n}\n\n.upsideDown {\n  margin-right: 10px;\n  transform: rotate(180deg);\n}\n\n.songRow_controlsAdd {\n  max-width: 50px;\n  max-height: 50px;\n  filter: brightness(0) invert(1);\n  margin-right: 10px;\n  margin-bottom: 2px;\n  position: relative;\n}\n\n.songRow_controlsAdd:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n}\n\n.songRow_controlsDelete {\n  margin-bottom: 16px;\n  filter: brightness(0) invert(1);\n  transform: scale(1.5) !important;\n}\n\n.download {\n  margin-bottom: -4px;\n  top: 0;\n  bottom: 0;\n}\n\n.songRow_controlsDeleteActive {\n  margin-bottom: 16px;\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n  transform: scale(1.5) !important;\n}\n\n.songRow_controlsDelete:hover {\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n.deletePopup {\n  justify-content: right;\n  align-items: right;\n}\n\n.deletePopupIcon {\n  max-height: 20px;\n  max-width: 50px;\n  align-items: right;\n}\n\n.deletePopupIcon:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}", "",{"version":3,"sources":["webpack://./src/styles/SongRow.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;EACA,YAAA;EACA,mBAAA;AACJ;;AAEA;EACI,WAAA;EACA,UAAA;EACA,gBAAA;EACA,mBAAA;EACA,gGAAA;EACA,kBAAA;AACJ;;AAEA;EACI,iGAAA;EACA,eAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;EAEA,YAAA;AAAJ;;AAGA;EACI,gBAAA;AAAJ;;AAGA;EACI,eAAA;AAAJ;;AAGA;EACI,eAAA;EACA,eAAA;EACA,gBAAA;AAAJ;;AAGA;EACI,WAAA;EACA,UAAA;EACA,kBAAA;EACA,yBAAA;AAAJ;;AAGA;EACI,WAAA;EACA,UAAA;EACA,iBAAA;EACA,kBAAA;EACA,YAAA;AAAJ;;AAGA;EACI,gBAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,oBAAA;EACA,iBAAA;EACA,gBAAA;EACA,wBAAA;AAAJ;;AAGA;EACI,iBAAA;EACA,kBAAA;EACA,oBAAA;EACA,iBAAA;EACA,gBAAA;EACA,wBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,gBAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,mBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,4BAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,4BAAA;EACA,+CAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,yBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,gBAAA;EACA,+BAAA;EACA,kBAAA;EACA,kBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,4BAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,+BAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,MAAA;EACA,SAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,iGAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,iGAAA;AAAJ;;AAGA;EACI,sBAAA;EACA,kBAAA;AAAJ;;AAIA;EACI,gBAAA;EACA,eAAA;EACA,kBAAA;AADJ;;AAIA;EACI,4BAAA;EACA,gCAAA;EACA,iGAAA;AADJ","sourcesContent":[".songRow {\n    margin-left: 20px;\n    padding: 20px;\n    display: flex;\n    align-items: center;\n    color: white;\n    opacity: 0.8;\n    border-radius: 10px;\n}\n\n.songRow_platform {\n    height: 3em;\n    width: 3em;\n    margin-left: 5px;\n    align-items: center;\n    filter: invert(17%) sepia(65%) saturate(3149%) hue-rotate(235deg) brightness(78%) contrast(144%);\n    margin-bottom: 5px;\n}\n\n.songRow_platform:hover {\n    filter: invert(57%) sepia(24%) saturate(6958%) hue-rotate(190deg) brightness(104%) contrast(101%);\n    cursor: default;\n}\n\n.songRow:hover {\n    cursor: pointer;\n    background: #000b1d;\n    // background: #050394;\n    opacity: 0.8;\n}\n\n.songRow_info {\n    margin-left: 5px;\n}\n\n.songRow_info > h1 {\n    font-size: 16px;\n}\n\n.songRow_info > p {\n    font-size: 14px;\n    margin-top: 3px;\n    color: lightgray;\n}\n\n.songRow_album {\n    height: 3em;\n    width: 3em;\n    margin-right: 30px;\n    color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n    height: 3em;\n    width: 3em;\n    margin-left: 22px;\n    margin-right: 24px;\n    color: white;\n}\n\n.songRow_search {\n    max-height: 80px;\n}\n\n.songRow_controls {\n    margin-right: 20px;\n    display: inline-flex;\n    text-align: right;\n    align-items: end;\n    margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsBlur {\n    filter: blur(5px);\n    margin-right: 20px;\n    display: inline-flex;\n    text-align: right;\n    align-items: end;\n    margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsIcons {\n    min-width: 35px;\n    min-height: 35px;\n    color: white;\n    fill: white;\n    margin-right: 10px;\n    margin-left: 10px;\n    margin-bottom: 10px;\n    position: relative;\n}\n\n.songRow_controlsIcons:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n}\n\n.songRow_controlsIcons.upsideDown:hover {\n    transition: 0.2s ease-in-out;\n    transform: (scaleY(-1.2) scaleX(-1.2)) !important;\n}\n\n.upsideDown {\n    margin-right: 10px;\n    transform: rotate(180deg);\n}\n\n.songRow_controlsAdd {\n    max-width: 50px;\n    max-height: 50px;\n    filter: brightness(0) invert(1);\n    margin-right: 10px;\n    margin-bottom: 2px;\n    position: relative;\n}\n\n.songRow_controlsAdd:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n}\n\n.songRow_controlsDelete {\n    margin-bottom: 16px;\n    filter: brightness(0) invert(1);\n    transform: scale(1.5) !important;\n}\n\n.download {\n    margin-bottom: -4px;\n    top: 0;\n    bottom: 0;\n}\n\n.songRow_controlsDeleteActive {\n    margin-bottom: 16px;\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n    transform: scale(1.5) !important;\n}\n\n.songRow_controlsDelete:hover {\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n.deletePopup {\n    justify-content: right;\n    align-items: right;\n    // display: inline-block;\n}\n\n.deletePopupIcon {\n    max-height: 20px;\n    max-width: 50px;\n    align-items: right;\n\n}\n.deletePopupIcon:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, ".songRow {\n  margin-left: 20px;\n  padding: 10px;\n  display: flex;\n  align-items: center;\n  color: white;\n  opacity: 0.8;\n  border-radius: 5px;\n}\n\n.songRow_platform {\n  height: 3em;\n  width: 3em;\n  margin-left: 5px;\n  align-items: center;\n  filter: invert(17%) sepia(65%) saturate(3149%) hue-rotate(235deg) brightness(78%) contrast(144%);\n  margin-bottom: 5px;\n}\n\n.songRow_platform:hover {\n  filter: invert(57%) sepia(24%) saturate(6958%) hue-rotate(190deg) brightness(104%) contrast(101%);\n  cursor: default;\n}\n\n.songRow:hover {\n  cursor: pointer;\n  background: #000b1d;\n  opacity: 0.8;\n}\n\n.songRow_info {\n  margin-left: 5px;\n}\n\n.songRow_info > h1 {\n  font-size: 16px;\n}\n\n.songRow_info > p {\n  font-size: 14px;\n  margin-top: 3px;\n  color: lightgray;\n}\n\n.songRow_album {\n  height: 3em;\n  width: 3em;\n  margin-right: 30px;\n  color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n  height: 3em;\n  width: 3em;\n  margin-left: 22px;\n  margin-right: 24px;\n  color: white;\n}\n\n.songRow_search {\n  max-height: 65px;\n  margin-right: 10px;\n}\n\n.songRow_controls {\n  margin-right: 20px;\n  display: inline-flex;\n  text-align: right;\n  align-items: end;\n  margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsBlur {\n  filter: blur(5px);\n  margin-right: 20px;\n  display: inline-flex;\n  text-align: right;\n  align-items: end;\n  margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsIcons {\n  min-width: 35px;\n  min-height: 35px;\n  color: white;\n  fill: white;\n  margin-right: 10px;\n  margin-left: 10px;\n  margin-bottom: 10px;\n  position: relative;\n}\n\n.songRow_controlsIcons:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n}\n\n.songRow_controlsIcons.upsideDown:hover {\n  transition: 0.2s ease-in-out;\n  transform: scaleY(-1.2) scaleX(-1.2) !important;\n}\n\n.upsideDown {\n  margin-right: 10px;\n  transform: rotate(180deg);\n}\n\n.songRow_controlsAdd {\n  max-width: 50px;\n  max-height: 50px;\n  filter: brightness(0) invert(1);\n  margin-right: 10px;\n  margin-bottom: 2px;\n  position: relative;\n}\n\n.songRow_controlsAdd:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n}\n\n.songRow_controlsDelete {\n  margin-bottom: 16px;\n  filter: brightness(0) invert(1);\n  transform: scale(1.5) !important;\n}\n\n.download {\n  margin-bottom: -4px;\n  top: 0;\n  bottom: 0;\n}\n\n.songRow_controlsDeleteActive {\n  margin-bottom: 16px;\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n  transform: scale(1.5) !important;\n}\n\n.songRow_controlsDelete:hover {\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n.deletePopup {\n  justify-content: right;\n  align-items: right;\n}\n\n.deletePopupIcon {\n  max-height: 20px;\n  max-width: 50px;\n  align-items: right;\n}\n\n.deletePopupIcon:hover {\n  transition: 0.2s ease-in-out;\n  transform: scale(1.2) !important;\n  filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}", "",{"version":3,"sources":["webpack://./src/styles/SongRow.scss"],"names":[],"mappings":"AAAA;EACI,iBAAA;EACA,aAAA;EACA,aAAA;EACA,mBAAA;EACA,YAAA;EACA,YAAA;EACA,kBAAA;AACJ;;AAEA;EACI,WAAA;EACA,UAAA;EACA,gBAAA;EACA,mBAAA;EACA,gGAAA;EACA,kBAAA;AACJ;;AAEA;EACI,iGAAA;EACA,eAAA;AACJ;;AAEA;EACI,eAAA;EACA,mBAAA;EAEA,YAAA;AAAJ;;AAGA;EACI,gBAAA;AAAJ;;AAGA;EACI,eAAA;AAAJ;;AAGA;EACI,eAAA;EACA,eAAA;EACA,gBAAA;AAAJ;;AAGA;EACI,WAAA;EACA,UAAA;EACA,kBAAA;EACA,yBAAA;AAAJ;;AAGA;EACI,WAAA;EACA,UAAA;EACA,iBAAA;EACA,kBAAA;EACA,YAAA;AAAJ;;AAGA;EACI,gBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,oBAAA;EACA,iBAAA;EACA,gBAAA;EACA,wBAAA;AAAJ;;AAGA;EACI,iBAAA;EACA,kBAAA;EACA,oBAAA;EACA,iBAAA;EACA,gBAAA;EACA,wBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,gBAAA;EACA,YAAA;EACA,WAAA;EACA,kBAAA;EACA,iBAAA;EACA,mBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,4BAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,4BAAA;EACA,+CAAA;AAAJ;;AAGA;EACI,kBAAA;EACA,yBAAA;AAAJ;;AAGA;EACI,eAAA;EACA,gBAAA;EACA,+BAAA;EACA,kBAAA;EACA,kBAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,4BAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,+BAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,MAAA;EACA,SAAA;AAAJ;;AAGA;EACI,mBAAA;EACA,iGAAA;EACA,gCAAA;AAAJ;;AAGA;EACI,iGAAA;AAAJ;;AAGA;EACI,sBAAA;EACA,kBAAA;AAAJ;;AAIA;EACI,gBAAA;EACA,eAAA;EACA,kBAAA;AADJ;;AAIA;EACI,4BAAA;EACA,gCAAA;EACA,iGAAA;AADJ","sourcesContent":[".songRow {\n    margin-left: 20px;\n    padding: 10px;\n    display: flex;\n    align-items: center;\n    color: white;\n    opacity: 0.8;\n    border-radius: 5px;\n}\n\n.songRow_platform {\n    height: 3em;\n    width: 3em;\n    margin-left: 5px;\n    align-items: center;\n    filter: invert(17%) sepia(65%) saturate(3149%) hue-rotate(235deg) brightness(78%) contrast(144%);\n    margin-bottom: 5px;\n}\n\n.songRow_platform:hover {\n    filter: invert(57%) sepia(24%) saturate(6958%) hue-rotate(190deg) brightness(104%) contrast(101%);\n    cursor: default;\n}\n\n.songRow:hover {\n    cursor: pointer;\n    background: #000b1d;\n    // background: #050394;\n    opacity: 0.8;\n}\n\n.songRow_info {\n    margin-left: 5px;\n}\n\n.songRow_info > h1 {\n    font-size: 16px;\n}\n\n.songRow_info > p {\n    font-size: 14px;\n    margin-top: 3px;\n    color: lightgray;\n}\n\n.songRow_album {\n    height: 3em;\n    width: 3em;\n    margin-right: 30px;\n    color: rgb(172, 246, 246);\n}\n\n.songRow_download {\n    height: 3em;\n    width: 3em;\n    margin-left: 22px;\n    margin-right: 24px;\n    color: white;\n}\n\n.songRow_search {\n    max-height: 65px;\n    margin-right: 10px;\n}\n\n.songRow_controls {\n    margin-right: 20px;\n    display: inline-flex;\n    text-align: right;\n    align-items: end;\n    margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsBlur {\n    filter: blur(5px);\n    margin-right: 20px;\n    display: inline-flex;\n    text-align: right;\n    align-items: end;\n    margin: 0px 0px 0px auto;\n}\n\n.songRow_controlsIcons {\n    min-width: 35px;\n    min-height: 35px;\n    color: white;\n    fill: white;\n    margin-right: 10px;\n    margin-left: 10px;\n    margin-bottom: 10px;\n    position: relative;\n}\n\n.songRow_controlsIcons:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n}\n\n.songRow_controlsIcons.upsideDown:hover {\n    transition: 0.2s ease-in-out;\n    transform: (scaleY(-1.2) scaleX(-1.2)) !important;\n}\n\n.upsideDown {\n    margin-right: 10px;\n    transform: rotate(180deg);\n}\n\n.songRow_controlsAdd {\n    max-width: 50px;\n    max-height: 50px;\n    filter: brightness(0) invert(1);\n    margin-right: 10px;\n    margin-bottom: 2px;\n    position: relative;\n}\n\n.songRow_controlsAdd:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n}\n\n.songRow_controlsDelete {\n    margin-bottom: 16px;\n    filter: brightness(0) invert(1);\n    transform: scale(1.5) !important;\n}\n\n.download {\n    margin-bottom: -4px;\n    top: 0;\n    bottom: 0;\n}\n\n.songRow_controlsDeleteActive {\n    margin-bottom: 16px;\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n    transform: scale(1.5) !important;\n}\n\n.songRow_controlsDelete:hover {\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n.deletePopup {\n    justify-content: right;\n    align-items: right;\n    // display: inline-block;\n}\n\n.deletePopupIcon {\n    max-height: 20px;\n    max-width: 50px;\n    align-items: right;\n\n}\n.deletePopupIcon:hover {\n    transition: 0.2s ease-in-out;\n    transform: scale(1.2) !important;\n    filter: invert(44%) sepia(45%) saturate(2171%) hue-rotate(340deg) brightness(102%) contrast(101%);\n}\n\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -23120,809 +22579,6 @@ deepmerge.all = function deepmergeAll(array, options) {
 var deepmerge_1 = deepmerge;
 
 module.exports = deepmerge_1;
-
-
-/***/ }),
-
-/***/ "./node_modules/himalaya/lib/compat.js":
-/*!*********************************************!*\
-  !*** ./node_modules/himalaya/lib/compat.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports.startsWith = startsWith;
-exports.endsWith = endsWith;
-exports.stringIncludes = stringIncludes;
-exports.isRealNaN = isRealNaN;
-exports.arrayIncludes = arrayIncludes;
-/*
-  We don't want to include babel-polyfill in our project.
-    - Library authors should be using babel-runtime for non-global polyfilling
-    - Adding babel-polyfill/-runtime increases bundle size significantly
-
-  We will include our polyfill instance methods as regular functions.
-*/
-
-function startsWith(str, searchString, position) {
-  return str.substr(position || 0, searchString.length) === searchString;
-}
-
-function endsWith(str, searchString, position) {
-  var index = (position || str.length) - searchString.length;
-  var lastIndex = str.lastIndexOf(searchString, index);
-  return lastIndex !== -1 && lastIndex === index;
-}
-
-function stringIncludes(str, searchString, position) {
-  return str.indexOf(searchString, position || 0) !== -1;
-}
-
-function isRealNaN(x) {
-  return typeof x === 'number' && isNaN(x);
-}
-
-function arrayIncludes(array, searchElement, position) {
-  var len = array.length;
-  if (len === 0) return false;
-
-  var lookupIndex = position | 0;
-  var isNaNElement = isRealNaN(searchElement);
-  var searchIndex = lookupIndex >= 0 ? lookupIndex : len + lookupIndex;
-  while (searchIndex < len) {
-    var element = array[searchIndex++];
-    if (element === searchElement) return true;
-    if (isNaNElement && isRealNaN(element)) return true;
-  }
-
-  return false;
-}
-//# sourceMappingURL=compat.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/himalaya/lib/format.js":
-/*!*********************************************!*\
-  !*** ./node_modules/himalaya/lib/format.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports.splitHead = splitHead;
-exports.unquote = unquote;
-exports.format = format;
-exports.formatAttributes = formatAttributes;
-function splitHead(str, sep) {
-  var idx = str.indexOf(sep);
-  if (idx === -1) return [str];
-  return [str.slice(0, idx), str.slice(idx + sep.length)];
-}
-
-function unquote(str) {
-  var car = str.charAt(0);
-  var end = str.length - 1;
-  var isQuoteStart = car === '"' || car === "'";
-  if (isQuoteStart && car === str.charAt(end)) {
-    return str.slice(1, end);
-  }
-  return str;
-}
-
-function format(nodes, options) {
-  return nodes.map(function (node) {
-    var type = node.type;
-    var outputNode = type === 'element' ? {
-      type: type,
-      tagName: node.tagName.toLowerCase(),
-      attributes: formatAttributes(node.attributes),
-      children: format(node.children, options)
-    } : { type: type, content: node.content };
-    if (options.includePositions) {
-      outputNode.position = node.position;
-    }
-    return outputNode;
-  });
-}
-
-function formatAttributes(attributes) {
-  return attributes.map(function (attribute) {
-    var parts = splitHead(attribute.trim(), '=');
-    var key = parts[0];
-    var value = typeof parts[1] === 'string' ? unquote(parts[1]) : null;
-    return { key: key, value: value };
-  });
-}
-//# sourceMappingURL=format.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/himalaya/lib/index.js":
-/*!********************************************!*\
-  !*** ./node_modules/himalaya/lib/index.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports.parseDefaults = undefined;
-exports.parse = parse;
-exports.stringify = stringify;
-
-var _lexer = __webpack_require__(/*! ./lexer */ "./node_modules/himalaya/lib/lexer.js");
-
-var _lexer2 = _interopRequireDefault(_lexer);
-
-var _parser = __webpack_require__(/*! ./parser */ "./node_modules/himalaya/lib/parser.js");
-
-var _parser2 = _interopRequireDefault(_parser);
-
-var _format = __webpack_require__(/*! ./format */ "./node_modules/himalaya/lib/format.js");
-
-var _stringify = __webpack_require__(/*! ./stringify */ "./node_modules/himalaya/lib/stringify.js");
-
-var _tags = __webpack_require__(/*! ./tags */ "./node_modules/himalaya/lib/tags.js");
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-var parseDefaults = exports.parseDefaults = {
-  voidTags: _tags.voidTags,
-  closingTags: _tags.closingTags,
-  childlessTags: _tags.childlessTags,
-  closingTagAncestorBreakers: _tags.closingTagAncestorBreakers,
-  includePositions: false
-};
-
-function parse(str) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : parseDefaults;
-
-  var tokens = (0, _lexer2.default)(str, options);
-  var nodes = (0, _parser2.default)(tokens, options);
-  return (0, _format.format)(nodes, options);
-}
-
-function stringify(ast) {
-  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : parseDefaults;
-
-  return (0, _stringify.toHTML)(ast, options);
-}
-//# sourceMappingURL=index.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/himalaya/lib/lexer.js":
-/*!********************************************!*\
-  !*** ./node_modules/himalaya/lib/lexer.js ***!
-  \********************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports.feedPosition = feedPosition;
-exports.jumpPosition = jumpPosition;
-exports.makeInitialPosition = makeInitialPosition;
-exports.copyPosition = copyPosition;
-exports["default"] = lexer;
-exports.lex = lex;
-exports.findTextEnd = findTextEnd;
-exports.lexText = lexText;
-exports.lexComment = lexComment;
-exports.lexTag = lexTag;
-exports.isWhitespaceChar = isWhitespaceChar;
-exports.lexTagName = lexTagName;
-exports.lexTagAttributes = lexTagAttributes;
-exports.lexSkipTag = lexSkipTag;
-
-var _compat = __webpack_require__(/*! ./compat */ "./node_modules/himalaya/lib/compat.js");
-
-function feedPosition(position, str, len) {
-  var start = position.index;
-  var end = position.index = start + len;
-  for (var i = start; i < end; i++) {
-    var char = str.charAt(i);
-    if (char === '\n') {
-      position.line++;
-      position.column = 0;
-    } else {
-      position.column++;
-    }
-  }
-}
-
-function jumpPosition(position, str, end) {
-  var len = end - position.index;
-  return feedPosition(position, str, len);
-}
-
-function makeInitialPosition() {
-  return {
-    index: 0,
-    column: 0,
-    line: 0
-  };
-}
-
-function copyPosition(position) {
-  return {
-    index: position.index,
-    line: position.line,
-    column: position.column
-  };
-}
-
-function lexer(str, options) {
-  var state = {
-    str: str,
-    options: options,
-    position: makeInitialPosition(),
-    tokens: []
-  };
-  lex(state);
-  return state.tokens;
-}
-
-function lex(state) {
-  var str = state.str,
-      childlessTags = state.options.childlessTags;
-
-  var len = str.length;
-  while (state.position.index < len) {
-    var start = state.position.index;
-    lexText(state);
-    if (state.position.index === start) {
-      var isComment = (0, _compat.startsWith)(str, '!--', start + 1);
-      if (isComment) {
-        lexComment(state);
-      } else {
-        var tagName = lexTag(state);
-        var safeTag = tagName.toLowerCase();
-        if ((0, _compat.arrayIncludes)(childlessTags, safeTag)) {
-          lexSkipTag(tagName, state);
-        }
-      }
-    }
-  }
-}
-
-var alphanumeric = /[A-Za-z0-9]/;
-function findTextEnd(str, index) {
-  while (true) {
-    var textEnd = str.indexOf('<', index);
-    if (textEnd === -1) {
-      return textEnd;
-    }
-    var char = str.charAt(textEnd + 1);
-    if (char === '/' || char === '!' || alphanumeric.test(char)) {
-      return textEnd;
-    }
-    index = textEnd + 1;
-  }
-}
-
-function lexText(state) {
-  var type = 'text';
-  var str = state.str,
-      position = state.position;
-
-  var textEnd = findTextEnd(str, position.index);
-  if (textEnd === position.index) return;
-  if (textEnd === -1) {
-    textEnd = str.length;
-  }
-
-  var start = copyPosition(position);
-  var content = str.slice(position.index, textEnd);
-  jumpPosition(position, str, textEnd);
-  var end = copyPosition(position);
-  state.tokens.push({ type: type, content: content, position: { start: start, end: end } });
-}
-
-function lexComment(state) {
-  var str = state.str,
-      position = state.position;
-
-  var start = copyPosition(position);
-  feedPosition(position, str, 4); // "<!--".length
-  var contentEnd = str.indexOf('-->', position.index);
-  var commentEnd = contentEnd + 3; // "-->".length
-  if (contentEnd === -1) {
-    contentEnd = commentEnd = str.length;
-  }
-
-  var content = str.slice(position.index, contentEnd);
-  jumpPosition(position, str, commentEnd);
-  state.tokens.push({
-    type: 'comment',
-    content: content,
-    position: {
-      start: start,
-      end: copyPosition(position)
-    }
-  });
-}
-
-function lexTag(state) {
-  var str = state.str,
-      position = state.position;
-
-  {
-    var secondChar = str.charAt(position.index + 1);
-    var close = secondChar === '/';
-    var start = copyPosition(position);
-    feedPosition(position, str, close ? 2 : 1);
-    state.tokens.push({ type: 'tag-start', close: close, position: { start: start } });
-  }
-  var tagName = lexTagName(state);
-  lexTagAttributes(state);
-  {
-    var firstChar = str.charAt(position.index);
-    var _close = firstChar === '/';
-    feedPosition(position, str, _close ? 2 : 1);
-    var end = copyPosition(position);
-    state.tokens.push({ type: 'tag-end', close: _close, position: { end: end } });
-  }
-  return tagName;
-}
-
-// See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions#special-white-space
-var whitespace = /\s/;
-function isWhitespaceChar(char) {
-  return whitespace.test(char);
-}
-
-function lexTagName(state) {
-  var str = state.str,
-      position = state.position;
-
-  var len = str.length;
-  var start = position.index;
-  while (start < len) {
-    var char = str.charAt(start);
-    var isTagChar = !(isWhitespaceChar(char) || char === '/' || char === '>');
-    if (isTagChar) break;
-    start++;
-  }
-
-  var end = start + 1;
-  while (end < len) {
-    var _char = str.charAt(end);
-    var _isTagChar = !(isWhitespaceChar(_char) || _char === '/' || _char === '>');
-    if (!_isTagChar) break;
-    end++;
-  }
-
-  jumpPosition(position, str, end);
-  var tagName = str.slice(start, end);
-  state.tokens.push({
-    type: 'tag',
-    content: tagName
-  });
-  return tagName;
-}
-
-function lexTagAttributes(state) {
-  var str = state.str,
-      position = state.position,
-      tokens = state.tokens;
-
-  var cursor = position.index;
-  var quote = null; // null, single-, or double-quote
-  var wordBegin = cursor; // index of word start
-  var words = []; // "key", "key=value", "key='value'", etc
-  var len = str.length;
-  while (cursor < len) {
-    var char = str.charAt(cursor);
-    if (quote) {
-      var isQuoteEnd = char === quote;
-      if (isQuoteEnd) {
-        quote = null;
-      }
-      cursor++;
-      continue;
-    }
-
-    var isTagEnd = char === '/' || char === '>';
-    if (isTagEnd) {
-      if (cursor !== wordBegin) {
-        words.push(str.slice(wordBegin, cursor));
-      }
-      break;
-    }
-
-    var isWordEnd = isWhitespaceChar(char);
-    if (isWordEnd) {
-      if (cursor !== wordBegin) {
-        words.push(str.slice(wordBegin, cursor));
-      }
-      wordBegin = cursor + 1;
-      cursor++;
-      continue;
-    }
-
-    var isQuoteStart = char === '\'' || char === '"';
-    if (isQuoteStart) {
-      quote = char;
-      cursor++;
-      continue;
-    }
-
-    cursor++;
-  }
-  jumpPosition(position, str, cursor);
-
-  var wLen = words.length;
-  var type = 'attribute';
-  for (var i = 0; i < wLen; i++) {
-    var word = words[i];
-    var isNotPair = word.indexOf('=') === -1;
-    if (isNotPair) {
-      var secondWord = words[i + 1];
-      if (secondWord && (0, _compat.startsWith)(secondWord, '=')) {
-        if (secondWord.length > 1) {
-          var newWord = word + secondWord;
-          tokens.push({ type: type, content: newWord });
-          i += 1;
-          continue;
-        }
-        var thirdWord = words[i + 2];
-        i += 1;
-        if (thirdWord) {
-          var _newWord = word + '=' + thirdWord;
-          tokens.push({ type: type, content: _newWord });
-          i += 1;
-          continue;
-        }
-      }
-    }
-    if ((0, _compat.endsWith)(word, '=')) {
-      var _secondWord = words[i + 1];
-      if (_secondWord && !(0, _compat.stringIncludes)(_secondWord, '=')) {
-        var _newWord3 = word + _secondWord;
-        tokens.push({ type: type, content: _newWord3 });
-        i += 1;
-        continue;
-      }
-
-      var _newWord2 = word.slice(0, -1);
-      tokens.push({ type: type, content: _newWord2 });
-      continue;
-    }
-
-    tokens.push({ type: type, content: word });
-  }
-}
-
-var push = [].push;
-
-function lexSkipTag(tagName, state) {
-  var str = state.str,
-      position = state.position,
-      tokens = state.tokens;
-
-  var safeTagName = tagName.toLowerCase();
-  var len = str.length;
-  var index = position.index;
-  while (index < len) {
-    var nextTag = str.indexOf('</', index);
-    if (nextTag === -1) {
-      lexText(state);
-      break;
-    }
-
-    var tagStartPosition = copyPosition(position);
-    jumpPosition(tagStartPosition, str, nextTag);
-    var tagState = { str: str, position: tagStartPosition, tokens: [] };
-    var name = lexTag(tagState);
-    if (safeTagName !== name.toLowerCase()) {
-      index = tagState.position.index;
-      continue;
-    }
-
-    if (nextTag !== position.index) {
-      var textStart = copyPosition(position);
-      jumpPosition(position, str, nextTag);
-      tokens.push({
-        type: 'text',
-        content: str.slice(textStart.index, nextTag),
-        position: {
-          start: textStart,
-          end: copyPosition(position)
-        }
-      });
-    }
-
-    push.apply(tokens, tagState.tokens);
-    jumpPosition(position, str, tagState.position.index);
-    break;
-  }
-}
-//# sourceMappingURL=lexer.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/himalaya/lib/parser.js":
-/*!*********************************************!*\
-  !*** ./node_modules/himalaya/lib/parser.js ***!
-  \*********************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports["default"] = parser;
-exports.hasTerminalParent = hasTerminalParent;
-exports.rewindStack = rewindStack;
-exports.parse = parse;
-
-var _compat = __webpack_require__(/*! ./compat */ "./node_modules/himalaya/lib/compat.js");
-
-function parser(tokens, options) {
-  var root = { tagName: null, children: [] };
-  var state = { tokens: tokens, options: options, cursor: 0, stack: [root] };
-  parse(state);
-  return root.children;
-}
-
-function hasTerminalParent(tagName, stack, terminals) {
-  var tagParents = terminals[tagName];
-  if (tagParents) {
-    var currentIndex = stack.length - 1;
-    while (currentIndex >= 0) {
-      var parentTagName = stack[currentIndex].tagName;
-      if (parentTagName === tagName) {
-        break;
-      }
-      if ((0, _compat.arrayIncludes)(tagParents, parentTagName)) {
-        return true;
-      }
-      currentIndex--;
-    }
-  }
-  return false;
-}
-
-function rewindStack(stack, newLength, childrenEndPosition, endPosition) {
-  stack[newLength].position.end = endPosition;
-  for (var i = newLength + 1, len = stack.length; i < len; i++) {
-    stack[i].position.end = childrenEndPosition;
-  }
-  stack.splice(newLength);
-}
-
-function parse(state) {
-  var tokens = state.tokens,
-      options = state.options;
-  var stack = state.stack;
-
-  var nodes = stack[stack.length - 1].children;
-  var len = tokens.length;
-  var cursor = state.cursor;
-
-  while (cursor < len) {
-    var token = tokens[cursor];
-    if (token.type !== 'tag-start') {
-      nodes.push(token);
-      cursor++;
-      continue;
-    }
-
-    var tagToken = tokens[++cursor];
-    cursor++;
-    var tagName = tagToken.content.toLowerCase();
-    if (token.close) {
-      var index = stack.length;
-      var shouldRewind = false;
-      while (--index > -1) {
-        if (stack[index].tagName === tagName) {
-          shouldRewind = true;
-          break;
-        }
-      }
-      while (cursor < len) {
-        var endToken = tokens[cursor];
-        if (endToken.type !== 'tag-end') break;
-        cursor++;
-      }
-      if (shouldRewind) {
-        rewindStack(stack, index, token.position.start, tokens[cursor - 1].position.end);
-        break;
-      } else {
-        continue;
-      }
-    }
-
-    var isClosingTag = (0, _compat.arrayIncludes)(options.closingTags, tagName);
-    var shouldRewindToAutoClose = isClosingTag;
-    if (shouldRewindToAutoClose) {
-      var terminals = options.closingTagAncestorBreakers;
-
-      shouldRewindToAutoClose = !hasTerminalParent(tagName, stack, terminals);
-    }
-
-    if (shouldRewindToAutoClose) {
-      // rewind the stack to just above the previous
-      // closing tag of the same name
-      var currentIndex = stack.length - 1;
-      while (currentIndex > 0) {
-        if (tagName === stack[currentIndex].tagName) {
-          rewindStack(stack, currentIndex, token.position.start, token.position.start);
-          var previousIndex = currentIndex - 1;
-          nodes = stack[previousIndex].children;
-          break;
-        }
-        currentIndex = currentIndex - 1;
-      }
-    }
-
-    var attributes = [];
-    var attrToken = void 0;
-    while (cursor < len) {
-      attrToken = tokens[cursor];
-      if (attrToken.type === 'tag-end') break;
-      attributes.push(attrToken.content);
-      cursor++;
-    }
-
-    cursor++;
-    var children = [];
-    var position = {
-      start: token.position.start,
-      end: attrToken.position.end
-    };
-    var elementNode = {
-      type: 'element',
-      tagName: tagToken.content,
-      attributes: attributes,
-      children: children,
-      position: position
-    };
-    nodes.push(elementNode);
-
-    var hasChildren = !(attrToken.close || (0, _compat.arrayIncludes)(options.voidTags, tagName));
-    if (hasChildren) {
-      var size = stack.push({ tagName: tagName, children: children, position: position });
-      var innerState = { tokens: tokens, options: options, cursor: cursor, stack: stack };
-      parse(innerState);
-      cursor = innerState.cursor;
-      var rewoundInElement = stack.length === size;
-      if (rewoundInElement) {
-        elementNode.position.end = tokens[cursor - 1].position.end;
-      }
-    }
-  }
-  state.cursor = cursor;
-}
-//# sourceMappingURL=parser.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/himalaya/lib/stringify.js":
-/*!************************************************!*\
-  !*** ./node_modules/himalaya/lib/stringify.js ***!
-  \************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-exports.formatAttributes = formatAttributes;
-exports.toHTML = toHTML;
-
-var _compat = __webpack_require__(/*! ./compat */ "./node_modules/himalaya/lib/compat.js");
-
-function formatAttributes(attributes) {
-  return attributes.reduce(function (attrs, attribute) {
-    var key = attribute.key,
-        value = attribute.value;
-
-    if (value === null) {
-      return attrs + ' ' + key;
-    }
-    var quoteEscape = value.indexOf('\'') !== -1;
-    var quote = quoteEscape ? '"' : '\'';
-    return attrs + ' ' + key + '=' + quote + value + quote;
-  }, '');
-}
-
-function toHTML(tree, options) {
-  return tree.map(function (node) {
-    if (node.type === 'text') {
-      return node.content;
-    }
-    if (node.type === 'comment') {
-      return '<!--' + node.content + '-->';
-    }
-    var tagName = node.tagName,
-        attributes = node.attributes,
-        children = node.children;
-
-    var isSelfClosing = (0, _compat.arrayIncludes)(options.voidTags, tagName.toLowerCase());
-    return isSelfClosing ? '<' + tagName + formatAttributes(attributes) + '>' : '<' + tagName + formatAttributes(attributes) + '>' + toHTML(children, options) + '</' + tagName + '>';
-  }).join('');
-}
-
-exports["default"] = { toHTML: toHTML };
-//# sourceMappingURL=stringify.js.map
-
-
-/***/ }),
-
-/***/ "./node_modules/himalaya/lib/tags.js":
-/*!*******************************************!*\
-  !*** ./node_modules/himalaya/lib/tags.js ***!
-  \*******************************************/
-/***/ ((__unused_webpack_module, exports) => {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", ({
-  value: true
-}));
-/*
-  Tags which contain arbitary non-parsed content
-  For example: <script> JavaScript should not be parsed
-*/
-var childlessTags = exports.childlessTags = ['style', 'script', 'template'];
-
-/*
-  Tags which auto-close because they cannot be nested
-  For example: <p>Outer<p>Inner is <p>Outer</p><p>Inner</p>
-*/
-var closingTags = exports.closingTags = ['html', 'head', 'body', 'p', 'dt', 'dd', 'li', 'option', 'thead', 'th', 'tbody', 'tr', 'td', 'tfoot', 'colgroup'];
-
-/*
-  Closing tags which have ancestor tags which
-  may exist within them which prevent the
-  closing tag from auto-closing.
-  For example: in <li><ul><li></ul></li>,
-  the top-level <li> should not auto-close.
-*/
-var closingTagAncestorBreakers = exports.closingTagAncestorBreakers = {
-  li: ['ul', 'ol', 'menu'],
-  dt: ['dl'],
-  dd: ['dl'],
-  tbody: ['table'],
-  thead: ['table'],
-  tfoot: ['table'],
-  tr: ['table'],
-  td: ['table']
-};
-
-/*
-  Tags which do not need the closing tag
-  For example: <img> does not need </img>
-*/
-var voidTags = exports.voidTags = ['!doctype', 'area', 'base', 'br', 'col', 'command', 'embed', 'hr', 'img', 'input', 'keygen', 'link', 'meta', 'param', 'source', 'track', 'wbr'];
-//# sourceMappingURL=tags.js.map
 
 
 /***/ }),
@@ -64280,526 +62936,6 @@ if (false) {} else {
 
 /***/ }),
 
-/***/ "./node_modules/spotify-uri/dist/index.js":
-/*!************************************************!*\
-  !*** ./node_modules/spotify-uri/dist/index.js ***!
-  \************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-var __defProp = Object.defineProperty;
-var __getOwnPropDesc = Object.getOwnPropertyDescriptor;
-var __getOwnPropNames = Object.getOwnPropertyNames;
-var __hasOwnProp = Object.prototype.hasOwnProperty;
-var __export = (target, all) => {
-  for (var name in all)
-    __defProp(target, name, { get: all[name], enumerable: true });
-};
-var __copyProps = (to, from, except, desc) => {
-  if (from && typeof from === "object" || typeof from === "function") {
-    for (let key of __getOwnPropNames(from))
-      if (!__hasOwnProp.call(to, key) && key !== except)
-        __defProp(to, key, { get: () => from[key], enumerable: !(desc = __getOwnPropDesc(from, key)) || desc.enumerable });
-  }
-  return to;
-};
-var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: true }), mod);
-
-// src/index.ts
-var src_exports = {};
-__export(src_exports, {
-  Album: () => Album,
-  Artist: () => Artist,
-  Episode: () => Episode,
-  Local: () => Local,
-  Playlist: () => Playlist,
-  Search: () => Search,
-  Track: () => Track,
-  User: () => User,
-  formatEmbedURL: () => formatEmbedURL,
-  formatOpenURL: () => formatOpenURL,
-  formatPlayURL: () => formatPlayURL,
-  formatURI: () => formatURI,
-  parse: () => parse
-});
-module.exports = __toCommonJS(src_exports);
-
-// src/parse.ts
-var import_url = __webpack_require__(/*! url */ "./node_modules/url/url.js");
-
-// src/util.ts
-function decode(str) {
-  return decodeURIComponent(str).replace(/\+/g, " ");
-}
-function encode(str) {
-  return escape(str.replace(/ /g, "+"));
-}
-
-// src/spotify-uri.ts
-var SpotifyUri = class {
-  constructor(uri) {
-    this.uri = uri;
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && typeof v.uri === "string");
-  }
-  toEmbedURL() {
-    return `https://embed.spotify.com/?uri=${this.toURI()}`;
-  }
-  toOpenURL() {
-    return `https://open.spotify.com${this.toURL()}`;
-  }
-  toPlayURL() {
-    return `https://play.spotify.com${this.toURL()}`;
-  }
-};
-
-// src/local.ts
-var Local = class extends SpotifyUri {
-  constructor(uri, artist, album, track, seconds) {
-    super(uri);
-    this.type = "local";
-    this.artist = artist;
-    this.album = album;
-    this.track = track;
-    this.seconds = seconds;
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && v.type === "local");
-  }
-  toURI() {
-    return `spotify:local:${encode(this.artist)}:${encode(this.album)}:${encode(this.track)}:${this.seconds}`;
-  }
-  toURL() {
-    return `/local/${encode(this.artist)}/${encode(this.album)}/${encode(this.track)}/${this.seconds}`;
-  }
-};
-
-// src/search.ts
-var Search = class extends SpotifyUri {
-  constructor(uri, query) {
-    super(uri);
-    this.type = "search";
-    this.query = query;
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && v.type === "search");
-  }
-  toURI() {
-    return `spotify:search:${encode(this.query)}`;
-  }
-  toURL() {
-    return `/search/${encode(this.query)}`;
-  }
-};
-
-// src/playlist.ts
-var Playlist = class extends SpotifyUri {
-  constructor(uri, id, user) {
-    super(uri);
-    this.type = "playlist";
-    this.id = id;
-    if (typeof user === "string") {
-      this.user = user;
-    }
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && v.type === "playlist");
-  }
-  toURI() {
-    if (this.user !== void 0) {
-      if (this.id === "starred") {
-        return `spotify:user:${encode(this.user)}:${encode(this.id)}`;
-      }
-      return `spotify:user:${encode(this.user)}:playlist:${encode(this.id)}`;
-    }
-    return `spotify:playlist:${encode(this.id)}`;
-  }
-  toURL() {
-    if (this.user !== void 0) {
-      if (this.id === "starred") {
-        return `/user/${encode(this.user)}/${encode(this.id)}`;
-      }
-      return `/user/${encode(this.user)}/playlist/${encode(this.id)}`;
-    }
-    return `/playlist/${encode(this.id)}`;
-  }
-};
-
-// src/artist.ts
-var Artist = class extends SpotifyUri {
-  constructor(uri, id) {
-    super(uri);
-    this.type = "artist";
-    this.id = id;
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && v.type === "artist");
-  }
-  toURI() {
-    return `spotify:${this.type}:${encode(this.id)}`;
-  }
-  toURL() {
-    return `/${this.type}/${encode(this.id)}`;
-  }
-};
-
-// src/album.ts
-var Album = class extends SpotifyUri {
-  constructor(uri, id) {
-    super(uri);
-    this.type = "album";
-    this.id = id;
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && v.type === "album");
-  }
-  toURI() {
-    return `spotify:${this.type}:${encode(this.id)}`;
-  }
-  toURL() {
-    return `/${this.type}/${encode(this.id)}`;
-  }
-};
-
-// src/track.ts
-var Track = class extends SpotifyUri {
-  constructor(uri, id) {
-    super(uri);
-    this.type = "track";
-    this.id = id;
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && v.type === "track");
-  }
-  toURI() {
-    return `spotify:${this.type}:${encode(this.id)}`;
-  }
-  toURL() {
-    return `/${this.type}/${encode(this.id)}`;
-  }
-};
-
-// src/episode.ts
-var Episode = class extends SpotifyUri {
-  constructor(uri, id) {
-    super(uri);
-    this.type = "episode";
-    this.id = id;
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && v.type === "episode");
-  }
-  toURI() {
-    return `spotify:${this.type}:${encode(this.id)}`;
-  }
-  toURL() {
-    return `/${this.type}/${encode(this.id)}`;
-  }
-};
-
-// src/show.ts
-var Show = class extends SpotifyUri {
-  constructor(uri, id) {
-    super(uri);
-    this.type = "show";
-    this.id = id;
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && v.type === "show");
-  }
-  toURI() {
-    return `spotify:${this.type}:${encode(this.id)}`;
-  }
-  toURL() {
-    return `/${this.type}/${encode(this.id)}`;
-  }
-};
-
-// src/user.ts
-var User = class extends SpotifyUri {
-  constructor(uri, user) {
-    super(uri);
-    this.type = "user";
-    this.user = user;
-  }
-  static is(v) {
-    return Boolean(typeof v === "object" && v.type === "user");
-  }
-  toURI() {
-    return `spotify:${this.type}:${encode(this.user)}`;
-  }
-  toURL() {
-    return `/${this.type}/${encode(this.user)}`;
-  }
-};
-
-// src/parse.ts
-function parse(input) {
-  const uri = SpotifyUri.is(input) ? input.uri : input;
-  const { protocol, hostname, pathname = "/", searchParams } = new import_url.URL(uri);
-  if (hostname === "embed.spotify.com") {
-    const parsedQs = Object.fromEntries(searchParams);
-    if (typeof parsedQs.uri !== "string") {
-      throw new Error("fo");
-    }
-    return parse(parsedQs.uri);
-  }
-  if (protocol === "spotify:") {
-    const parts2 = uri.split(":");
-    return parseParts(uri, parts2);
-  }
-  if (pathname === null) {
-    throw new TypeError("No pathname");
-  }
-  const parts = pathname.split("/");
-  return parseParts(uri, parts);
-}
-function parseParts(uri, parts) {
-  const len = parts.length;
-  if (parts[1] === "embed") {
-    parts = parts.slice(1);
-  }
-  if (parts[1] === "search") {
-    return new Search(uri, decode(parts.slice(2).join(":")));
-  }
-  if (len >= 3 && parts[1] === "local") {
-    return new Local(
-      uri,
-      decode(parts[2]),
-      decode(parts[3]),
-      decode(parts[4]),
-      +parts[5]
-    );
-  }
-  if (len === 3 && parts[1] === "playlist") {
-    return new Playlist(uri, decode(parts[2]));
-  }
-  if (len === 3 && parts[1] === "user") {
-    return new User(uri, decode(parts[2]));
-  }
-  if (len >= 5) {
-    return new Playlist(uri, decode(parts[4]), decode(parts[2]));
-  }
-  if (len >= 4 && parts[3] === "starred") {
-    return new Playlist(uri, "starred", decode(parts[2]));
-  }
-  if (parts[1] === "artist") {
-    return new Artist(uri, parts[2]);
-  }
-  if (parts[1] === "album") {
-    return new Album(uri, parts[2]);
-  }
-  if (parts[1] === "track") {
-    return new Track(uri, parts[2]);
-  }
-  if (parts[1] === "episode") {
-    return new Episode(uri, parts[2]);
-  }
-  if (parts[1] === "show") {
-    return new Show(uri, parts[2]);
-  }
-  if (parts[1] === "playlist") {
-    return new Playlist(uri, parts[2]);
-  }
-  throw new TypeError(`Could not determine type for: ${uri}`);
-}
-
-// src/index.ts
-function formatURI(input) {
-  const uri = typeof input === "string" ? parse(input) : input;
-  return uri.toURI();
-}
-function formatEmbedURL(input) {
-  const uri = typeof input === "string" ? parse(input) : input;
-  return uri.toEmbedURL();
-}
-function formatOpenURL(input) {
-  const uri = typeof input === "string" ? parse(input) : input;
-  return uri.toOpenURL();
-}
-function formatPlayURL(input) {
-  const uri = typeof input === "string" ? parse(input) : input;
-  return uri.toPlayURL();
-}
-// Annotate the CommonJS export names for ESM import in node:
-0 && (0);
-
-
-/***/ }),
-
-/***/ "./node_modules/spotify-url-info/src/index.js":
-/*!****************************************************!*\
-  !*** ./node_modules/spotify-url-info/src/index.js ***!
-  \****************************************************/
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-
-
-const spotifyURI = __webpack_require__(/*! spotify-uri */ "./node_modules/spotify-uri/dist/index.js")
-const { parse } = __webpack_require__(/*! himalaya */ "./node_modules/himalaya/lib/index.js")
-
-const TYPE = {
-  ALBUM: 'album',
-  ARTIST: 'artist',
-  EPISODE: 'episode',
-  PLAYLIST: 'playlist',
-  TRACK: 'track'
-}
-
-const ERROR = {
-  REPORT:
-    'Please report the problem at https://github.com/microlinkhq/spotify-url-info/issues.',
-  NOT_DATA: "Couldn't find any data in embed page that we know how to parse.",
-  NOT_SCRIPTS: "Couldn't find scripts to get the data."
-}
-
-const throwError = message => {
-  throw new TypeError(`${message}\n${ERROR.REPORT}`)
-}
-
-const SUPPORTED_TYPES = Object.values(TYPE)
-
-const createGetData = fetch => async (url, opts) => {
-  const parsedUrl = getParsedUrl(url)
-  const embedURL = spotifyURI.formatEmbedURL(parsedUrl)
-
-  const response = await fetch(embedURL, opts)
-  const text = await response.text()
-  const embed = parse(text)
-
-  let scripts = embed.find(el => el.tagName === 'html')
-
-  if (scripts === undefined) return throwError(ERROR.NOT_SCRIPTS)
-
-  scripts = scripts.children
-    .find(el => el.tagName === 'body')
-    .children.filter(({ tagName }) => tagName === 'script')
-
-  let script = scripts.find(script =>
-    script.attributes.some(({ value }) => value === 'resource')
-  )
-
-  if (script !== undefined) {
-    // found data in the older embed style
-    return normalizeData({
-      data: JSON.parse(Buffer.from(script.children[0].content, 'base64'))
-    })
-  }
-
-  script = scripts.find(script =>
-    script.attributes.some(({ value }) => value === 'initial-state')
-  )
-
-  if (script !== undefined) {
-    // found data in the new embed style
-    const data = JSON.parse(Buffer.from(script.children[0].content, 'base64'))
-      .data.entity
-    return normalizeData({ data })
-  }
-
-  return throwError(ERROR.NOT_DATA)
-}
-
-function getParsedUrl (url) {
-  try {
-    const parsedURL = spotifyURI.parse(url)
-    if (!parsedURL.type) throw new TypeError()
-    return spotifyURI.formatEmbedURL(parsedURL)
-  } catch (_) {
-    throw new TypeError(`Couldn't parse '${url}' as valid URL`)
-  }
-}
-
-const getImages = data => data.coverArt?.sources || data.images
-
-const getDate = data => data.releaseDate?.isoString || data.release_date
-
-const getLink = data => spotifyURI.formatOpenURL(data.uri)
-
-function getArtistTrack (track) {
-  return track.show
-    ? track.show.publisher
-    : []
-        .concat(track.artists)
-        .filter(Boolean)
-        .map(a => a.name)
-        .reduce(
-          (acc, name, index, array) =>
-            index === 0
-              ? name
-              : acc + (array.length - 1 === index ? ' & ' : ', ') + name,
-          ''
-        )
-}
-
-function getPreview (data) {
-  const track = toTrack(data.trackList ? data.trackList[0] : data)
-  const date = getDate(data)
-
-  return {
-    date: date ? new Date(date).toISOString() : date,
-    title: data.name,
-    type: data.type,
-    track: track.name,
-    description: data.description || data.subtitle || track.description,
-    artist: track.artist,
-    image: getImages(data).reduce((a, b) => (a.width > b.width ? a : b)).url,
-    audio: track.previewUrl,
-    link: getLink(data),
-    embed: `https://embed.spotify.com/?uri=${data.uri}`
-  }
-}
-
-const toTrack = track => ({
-  artist: getArtistTrack(track) || track.subtitle,
-  duration: track.duration,
-  name: track.title,
-  previewUrl: track.isPlayable ? track.audioPreview.url : undefined,
-  uri: track.uri
-})
-
-const getTracks = data =>
-  data.trackList ? data.trackList.map(toTrack) : [toTrack(data)]
-
-function normalizeData ({ data }) {
-  if (!data || !data.type || !data.name) {
-    throw new Error("Data doesn't seem to be of the right shape to parse")
-  }
-
-  if (!SUPPORTED_TYPES.includes(data.type)) {
-    throw new Error(
-      `Not an ${SUPPORTED_TYPES.join(', ')}. Only these types can be parsed`
-    )
-  }
-
-  data.type = data.uri.split(':')[1]
-
-  return data
-}
-
-function spotifyUrlInfo (fetch) {
-  const getData = createGetData(fetch)
-  return {
-    getLink,
-    getData,
-    getPreview: (url, opts) => getData(url, opts).then(getPreview),
-    getTracks: (url, opts) => getData(url, opts).then(getTracks),
-    getDetails: (url, opts) =>
-      getData(url, opts).then(data => ({
-        preview: getPreview(data),
-        tracks: getTracks(data)
-      }))
-  }
-}
-
-module.exports = spotifyUrlInfo
-
-
-/***/ }),
-
 /***/ "./node_modules/spotify-web-api-js/src/spotify-web-api.js":
 /*!****************************************************************!*\
   !*** ./node_modules/spotify-web-api-js/src/spotify-web-api.js ***!
@@ -68012,1487 +66148,6 @@ function warning(condition, message) {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (warning);
-
-
-/***/ }),
-
-/***/ "./node_modules/url/node_modules/punycode/punycode.js":
-/*!************************************************************!*\
-  !*** ./node_modules/url/node_modules/punycode/punycode.js ***!
-  \************************************************************/
-/***/ (function(module, exports, __webpack_require__) {
-
-/* module decorator */ module = __webpack_require__.nmd(module);
-var __WEBPACK_AMD_DEFINE_RESULT__;/*! https://mths.be/punycode v1.3.2 by @mathias */
-;(function(root) {
-
-	/** Detect free variables */
-	var freeExports =  true && exports &&
-		!exports.nodeType && exports;
-	var freeModule =  true && module &&
-		!module.nodeType && module;
-	var freeGlobal = typeof __webpack_require__.g == 'object' && __webpack_require__.g;
-	if (
-		freeGlobal.global === freeGlobal ||
-		freeGlobal.window === freeGlobal ||
-		freeGlobal.self === freeGlobal
-	) {
-		root = freeGlobal;
-	}
-
-	/**
-	 * The `punycode` object.
-	 * @name punycode
-	 * @type Object
-	 */
-	var punycode,
-
-	/** Highest positive signed 32-bit float value */
-	maxInt = 2147483647, // aka. 0x7FFFFFFF or 2^31-1
-
-	/** Bootstring parameters */
-	base = 36,
-	tMin = 1,
-	tMax = 26,
-	skew = 38,
-	damp = 700,
-	initialBias = 72,
-	initialN = 128, // 0x80
-	delimiter = '-', // '\x2D'
-
-	/** Regular expressions */
-	regexPunycode = /^xn--/,
-	regexNonASCII = /[^\x20-\x7E]/, // unprintable ASCII chars + non-ASCII chars
-	regexSeparators = /[\x2E\u3002\uFF0E\uFF61]/g, // RFC 3490 separators
-
-	/** Error messages */
-	errors = {
-		'overflow': 'Overflow: input needs wider integers to process',
-		'not-basic': 'Illegal input >= 0x80 (not a basic code point)',
-		'invalid-input': 'Invalid input'
-	},
-
-	/** Convenience shortcuts */
-	baseMinusTMin = base - tMin,
-	floor = Math.floor,
-	stringFromCharCode = String.fromCharCode,
-
-	/** Temporary variable */
-	key;
-
-	/*--------------------------------------------------------------------------*/
-
-	/**
-	 * A generic error utility function.
-	 * @private
-	 * @param {String} type The error type.
-	 * @returns {Error} Throws a `RangeError` with the applicable error message.
-	 */
-	function error(type) {
-		throw RangeError(errors[type]);
-	}
-
-	/**
-	 * A generic `Array#map` utility function.
-	 * @private
-	 * @param {Array} array The array to iterate over.
-	 * @param {Function} callback The function that gets called for every array
-	 * item.
-	 * @returns {Array} A new array of values returned by the callback function.
-	 */
-	function map(array, fn) {
-		var length = array.length;
-		var result = [];
-		while (length--) {
-			result[length] = fn(array[length]);
-		}
-		return result;
-	}
-
-	/**
-	 * A simple `Array#map`-like wrapper to work with domain name strings or email
-	 * addresses.
-	 * @private
-	 * @param {String} domain The domain name or email address.
-	 * @param {Function} callback The function that gets called for every
-	 * character.
-	 * @returns {Array} A new string of characters returned by the callback
-	 * function.
-	 */
-	function mapDomain(string, fn) {
-		var parts = string.split('@');
-		var result = '';
-		if (parts.length > 1) {
-			// In email addresses, only the domain name should be punycoded. Leave
-			// the local part (i.e. everything up to `@`) intact.
-			result = parts[0] + '@';
-			string = parts[1];
-		}
-		// Avoid `split(regex)` for IE8 compatibility. See #17.
-		string = string.replace(regexSeparators, '\x2E');
-		var labels = string.split('.');
-		var encoded = map(labels, fn).join('.');
-		return result + encoded;
-	}
-
-	/**
-	 * Creates an array containing the numeric code points of each Unicode
-	 * character in the string. While JavaScript uses UCS-2 internally,
-	 * this function will convert a pair of surrogate halves (each of which
-	 * UCS-2 exposes as separate characters) into a single code point,
-	 * matching UTF-16.
-	 * @see `punycode.ucs2.encode`
-	 * @see <https://mathiasbynens.be/notes/javascript-encoding>
-	 * @memberOf punycode.ucs2
-	 * @name decode
-	 * @param {String} string The Unicode input string (UCS-2).
-	 * @returns {Array} The new array of code points.
-	 */
-	function ucs2decode(string) {
-		var output = [],
-		    counter = 0,
-		    length = string.length,
-		    value,
-		    extra;
-		while (counter < length) {
-			value = string.charCodeAt(counter++);
-			if (value >= 0xD800 && value <= 0xDBFF && counter < length) {
-				// high surrogate, and there is a next character
-				extra = string.charCodeAt(counter++);
-				if ((extra & 0xFC00) == 0xDC00) { // low surrogate
-					output.push(((value & 0x3FF) << 10) + (extra & 0x3FF) + 0x10000);
-				} else {
-					// unmatched surrogate; only append this code unit, in case the next
-					// code unit is the high surrogate of a surrogate pair
-					output.push(value);
-					counter--;
-				}
-			} else {
-				output.push(value);
-			}
-		}
-		return output;
-	}
-
-	/**
-	 * Creates a string based on an array of numeric code points.
-	 * @see `punycode.ucs2.decode`
-	 * @memberOf punycode.ucs2
-	 * @name encode
-	 * @param {Array} codePoints The array of numeric code points.
-	 * @returns {String} The new Unicode string (UCS-2).
-	 */
-	function ucs2encode(array) {
-		return map(array, function(value) {
-			var output = '';
-			if (value > 0xFFFF) {
-				value -= 0x10000;
-				output += stringFromCharCode(value >>> 10 & 0x3FF | 0xD800);
-				value = 0xDC00 | value & 0x3FF;
-			}
-			output += stringFromCharCode(value);
-			return output;
-		}).join('');
-	}
-
-	/**
-	 * Converts a basic code point into a digit/integer.
-	 * @see `digitToBasic()`
-	 * @private
-	 * @param {Number} codePoint The basic numeric code point value.
-	 * @returns {Number} The numeric value of a basic code point (for use in
-	 * representing integers) in the range `0` to `base - 1`, or `base` if
-	 * the code point does not represent a value.
-	 */
-	function basicToDigit(codePoint) {
-		if (codePoint - 48 < 10) {
-			return codePoint - 22;
-		}
-		if (codePoint - 65 < 26) {
-			return codePoint - 65;
-		}
-		if (codePoint - 97 < 26) {
-			return codePoint - 97;
-		}
-		return base;
-	}
-
-	/**
-	 * Converts a digit/integer into a basic code point.
-	 * @see `basicToDigit()`
-	 * @private
-	 * @param {Number} digit The numeric value of a basic code point.
-	 * @returns {Number} The basic code point whose value (when used for
-	 * representing integers) is `digit`, which needs to be in the range
-	 * `0` to `base - 1`. If `flag` is non-zero, the uppercase form is
-	 * used; else, the lowercase form is used. The behavior is undefined
-	 * if `flag` is non-zero and `digit` has no uppercase form.
-	 */
-	function digitToBasic(digit, flag) {
-		//  0..25 map to ASCII a..z or A..Z
-		// 26..35 map to ASCII 0..9
-		return digit + 22 + 75 * (digit < 26) - ((flag != 0) << 5);
-	}
-
-	/**
-	 * Bias adaptation function as per section 3.4 of RFC 3492.
-	 * http://tools.ietf.org/html/rfc3492#section-3.4
-	 * @private
-	 */
-	function adapt(delta, numPoints, firstTime) {
-		var k = 0;
-		delta = firstTime ? floor(delta / damp) : delta >> 1;
-		delta += floor(delta / numPoints);
-		for (/* no initialization */; delta > baseMinusTMin * tMax >> 1; k += base) {
-			delta = floor(delta / baseMinusTMin);
-		}
-		return floor(k + (baseMinusTMin + 1) * delta / (delta + skew));
-	}
-
-	/**
-	 * Converts a Punycode string of ASCII-only symbols to a string of Unicode
-	 * symbols.
-	 * @memberOf punycode
-	 * @param {String} input The Punycode string of ASCII-only symbols.
-	 * @returns {String} The resulting string of Unicode symbols.
-	 */
-	function decode(input) {
-		// Don't use UCS-2
-		var output = [],
-		    inputLength = input.length,
-		    out,
-		    i = 0,
-		    n = initialN,
-		    bias = initialBias,
-		    basic,
-		    j,
-		    index,
-		    oldi,
-		    w,
-		    k,
-		    digit,
-		    t,
-		    /** Cached calculation results */
-		    baseMinusT;
-
-		// Handle the basic code points: let `basic` be the number of input code
-		// points before the last delimiter, or `0` if there is none, then copy
-		// the first basic code points to the output.
-
-		basic = input.lastIndexOf(delimiter);
-		if (basic < 0) {
-			basic = 0;
-		}
-
-		for (j = 0; j < basic; ++j) {
-			// if it's not a basic code point
-			if (input.charCodeAt(j) >= 0x80) {
-				error('not-basic');
-			}
-			output.push(input.charCodeAt(j));
-		}
-
-		// Main decoding loop: start just after the last delimiter if any basic code
-		// points were copied; start at the beginning otherwise.
-
-		for (index = basic > 0 ? basic + 1 : 0; index < inputLength; /* no final expression */) {
-
-			// `index` is the index of the next character to be consumed.
-			// Decode a generalized variable-length integer into `delta`,
-			// which gets added to `i`. The overflow checking is easier
-			// if we increase `i` as we go, then subtract off its starting
-			// value at the end to obtain `delta`.
-			for (oldi = i, w = 1, k = base; /* no condition */; k += base) {
-
-				if (index >= inputLength) {
-					error('invalid-input');
-				}
-
-				digit = basicToDigit(input.charCodeAt(index++));
-
-				if (digit >= base || digit > floor((maxInt - i) / w)) {
-					error('overflow');
-				}
-
-				i += digit * w;
-				t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
-
-				if (digit < t) {
-					break;
-				}
-
-				baseMinusT = base - t;
-				if (w > floor(maxInt / baseMinusT)) {
-					error('overflow');
-				}
-
-				w *= baseMinusT;
-
-			}
-
-			out = output.length + 1;
-			bias = adapt(i - oldi, out, oldi == 0);
-
-			// `i` was supposed to wrap around from `out` to `0`,
-			// incrementing `n` each time, so we'll fix that now:
-			if (floor(i / out) > maxInt - n) {
-				error('overflow');
-			}
-
-			n += floor(i / out);
-			i %= out;
-
-			// Insert `n` at position `i` of the output
-			output.splice(i++, 0, n);
-
-		}
-
-		return ucs2encode(output);
-	}
-
-	/**
-	 * Converts a string of Unicode symbols (e.g. a domain name label) to a
-	 * Punycode string of ASCII-only symbols.
-	 * @memberOf punycode
-	 * @param {String} input The string of Unicode symbols.
-	 * @returns {String} The resulting Punycode string of ASCII-only symbols.
-	 */
-	function encode(input) {
-		var n,
-		    delta,
-		    handledCPCount,
-		    basicLength,
-		    bias,
-		    j,
-		    m,
-		    q,
-		    k,
-		    t,
-		    currentValue,
-		    output = [],
-		    /** `inputLength` will hold the number of code points in `input`. */
-		    inputLength,
-		    /** Cached calculation results */
-		    handledCPCountPlusOne,
-		    baseMinusT,
-		    qMinusT;
-
-		// Convert the input in UCS-2 to Unicode
-		input = ucs2decode(input);
-
-		// Cache the length
-		inputLength = input.length;
-
-		// Initialize the state
-		n = initialN;
-		delta = 0;
-		bias = initialBias;
-
-		// Handle the basic code points
-		for (j = 0; j < inputLength; ++j) {
-			currentValue = input[j];
-			if (currentValue < 0x80) {
-				output.push(stringFromCharCode(currentValue));
-			}
-		}
-
-		handledCPCount = basicLength = output.length;
-
-		// `handledCPCount` is the number of code points that have been handled;
-		// `basicLength` is the number of basic code points.
-
-		// Finish the basic string - if it is not empty - with a delimiter
-		if (basicLength) {
-			output.push(delimiter);
-		}
-
-		// Main encoding loop:
-		while (handledCPCount < inputLength) {
-
-			// All non-basic code points < n have been handled already. Find the next
-			// larger one:
-			for (m = maxInt, j = 0; j < inputLength; ++j) {
-				currentValue = input[j];
-				if (currentValue >= n && currentValue < m) {
-					m = currentValue;
-				}
-			}
-
-			// Increase `delta` enough to advance the decoder's <n,i> state to <m,0>,
-			// but guard against overflow
-			handledCPCountPlusOne = handledCPCount + 1;
-			if (m - n > floor((maxInt - delta) / handledCPCountPlusOne)) {
-				error('overflow');
-			}
-
-			delta += (m - n) * handledCPCountPlusOne;
-			n = m;
-
-			for (j = 0; j < inputLength; ++j) {
-				currentValue = input[j];
-
-				if (currentValue < n && ++delta > maxInt) {
-					error('overflow');
-				}
-
-				if (currentValue == n) {
-					// Represent delta as a generalized variable-length integer
-					for (q = delta, k = base; /* no condition */; k += base) {
-						t = k <= bias ? tMin : (k >= bias + tMax ? tMax : k - bias);
-						if (q < t) {
-							break;
-						}
-						qMinusT = q - t;
-						baseMinusT = base - t;
-						output.push(
-							stringFromCharCode(digitToBasic(t + qMinusT % baseMinusT, 0))
-						);
-						q = floor(qMinusT / baseMinusT);
-					}
-
-					output.push(stringFromCharCode(digitToBasic(q, 0)));
-					bias = adapt(delta, handledCPCountPlusOne, handledCPCount == basicLength);
-					delta = 0;
-					++handledCPCount;
-				}
-			}
-
-			++delta;
-			++n;
-
-		}
-		return output.join('');
-	}
-
-	/**
-	 * Converts a Punycode string representing a domain name or an email address
-	 * to Unicode. Only the Punycoded parts of the input will be converted, i.e.
-	 * it doesn't matter if you call it on a string that has already been
-	 * converted to Unicode.
-	 * @memberOf punycode
-	 * @param {String} input The Punycoded domain name or email address to
-	 * convert to Unicode.
-	 * @returns {String} The Unicode representation of the given Punycode
-	 * string.
-	 */
-	function toUnicode(input) {
-		return mapDomain(input, function(string) {
-			return regexPunycode.test(string)
-				? decode(string.slice(4).toLowerCase())
-				: string;
-		});
-	}
-
-	/**
-	 * Converts a Unicode string representing a domain name or an email address to
-	 * Punycode. Only the non-ASCII parts of the domain name will be converted,
-	 * i.e. it doesn't matter if you call it with a domain that's already in
-	 * ASCII.
-	 * @memberOf punycode
-	 * @param {String} input The domain name or email address to convert, as a
-	 * Unicode string.
-	 * @returns {String} The Punycode representation of the given domain name or
-	 * email address.
-	 */
-	function toASCII(input) {
-		return mapDomain(input, function(string) {
-			return regexNonASCII.test(string)
-				? 'xn--' + encode(string)
-				: string;
-		});
-	}
-
-	/*--------------------------------------------------------------------------*/
-
-	/** Define the public API */
-	punycode = {
-		/**
-		 * A string representing the current Punycode.js version number.
-		 * @memberOf punycode
-		 * @type String
-		 */
-		'version': '1.3.2',
-		/**
-		 * An object of methods to convert from JavaScript's internal character
-		 * representation (UCS-2) to Unicode code points, and back.
-		 * @see <https://mathiasbynens.be/notes/javascript-encoding>
-		 * @memberOf punycode
-		 * @type Object
-		 */
-		'ucs2': {
-			'decode': ucs2decode,
-			'encode': ucs2encode
-		},
-		'decode': decode,
-		'encode': encode,
-		'toASCII': toASCII,
-		'toUnicode': toUnicode
-	};
-
-	/** Expose `punycode` */
-	// Some AMD build optimizers, like r.js, check for specific condition patterns
-	// like the following:
-	if (
-		true
-	) {
-		!(__WEBPACK_AMD_DEFINE_RESULT__ = (function() {
-			return punycode;
-		}).call(exports, __webpack_require__, exports, module),
-		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
-	} else {}
-
-}(this));
-
-
-/***/ }),
-
-/***/ "./node_modules/url/node_modules/querystring/decode.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/url/node_modules/querystring/decode.js ***!
-  \*************************************************************/
-/***/ ((module) => {
-
-"use strict";
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-// If obj.hasOwnProperty has been overridden, then calling
-// obj.hasOwnProperty(prop) will break.
-// See: https://github.com/joyent/node/issues/1707
-function hasOwnProperty(obj, prop) {
-  return Object.prototype.hasOwnProperty.call(obj, prop);
-}
-
-module.exports = function(qs, sep, eq, options) {
-  sep = sep || '&';
-  eq = eq || '=';
-  var obj = {};
-
-  if (typeof qs !== 'string' || qs.length === 0) {
-    return obj;
-  }
-
-  var regexp = /\+/g;
-  qs = qs.split(sep);
-
-  var maxKeys = 1000;
-  if (options && typeof options.maxKeys === 'number') {
-    maxKeys = options.maxKeys;
-  }
-
-  var len = qs.length;
-  // maxKeys <= 0 means that we should not limit keys count
-  if (maxKeys > 0 && len > maxKeys) {
-    len = maxKeys;
-  }
-
-  for (var i = 0; i < len; ++i) {
-    var x = qs[i].replace(regexp, '%20'),
-        idx = x.indexOf(eq),
-        kstr, vstr, k, v;
-
-    if (idx >= 0) {
-      kstr = x.substr(0, idx);
-      vstr = x.substr(idx + 1);
-    } else {
-      kstr = x;
-      vstr = '';
-    }
-
-    k = decodeURIComponent(kstr);
-    v = decodeURIComponent(vstr);
-
-    if (!hasOwnProperty(obj, k)) {
-      obj[k] = v;
-    } else if (Array.isArray(obj[k])) {
-      obj[k].push(v);
-    } else {
-      obj[k] = [obj[k], v];
-    }
-  }
-
-  return obj;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/url/node_modules/querystring/encode.js":
-/*!*************************************************************!*\
-  !*** ./node_modules/url/node_modules/querystring/encode.js ***!
-  \*************************************************************/
-/***/ ((module) => {
-
-"use strict";
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-var stringifyPrimitive = function(v) {
-  switch (typeof v) {
-    case 'string':
-      return v;
-
-    case 'boolean':
-      return v ? 'true' : 'false';
-
-    case 'number':
-      return isFinite(v) ? v : '';
-
-    default:
-      return '';
-  }
-};
-
-module.exports = function(obj, sep, eq, name) {
-  sep = sep || '&';
-  eq = eq || '=';
-  if (obj === null) {
-    obj = undefined;
-  }
-
-  if (typeof obj === 'object') {
-    return Object.keys(obj).map(function(k) {
-      var ks = encodeURIComponent(stringifyPrimitive(k)) + eq;
-      if (Array.isArray(obj[k])) {
-        return obj[k].map(function(v) {
-          return ks + encodeURIComponent(stringifyPrimitive(v));
-        }).join(sep);
-      } else {
-        return ks + encodeURIComponent(stringifyPrimitive(obj[k]));
-      }
-    }).join(sep);
-
-  }
-
-  if (!name) return '';
-  return encodeURIComponent(stringifyPrimitive(name)) + eq +
-         encodeURIComponent(stringifyPrimitive(obj));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/url/node_modules/querystring/index.js":
-/*!************************************************************!*\
-  !*** ./node_modules/url/node_modules/querystring/index.js ***!
-  \************************************************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-
-
-exports.decode = exports.parse = __webpack_require__(/*! ./decode */ "./node_modules/url/node_modules/querystring/decode.js");
-exports.encode = exports.stringify = __webpack_require__(/*! ./encode */ "./node_modules/url/node_modules/querystring/encode.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/url/url.js":
-/*!*********************************!*\
-  !*** ./node_modules/url/url.js ***!
-  \*********************************/
-/***/ ((__unused_webpack_module, exports, __webpack_require__) => {
-
-"use strict";
-// Copyright Joyent, Inc. and other Node contributors.
-//
-// Permission is hereby granted, free of charge, to any person obtaining a
-// copy of this software and associated documentation files (the
-// "Software"), to deal in the Software without restriction, including
-// without limitation the rights to use, copy, modify, merge, publish,
-// distribute, sublicense, and/or sell copies of the Software, and to permit
-// persons to whom the Software is furnished to do so, subject to the
-// following conditions:
-//
-// The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
-// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN
-// NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM,
-// DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR
-// OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE
-// USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-
-
-var punycode = __webpack_require__(/*! punycode */ "./node_modules/url/node_modules/punycode/punycode.js");
-var util = __webpack_require__(/*! ./util */ "./node_modules/url/util.js");
-
-exports.parse = urlParse;
-exports.resolve = urlResolve;
-exports.resolveObject = urlResolveObject;
-exports.format = urlFormat;
-
-exports.Url = Url;
-
-function Url() {
-  this.protocol = null;
-  this.slashes = null;
-  this.auth = null;
-  this.host = null;
-  this.port = null;
-  this.hostname = null;
-  this.hash = null;
-  this.search = null;
-  this.query = null;
-  this.pathname = null;
-  this.path = null;
-  this.href = null;
-}
-
-// Reference: RFC 3986, RFC 1808, RFC 2396
-
-// define these here so at least they only have to be
-// compiled once on the first module load.
-var protocolPattern = /^([a-z0-9.+-]+:)/i,
-    portPattern = /:[0-9]*$/,
-
-    // Special case for a simple path URL
-    simplePathPattern = /^(\/\/?(?!\/)[^\?\s]*)(\?[^\s]*)?$/,
-
-    // RFC 2396: characters reserved for delimiting URLs.
-    // We actually just auto-escape these.
-    delims = ['<', '>', '"', '`', ' ', '\r', '\n', '\t'],
-
-    // RFC 2396: characters not allowed for various reasons.
-    unwise = ['{', '}', '|', '\\', '^', '`'].concat(delims),
-
-    // Allowed by RFCs, but cause of XSS attacks.  Always escape these.
-    autoEscape = ['\''].concat(unwise),
-    // Characters that are never ever allowed in a hostname.
-    // Note that any invalid chars are also handled, but these
-    // are the ones that are *expected* to be seen, so we fast-path
-    // them.
-    nonHostChars = ['%', '/', '?', ';', '#'].concat(autoEscape),
-    hostEndingChars = ['/', '?', '#'],
-    hostnameMaxLen = 255,
-    hostnamePartPattern = /^[+a-z0-9A-Z_-]{0,63}$/,
-    hostnamePartStart = /^([+a-z0-9A-Z_-]{0,63})(.*)$/,
-    // protocols that can allow "unsafe" and "unwise" chars.
-    unsafeProtocol = {
-      'javascript': true,
-      'javascript:': true
-    },
-    // protocols that never have a hostname.
-    hostlessProtocol = {
-      'javascript': true,
-      'javascript:': true
-    },
-    // protocols that always contain a // bit.
-    slashedProtocol = {
-      'http': true,
-      'https': true,
-      'ftp': true,
-      'gopher': true,
-      'file': true,
-      'http:': true,
-      'https:': true,
-      'ftp:': true,
-      'gopher:': true,
-      'file:': true
-    },
-    querystring = __webpack_require__(/*! querystring */ "./node_modules/url/node_modules/querystring/index.js");
-
-function urlParse(url, parseQueryString, slashesDenoteHost) {
-  if (url && util.isObject(url) && url instanceof Url) return url;
-
-  var u = new Url;
-  u.parse(url, parseQueryString, slashesDenoteHost);
-  return u;
-}
-
-Url.prototype.parse = function(url, parseQueryString, slashesDenoteHost) {
-  if (!util.isString(url)) {
-    throw new TypeError("Parameter 'url' must be a string, not " + typeof url);
-  }
-
-  // Copy chrome, IE, opera backslash-handling behavior.
-  // Back slashes before the query string get converted to forward slashes
-  // See: https://code.google.com/p/chromium/issues/detail?id=25916
-  var queryIndex = url.indexOf('?'),
-      splitter =
-          (queryIndex !== -1 && queryIndex < url.indexOf('#')) ? '?' : '#',
-      uSplit = url.split(splitter),
-      slashRegex = /\\/g;
-  uSplit[0] = uSplit[0].replace(slashRegex, '/');
-  url = uSplit.join(splitter);
-
-  var rest = url;
-
-  // trim before proceeding.
-  // This is to support parse stuff like "  http://foo.com  \n"
-  rest = rest.trim();
-
-  if (!slashesDenoteHost && url.split('#').length === 1) {
-    // Try fast path regexp
-    var simplePath = simplePathPattern.exec(rest);
-    if (simplePath) {
-      this.path = rest;
-      this.href = rest;
-      this.pathname = simplePath[1];
-      if (simplePath[2]) {
-        this.search = simplePath[2];
-        if (parseQueryString) {
-          this.query = querystring.parse(this.search.substr(1));
-        } else {
-          this.query = this.search.substr(1);
-        }
-      } else if (parseQueryString) {
-        this.search = '';
-        this.query = {};
-      }
-      return this;
-    }
-  }
-
-  var proto = protocolPattern.exec(rest);
-  if (proto) {
-    proto = proto[0];
-    var lowerProto = proto.toLowerCase();
-    this.protocol = lowerProto;
-    rest = rest.substr(proto.length);
-  }
-
-  // figure out if it's got a host
-  // user@server is *always* interpreted as a hostname, and url
-  // resolution will treat //foo/bar as host=foo,path=bar because that's
-  // how the browser resolves relative URLs.
-  if (slashesDenoteHost || proto || rest.match(/^\/\/[^@\/]+@[^@\/]+/)) {
-    var slashes = rest.substr(0, 2) === '//';
-    if (slashes && !(proto && hostlessProtocol[proto])) {
-      rest = rest.substr(2);
-      this.slashes = true;
-    }
-  }
-
-  if (!hostlessProtocol[proto] &&
-      (slashes || (proto && !slashedProtocol[proto]))) {
-
-    // there's a hostname.
-    // the first instance of /, ?, ;, or # ends the host.
-    //
-    // If there is an @ in the hostname, then non-host chars *are* allowed
-    // to the left of the last @ sign, unless some host-ending character
-    // comes *before* the @-sign.
-    // URLs are obnoxious.
-    //
-    // ex:
-    // http://a@b@c/ => user:a@b host:c
-    // http://a@b?@c => user:a host:c path:/?@c
-
-    // v0.12 TODO(isaacs): This is not quite how Chrome does things.
-    // Review our test case against browsers more comprehensively.
-
-    // find the first instance of any hostEndingChars
-    var hostEnd = -1;
-    for (var i = 0; i < hostEndingChars.length; i++) {
-      var hec = rest.indexOf(hostEndingChars[i]);
-      if (hec !== -1 && (hostEnd === -1 || hec < hostEnd))
-        hostEnd = hec;
-    }
-
-    // at this point, either we have an explicit point where the
-    // auth portion cannot go past, or the last @ char is the decider.
-    var auth, atSign;
-    if (hostEnd === -1) {
-      // atSign can be anywhere.
-      atSign = rest.lastIndexOf('@');
-    } else {
-      // atSign must be in auth portion.
-      // http://a@b/c@d => host:b auth:a path:/c@d
-      atSign = rest.lastIndexOf('@', hostEnd);
-    }
-
-    // Now we have a portion which is definitely the auth.
-    // Pull that off.
-    if (atSign !== -1) {
-      auth = rest.slice(0, atSign);
-      rest = rest.slice(atSign + 1);
-      this.auth = decodeURIComponent(auth);
-    }
-
-    // the host is the remaining to the left of the first non-host char
-    hostEnd = -1;
-    for (var i = 0; i < nonHostChars.length; i++) {
-      var hec = rest.indexOf(nonHostChars[i]);
-      if (hec !== -1 && (hostEnd === -1 || hec < hostEnd))
-        hostEnd = hec;
-    }
-    // if we still have not hit it, then the entire thing is a host.
-    if (hostEnd === -1)
-      hostEnd = rest.length;
-
-    this.host = rest.slice(0, hostEnd);
-    rest = rest.slice(hostEnd);
-
-    // pull out port.
-    this.parseHost();
-
-    // we've indicated that there is a hostname,
-    // so even if it's empty, it has to be present.
-    this.hostname = this.hostname || '';
-
-    // if hostname begins with [ and ends with ]
-    // assume that it's an IPv6 address.
-    var ipv6Hostname = this.hostname[0] === '[' &&
-        this.hostname[this.hostname.length - 1] === ']';
-
-    // validate a little.
-    if (!ipv6Hostname) {
-      var hostparts = this.hostname.split(/\./);
-      for (var i = 0, l = hostparts.length; i < l; i++) {
-        var part = hostparts[i];
-        if (!part) continue;
-        if (!part.match(hostnamePartPattern)) {
-          var newpart = '';
-          for (var j = 0, k = part.length; j < k; j++) {
-            if (part.charCodeAt(j) > 127) {
-              // we replace non-ASCII char with a temporary placeholder
-              // we need this to make sure size of hostname is not
-              // broken by replacing non-ASCII by nothing
-              newpart += 'x';
-            } else {
-              newpart += part[j];
-            }
-          }
-          // we test again with ASCII char only
-          if (!newpart.match(hostnamePartPattern)) {
-            var validParts = hostparts.slice(0, i);
-            var notHost = hostparts.slice(i + 1);
-            var bit = part.match(hostnamePartStart);
-            if (bit) {
-              validParts.push(bit[1]);
-              notHost.unshift(bit[2]);
-            }
-            if (notHost.length) {
-              rest = '/' + notHost.join('.') + rest;
-            }
-            this.hostname = validParts.join('.');
-            break;
-          }
-        }
-      }
-    }
-
-    if (this.hostname.length > hostnameMaxLen) {
-      this.hostname = '';
-    } else {
-      // hostnames are always lower case.
-      this.hostname = this.hostname.toLowerCase();
-    }
-
-    if (!ipv6Hostname) {
-      // IDNA Support: Returns a punycoded representation of "domain".
-      // It only converts parts of the domain name that
-      // have non-ASCII characters, i.e. it doesn't matter if
-      // you call it with a domain that already is ASCII-only.
-      this.hostname = punycode.toASCII(this.hostname);
-    }
-
-    var p = this.port ? ':' + this.port : '';
-    var h = this.hostname || '';
-    this.host = h + p;
-    this.href += this.host;
-
-    // strip [ and ] from the hostname
-    // the host field still retains them, though
-    if (ipv6Hostname) {
-      this.hostname = this.hostname.substr(1, this.hostname.length - 2);
-      if (rest[0] !== '/') {
-        rest = '/' + rest;
-      }
-    }
-  }
-
-  // now rest is set to the post-host stuff.
-  // chop off any delim chars.
-  if (!unsafeProtocol[lowerProto]) {
-
-    // First, make 100% sure that any "autoEscape" chars get
-    // escaped, even if encodeURIComponent doesn't think they
-    // need to be.
-    for (var i = 0, l = autoEscape.length; i < l; i++) {
-      var ae = autoEscape[i];
-      if (rest.indexOf(ae) === -1)
-        continue;
-      var esc = encodeURIComponent(ae);
-      if (esc === ae) {
-        esc = escape(ae);
-      }
-      rest = rest.split(ae).join(esc);
-    }
-  }
-
-
-  // chop off from the tail first.
-  var hash = rest.indexOf('#');
-  if (hash !== -1) {
-    // got a fragment string.
-    this.hash = rest.substr(hash);
-    rest = rest.slice(0, hash);
-  }
-  var qm = rest.indexOf('?');
-  if (qm !== -1) {
-    this.search = rest.substr(qm);
-    this.query = rest.substr(qm + 1);
-    if (parseQueryString) {
-      this.query = querystring.parse(this.query);
-    }
-    rest = rest.slice(0, qm);
-  } else if (parseQueryString) {
-    // no query string, but parseQueryString still requested
-    this.search = '';
-    this.query = {};
-  }
-  if (rest) this.pathname = rest;
-  if (slashedProtocol[lowerProto] &&
-      this.hostname && !this.pathname) {
-    this.pathname = '/';
-  }
-
-  //to support http.request
-  if (this.pathname || this.search) {
-    var p = this.pathname || '';
-    var s = this.search || '';
-    this.path = p + s;
-  }
-
-  // finally, reconstruct the href based on what has been validated.
-  this.href = this.format();
-  return this;
-};
-
-// format a parsed object into a url string
-function urlFormat(obj) {
-  // ensure it's an object, and not a string url.
-  // If it's an obj, this is a no-op.
-  // this way, you can call url_format() on strings
-  // to clean up potentially wonky urls.
-  if (util.isString(obj)) obj = urlParse(obj);
-  if (!(obj instanceof Url)) return Url.prototype.format.call(obj);
-  return obj.format();
-}
-
-Url.prototype.format = function() {
-  var auth = this.auth || '';
-  if (auth) {
-    auth = encodeURIComponent(auth);
-    auth = auth.replace(/%3A/i, ':');
-    auth += '@';
-  }
-
-  var protocol = this.protocol || '',
-      pathname = this.pathname || '',
-      hash = this.hash || '',
-      host = false,
-      query = '';
-
-  if (this.host) {
-    host = auth + this.host;
-  } else if (this.hostname) {
-    host = auth + (this.hostname.indexOf(':') === -1 ?
-        this.hostname :
-        '[' + this.hostname + ']');
-    if (this.port) {
-      host += ':' + this.port;
-    }
-  }
-
-  if (this.query &&
-      util.isObject(this.query) &&
-      Object.keys(this.query).length) {
-    query = querystring.stringify(this.query);
-  }
-
-  var search = this.search || (query && ('?' + query)) || '';
-
-  if (protocol && protocol.substr(-1) !== ':') protocol += ':';
-
-  // only the slashedProtocols get the //.  Not mailto:, xmpp:, etc.
-  // unless they had them to begin with.
-  if (this.slashes ||
-      (!protocol || slashedProtocol[protocol]) && host !== false) {
-    host = '//' + (host || '');
-    if (pathname && pathname.charAt(0) !== '/') pathname = '/' + pathname;
-  } else if (!host) {
-    host = '';
-  }
-
-  if (hash && hash.charAt(0) !== '#') hash = '#' + hash;
-  if (search && search.charAt(0) !== '?') search = '?' + search;
-
-  pathname = pathname.replace(/[?#]/g, function(match) {
-    return encodeURIComponent(match);
-  });
-  search = search.replace('#', '%23');
-
-  return protocol + host + pathname + search + hash;
-};
-
-function urlResolve(source, relative) {
-  return urlParse(source, false, true).resolve(relative);
-}
-
-Url.prototype.resolve = function(relative) {
-  return this.resolveObject(urlParse(relative, false, true)).format();
-};
-
-function urlResolveObject(source, relative) {
-  if (!source) return relative;
-  return urlParse(source, false, true).resolveObject(relative);
-}
-
-Url.prototype.resolveObject = function(relative) {
-  if (util.isString(relative)) {
-    var rel = new Url();
-    rel.parse(relative, false, true);
-    relative = rel;
-  }
-
-  var result = new Url();
-  var tkeys = Object.keys(this);
-  for (var tk = 0; tk < tkeys.length; tk++) {
-    var tkey = tkeys[tk];
-    result[tkey] = this[tkey];
-  }
-
-  // hash is always overridden, no matter what.
-  // even href="" will remove it.
-  result.hash = relative.hash;
-
-  // if the relative url is empty, then there's nothing left to do here.
-  if (relative.href === '') {
-    result.href = result.format();
-    return result;
-  }
-
-  // hrefs like //foo/bar always cut to the protocol.
-  if (relative.slashes && !relative.protocol) {
-    // take everything except the protocol from relative
-    var rkeys = Object.keys(relative);
-    for (var rk = 0; rk < rkeys.length; rk++) {
-      var rkey = rkeys[rk];
-      if (rkey !== 'protocol')
-        result[rkey] = relative[rkey];
-    }
-
-    //urlParse appends trailing / to urls like http://www.example.com
-    if (slashedProtocol[result.protocol] &&
-        result.hostname && !result.pathname) {
-      result.path = result.pathname = '/';
-    }
-
-    result.href = result.format();
-    return result;
-  }
-
-  if (relative.protocol && relative.protocol !== result.protocol) {
-    // if it's a known url protocol, then changing
-    // the protocol does weird things
-    // first, if it's not file:, then we MUST have a host,
-    // and if there was a path
-    // to begin with, then we MUST have a path.
-    // if it is file:, then the host is dropped,
-    // because that's known to be hostless.
-    // anything else is assumed to be absolute.
-    if (!slashedProtocol[relative.protocol]) {
-      var keys = Object.keys(relative);
-      for (var v = 0; v < keys.length; v++) {
-        var k = keys[v];
-        result[k] = relative[k];
-      }
-      result.href = result.format();
-      return result;
-    }
-
-    result.protocol = relative.protocol;
-    if (!relative.host && !hostlessProtocol[relative.protocol]) {
-      var relPath = (relative.pathname || '').split('/');
-      while (relPath.length && !(relative.host = relPath.shift()));
-      if (!relative.host) relative.host = '';
-      if (!relative.hostname) relative.hostname = '';
-      if (relPath[0] !== '') relPath.unshift('');
-      if (relPath.length < 2) relPath.unshift('');
-      result.pathname = relPath.join('/');
-    } else {
-      result.pathname = relative.pathname;
-    }
-    result.search = relative.search;
-    result.query = relative.query;
-    result.host = relative.host || '';
-    result.auth = relative.auth;
-    result.hostname = relative.hostname || relative.host;
-    result.port = relative.port;
-    // to support http.request
-    if (result.pathname || result.search) {
-      var p = result.pathname || '';
-      var s = result.search || '';
-      result.path = p + s;
-    }
-    result.slashes = result.slashes || relative.slashes;
-    result.href = result.format();
-    return result;
-  }
-
-  var isSourceAbs = (result.pathname && result.pathname.charAt(0) === '/'),
-      isRelAbs = (
-          relative.host ||
-          relative.pathname && relative.pathname.charAt(0) === '/'
-      ),
-      mustEndAbs = (isRelAbs || isSourceAbs ||
-                    (result.host && relative.pathname)),
-      removeAllDots = mustEndAbs,
-      srcPath = result.pathname && result.pathname.split('/') || [],
-      relPath = relative.pathname && relative.pathname.split('/') || [],
-      psychotic = result.protocol && !slashedProtocol[result.protocol];
-
-  // if the url is a non-slashed url, then relative
-  // links like ../.. should be able
-  // to crawl up to the hostname, as well.  This is strange.
-  // result.protocol has already been set by now.
-  // Later on, put the first path part into the host field.
-  if (psychotic) {
-    result.hostname = '';
-    result.port = null;
-    if (result.host) {
-      if (srcPath[0] === '') srcPath[0] = result.host;
-      else srcPath.unshift(result.host);
-    }
-    result.host = '';
-    if (relative.protocol) {
-      relative.hostname = null;
-      relative.port = null;
-      if (relative.host) {
-        if (relPath[0] === '') relPath[0] = relative.host;
-        else relPath.unshift(relative.host);
-      }
-      relative.host = null;
-    }
-    mustEndAbs = mustEndAbs && (relPath[0] === '' || srcPath[0] === '');
-  }
-
-  if (isRelAbs) {
-    // it's absolute.
-    result.host = (relative.host || relative.host === '') ?
-                  relative.host : result.host;
-    result.hostname = (relative.hostname || relative.hostname === '') ?
-                      relative.hostname : result.hostname;
-    result.search = relative.search;
-    result.query = relative.query;
-    srcPath = relPath;
-    // fall through to the dot-handling below.
-  } else if (relPath.length) {
-    // it's relative
-    // throw away the existing file, and take the new path instead.
-    if (!srcPath) srcPath = [];
-    srcPath.pop();
-    srcPath = srcPath.concat(relPath);
-    result.search = relative.search;
-    result.query = relative.query;
-  } else if (!util.isNullOrUndefined(relative.search)) {
-    // just pull out the search.
-    // like href='?foo'.
-    // Put this after the other two cases because it simplifies the booleans
-    if (psychotic) {
-      result.hostname = result.host = srcPath.shift();
-      //occationaly the auth can get stuck only in host
-      //this especially happens in cases like
-      //url.resolveObject('mailto:local1@domain1', 'local2@domain2')
-      var authInHost = result.host && result.host.indexOf('@') > 0 ?
-                       result.host.split('@') : false;
-      if (authInHost) {
-        result.auth = authInHost.shift();
-        result.host = result.hostname = authInHost.shift();
-      }
-    }
-    result.search = relative.search;
-    result.query = relative.query;
-    //to support http.request
-    if (!util.isNull(result.pathname) || !util.isNull(result.search)) {
-      result.path = (result.pathname ? result.pathname : '') +
-                    (result.search ? result.search : '');
-    }
-    result.href = result.format();
-    return result;
-  }
-
-  if (!srcPath.length) {
-    // no path at all.  easy.
-    // we've already handled the other stuff above.
-    result.pathname = null;
-    //to support http.request
-    if (result.search) {
-      result.path = '/' + result.search;
-    } else {
-      result.path = null;
-    }
-    result.href = result.format();
-    return result;
-  }
-
-  // if a url ENDs in . or .., then it must get a trailing slash.
-  // however, if it ends in anything else non-slashy,
-  // then it must NOT get a trailing slash.
-  var last = srcPath.slice(-1)[0];
-  var hasTrailingSlash = (
-      (result.host || relative.host || srcPath.length > 1) &&
-      (last === '.' || last === '..') || last === '');
-
-  // strip single dots, resolve double dots to parent dir
-  // if the path tries to go above the root, `up` ends up > 0
-  var up = 0;
-  for (var i = srcPath.length; i >= 0; i--) {
-    last = srcPath[i];
-    if (last === '.') {
-      srcPath.splice(i, 1);
-    } else if (last === '..') {
-      srcPath.splice(i, 1);
-      up++;
-    } else if (up) {
-      srcPath.splice(i, 1);
-      up--;
-    }
-  }
-
-  // if the path is allowed to go above the root, restore leading ..s
-  if (!mustEndAbs && !removeAllDots) {
-    for (; up--; up) {
-      srcPath.unshift('..');
-    }
-  }
-
-  if (mustEndAbs && srcPath[0] !== '' &&
-      (!srcPath[0] || srcPath[0].charAt(0) !== '/')) {
-    srcPath.unshift('');
-  }
-
-  if (hasTrailingSlash && (srcPath.join('/').substr(-1) !== '/')) {
-    srcPath.push('');
-  }
-
-  var isAbsolute = srcPath[0] === '' ||
-      (srcPath[0] && srcPath[0].charAt(0) === '/');
-
-  // put the host back
-  if (psychotic) {
-    result.hostname = result.host = isAbsolute ? '' :
-                                    srcPath.length ? srcPath.shift() : '';
-    //occationaly the auth can get stuck only in host
-    //this especially happens in cases like
-    //url.resolveObject('mailto:local1@domain1', 'local2@domain2')
-    var authInHost = result.host && result.host.indexOf('@') > 0 ?
-                     result.host.split('@') : false;
-    if (authInHost) {
-      result.auth = authInHost.shift();
-      result.host = result.hostname = authInHost.shift();
-    }
-  }
-
-  mustEndAbs = mustEndAbs || (result.host && srcPath.length);
-
-  if (mustEndAbs && !isAbsolute) {
-    srcPath.unshift('');
-  }
-
-  if (!srcPath.length) {
-    result.pathname = null;
-    result.path = null;
-  } else {
-    result.pathname = srcPath.join('/');
-  }
-
-  //to support request.http
-  if (!util.isNull(result.pathname) || !util.isNull(result.search)) {
-    result.path = (result.pathname ? result.pathname : '') +
-                  (result.search ? result.search : '');
-  }
-  result.auth = relative.auth || result.auth;
-  result.slashes = result.slashes || relative.slashes;
-  result.href = result.format();
-  return result;
-};
-
-Url.prototype.parseHost = function() {
-  var host = this.host;
-  var port = portPattern.exec(host);
-  if (port) {
-    port = port[0];
-    if (port !== ':') {
-      this.port = port.substr(1);
-    }
-    host = host.substr(0, host.length - port.length);
-  }
-  if (host) this.hostname = host;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/url/util.js":
-/*!**********************************!*\
-  !*** ./node_modules/url/util.js ***!
-  \**********************************/
-/***/ ((module) => {
-
-"use strict";
-
-
-module.exports = {
-  isString: function(arg) {
-    return typeof(arg) === 'string';
-  },
-  isObject: function(arg) {
-    return typeof(arg) === 'object' && arg !== null;
-  },
-  isNull: function(arg) {
-    return arg === null;
-  },
-  isNullOrUndefined: function(arg) {
-    return arg == null;
-  }
-};
 
 
 /***/ }),
@@ -89623,15 +86278,12 @@ var vanilla = (createState) => {
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = __webpack_module_cache__[moduleId] = {
 /******/ 			id: moduleId,
-/******/ 			loaded: false,
+/******/ 			// no module.loaded needed
 /******/ 			exports: {}
 /******/ 		};
 /******/ 	
 /******/ 		// Execute the module function
-/******/ 		__webpack_modules__[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/ 	
-/******/ 		// Flag the module as loaded
-/******/ 		module.loaded = true;
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
 /******/ 	
 /******/ 		// Return the exports of the module
 /******/ 		return module.exports;
@@ -89757,15 +86409,6 @@ var vanilla = (createState) => {
 /******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
-/******/ 	})();
-/******/ 	
-/******/ 	/* webpack/runtime/node module decorator */
-/******/ 	(() => {
-/******/ 		__webpack_require__.nmd = (module) => {
-/******/ 			module.paths = [];
-/******/ 			if (!module.children) module.children = [];
-/******/ 			return module;
 /******/ 		};
 /******/ 	})();
 /******/ 	
