@@ -8,6 +8,8 @@ import ytSearch from "youtube-search";
 import JSSoup from "jssoup";
 import cheerio from "cheerio";
 import googleIt from "google-it";
+import spotify from "spotify-url-info";
+const { getData, getTracks, getPreview } = spotify(fetch);
 
 var __awaiter =
   (this && this.__awaiter) ||
@@ -293,10 +295,28 @@ connectDB().then(() => {
         "only-urls": true,
       });
       const spotifyUrls = googleResults.map((result) => result.link);
-
       res.json(spotifyUrls);
+      // console.log("Found tracks:", await getData(spotifyUrls[0]));
+      // res.json(
+      //   await Promise.all(
+      //     await spotifyUrls.map(async (url) => await getData(url))
+      //   )
+      // );
     } catch (error) {
       console.error("Error searching for tracks:", error);
+      res.sendStatus(500);
+    }
+  });
+
+  app.post("/spotify/getTrack", async (req, res) => {
+    const trackUrl = req.body.url;
+    console.log("Requested track:", trackUrl);
+    try {
+      const trackData = await getData(trackUrl);
+      console.log("Found track:", trackData);
+      res.json(trackData);
+    } catch (error) {
+      console.error("Error getting track:", error);
       res.sendStatus(500);
     }
   });

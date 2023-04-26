@@ -1,11 +1,11 @@
 .songRow {
     margin-left: 20px;
-    padding: 20px;
+    padding: 10px;
     display: flex;
     align-items: center;
     color: white;
     opacity: 0.8;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 .songRow_platform {
@@ -59,7 +59,8 @@
 }
 
 .songRow_search {
-    max-height: 80px;
+    max-height: 65px;
+    margin-right: 10px;
 }
 
 .songRow_controls {

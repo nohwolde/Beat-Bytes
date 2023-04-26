@@ -9,12 +9,7 @@ import Yt from "./pics/ytDark.svg";
 import { useSpotify } from "../store";
 import { useActions } from "../store";
 import { useSearch } from "../store";
-import logo from "./logo.png";
 import axios from "axios";
-import { parse } from "himalaya";
-import spotify from "spotify-url-info";
-import fetch from "cross-fetch";
-const { getTracks, getPreview } = spotify(axios);
 
 function Header({ spotify, setLoading }) {
   // SPOTIFY
@@ -25,57 +20,14 @@ function Header({ spotify, setLoading }) {
   const setPage = useActions((state) => state.setPage);
   const getPage = useActions((state) => state.getPage);
   const setSearch = useSearch((state) => state.setSearch);
+  const pushSearch = useSearch((state) => state.pushSearch);
 
   // STATES
   const searchPlatform = useSearch((state) => state.searchPlatform);
   const setSearchPlatform = useSearch((state) => state.setSearchPlatform);
+  const getSearchPlatform = useSearch((state) => state.getSearchPlatform);
 
   const searchRef = useRef();
-
-  useEffect(() => {
-    if (token !== null && token === "") setSearchPlatform("Youtube");
-    else setSearchPlatform("Spotify");
-  }, [token]);
-
-  const createGetData = async (url, opts) => {
-    const embedURL = "https://open.spotify.com/track/" + url;
-
-    const response = await axios.get(embedURL, opts);
-    const text = await response.text();
-    const embed = parse(text);
-
-    let scripts = embed.find((el) => el.tagName === "html");
-
-    if (scripts === undefined) return new TypeError("ERROR.NOT_SCRIPTS");
-
-    scripts = scripts.children
-      .find((el) => el.tagName === "body")
-      .children.filter(({ tagName }) => tagName === "script");
-
-    let script = scripts.find((script) =>
-      script.attributes.some(({ value }) => value === "resource")
-    );
-
-    if (script !== undefined) {
-      // found data in the older embed style
-      return normalizeData({
-        data: JSON.parse(Buffer.from(script.children[0].content, "base64")),
-      });
-    }
-
-    script = scripts.find((script) =>
-      script.attributes.some(({ value }) => value === "initial-state")
-    );
-
-    if (script !== undefined) {
-      // found data in the new embed style
-      const data = JSON.parse(Buffer.from(script.children[0].content, "base64"))
-        .data.entity;
-      return data;
-    }
-
-    return new TypeError("ERROR.NOT_DATA");
-  };
 
   // Conducts the search for all three platforms, and searches
   // the database to return  all songs that match the search query
@@ -87,54 +39,84 @@ function Header({ spotify, setLoading }) {
     setPage("Search");
     setLoading(false);
     if (platform === "Spotify") {
-      await spotify.searchTracks(searchRef.current.value).then(
-        // uses built in spotify search function
-        (data) => {
-          data.tracks.items.map(
-            (
-              track // grabs data from each song
-            ) =>
-              results.push({
+      setSearch([]);
+      const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+
+      const processBatch = async (urls, query) => {
+        const trackRequests = urls.map(async (url) => {
+          const trackResponse = await axios
+            .post("/spotify/getTrack", {
+              url: url,
+            })
+            .then((track) => {
+              return {
                 item: {
-                  name: track.name,
-                  id: track.id,
-                  is_local: track.is_local,
-                  uri: track.uri,
+                  name: track.data.name,
+                  id: track.data.id,
+                  is_local: false,
+                  uri: track.data.uri,
+                  title: track.data.name,
+                  type: "track",
                   album: {
-                    id: track.album.id,
+                    id: track.id,
                     images: [
-                      track.album.images[0] ? track.album.images[0].url : "",
+                      track.data.coverArt.sources[0]
+                        ? track.data.coverArt.sources[0].url
+                        : "",
                     ],
-                    name: track.album.name,
-                    uri: track.album.uri,
-                    is_playable: track.album.is_playable,
+                    name: track.data.name,
+                    uri: track.data.uri,
+                    is_playable: true,
                   },
-                  artists: [
-                    ...track.artists.map((artist) => {
-                      return {
-                        id: artist.id,
-                        name: artist.name,
-                        uri: artist.uri,
-                      };
-                    }),
-                  ],
+                  artists: [...track.data.artists],
                 },
                 platform: platform,
-              })
-          );
+              };
+            });
+          return trackResponse;
+        });
+
+        const tracks = await Promise.all(trackRequests);
+        console.log(tracks);
+        if (
+          getSearchPlatform() === "Spotify" &&
+          query === searchRef.current.value
+        )
+          pushSearch(tracks);
+        return tracks;
+      };
+
+      const searchTracks = async () => {
+        try {
+          const query = searchRef.current.value;
+          const searchResponse = await axios.post("/spotify/search", {
+            query: query,
+          });
+
+          const urls = searchResponse.data;
+          const batchSize = 10;
+          const trackResults = [];
+          for (let i = 0; i < urls.length; i += batchSize) {
+            const batch = urls.slice(i, i + batchSize);
+            const tracks = await processBatch(batch, query);
+            if (
+              !(
+                getSearchPlatform() === "Spotify" &&
+                query === searchRef.current.value
+              )
+            )
+              break;
+            else results.push(...tracks);
+            await delay(500); // Add a delay between batches, adjust as needed
+          }
+
+          console.log(trackResults);
+          return trackResults;
+        } catch (error) {
+          console.error("Error:", error);
         }
-      );
-
-      // const search = await axios.post("/spotify/search", {
-      //   query: searchRef.current.value,
-      // });
-
-      // console.log("Spotify Song", getTracks(search[0]));
-
-      // results.push(search);
-
-      console.log(results);
-      setSearch(results);
+      };
+      await searchTracks();
     } else if (platform === "Soundcloud") {
       setSearch([]);
       setLoading(true);
@@ -171,7 +153,7 @@ function Header({ spotify, setLoading }) {
           );
         })
       );
-      resolved.map((song) =>
+      resolved.map((song) => {
         results.push({
           item: song,
           platform: "Soundcloud",
@@ -179,8 +161,8 @@ function Header({ spotify, setLoading }) {
           artist: song.user.username,
           pic: song.artwork_url,
           link: song.permalink_url,
-        })
-      );
+        });
+      });
       console.log(results);
       setSearch(results);
       setLoading(false);
@@ -229,11 +211,9 @@ function Header({ spotify, setLoading }) {
           <img
             alt=""
             className={
-              !(token === "")
-                ? (searchPlatform === "Spotify") | (token === null)
-                  ? "header_playerLogoActive"
-                  : "header_playerLogo"
-                : "header_playerLogoDisabled"
+              (searchPlatform === "Spotify") | (token === null)
+                ? "header_playerLogoActive"
+                : "header_playerLogo"
             }
             src={Spot}
             onClick={() => invokeSearch("Spotify")}

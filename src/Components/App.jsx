@@ -54,6 +54,7 @@ function App() {
       setToken(_token);
       spotify.setAccessToken(_token);
       setSpotify(spotify);
+      setPlaylists([]);
       await Promise.all([
         fetchPlaylists(),
         fetchUser(),

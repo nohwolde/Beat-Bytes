@@ -240,6 +240,8 @@ let spotifyStore = (set, get) => ({
 let searchStore = (set, get) => ({
   search: [],
   searchPlatform: "Spotify",
+  pushSearch: (songs) =>
+    set((state) => ({ search: [...state.search, ...songs] })),
   setSearch: (search) => set({ search: search }),
   getSearch: () => get().search,
   setSearchPlatform: (platform) => set({ searchPlatform: platform }),

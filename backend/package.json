@@ -22,6 +22,7 @@
     "mongoose": "^6.10.0",
     "morgan": "^1.10.0",
     "node-fetch": "^3.3.0",
+    "spotify-url-info": "^3.2.3",
     "youtube-search": "^1.1.6"
   }
 }

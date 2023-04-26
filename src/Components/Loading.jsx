@@ -5,6 +5,7 @@ import { accessUrl } from "./spotify";
 import { useSpotify } from "../store";
 const Loading = () => {
   const setToken = useSpotify((state) => state.setToken);
+  const setPlaylists = useSpotify((state) => state.setPlaylists);
   const loginTest = () => {
     console.log("test");
     setToken("");
