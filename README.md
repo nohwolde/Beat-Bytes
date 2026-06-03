@@ -1,7 +1,5 @@
 # 🚀 Welcome to Beatbytes!
 
-You can use the App at: https://nohwolde.github.io/Beat-Bytes/
-
 This project has been created using **webpack-cli**, you can now run
 
 If you want to install the project on your local machine follow these steps:
